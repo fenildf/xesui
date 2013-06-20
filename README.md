@@ -13,7 +13,7 @@
 
 1. [结构文档](https://github.com/xueersi/xesui/blob/master/docs/DOM.html)：DOM结构
 2. [命名规则](https://github.com/xueersi/xesui/blob/master/docs/xesui_v0.4.md)：CSS、JS命名规则
-3. [组件介绍](https://github.com/xueersi/xesui/blob/master/docs/xesui_v0.4.md)：UI组件
+3. [模块组件](https://github.com/xueersi/xesui/blob/master/docs/module.md)：模块组件组件介绍
 4. [在线演示]
 5. [压缩工具]
 6. on [github](https://github.com/xueersi/xesui)
