@@ -3,58 +3,78 @@
 ## 模块
 小的功能模块
 
-### xes.dialog
-
 ### xes.cookie
 
 ### xes.form
+表单
 
 ### xes.button
+按钮
 
 ### xes.verify
+表单验证
 
 ### xes.date
+日期扩展
 
 ### xes.time
+时间扩展
 
 ### xes.img
+图片处理
 
 ### xes.tools
+base64加密解密
 
 ### xes.localstorage
+本地存储
 
 ### xes.browser
 
 ### xes.ajax
 
+
 ### xes.dom
 
+
 ### xes.number
+数字扩展
 
 ### xes.object
+对象扩展
 
 ### xes.string
+字符串扩展
 
 ### xes.url
+url地址处理
 
 ### xes.json
 
+
 ### xes.fn
 
+
 ### xes.event
+事件
 
 ### xes.element
 
-### xes.drap
+
+### xes.dragdrop
+拖拽
 
 ### xes.mask
+遮罩
 
 ### xes.loading
+加载
 
 ### xes.position
+定位
 
 ### xes.scroll
-
+滚动
 
 
 ## 组件
