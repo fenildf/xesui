@@ -12,11 +12,11 @@
 
 ## 使用帮助
 
-1. [结构文档](http://docs.xesui.com/dom.html)：DOM结构
-2. [命名规则](http://docs.xesui.com/name.html)：CSS、JS命名规则
-3. [组件介绍](http://docs.xesui.com/moudel.html)：UI组件
-4. [在线演示](http://demo.xesui.com/)
-5. [压缩工具](http://tools.xesui.com/compressor.html)
+1. [结构文档](https://github.com/xueersi/xesui/blob/master/docs/DOM.html)：DOM结构
+2. [命名规则](https://github.com/xueersi/xesui/blob/master/docs/xesui_v0.4.md)：CSS、JS命名规则
+3. [组件介绍](https://github.com/xueersi/xesui/blob/master/docs/xesui_v0.4.md)：UI组件
+4. [在线演示]
+5. [压缩工具]
 6. on [github](https://github.com/xueersi/xesui)
 
 
