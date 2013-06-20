@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	* {margin: 0; padding: 0; list-style:none; }
+	.list{width: 100%;height: 100px; }
+	.list li {width:100%;height: 100px;float: left; position: absolute; z-index: 9; background-color: #c00}
+	.list li.current { z-index: 10}
+	.wrap{width:600px;height: 50px;margin: 10px auto; position: relative; z-index: 11; background-color: #fff; top: -30px}
+	.num {position: absolute; text-align: right; right: 0}
+	.num li {width: 10px;height: 10px; background-color: #ccc; float: left; display: inline-block;}
+	body {
+		background-image: url('http://img04.xesimg.com/theme/blue/bg.jpg');
+	}
+</style>
+</head>
+<body>
+
+<div class="avatar">
+	<a href="" class="prev"></a>
+	<ul>
+		<li><img src="" alt=""><a href="" class="ui_username"></a></li>
+		<li><img src="" alt=""><a href="" class="ui_username"></a></li>
+		<li><img src="" alt=""><a href="" class="ui_username"></a></li>
+		<li><img src="" alt=""><a href="" class="ui_username"></a></li>
+		<li><img src="" alt=""><a href="" class="ui_username"></a></li>
+	</ul>
+	<a href="" class="next"></a>
+</div>
+
+
+
+
+<div class="ui_feed">
+	<div class="avatar"></div>
+	<div class="feed_detail">
+		<a href="" class="ui_username"></a>
+		<div class="feed_text"></div>
+		<div class="feed_media"></div>
+		<div class="feed_media_expand"></div>
+		<div class="feed_bar"></div>
+		<div class="feed_comment"></div>
+	</div>
+</div>
+
+
+
+<table class="ui_table text_c">
+	<thead>
+		<tr class="text_r">
+			<th></th>
+			<th></th>
+			<th></th>
+			<th class="text_l"></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="4"></td>
+		</tr>
+	</tfoot>
+</table>
+
+
+
+
+
+
+<form action="" class="ui_form">
+	<!-- 结构1 -->
+	<div class="form_item">
+		<span class="form_label"></span>
+		<div class="form_info">
+			<label for="" class="input"><input name="" type="text">adaff</label>
+			<p class="form_tips tips_error tips_success tips_text">信息信息</p>
+		</div>
+	</div>
+	<!-- 结构2 -->
+	<dl class="form_item">
+		<dt class="form_label"></dt>
+		<dd class="form_info">
+			<label for="" class="input"><input type="text">adaff</label>
+			<p class="form_tips tips_error tips_success tips_text">信息信息</p>
+		</dd>
+	</dl>
+</form>
+
+
+<div class="pay_step">
+	<ul>
+		<li>
+			<i class="text_num">1</i>
+			<p>1.我的购物车</p>
+		</li>
+		<li class="step_gray">
+			<i class="text_num">2</i>
+			<p>2.填写并核对订单信息</p>
+		</li>
+		<li class="">
+			<i class="text_num">3</i>
+			<p>3.成果提交订单</p>
+		</li>
+	</ul>
+</div>
+
+<div class="gift_list">
+	<dl class="gift_item">
+		<dt><img src="" alt=""></dt>
+		<dd class="gift_title"></dd>
+		<dd class="gift_gold"></dd>
+		<dd class="gift_button"></dd>
+		<dd class="gift_info hidden"></dd>
+	</dl>
+</div>
+
+
+<div class="ui_comment">
+	<form action="" class="comment_form">
+		<div class="comment_title">发布活动</div>
+		<div class="comment_textarea">
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</div>
+		<div class="comment_func">
+			<div class="comment_kind">
+				<ul>
+					<li class="kind_img">
+						<p><em class="icon_img"></em></p>
+					</li>
+					<li class="kind_media"></li>
+				</ul>
+			</div>
+			<div class="comment_tips">请填写内容，长度在10~140之间</div>
+			<div class="comment_button">
+				<span class="comment_size"><i class="text_num">1</i>/140</span>
+				<button class="btn_submit">提交</button>
+			</div>
+		</div>
+	</form>
+	<div class="comment_list">
+		<!-- 调用 ui_comment_list -->
+	</div>
+</div>
+
+<div class="ui_teachers">
+	<div class="teacher_handle"></div>	
+	<div class="teacher_item">
+		<i class="num"></i>
+		<div class="avatar"></div>
+		<span class="course_num"></span>
+		<span class="trend"></span>
+		<span class="student_num"></span>
+		<span class="new_trend"></span>
+		<div class="ui_follow following">
+			<em class="icon icon_succeed icon_add"></em>
+			关注/已关注
+			<i class="line line_gray">|</i>
+			<a href="" class="btn_cancel">取消</a>
+		</div>
+	</div>
+	<div class="teacher_item"></div>
+	<div class="teacher_item"></div>
+	<div class="teacher_item"></div>
+	<div class="teacher_item"></div>
+	<div class="teacher_item"></div>
+
+</div>
+
+
+<div class="ui_follow">
+  <em class="icon icon_add"></em>
+  关注
+ </div>
+
+<div class="ui_follow following">
+  <em class="icon icon_succeed"></em>
+  已关注
+  <i class="line line_gray">|</i>
+  <a href="" class="btn_cancel">取消</a>
+</div>
+
+<div class="ui_follow following">
+  <em class="icon icon_add hidden"></em>
+  已关注
+</div>
+
+
+
+<ul class="bank_list">
+	<li>
+		<label for="" class="ICBC"><input type="text" value="ICBC"></label>
+		<label for="" class="CMB"><input type="text" value="ICBC"></label>
+		<label for="" class="CCB"><input type="text" value="ICBC"></label>
+		<label for="" class="COMM"><input type="text" value="ICBC"></label>
+		<label for="" class="CITIC"><input type="text" value="ICBC"></label>
+	</li>
+</ul>
+
+
+
+<div class="main_header border_blue"><span>无连接标题</span></div>
+
+<div class="main_header border_blue">
+	<ul class="nav_links">
+		<li><a class="current">全部</a><i class="line line_blue">|</i></li>
+		<li><a>小学</a></li>
+		<li><a>初中</a></li>
+		。。。
+	</ul>
+</div>
+
+
+
+
+
+
+    <div id="aaa">
+    	<ul class="list">
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    	</ul>
+		<div class="wrap">
+			<ol class="num">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+    </div>
+</body>
+</html>

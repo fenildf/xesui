@@ -1,0 +1,1005 @@
+/**
+ *reset.css
+ *页面样式重构
+ *
+ *
+ */
+
+/**reset
+ *public.css
+ *页面公用样式
+ *共用的全局性的类如：color,font,line-height,margin,padding,border,input,button,clear,等
+ *
+ */
+
+/**
+*layout.css
+*页面整体盒模型的搭建
+*如head middle foot mainbody sidebar等
+*
+<div class="layout">
+   <div class="layout_body">左</div>
+   <div class="layout_side">右</div>
+</div>
+*/
+
+/**
+*head_top_menu.css
+*顶部菜单
+*
+<div id="header">
+    <div class="header_box">
+           <h1 class="logo"><a>学而思网校</a><h1>
+           <ul class="nav">
+             <li>首页</li>
+             <li></li>
+             <li></li>
+             <li></li>
+           </ul> 
+           <div class="search"><input/><i>搜索</i></div>
+           <ul class="topbar">
+                <li></li>
+                <li></li>
+                <li></li>
+           </ul>
+    </div>
+</div>
+*
+*/
+
+/**
+*logo.css
+*页面logo
+*
+*<h1 class="logo"><a>学而思网校</a><h1>
+*/
+============================= 必用样式 分割线  ===========================================
+/**
+*picture.css
+*首页轮播图
+* 参照alipay.com
+*
+*<div id="index_focus">
+*<ul clss="focus_list">
+   <li><a>广告说明文字</a></li>
+   <li class="current"><span >第一张</span></li>
+</ul>
+  <div class="focus_num_wrap">  // width
+    <ol class="layout_body focus_num">
+      <li>1</li>
+      <li>2</li>
+    </ol>
+  </div>
+</div>
+*
+*/
+
+/**
+*index_login.css
+*首页登录框部份
+*<div class="index_login">
+*<form>
+   <div class="login">
+	     <p><input type="text" /></p>
+	     <p><input/></p>
+	     <p><label><input/>记住用户名</label><span>忘记密码？</span></p>
+	     <p><button>登录</button> input[type="button"]</p>
+   </div>
+   </form>
+   <div class="infor">
+      <p>说明文字</p>
+      <p><a>qq</a><a>weibo</a></p>
+      <p>111111<em>说明文字</em>1111111111111</p>
+      <p>111111111111111111111111</p>
+      
+   </div>
+</div>
+*
+*/
+
+
+================================ 页面 分割线  ============================================
+
+/**
+*name.css
+*ui_username
+*用户，年级名称加"V"
+*div>a+i.icon
+
+   <a class="ui_user">userName<em class="icon icon_verifty_teacher">V</em></a>
+
+*/
+
+
+/**
+*avatar.css
+*ui_avatar
+*用户头像，名称，左右翻动头像组件
+<div class="ui_avatar">
+  <a href="" class="prev"></a>
+  <ul class="avatar_items">
+    <li>
+      <a href="" class="userpic J_userinfo"><img src="" alt=""></a>
+      <a class="username J_userinfo">userName<em class="icon icon_verifty_teacher">V</em></a>
+    </li>
+    <li><img src="" alt=""><a href="" class="ui_username"></a></li>
+    <li><img src="" alt=""><a href="" class="ui_username"></a></li>
+    <li><img src="" alt=""><a href="" class="ui_username"></a></li>
+    <li><img src="" alt=""><a href="" class="ui_username"></a></li>
+  </ul>
+  <a href="" class="next"></a>
+</div>
+
+
+
+<div class="ui_avatar avatar_mini">
+    <p>
+      <a href="" class="userpic J_userinfo"><img src="" alt=""></a>
+      <a class="username J_userinfo">userName<em class="icon icon_verifty_teacher">V</em></a>    
+    </p>
+</div>
+
+
+
+// 单独调用
+  <a href="" class="userpic J_userinfo"><img src="" alt=""></a>
+  <a class="username J_userinfo">userName<em class="icon icon_verifty_teacher">V</em></a>    
+
+
+
+*/
+
+-------------------- 2013-06-17 End ---------------------
+
+
+/**
+*text.css
+*ui_text
+*所有文章列表
+*<div class="ui_detail">
+* 
+*    所有文章列表所有文章列表所有文章列表所有文章列表所有文章列表所有文章列表
+*</div>
+*
+*
+*
+*/
+
+/**
+ *
+ * 动态列表
+ * 
+<div class="ui_feed">
+  <div class="avatar"></div>
+  <div class="feed_detail">
+    <a href="" class="ui_username"></a>
+    <div class="feed_text"></div>
+    <div class="feed_media"></div>
+    <div class="feed_media_expand"></div>
+    <div class="feed_bar"></div>
+    <div class="feed_comment"></div>
+
+  </div>
+</div>
+
+*/
+
+
+
+/**
+*list.css
+*ui_list
+*所有有序，无序列表
+*<ul ol>
+*    <li>1<a>中华人民共和国--学而思网校</a></li>
+*</ul ol>
+*/
+
+
+/**
+*panel.css
+*ui_panel
+*所有带有标题的部份
+*<div class="ui_panel">
+	   <!-- side_header -->
+	   <!-- 内容部份 -->
+ </div>
+*/
+
+
+
+/**
+*screen.css
+*ui_course_screen
+*课程频道页筛选课程
+*
+<div class="ui_filter">
+  <div class="filter_handle">
+    <h2>一年级</h2>
+    <ul class="filter_handle_items"> // 三行4列显示
+      <li>一年级</li>
+      <li>二年级</li>
+      <li>...</li>
+    </ul>
+    <p class="more">本年级共有。。。。</p>
+  </div>
+
+<dl class="filter_item">
+	<dt>学科</dt>
+	<dd>
+	 	<a>数学</a><a>语文</a>
+	</dd>
+</dl>
+<dl class="filter_item">
+  <dt>学科</dt>
+  <dd>
+    <a>数学</a><a>语文</a>
+  </dd>
+</dl>
+<dl class="filter_item filter_other expand / collapsed">
+  <dt>学科</dt>
+  <dd>
+    <a>数学</a><a>语文</a>
+  </dd>
+</dl>
+<dl class="filter_item filter_other">
+  <dt>学科</dt>
+  <dd>
+    <a class="current">数学</a><a>语文</a>
+  </dd>
+</dl>
+<div class="filter_more"><p>更多</p></div>  
+</div>
+
+*
+*/
+
+
+/**
+*course.css
+*ui_course_content
+*课程列表，课程动态，课程评论，购物车推荐课程，
+*<div class="ui_courses">
+   <div class="avatar">头像<div>
+   <div class="course_detail">
+      <p class="course_title">课程标题</p>
+      <p class="course_info">课程信息</p>
+      <p class="course_func">
+        <button><em class="icon icon_arrow_right"></em>免费试听</button>
+        <a><em class="icon icon_xxxx"></em>赞</a>
+        <i class="line line_gray">|</i>
+        <a><em class="icon icon_xxxx"></em>赞</a>
+      </p>
+   </div>
+</div>
+*/
+
+
+
+
+
+/**
+*teacher.css
+*老师排序
+*
+
+<div class="ui_teachers">
+  <div class="teacher_item">
+    <i class="num"></i>
+    <div class="avatar"></div>
+    <span class="course_num"></span>
+    <span class="trend"></span>
+    <span class="student_num"></span>
+    <span class="new_trend"></span>
+    <div class="ui_follow following">
+      <em class="icon icon_succeed icon_add"></em>
+      关注/已关注
+      <i class="line line_gray">|</i>
+      <a href="" class="btn_cancel">取消</a>
+    </div>
+  </div>
+  <div class="teacher_item"></div>
+  <div class="teacher_item"></div>
+  <div class="teacher_item"></div>
+  <div class="teacher_item"></div>
+  <div class="teacher_item"></div>
+
+</div>
+
+*
+* 
+*/
+
+
+/**
+ * 关注按钮
+ * 
+ *
+  
+<div class="ui_follow btn_text">
+  <em class="icon icon_add"></em>
+  关注
+ </div>
+
+<div class="ui_follow following">
+  <em class="icon icon_succeed"></em>
+  已关注
+  <i class="line line_gray">|</i>
+  <a href="" class="btn_cancel">取消</a>
+</div>
+
+<div class="ui_follow following">
+  <em class="icon icon_add hidden"></em>
+  已关注
+</div>
+
+ */
+
+-------------------------- 2013-6-18 end ---------------------
+
+/**
+ * 列表排序工具条
+ *
+ * 1. 老师排序部分：
+ <div class="ui_sortbar sort_teacher sort_course">
+  <ul>
+    <li class="sort_num">排名</li>
+    <li class="sort_avatar">老师</li>
+    <li class="sort_course_num"><a>授课数量<em class="icon icon_trend_top"></em></a></li>
+    <li class="sort_trend"><a>有意思指数<em class="icon icon_trend_bottom"></em></a></li>
+    <li class="sort_student_num"><a>学员人数<em class="icon icon_trend_bottom icon_trend_top"></em></a></li>
+    <li class="sort_new_trend"><a>新鲜指数<em class="icon icon_trend_bottom icon_trend_top"></em></a></li>
+  </ul>
+</div>
+
+ * 2. 课程排序部分
+ *
+ *    在li里面写右侧的留白
+ *    
+ <div class="ui_sortbar sort_course">
+  <ul>
+    <li class="sort_title">排序：</li>
+    <li><a class="current">销量</a></li>
+    <li><a>最新</a></li>
+    <li><a>有意思</a></li>
+    <li><a>价格<em class="icon icon_trend_bottom">从高到低</em></a></li>
+  </ul>
+</div>
+
+ */
+
+
+/**
+*hlep.css
+*帮助，联系我们等页面
+*
+* 左侧导航采用 nav_list 类
+<div class="side_menu_head"><span>常见问题</span></div>
+<ul class="side_menu_body text_c">
+  <li><i>·</i><a herf="##">网上银行帮助中心</a></li>
+  <li><a herf="##">网上银行帮助中心</a></li>
+  <li><a herf="##">网上银行帮助中心</a></li>
+  <li><a herf="##">网上银行帮助中心</a></li>
+  <li><a herf="##">网上银行帮助中心</a></li>
+</ul>
+ 
+ 
+ 
+<div class="ui_article">
+   <h2 class="article_title">网校常见问题</h2>
+   <div class="article_content">
+     <p>网校常见问题网校常见问题网校常见问题网校常见问题网校常见问题网校常见问题</p>
+     <p>网校常见问题网校常见问题网校常见问题网校常见问题网校常见问题网校常见问题</p>
+     <p><img/></p>
+   </div>
+</div>
+
+*/
+
+
+/**
+*404.css
+*错误提示
+* 背景图放到page_404容器内
+*
+* 
+<div class="page_404">
+    <div class="page_404_tips">404_error</div>
+    <div class="page_404_button"><a class="home" href="http://www.xueersi.com/">返回首页</a><a class="up" href="javascript:history.go(-1);">返回上一页</a></div>
+    <p class="page_404_time">倒计时</p>
+    <ul class="page_404_info">
+        <li>我们正在联系火星总部查找您需要的页面，请返回等待信息.....</li>
+        <li><i>·</i>不要返回吗？</li>
+        <li><i>·</i>确定不要返回吗？</li>
+        <li><i>·</i>真的确定不要返回吗？</li>
+        <li><i>·</i>真的真的确定不要返回吗？</li>
+        <li><i>·</i>好吧，还是随便你要不要确定返回吧</li>
+    </ul>
+</div>
+ 
+*/
+
+/**
+ * rank.css
+ * 前三名为橙色：rank_top
+ * 默认灰色：rank
+ * 标签随意，但必须设置为内联元素（非块级）
+ *
+<ol>
+  <li><i class="rank rank_top">1</i><a>adfasdfasfasfas</a></li>
+  <li><i class="rank rank_top">2</i><a>adfasdfasfasfas</a></li>
+  <li><i class="rank rank_top">3</i><a>adfasdfasfasfas</a></li>
+  <li><i class="rank">4</i><a>adfasdfasfasfas</a></li>
+  <li><i class="rank">5</i><a>adfasdfasfasfas</a></li>
+</ol>
+
+
+ */
+
+
+/**
+*advert.css
+*advert
+*广告位
+* 图片类型：advert_img
+* 视频媒体：advert_media
+* 嵌入页面：advert_iframe
+*
+  <div class="advert advert_img">
+    <a>
+      <img/>
+    </a>
+  </div>
+*/
+
+/**
+*footer.css
+*ui_service_items
+*首页底部的服务项目
+*
+<div class="foot_service">
+  <a class="service_share">
+    <strong>学习经验分享</strong>
+    <p>解决学习的困扰，成功学员提供学习经验</p>
+  </a>
+  <a class="service_live">
+    <strong>直播学习指导</strong>
+    <p>解决学习的困扰，成功学员提供学习经验</p>
+  </a>
+  <a class="service_system">
+    <strong>专业的学习规划体系</strong>
+    <p>解决学习的困扰，成功学员提供学习经验</p>
+  </a>
+  <a class="service_interaction">
+    <strong>有趣的互动视频</strong>
+    <p>解决学习的困扰，成功学员提供学习经验</p>
+  </a>
+</div>
+*
+*/
+
+/**
+*bank.css
+*付款银行
+
+<ul class="bank_list">
+  <li class="ICBC">
+    <input type="text" value="ICBC"><label for="">爱存不存</label>
+  </li>
+  <li class="CMB">
+    <input type="text" value="CMB"><label for="">存吗？不</label>
+  </li>
+  <li class="CCB"> 
+   <input type="text" value="CCB"><label for="">存存吧</label>
+  </li>
+  <li class="COMM"> 
+   <input type="text" value="COMM"><label for="">交通银行</label>
+  </li>
+  <li class="CITIC">
+    <input type="text" value="CITIC"><label for="">中信银行</label>
+  </li>
+</ul>
+
+*
+*/
+
+/**
+*search.css
+*搜课页---搜索
+*
+*
+<div class="ui_searchbar">
+<p class="search_head">课程</p>
+<div class="search_group">
+  <form>
+    <input class="search_keyword"/><button class="btn_large btn_submit btn_blue">搜索</button>
+  </form>
+</div>
+<div class="search_tips">刘明文字刘明文字刘明“<strong class="f_red">刘明文字</strong>”刘明文字刘明文字刘明文字刘明文字刘明文字</div>
+*/
+
+
+/**
+ * nav 导航类
+ *
+ * 左侧导航：nav_list
+ *
+ *    <ul class="nav nav-list">
+        <li class="nav-header">List header</li>
+        <li class="current"><a href="#">首页</a></li>
+        <li><i>·</i><a href="#">Library</a></li>
+        ...
+      </ul>
+ * 
+ * tab导航：nav_tabs
+ *
+    <ul class="nav nav-tabs">
+      <li class="current">
+        <a href="#">首页</a>
+      </li>
+      <li><a href="#">...</a></li>
+      <li><a href="#">...</a></li>
+    </ul>
+
+ * 高亮显示：nav_pills
+ *
+   <ul class="nav nav-pills">
+    <li class="current">
+      <a href="#">首页</a>
+    </li>
+    <li><a href="#">...</a></li>
+    <li><a href="#">...</a></li>
+  </ul>
+ *
+ * 文本链接：nav_links
+ *
+ * 
+ *
+ */
+
+
+/**
+ * side_header
+ *
+ * 默认：灰字、无线、左对齐
+ * border_blue：蓝字、蓝边、右对齐
+ * 
+ *
+ <div class="side_header border_blue"><span>侧边标题</span></div>
+ */
+
+/**
+ * main_header
+ * 默认：蓝字、灰线、带角；
+ * border_blue：蓝字、蓝线、无角；
+ * 
+ *
+ * 内容为：nav_links
+ *
+<div class="main_header border_blue"><span>无连接标题</span></div>
+
+<div class="main_header border_blue">
+  <ul class="nav_links">
+    <li><a class="current">全部</a><i class="line line_blue">|</i></li>
+    <li><a>小学</a></li>
+    <li><a>初中</a></li>
+    。。。
+  </ul>
+</div>
+
+
+
+ * 
+ */
+/**
+*visitor.css
+*最近访客
+*
+*
+
+<div class="ui_avatar avatar_mini">
+    <p>
+      <a href="" class="userpic"><img src="" alt=""></a>
+      <a class="username">王雨洁</a>    
+      <span>2小时前</span>
+    </p>
+</div>
+*
+*
+*
+*/
+
+
+/**
+*
+*个人中心----个人形象信息（老师）
+*
+<div class="head_user">
+  <div class="user_pic"><img/>大头像</div>
+  <div class="user_detail">
+     <div class="user_name">王雨洁<em class="icon icon_verifty_teacher">v</em></div>
+     <div class="user_info">个人信息的中的<br/>中的个人信算成好吧的</div>
+     <div class="ui_follow following">
+      <em class="icon icon_succeed icon_add"></em>
+      关注/已关注
+      <i class="line line_gray">|</i>
+      <a href="" class="btn_cancel">取消</a>
+    </div>
+  </div>
+  <ul class="user_count">
+    <li><em class="icon icon_peple"></em>学员<strong>1012324</strong></li>
+    <li><em class="icon icon_text"></em>课程<strong>10124</strong></li>
+  </ul>
+</div>
+*
+* 个人中心----个人形象信息（用户）
+*
+<div class="head_user user_student">
+  <div class="user_pic"><img/>大头像</div>
+  <div class="user_detail">
+     <div class="user_name">朱化刚</div>
+     <div class="user_info">
+        <div class="user_level"></div>
+        <p class="user_profile">
+          <span class="user_grade"><em class="icon icon_person"></em>六年级</span>
+          <span class="user_address">北京市海淀区</span>
+          <span class="user_school">人大附中</span>
+        </p>
+        <p class="user_statistics">
+          关注老师<strong class="f_red">543</strong>
+          在学课程<strong class="f_red">43</strong>
+        </p>
+     </div>     
+  </div>
+  <ul class="user_func">
+    <li><em class="icon icon_order"></em><strong>10</strong></<a>订单</a></li>
+    <li><em class="icon icon_gold"></em><strong>1200</strong><a>换礼</a></li>
+    <li><em class="icon icon_card"></em><a>激活听课证</a></li>
+  </ul>
+</div>
+*/
+
+-------------------------- 2013-6-19 end ---------------------
+
+
+/**
+ * 一、个人设置：    
+ * 1、所有的表单、及验证时的结构 
+ * 2、所有的表格 
+ * 7、头像上传组件       !
+ * 8、金币换礼         
+ * 9、头像更换         
+ * 
+ * 10、右侧header下面的信息工具栏 :放到页面级别的css文件里面去，单独写样式。如：page_setting.css;     
+ 
+ *
+ * 二、学习中心：
+ * 
+ * 3、信息提示条        !
+ * 5、整套听课页面      Marco 负责
+ * 6、试题、试卷        !
+ * 7、错题本           !
+ * 
+ * 三、整套支付         !（主要是支付环节的页面）
+ *
+ * 四、登录/注册        
+ *
+ * 五、分页
+ * 1. 结构
+ * 2. 交互
+ * 3. 每页显示20条记录，第一页第一次加载时分4次显示完全（第5条下面点击“更多”时再显示5条，以此类推，直到显示完20条为止，出现分页工具条）
+ * 
+ * 六、交互
+ * 1. 弹层
+ * 2. 冒泡
+ * 3. 切换
+ * 4. 下拉
+ * 5. 表单验证
+ * 6. 跟随屏幕滚动
+ * 7. 听课页：课程大纲、弹层、做题……
+ * 8. Ajax
+ * 9. 信息：点击右上角对应信息，跳转到信息页面时，需要定位到该分类下的信息列表
+ * 
+ * 
+ * 11、
+ */
+
+
+/**
+*table.css
+*表格
+*1. 默认不带竖线；
+*2. 隔行换色用CSS3实现（tr:ntd-odd），鼠标划过同样 （tr:hover）;
+*   .ui_table tr:nth-child(odd){color:#000; background:#f2f2f2;} 奇数行
+    .ui_table tr:nth-child(even){color:#666; background:#dfdfdf;} 偶数行
+*
+表头：灰底、文字加粗
+
+1. 不带竖线（默认）
+
+
+<table class="ui_table text_c">
+  <thead>
+    <tr class="text_r">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th class="text_l"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+  </tfoot>
+</table>
+
+
+  
+2. 带竖线 ui_table table_line
+
+
+
+
+3. 蓝色边框（支付流程）: ui_table table_blue;
+*
+*/
+
+
+
+/**
+ * form.css
+ *
+ * 1、表单验证提示信息放到：form_tips容器内,同时给父级增加错误类别的样式：
+ *    $(this).parents('.form_item').addClass('tips_error');
+ *    用父级的错误类型控制里面的input边框颜色、提示信息样式等内容
+ *    
+ * 2、用样式控制，不限制标签，可以参照下面两种结构编写：
+ * 
+ <form action="" class="ui_form">
+  <!-- 结构1 -->
+  <div class="form_item">
+    <span class="form_label"></span>
+    <div class="form_info">
+      <label for="" class="input"><input name="" type="text" >adaff</label>
+      <p class="form_tips tips_text">信息信息</p>
+    </div>
+  </div>
+  <!-- 结构2 -->
+  <dl class="form_item">
+    <dt class="form_label"></dt>
+    <dd class="form_info">
+      <label for="" class="input"><input type="text">adaff</label>
+      <p class="form_tips tips_error tips_success tips_text">信息信息</p>
+    </dd>
+  </dl>
+</form>
+
+ */
+
+
+/**
+ * step.css
+ *
+ * 1. div.pay_step背景为蓝色横条（通栏）
+ * 2. 每一步默认为蓝色（已完成状态），背景为蓝色横条+蓝色圆圈；
+ * 3. 未完成状态的li上面增加class（.next_step），背景为灰色横条+灰色圆圈；
+ * 4. li {width:130;}
+ *
+ 
+<div class="pay_step">
+  <ul>
+    <li>
+      <i class="text_num">1</i>
+      <p>1.我的购物车</p>
+    </li>
+    <li class="next_step">
+      <i class="text_num">2</i>
+      <p>2.填写并核对订单信息</p>
+    </li>
+    <li class="next_step">
+      <i class="text_num">3</i>
+      <p>3.成果提交订单</p>
+    </li>
+  </ul>
+</div>
+
+ */
+
+
+
+
+
+
+/**
+*shopcar.css
+*购物车
+*
+*
+*/
+
+/**
+*comment.css
+*个人中心评论
+*
+*
+
+<div class="ui_comment">
+  <form action="" class="comment_form">
+    <div class="comment_title">发布活动</div>
+    <div class="comment_textarea">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div class="comment_func">
+      <div class="comment_kind">
+        <ul>
+          <li class="kind_img">
+            <p><em class="icon_img"></em></p>
+          </li>
+          <li class="kind_media"></li>
+        </ul>
+      </div>
+      <div class="comment_tips">请填写内容，长度在10~140之间</div>
+      <div class="comment_button">
+        <span class="comment_size"><i class="text_num">1</i>/140</span>
+        <button class="btn_submit">提交</button>
+      </div>
+    </div>
+  </form>
+  <div class="comment_list">
+    <!-- 调用 ui_comment_list -->
+  </div>
+</div>
+*/
+
+
+/**
+* page_gift.css
+* 个人设置
+* 金币换礼
+*
+<div class="gift_list">
+  <dl class="gift_item">
+    <dt><img src="" alt=""></dt>
+    <dd class="gift_title"></dd>
+    <dd class="gift_gold"></dd>
+    <dd class="gift_button"></dd>
+    <dd class="gift_info hidden"></dd>
+  </dl>
+</div>
+*
+*
+*/
+
+/**
+*
+*课程详情页----课程咨询
+*
+*consult.css
+<div class="course_consult">
+   <p class="1">网校学员：Fairyjf　　2013-05-21 10:30:17</p>
+   <p class="2">咨询内容：请问竞赛班和强化班的区别</p>
+   <p class="3">陈敏老师回复：您好，Q1年卡的课程一共46讲，</p>
+</div>
+*/
+
+
+
+
+
+
+
+============================  组件 =================================================
+/**
+*back.css
+*图片背景
+*
+*
+*/
+
+/**
+*icon.css
+*图标
+*
+*
+*/
+
+
+/**
+*tips.css
+*提示
+
+tips_success tips_error tips_info
+
+
+*
+*/
+
+
+/**
+ * popover.css
+ 
+ pop_l
+           |
+          <
+           |
+           |
+           |
+
+    箭头在下方：top变化
+
+pop_r
+        |
+         >
+        |
+        |
+        |
+
+    箭头在下方：top变化
+
+ pop_t
+         __/\________
+ 
+    箭头在右侧时：left变化
+
+ pop_b
+
+         __  ________
+           \/
+ 
+    箭头在右侧时：left变化
+
+ 
+ */
+
+/**
+*dialog.css
+*弹出层
+*
+*
+*/
+
+/**
+*page.css
+*翻页
+*
+*
+*/
+
+
+/**
+*button.css
+*按钮
+*
+*
+*
+1、
+btn_text: 文本按钮、可以是超链接，非提交类按钮 ：里面可以放入文字、超链接、图标等
+
+默认样式：背景、边框灰色、文字默认颜色；
+鼠标划过：背景、边框改为橙色、文字白色；
+
+
+2、按照功能划分：
+
+btn btn_submit / btn_cancel / btn_close / btn_next / btn_prev / btn_sns
+
+
+3、按照颜色、大小划分：
+
+btn_gray btn_red btn_blue btn_orange
+
+btn_large btn_small btn_mini
+
+
+*/
+
+=============================== 分割线 =================================
