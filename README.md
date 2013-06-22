@@ -12,14 +12,28 @@
 ## 使用帮助
 
 1. [结构文档](https://github.com/xueersi/xesui/blob/master/docs/DOM.html)：DOM结构
-2. [命名规则](https://github.com/xueersi/xesui/blob/master/docs/xesui_v0.4.md)：CSS、JS命名规则
+2. [命名规则](https://github.com/xueersi/xesui/blob/master/docs/nomenclature.md)：CSS、JS命名规则
 3. [模块组件](https://github.com/xueersi/xesui/blob/master/docs/module.md)：模块组件组件介绍
-4. [在线演示]
-5. [压缩工具]
-6. on [github](https://github.com/xueersi/xesui)
+4. [加载方式](https://github.com/xueersi/xesui/blob/master/docs/loader.md)：文件加载方式
+5. [在线演示]
+6. [压缩工具]
+7. on [github](https://github.com/xueersi/xesui)
 
 
 ## 版本更新日志
+
+* **v0.4.0622** ：
+
+    - 重新规划加载方式：初步采用模块后面跟JS标签的方式，（测试过头部轮询DOM节点、onload事件监听等方式，都不理想）；
+    - 更新docs文档目录：拆分出《加载方式》、《目录结构》、《命名书写规范》；
+
+
+* **v0.4.0621** ：
+
+    - 公用样式
+    - 表单样式
+    - 首页结构
+    - 弹窗思路整理
 
 * **v0.4.0620** (2013-06-20) ：完成80%DOM结构文档、组件命名，及样式方案；
     
