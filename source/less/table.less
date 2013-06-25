@@ -1,0 +1,56 @@
+/**
+ *Table 公用样式
+ *table元素已经设定了BG和border-collapse属性
+ */
+@import "variables.less";
+table{
+	max-width:100%;
+	background-color:@tbg;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.table{
+	width: 100%;
+	font-size:@f12;
+	color:@g3;
+	margin-bottom: @hl20;
+	border:1px solid @tborder;
+	th,
+	td{
+		padding:10px;
+		line-height:@hl20;
+		text-align:@c;
+		vertical-align:@t;
+		border-top:1px dotted @tborder;
+	}
+	th{
+		font-weight:bold;
+		background-color:@tbhb;
+		border-bottom:1px solid @tborder;
+	}
+	td a{
+		color:@linkcolor;
+		text-decoration: none;
+	}
+}
+
+/**
+ * table with the solid border
+ *具体在学习中心-个人设置-我的订单使用
+ *------------------------------------
+ */
+.table-solid{
+	th,
+	td{
+		border:1px solid @tborder;
+	}
+}
+
+
+
+
+
+
+
+
+

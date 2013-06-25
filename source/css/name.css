@@ -1,0 +1,132 @@
+/**
+*name.css
+*ui_username
+*用户，年级名称加"V"
+*
+*div>a+i.icon
+   <a class="ui_username">userName<i class="icon icon_verifty_teacher">V</i></a>
+*/
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *------------------------------------
+ */
+/**
+ * 提示警告类
+ * 警告类：@wbg:warningbackground
+ * 提示类：@tbg:tipingbackground
+ */
+/**
+ * padding值设定
+ *@pt1=padding-top:1px;
+ *@pr1=padding-right:1px;
+ *@pb1=padding-bottom:1px;
+ *@pl1=padding-left:1px;
+ *可以使用计算值调用 eg:padding-left:20px=20*@pl1;
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@pt1=margin-top:1px;
+ *@pr1=margin-right:1px;
+ *@pb1=margin-bottom:1px;
+ *@pl1=margin-left:1px;
+ *可以使用计算值调用 eg:margin-left:20px=20*@ml1;
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用 eg:width:20px=20*@w1;
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+.ui_username,
+.ui_username_large {
+  color: #333333;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+}
+.ui_username_large {
+  font-size: 20px;
+}

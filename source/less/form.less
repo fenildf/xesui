@@ -1,0 +1,71 @@
+/**
+ *From 公用样式
+ *table元素已经设定了BG和border-collapse属性
+ */
+@import "variables.less";
+@import "base.less";
+form{
+	margin:0 0 @hl20;
+	font-size:@f12;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+label {
+  display: block;
+  text-align:@r;
+  width:60*@w1;
+}
+textarea{
+  height: auto;
+}
+
+/**
+ * 设定select, checkbox样式
+ */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input{
+  display:inline-block;
+  padding:2px 5px;
+  margin:4px 4px 0;
+  *margin-top: 0; /* IE7 */
+  margin-top: 1px \9; /* IE8-9 */
+  vertical-align:@m;
+  line-height:@hl20;
+  font-size:@f12;
+}
+/**
+ * 设定表单元素placeholder的字体颜色值
+ */
+input[type="text"],
+textarea {
+  .placeholder(@g3+#666666);
+   padding:3px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

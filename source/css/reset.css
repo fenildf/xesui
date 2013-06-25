@@ -1,0 +1,39 @@
+/**
+ * Reset文件
+ */
+body {
+  font-size: 100%;
+  font-family: arial;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+  list-style-type: none;
+}
+img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button,
+input {
+  *overview: visiable;
+  line-height: normal;
+}
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,311 @@
+/**
+ * Button 公用样式
+ */
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *------------------------------------
+ */
+/**
+ * 提示警告类
+ * 警告类：@wbg:warningbackground
+ * 提示类：@tbg:tipingbackground
+ */
+/**
+ * padding值设定
+ *@pt1=padding-top:1px;
+ *@pr1=padding-right:1px;
+ *@pb1=padding-bottom:1px;
+ *@pl1=padding-left:1px;
+ *可以使用计算值调用 eg:padding-left:20px=20*@pl1;
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@pt1=margin-top:1px;
+ *@pr1=margin-right:1px;
+ *@pb1=margin-bottom:1px;
+ *@pl1=margin-left:1px;
+ *可以使用计算值调用 eg:margin-left:20px=20*@ml1;
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用 eg:width:20px=20*@w1;
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  background-image: url("../img/glyphicons-halflings.png");
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+}
+/**
+ *icon按钮样式
+ * <em>于icon图片类，<i>用于文字类
+ *
+ *认证加V以及顶部图标
+ *icon-bverify：蓝V
+ *icon-bbverify：大蓝V
+ *icon-yverify：黄V
+ *icon-byverify：大黄V
+ *icon-new:有新消息状态;
+ *icon-shopping：顶部购物图标
+ *icon-messages：顶部信息图标
+ *icon-settsings：顶部设置图标
+ *-------------------------------------------
+ *nav-list图标
+ *icon-home:我的网校;
+ *icon-star:我的收藏;
+ *icon-heart:我的关注; 
+ *icon-th:我的错题本; 
+ *icon-exam:我的考试;
+ *icon-report:效果报告;
+ *icon-schedule:课程表;
+ *icon-shield:我的挑战;
+ *icon-diamond:金币兑礼;
+
+ *--------------------------------------------
+ *个人中心头部icons
+ *icon-lv:个人学力;
+ *icon-user:个人学习经历;
+ *icon-orders:个人订单;
+ *icon-coins:个人金币;
+ *icon-card:激活听课证;
+ *--------------------------------------------
+ *课程列表，课程动态，课程评论，购物车推荐课程
+ *icon_chevron_right:老师轮播图右侧按钮;
+ *icon_chevron_left:老师轮播图左侧按钮;
+ *icon_yellow_sign:课程标题橙色标记
+ *icon_thumbs_up:课程功能区赞图标;
+ *icon_rmb:课程功能区价格图标;
+ *icon_gray_user:课程功能区总学员数图标;
+ *icon_clock:课程功能区请假按钮;
+ *icon_word:课程功能区资料按钮;
+ *icon_horn:课程功能区续保按钮;
+ *icon_manuscript:课程功能区考试按钮;
+ *icon_tv:课程功能区直播按钮;
+ *--------------------------------------------
+ *alert图标
+ *icon_info-sign:警告框图标;
+ *-------------------------------------------
+ *关注按钮
+ *icon_add：关注添加图标
+ *icon_gray_add：未关注图标
+ *-------------------------------------------
+ *课程卡，去看看图标
+ *icon_coursecard:课程卡大图标;
+ *icon_guide:新手指南;
+ *icon_courseselect:怎样选课图标;
+ *icon_forward:去看看按钮;
+ *
+ * 
+ */
+.icon-new {
+  background-position: 0      0;
+}
+.icon-shopping {
+  background-position: 0      0;
+}
+.icon-message {
+  background-position: 0      0;
+}
+.icon-settsings {
+  background-position: 0      0;
+}
+.icon-bverify： {
+  background-position: 0      0;
+}
+.icon-bbverify： {
+  background-position: 0      0;
+}
+.icon-yverify： {
+  background-position: 0      0;
+}
+.icon-byverify： {
+  background-position: 0      0;
+}
+.icon-home {
+  background-position: 0      0;
+}
+.icon-star {
+  background-position: 0      0;
+}
+.icon-heart {
+  background-position: 0      0;
+}
+.icon-th {
+  background-position: 0      0;
+}
+.icon-exam {
+  background-position: 0      0;
+}
+.icon-report {
+  background-position: 0      0;
+}
+.icon-schedule {
+  background-position: 0      0;
+}
+.icon-shield {
+  background-position: 0      0;
+}
+.icon-diamond {
+  background-position: 0      0;
+}
+.icon-lv {
+  background-position: 0      0;
+}
+.icon-user {
+  background-position: 0      0;
+}
+.icon-orders {
+  background-position: 0      0;
+}
+.icon-coins {
+  background-position: 0      0;
+}
+.icon-card {
+  background-position: 0      0;
+}
+.icon-chevron-right {
+  background-position: 0      0;
+}
+.icon-chevron-left {
+  background-position: 0      0;
+}
+.icon-yellow_sign {
+  background-position: 0      0;
+}
+.icon_thumbs-up {
+  background-position: 0      0;
+}
+.icon_rmb {
+  background-position: 0      0;
+}
+.icon_gray_user {
+  background-position: 0      0;
+}
+.icon_clock {
+  background-position: 0      0;
+}
+.icon_word {
+  background-position: 0      0;
+}
+.icon_horn {
+  background-position: 0      0;
+}
+.icon_manuscript {
+  background-position: 0      0;
+}
+.icon_tv {
+  background-position: 0      0;
+}
+.icon_course_students {
+  background-position: 0      0;
+}
+.icon-info-sign {
+  background-position: 0      0;
+}
+.icon-follow-add {
+  background-position: 0      0;
+}
+.icon-follow-cancel {
+  background-position: 0      0;
+}
+.icon_coursecard {
+  background-position: 0      0;
+}
+.icon_guide {
+  background-position: 0      0;
+}
+.icon_courseselect {
+  background-position: 0      0;
+}
+.icon_forward {
+  background-position: 0      0;
+}

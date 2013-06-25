@@ -1,0 +1,13 @@
+/**
+*text.css
+*ui_text
+*所有文章列表
+*<div class="ui_detail">
+*所有文章列表所有文章列表所有文章列表所有文章列表所有文章列表所有文章列表
+*</div>
+*/
+@import "variables.less";
+.ui_detail{
+	padding: 60*@pt1,0,0,30*@pl1;
+	line-height: @hl20;
+}

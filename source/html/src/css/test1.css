@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2013-06-22 14:40:57
+ * @version $Id$
+ */
+/*header*/
+#header {height:55px; overflow: hidden;box-shadow:0 2px 12px #ddd;margin:0;position: relative;z-index: 100;}
+#header .header_box {width: 980px;margin:0 auto;overflow: hidden;}
+
+/*logo*/
+h1.logo {float: left;display: inline;width: 260px; }
+h1.logo  a {display: block; height:55px;text-indent: -99999em;background: url(/xesui/src/img/logo.png) no-repeat;}
+/*菜单*/
+#header .header_box ul.nav,.search,ul.topbar {float: left;display: inline;}
+#header .header_box ul.nav {width: 400px;height: 45px;}
+#header .header_box ul.nav li {float: left;display: inline;line-height: 45px;margin:6px 10px 0 30px;font-family: 微软雅黑;font-size: 18px;}
+#header .header_box ul.nav li.current {border-bottom: 4px solid #cc0000;}
+#header .header_box ul.nav li.current a {color: #cc0000;}
+/*搜索*/
+#header .header_box .search {width: 180px;height: 30px; margin-top: 12px;border-radius: 16px;border:1px solid #ccc;}
+#header .header_box .search input {height: 20px; border: 0;margin:5px 0 0 10px;}
+/*工具*/
+#header .header_box ul.topbar {float:right;width: 120px;border: 1px solid #ccc;}
+#header .header_box ul.topbar li {float: left;}
+
+
+/*footer*/
+#footer{width: 100%; border-top: 1px solid #e5e5e5;padding:0px;}
+#footer  p {text-align: center;line-height: 180%;}
+#footer  p a {padding: 0px 5px;}
+#footer  p.link {padding-top: 15px;}
+#footer .area {padding:20px 0;}
+#footer .foot_service a p {line-height: 150%; color: #666;  text-align: left;}
+/*footer >  foot_service*/
+.foot_service {width: 980px;margin:0 auto;overflow: hidden; padding-bottom: 20px;border-bottom: 1px solid #F1F1F1;}
+.foot_service a { float: left; display: inline; width: 140px; overflow: hidden; cursor: pointer; height: 56px; margin: 15px 10px 0 20px; padding-left: 68px; text-decoration: none;}
+.foot_service a.service_share {background: url(http://www.xueersi.com/static/img/icon/A1_01.gif) no-repeat;}
+.foot_service a.service_live {background: url(http://www.xueersi.com/static/img/icon/A2_01.gif) no-repeat;}
+.foot_service a.service_system {background: url(http://www.xueersi.com/static/img/icon/A3_01.gif) no-repeat;}
+.foot_service a.service_interaction {background: url(http://www.xueersi.com/static/img/icon/A4_01.gif) no-repeat;}
+.foot_service a.service_share:hover {background: url(http://www.xueersi.com/static/img/icon/A1.gif) no-repeat;}
+.foot_service a.service_live:hover {background: url(http://www.xueersi.com/static/img/icon/A2.gif) no-repeat;}
+.foot_service a.service_system:hover {background: url(http://www.xueersi.com/static/img/icon/A3.gif) no-repeat;}
+.foot_service a.service_interaction:hover {background: url(http://www.xueersi.com/static/img/icon/A4.gif) no-repeat;}
+.foot_service a strong {display: block;line-height: 22px; }
+
+
+
+
+
+/*layout*/
+#container {overflow: hidden;width: 100%;margin:0;}
+
+.layout {width: 980px;margin: auto;overflow: hidden;}
+.layout_body {overflow: hidden;min-height: 700px;}
+.layout_side {overflow: hidden;}
+
+
+/*公用样式*/
+.panle {overflow: hidden;}
+
+.left {float: left;display: inline;}
+.right {float: right;display: inline;}
+
+.w_310{width: 310px;margin-right: 5px;}
+.w_655 {width: 655px;border-right:1px solid #e5e5e5;}
+.w_645 {width: 645px;}
+
+.hidden {display: none;}
+.show {display: block;}
+
+.border_none {border: 0;}
+
+
+ /**
+  * [首页广告轮播和登录框部分]
+  * @type {[type]}
+  *
+  * 
+  */
+#index_focus {height: 400px;overflow: hidden;}
+/*轮播部分*/
+#index_focus .focus_list {overflow: hidden;}
+#index_focus .focus_list li {width: 100%; height: 400px;float: left; position: absolute; z-index: 9;background: url(/xesui/src/pic/pic_01.jpg) no-repeat center ;}
+#index_focus .focus_list li a {display: none;height: 400px; text-indent: -999999em;}
+#index_focus .focus_list li.current { z-index: 10;}
+
+#index_focus .focus_num_wrap {width:980px;height: 20px; margin: 0 auto; position: relative;z-index: 11;top:375px; }
+#index_focus .focus_num_wrap ol.focus_num {width:100px;height: 20px;position: absolute; right: 308px; }
+#index_focus .focus_num_wrap ol.focus_num li { float: left; display: inline; width: 9px;height: 9px; background-color: #fff;border-radius: 15px; text-indent: -99999em;margin:0 3px;cursor: pointer;}
+#index_focus .focus_num_wrap ol.focus_num li.current {background: #0076b3;}
+ /**
+  * [首页广告轮播和登录框部分]
+  * @type {[type]}
+  *
+  * end
+  */
+ 
+/*
+*[首页登录框部分]
+*@type {[type]}
+*end
+*/
+.index_login {width:980px; margin: 0 auto; position: relative;z-index: 11;top:15px;}
+.index_login .login_from {width: 318px;height: 368px;overflow: hidden;border: 1px solid #cfdede;background: #fbfdfd;position: absolute;top:0;right:0;}
+
+.index_login .login_input {width:282px;height: 207px;margin:0 auto;overflow: hidden;}
+.index_login .login_input p {overflow: hidden;}
+.index_login .login_input input.input_text {width:265px;height: 30px;border: 1px solid #cfdede;color: #ccc;margin-top: 18px;padding-left: 15px;}
+.index_login .login_input p label,span {float: left;display: inline;line-height: 40px;color: #999;}
+.index_login .login_input p label input {vertical-align: middle;}
+.index_login .login_input p span {float: right;}
+.index_login .login_input p span a {color: #999;}
+.index_login .login_input p button.btn {width:281px;height: 42px;line-height: 42px;border-radius: 5px;background: #cc0000;background: -webkit-linear-gradient(top,#e72501, #bd1c01);font-size: 18px;color: #fff;font-family: 微软雅黑; cursor: pointer;text-shadow:2px 3px 5px #f1f1f1;}
+
+.index_login .login_infor {border-top: 1px solid #cfdede;}
+.index_login .login_infor p {width: 282px;margin: 0 auto;overflow: hidden;}
+.index_login .login_infor .infor_reg {line-height: 42px;color: #666;}
+.index_login .login_infor .infor_reg a {color: #006699;}
+.index_login .login_infor .infor_app {overflow: hidden;margin-bottom: 10px;}
+.index_login .login_infor .infor_app a.app_qq,a.app_weibo {float: left;display: inline;width: 138px;height: 47px; text-indent: -999999em;}
+.index_login .login_infor .infor_app a.app_qq {background: url(/xesui/src/img/qq.jpg) no-repeat;}
+.index_login .login_infor .infor_app a.app_weibo {float:right;background: url(/xesui/src/img/weibo.jpg) no-repeat;}
+.index_login .login_infor .infor_text {line-height:25px;color: #999;}
+.index_login .login_infor .infor_text strong {font-weight: normal;color: #cc0000;}
+
+
+
+/**
+ * [边栏部分的标题]
+ * @type {[type]}
+ */
+.side_header {height: 42px;line-height: 42px;border-bottom:1px solid #0076b3; }
+.side_header span {float:right;color:#0076b3;font-size: 20px;font-family: 微软雅黑;text-align: right;}
+
+ul.index_notice {overflow: hidden;padding: 10px 0;}
+ul.index_notice li {height: 30px;line-height: 30px;padding-left: 10px;overflow: hidden; }
+ul.index_notice li i {display:inline-block;font-size: 18px;padding-right: 10px;font-style:normal;}
+ul.index_notice li {font-size: 14px;}
+/**
+ * [广告块]
+ * @type {[type]}
+ */
+.advert {margin-top: 10px;}
+
+
+
+/**
+ * [overflow description]
+ * @type {[type]}
+ */
+.main_header {overflow: hidden;margin-bottom: 20px;}
+.main_header .nav_links {width:645px;height: 42px;border-bottom:1px solid #0076b3;overflow: hidden;}
+.main_header .nav_links li {float: left;display: inline;line-height: 42px;}
+.main_header .nav_links li a {color: #006699;font-size: 14px;}
+.main_header .nav_links li.current  a{font-weight: bold;}
+.main_header .nav_links li i {font-style: normal;color: #ccc;display: inline-block;padding:0 8px;}
+
+/**
+ * [overflow description]
+ * @type {[type]}
+ */
+.ui_feed {overflow: hidden;margin-bottom: 10px;border-bottom: 1px solid #F1F1F1;padding-bottom: 20px;margin-bottom: 20px;}
+.ui_avatar {overflow: hidden;}
+
+.ui_feed .avatar_mini {float: left;display: inline;width: 60px;}
+.ui_avatar .userpic {}
+
+.feed_detail {float: left;display: inline;width: 570px;margin-left:10px;}
+.feed_detail .ui_username {display:inline-block;font-size: 14px;line-height:25px;}
+.feed_detail .feed_text {line-height: 180%;color: #666;}
+.feed_detail .feed_text a {color: #006699;}

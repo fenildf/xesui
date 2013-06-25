@@ -1,0 +1,105 @@
+/**
+ * Base style
+ */
+
+@import "variables.less";
+
+/**
+ * Typography
+ *---------------------------
+ */
+.bl{ 
+	clear:both;
+}
+.fl{
+	float:@l;
+}
+.fr{
+	float:@r;
+}
+.n{
+	font-weight:normal;
+	font-style:normal;
+}
+.b{
+	font-weight:bold;
+}
+.tc{
+	text-align:@c;
+}
+.tl{
+	text-align:@l;
+}
+.tr{
+	text-align:@r;
+}
+
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+.border-radius(@radius:@bbr){
+ 		border-radius:@radius;
+ 		-moz-border-radius: @radius;
+ 		-webkit-border-radius: @radius;
+ }
+
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+.box-shadow(@x:0, @y:0, @blur:1px, @color:#fff, @inset:inset){
+	box-shadow:@arguments;
+	-moz-box-shadow:@arguments;
+	-webkit-box-shadow:@arguments;	
+}
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+.placeholder(@placecolor) {
+  &:-moz-placeholder {
+    color: @placecolor;
+  }
+  &:-ms-input-placeholder {
+    color: @placecolor;
+  }
+  &::-webkit-input-placeholder {
+    color: @placecolor;
+  }
+}
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+.mixin(dark,@color){
+	color:darken(@color, 10%);
+}
+.mixin (light, @color) {
+    color: lighten(@color, 10%);
+}
+.mixin (@_, @color) {
+    display: block;
+}
+
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+.background-color(@tbg){
+ 		background-color:@tbg;
+ }
+
+
+
+
+
+
+
+
+
