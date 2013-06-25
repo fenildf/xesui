@@ -260,17 +260,20 @@
 *ui_course_content
 *课程列表，课程动态，课程评论，购物车推荐课程，
 *<div class="ui_courses">
-   <div class="avatar">头像<div>
-   <div class="course_detail">
-      <p class="course_title">课程标题</p>
-      <p class="course_info">课程信息</p>
-      <p class="course_func">
-        <button><em class="icon icon_arrow_right"></em>免费试听</button>
-        <a><em class="icon icon_xxxx"></em>赞</a>
-        <i class="line line_gray">|</i>
-        <a><em class="icon icon_xxxx"></em>赞</a>
-      </p>
+    <div class="course_item"> 
+	   <div class="avatar">头像<div>
+	   <div class="course_detail">
+	      <p class="course_title">课程标题</p>
+	      <p class="course_info">课程信息</p>
+	      <p class="course_func">
+	        <button><em class="icon icon_arrow_right"></em>免费试听</button>
+	        <a><em class="icon icon_xxxx"></em>赞</a>
+	        <i class="line line_gray">|</i>
+	        <a><em class="icon icon_xxxx"></em>赞</a>
+	      </p>
+	   </div>
    </div>
+   <div class="coruse_item>...</div>
 </div>
 */
 
