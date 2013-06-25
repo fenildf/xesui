@@ -344,7 +344,7 @@
  * 列表排序工具条
  *
  * 1. 老师排序部分：
- <div class="ui_sortbar sort_teacher sort_course">
+ <div class="ui_sortbar sort_teacher">
   <ul>
     <li class="sort_num">排名</li>
     <li class="sort_avatar">老师</li>
@@ -358,8 +358,9 @@
  * 2. 课程排序部分
  *
  *    在li里面写右侧的留白
+ *    默认就是sort_course的样式
  *    
- <div class="ui_sortbar sort_course">
+ <div class="ui_sortbar">
   <ul>
     <li class="sort_title">排序：</li>
     <li><a class="current">销量</a></li>
