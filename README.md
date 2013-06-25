@@ -22,8 +22,7 @@
     - img:  [../img/](https://github.com/xueersi/xesui/tree/master/source/img)   
     
     - js:   [../js/](https://github.com/xueersi/xesui/tree/master/source/js)     
-    
-    
+       
 2. [命名规则](https://github.com/xueersi/xesui/blob/master/docs/nomenclature.md)：CSS、JS命名规则
 3. [结构文档](https://github.com/xueersi/xesui/blob/master/docs/DOM.html)：DOM结构
 4. [模块组件](https://github.com/xueersi/xesui/blob/master/docs/module.md)：模块组件组件介绍
