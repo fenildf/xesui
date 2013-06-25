@@ -3,7 +3,7 @@
 [XESUI](http://xesui.com/) 是学而思网校的前端框架。其中包括网校的样式解决方案，UI组件的交互效果，技术文档，以及一整套学而思网校前端架构解决方案。目前还处于测试阶段，仅供内部使用。
 
 * 当前版本：v0.4
-* 最后更新：2013-06-20
+* 最后更新：2013-06-25
 
 
 ## 目录结构
@@ -11,16 +11,31 @@
 
 ## 使用帮助
 
-1. [结构文档](https://github.com/xueersi/xesui/blob/master/docs/DOM.html)：DOM结构
+1. [文件结构](https://github.com/xueersi/xesui/blob/master/docs/structures.md)：文档目录结构 
+
+    - html: [../html/](https://github.com/xueersi/xesui/tree/master/source/html)  
+    
+    - less: [../less/](https://github.com/xueersi/xesui/tree/master/source/less) 
+    
+    - css:  [../css/](https://github.com/xueersi/xesui/tree/master/source/css)   
+    
+    - img:  [../img/](https://github.com/xueersi/xesui/tree/master/source/img)   
+    
+    - js:   [../js/](https://github.com/xueersi/xesui/tree/master/source/js)     
+    
+    
 2. [命名规则](https://github.com/xueersi/xesui/blob/master/docs/nomenclature.md)：CSS、JS命名规则
-3. [模块组件](https://github.com/xueersi/xesui/blob/master/docs/module.md)：模块组件组件介绍
-4. [加载方式](https://github.com/xueersi/xesui/blob/master/docs/loader.md)：文件加载方式
-5. [在线演示]
-6. [压缩工具]
-7. on [github](https://github.com/xueersi/xesui)
+3. [结构文档](https://github.com/xueersi/xesui/blob/master/docs/DOM.html)：DOM结构
+4. [模块组件](https://github.com/xueersi/xesui/blob/master/docs/module.md)：模块组件组件介绍
+5. [加载方式](https://github.com/xueersi/xesui/blob/master/docs/loader.md)：文件加载方式
+6. [在线演示]
+7. [压缩工具]
+8. on [github](https://github.com/xueersi/xesui)
 
 
 ## 版本更新日志
+
+
 
 * **v0.4.0622** ：
 

@@ -17,7 +17,9 @@
         |    |
         |    |---- pic/               // 临时的广告图、占位图
         |
-        |---- source/                 // 源文件
+        |---- source/                 // 源文件        
+        |    |---- html/              // HTML结构
+        |    |
         |    |---- less/              // 模块样式文件，按照模块命名
         |    |    |---- dialog.less
         |    |    |---- tabs.less
@@ -40,6 +42,7 @@
         |    |
         |    |---- json/              // JSON模拟数据文件
         |    |    |---- course_list.json
+
         |
         |---- adapter/                // 适配器/路由
         |---- docs/                   // 文档
