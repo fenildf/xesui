@@ -12,15 +12,10 @@
 ## 使用帮助
 
 1. [文件结构](https://github.com/xueersi/xesui/blob/master/docs/structures.md)：文档目录结构 
-
     - html: [../html/](https://github.com/xueersi/xesui/tree/master/source/html)  
-    
     - less: [../less/](https://github.com/xueersi/xesui/tree/master/source/less) 
-    
     - css:  [../css/](https://github.com/xueersi/xesui/tree/master/source/css)   
-    
     - img:  [../img/](https://github.com/xueersi/xesui/tree/master/source/img)   
-    
     - js:   [../js/](https://github.com/xueersi/xesui/tree/master/source/js)     
        
 2. [命名规则](https://github.com/xueersi/xesui/blob/master/docs/nomenclature.md)：CSS、JS命名规则
