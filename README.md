@@ -34,8 +34,9 @@
     - 完成整站ICON的编写
     - 完成布局：layout
     - 完成课程列表：ui_courses
-    - 完成教师列表：ui_teacher、avatar(用户头像)、ui_username
-    - 交互部分：完成模块文件、命名、注释文档等
+    - 完成教师列表：ui_teacher、avatar(用户头像)、ui_username；
+    - 交互部分：完成模块文件、命名、注释文档；
+    - 声明xesui包：改名字为 `xue`，增加别名“ `_` ”
 
 
 * **v0.4.0625** ：
