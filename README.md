@@ -29,6 +29,15 @@
 
 ## 版本更新日志
 
+* **v0.4.0626** ：
+
+    - 完成整站ICON的编写
+    - 完成布局：layout
+    - 完成课程列表：ui_courses
+    - 完成教师列表：ui_teacher、avatar(用户头像)、ui_username
+    - 交互部分：完成模块文件、命名、注释文档等
+
+
 * **v0.4.0625** ：
 
     - 完成公共样式：reset、base、button、table、form、list、tips、sprites……
