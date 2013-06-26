@@ -72,7 +72,7 @@ h1.logo  a {display: block; height:55px;text-indent: -99999em;background: url(/x
 .foot_service a.service_live:hover {background: url(http://www.xueersi.com/static/img/icon/A2.gif) no-repeat;}
 .foot_service a.service_system:hover {background: url(http://www.xueersi.com/static/img/icon/A3.gif) no-repeat;}
 .foot_service a.service_interaction:hover {background: url(http://www.xueersi.com/static/img/icon/A4.gif) no-repeat;}
-.foot_service a span {display: block;line-height: 22px; }
+.foot_service a span {display: block;line-height: 22px; font-weight: bold;}
 
 
 
@@ -355,14 +355,16 @@ ul.filter_handle_items {display: none;}
 
 
 
-.side_nav {background: #fbfbfb; overflow: hidden;border-bottom:1px solid #e4e4e4;border-right:1px solid #e4e4e4;}
+.side_nav {background: #fbfbfb; overflow: hidden;border-bottom:1px solid #e4e4e4;border-right:1px solid #e4e4e4;padding: 20px 0;}
 .side_nav .nav_header {border-bottom: 1px solid #cae0ed;margin-bottom: 20px;color: #999;text-align: center;}
 .side_nav .nav_header span {display: inline-block;padding: 0 10px ;background: #fbfbfb;position: relative;z-index: 10;top:12px;}
 .side_nav li {line-height: 25px; }
 .side_nav li a {font-size: 14px;color: #0076b8;}
 
+
 .nav_setting li {text-align: center;}
 .nav_setting li.current a {padding: 2px 10px;background: #4a9eda;color: #fff;}
+.nav_help {}
 .nav_help li {text-align: left;padding-left: 15px;}
 .nav_help li.current a {font-weight: bold;}
 
@@ -383,10 +385,11 @@ ul.filter_handle_items {display: none;}
 
 
 
-
-
-
-
+.ui_article {overflow: hidden;margin: 20px 0;}
+.article_title {line-height: 40px;font-size: 18px;}
+.article_content {overflow: hidden;}
+.article_content p {line-height: 180%;margin-bottom: 10px; text-indent: 2em;font-size: 14px;color: #666;}
+.article_content p.pic {text-align: center;}
 
 
 
