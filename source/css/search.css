@@ -1,5 +1,5 @@
 /**
- * Button 公用样式
+ * search.css
  */
 /**
  * Colors
@@ -104,6 +104,9 @@
  *tborder:table-border
  *----------------------------------------
  */
+/**
+ * Button 公用样式
+ */
 .icon {
   display: inline-block;
   width: 20px;
@@ -198,7 +201,7 @@
   height: 36px;
 }
 .icon_new {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_shopping {
   background-position: -26px -74px;
@@ -231,16 +234,16 @@
   background-position: 0 -75px;
 }
 .icon_th {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_exam {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_report {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_schedule {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_user {
   background-position: 0 -100px;
@@ -300,10 +303,10 @@
   background-position: -75px -75px;
 }
 .icon_follow_add {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_follow_cancel {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_coursecard {
   background-position: -123px -375px;
@@ -316,4 +319,256 @@
 }
 .icon_forward {
   background-position: -127px -366px;
+}
+/**
+ * Base style
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.b {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ *From 公用样式
+ *table元素已经设定了BG和border-collapse属性
+ */
+form {
+  margin: 0 0 20px;
+  font-size: 12px;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+label {
+  display: block;
+  text-align: right;
+  width: 60px;
+}
+textarea {
+  height: auto;
+}
+/**
+ * 设定select, checkbox样式
+ */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 4px 4px 0;
+  *margin-top: 0;
+  /* IE7 */
+
+  margin-top: 1px \9;
+  /* IE8-9 */
+
+  vertical-align: middle;
+  line-height: 20px;
+  font-size: 12px;
+}
+/**
+ * 设定表单元素placeholder的字体颜色值
+ */
+input[type="text"],
+textarea {
+  padding: 3px 5px;
+}
+input[type="text"]:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999999;
+}
+input[type="text"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999999;
+}
+input[type="text"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+/**
+ * Button 公用样式
+ */
+.btn {
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.btn_text {
+  border: none;
+  background: none;
+}
+/**
+ * 按钮按大小分类
+ * large:10px 20px;
+ * small:5px 5px;
+ * medium:5px 20px;
+ */
+.btn_large {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.btn_small {
+  padding: 5px 5px;
+}
+.btn_medium {
+  padding: 5px 20px;
+}
+/**
+ * 按钮按颜色分类
+ * gray：取消按钮，
+ * red：提交类按钮以及课程列表听课按钮激活状态
+ * blue：页面按钮
+ * orange:关注按钮;
+ */
+.btn_gray {
+  border: 1px solid #cfcfcf;
+  background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
+}
+.btn_red {
+  color: #ffffff;
+  border: 1px solid #880000;
+  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+}
+.btn_blue {
+  color: #ffffff;
+  border: 1px solid #377ece;
+  background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  background: -moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+}
+.btn_sky {
+  color: #ffffff;
+  border: 1px solid #339afe;
+  background-color: #339afe;
+}
+.btn_orange {
+  color: #ffffff;
+  border: 1px solid #ff870f;
+  background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
+  background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
+}
+/**
+ * 按钮按功能分类(默认样式)
+ * 
+ */
+.btn_disable {
+  color: #eee;
+  border: 1px solid #c5c5c5;
+  text-shadow: 1px 0px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
+
+}
+.ui_searchbar {
+  font-size: 12px;
+}
+.search_group {
+  float: left;
+  margin-bottom: -2px;
+}
+.search_group input,
+.search_group form {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.search_group input {
+  width: 409px;
+  padding: 4px 10px;
+  margin-right: -6px;
+}
+.search_tips {
+  padding: 5px 10px;
+  overflow: hidden;
+  background: #eeeeee;
 }

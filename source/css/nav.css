@@ -1,5 +1,9 @@
 /**
- * Button 公用样式
+ * nav 导航类
+ * 左侧导航：nav_list
+ * tab导航：nav_tabs
+ * 高亮显示：nav_pills
+ * 文本链接：nav_links
  */
 /**
  * Colors
@@ -104,6 +108,9 @@
  *tborder:table-border
  *----------------------------------------
  */
+/**
+ * Button 公用样式
+ */
 .icon {
   display: inline-block;
   width: 20px;
@@ -198,7 +205,7 @@
   height: 36px;
 }
 .icon_new {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_shopping {
   background-position: -26px -74px;
@@ -231,16 +238,16 @@
   background-position: 0 -75px;
 }
 .icon_th {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_exam {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_report {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_schedule {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_user {
   background-position: 0 -100px;
@@ -300,10 +307,10 @@
   background-position: -75px -75px;
 }
 .icon_follow_add {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_follow_cancel {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_coursecard {
   background-position: -123px -375px;
@@ -316,4 +323,122 @@
 }
 .icon_forward {
   background-position: -127px -366px;
+}
+/**
+ * Base style
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.b {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+.nav {
+  margin-left: 0px;
+  list-style: none;
+}
+.nav > li > a {
+  display: block;
+  color: #0078b0;
+}
+.nav_list > .current > a,
+.nav_list > .current > a:hover,
+.nav_list > .current > a:focus {
+  color: #ffffff;
+}
+.nav_tabs {
+  margin-bottom: -1px;
+}
+.nav_tabs > li,
+.nav_pills > li {
+  float: left;
+  display: inline;
+}
+.nav_tabs > li a,
+.nav_pills > li a {
+  line-height: 20px;
+  font-weight: bold;
+}
+.nav_tabs > li a {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: normal;
+}
+.nav_tabs > .current > a,
+.nav_tabs > .current > a:hover,
+.nav_tabs > .current > a:focus {
+  color: #999999;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.nav_pills > li > a {
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+.nav_links > a,
+.nav_pills > .current > a,
+.nav_pills > .current > a:hover,
+.nav_pills > .current > a:focus {
+  color: #ffffff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #47a0dc;
 }

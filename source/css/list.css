@@ -31,6 +31,7 @@ ol {
   list-style-type: none;
 }
 img {
+  display: block;
   border: 0;
 }
 table {
@@ -64,26 +65,13 @@ a {
  *------------------------------------
  */
 /**
- * 提示警告类
- * 警告类：@wbg:warningbackground
- * 提示类：@tbg:tipingbackground
- */
-/**
  * padding值设定
- *@pt1=padding-top:1px;
- *@pr1=padding-right:1px;
- *@pb1=padding-bottom:1px;
- *@pl1=padding-left:1px;
- *可以使用计算值调用 eg:padding-left:20px=20*@pl1;
+ *
  *-----------------------------------------------
  */
 /**
  * margin值设定
- *@pt1=margin-top:1px;
- *@pr1=margin-right:1px;
- *@pb1=margin-bottom:1px;
- *@pl1=margin-left:1px;
- *可以使用计算值调用 eg:margin-left:20px=20*@ml1;
+ *@margin0, @margin5
  *-------------------------------------------------
  */
 /**
@@ -100,6 +88,7 @@ a {
  *f13:font-size:13px;
  *f14:font-size:14px;
  *f16:font-size:16px;
+ *f18:font-size:18px;
  *f20:font-size:20px;
  *f24:font-size:24px;
  *------------------------------------
@@ -112,6 +101,7 @@ a {
  * t:top
  * m:middle
  * b:bottom
+ *ti:text-index:-9999em;
  *--------------------------------------
  */
 /**
@@ -122,6 +112,8 @@ a {
  * hl20:high-light:20px;
  * hl22:high-light:22px;
  * hl24:high-light:24px;
+ * hl150:high-light:150%;
+ * hl180:high-light:180%;
  *--------------------------------------
  */
 /**

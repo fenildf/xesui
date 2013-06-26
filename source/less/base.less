@@ -33,6 +33,9 @@
 .tr{
 	text-align:@r;
 }
+.red{
+	color:@r0;
+}
 
 /**
  * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
@@ -91,9 +94,20 @@
  * 可以在less文件中使用background-color(@color)调用
  *----------------------------------------------------
  */
-.background-color(@tbg){
- 		background-color:@tbg;
+.background-color(@color){
+ 		background-color:@color;
  }
+
+ /**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+.border-color(@color){
+ 		border-color:@color;
+ }
+
+
 
 
 
