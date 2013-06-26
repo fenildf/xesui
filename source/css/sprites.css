@@ -198,7 +198,7 @@
   height: 36px;
 }
 .icon_new {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_shopping {
   background-position: -26px -74px;
@@ -231,16 +231,16 @@
   background-position: 0 -75px;
 }
 .icon_th {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_exam {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_report {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_schedule {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_user {
   background-position: 0 -100px;
@@ -300,10 +300,10 @@
   background-position: -75px -75px;
 }
 .icon_follow_add {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_follow_cancel {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon_coursecard {
   background-position: -123px -375px;
