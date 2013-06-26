@@ -6,7 +6,7 @@
 	<title>新版学而思网校首页----课程列表</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
+	
     <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
 
 <body>
@@ -36,54 +36,79 @@
 	<!-- 内容 start-->
 	<div id="middle">
 		<div class="layout">
-			<div class="layout_body left">
+			<div class="layout_body left w_730">
+				<div class="menu_pd_title">
+                     <a target="_blank" href="http://www.xueersi.com">首页</a>
+                     &gt;
+                     <a href="/xiao3/">三年级课程</a>
+                     &gt;
+               学期同步
+                 </div>
 				<!--课程筛选 -->
 				<div class="ui_filter">
 					<div class="filter_handle">
 						<h2>一年级</h2>
 						<ul class="filter_handle_items">
-							
+
 							<li>一年级</li>
 							<li>二年级</li>
 							<li>...</li>
 						</ul>
-						<p class="more">本年级共有<strong>84</strong>名老师<strong>4434255</strong>个课程</p>
+						<p class="more">
+							本年级共有 <strong>84</strong>
+							名老师 <strong>4434255</strong>
+							个课程
+						</p>
 					</div>
 					<dl class="filter_item">
 						<dt>学科</dt>
 						<dd>
-							<a>数学</a>
-							<a>语文</a>
+							<a href="#" class="current">数学</a>
+							<a href="#">语文</a>
+							<a href="#">英语</a>
+							<a href="#">物理</a>
+							<a href="#">化学</a>
+							<a href="#">生物</a>
 						</dd>
 					</dl>
 					<dl class="filter_item">
-						<dt>学科</dt>
+						<dt>类别</dt>
 						<dd>
-							<a>数学</a>
-							<a>语文</a>
-						</dd>
-					</dl>
-					<dl class="filter_item filter_other expand / collapsed">
-						<dt>学科</dt>
-						<dd>
-							<a>数学</a>
-							<a>语文</a>
+							<a href="#" class="current">学期同步</a>
+							<a href="#">专题课程</a>
+							<a href="#">教材铺导</a>
+							<a href="#">竞赛考试</a>
+							<a href="#">专题课程</a>
 						</dd>
 					</dl>
 					<dl class="filter_item filter_other">
-						<dt>学科</dt>
+						<dt>版本</dt>
 						<dd>
-							<a class="current">数学</a>
-							<a>语文</a>
+							<a href="#" class="current">不限</a>
+							<a href="#">语文</a>
+						</dd>
+					</dl>
+					<dl class="filter_item filter_other">
+						<dt>难度</dt>
+						<dd>
+							<a class="current">不限</a>
+							<a href="#">语文</a>
+						</dd>
+					</dl>
+					<dl class="filter_item filter_other border_none">
+						<dt>老师</dt>
+						<dd>
+							<a class="current">不限</a>
+							<a href="#">语文</a>
 						</dd>
 					</dl>
 					<div class="filter_more">
-						<p>更多</p>
+						<p>更多条件</p>
 					</div>
 				</div>
 				<!--课程筛选 end-->
 				<!-- 课程排序工具条 -->
-				<div class="ui_sortbar sort_course">
+				<div class="ui_sortbar">
 					<ul>
 						<li class="sort_title">排序：</li>
 						<li>
@@ -105,58 +130,155 @@
 				<!-- 课程排序工具条 end-->
 				<!-- 课程列表 -->
 				  <div class="ui_courses">
-				  	<div class="ui_avatar">
-				  		<a href="" class="prev">左</a>
-				  		<ul class="avatar_items">
-				  			<li>
-				  				<a href="" class="userpic J_userinfo">
-				  					<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
-				  				<a class="username J_userinfo">
-				  					userName <em class="icon icon_verifty_teacher">V</em>
-				  				</a>
-				  			</li>
-				  		
-				  		</ul>
-				  		<a href="" class="next">右</a>
-				  	</div>
-				  	<!-- 头像 -->
-				  	<div class="course_detail">
-				  		<p class="course_title">
-				  			2013年上学期课外拓展班数学同步课程 <strong>赠送两次直播</strong>
-				  		</p>
-				  		<p class="course_info">
-				  			课程包含 <strong>15</strong>
-				  			讲，
-				  			<strong>3</strong>
-				  			次月考，
-				  			<strong>3</strong>
-				  			次直播
-				  		</p>
-				  		<p class="course_func">
-				  			<button> <em class="icon icon_arrow_right"></em>
-				  				免费试听
-				  			</button>
-				  			<a> <em class="icon icon_xxxx"></em>
-				  				465
-				  			</a> <i class="line line_gray">|</i>
-				  			<a>
-				  				<em class="icon icon_xxxx"></em>
-				  				37
-				  			</a>
-				  			<a>
-				  				<em class="icon icon_xxxx"></em>
-				  				88
-				  			</a>
-				  		</p>
-				  	</div>
+				  	<div class="course_item">
+				  		<div class="ui_avatar">
+				  			<a href="" class="prev">左</a>
+				  			<ul class="avatar_items">
+				  				<li>
+				  					<a href="" class="userpic J_userinfo">
+				  						<img src="http://file.xueersi.com/web/13105601335455.jpg" alt=""></a>
+				  					<a class="username J_userinfo">
+				  						王雨洁 
+				  					</a>
+				  				</li>
 
+				  			</ul>
+				  			<a href="" class="next">右</a>
+				  		</div>
+				  		<!-- 头像 -->				  
+				  		<div class="course_detail">
+				  			<p class="course_title">
+				  				<em class="icon ">数学</em>2013年上学期课外拓展班数学同步课程 <strong>赠送两次直播</strong>
+				  			</p>
+				  			<p class="course_info">
+				  				课程包含 <strong>15</strong>
+				  				讲，
+				  				<strong>3</strong>
+				  				次月考，
+				  				<strong>3</strong>
+				  				次直播
+				  			</p>
+				  			<p class="course_func">
+				  				<button> <em class="icon icon_arrow_right"></em>
+				  					免费试听
+				  				</button>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					<strong>465</strong>
+				  				</span>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					37
+				  				</span>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					88
+				  				</span>
+				  			</p>
+				  		</div>
+				  	</div>
+				  	<div class="course_item">
+				  		<div class="ui_avatar">
+				  			<a href="" class="prev">左</a>
+				  			<ul class="avatar_items">
+				  				<li>
+				  					<a href="" class="userpic J_userinfo">
+				  						<img src="http://file.xueersi.com/web/13105601335455.jpg" alt=""></a>
+				  					<a class="username J_userinfo">
+				  						王雨洁 
+				  					</a>
+				  				</li>
+
+				  			</ul>
+				  			<a href="" class="next">右</a>
+				  		</div>
+				  		<!-- 头像 -->				  
+				  		<div class="course_detail">
+				  			<p class="course_title">
+				  				<em class="icon ">数学</em>2013年上学期课外拓展班数学同步课程 <strong>赠送两次直播</strong>
+				  			</p>
+				  			<p class="course_info">
+				  				课程包含 <strong>15</strong>
+				  				讲，
+				  				<strong>3</strong>
+				  				次月考，
+				  				<strong>3</strong>
+				  				次直播
+				  			</p>
+				  			<p class="course_func">
+				  				<button> <em class="icon icon_arrow_right"></em>
+				  					免费试听
+				  				</button>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					<strong>465</strong>
+				  				</span>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					37
+				  				</span>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					88
+				  				</span>
+				  			</p>
+				  		</div>
+				  	</div>
+				  		<div class="course_item">
+				  		<div class="ui_avatar">
+				  			
+				  			<ul class="avatar_items">
+				  				<li>
+				  					<a href="" class="userpic J_userinfo">
+				  						<img src="http://file.xueersi.com/web/13105601335455.jpg" alt=""></a>
+				  					<a class="username J_userinfo">
+				  						王雨洁 
+				  					</a>
+				  				</li>
+
+				  			</ul>
+				  			
+				  		</div>
+				  		<!-- 头像 -->				  
+				  		<div class="course_detail">
+				  			<p class="course_title">
+				  				<em class="icon ">数学</em>2013年上学期课外拓展班数学同步课程 <strong>赠送两次直播</strong>
+				  			</p>
+				  			<p class="course_info">
+				  				课程包含 <strong>15</strong>
+				  				讲，
+				  				<strong>3</strong>
+				  				次月考，
+				  				<strong>3</strong>
+				  				次直播
+				  			</p>
+				  			<p class="course_func">
+				  				<button> <em class="icon icon_arrow_right"></em>
+				  					免费试听
+				  				</button>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					<strong>465</strong>
+				  				</span>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					37
+				  				</span>
+				  				<span>
+				  					<em class="icon icon_xxxx"></em>
+				  					88
+				  				</span>
+				  			</p>
+				  		</div>
+				  	</div>
+				  	<!-- repeat -->
 				  </div>
 				<!-- 课程列表 end -->
 				<div id="pages">=====翻页=====</div>
 				<!-- 翻页。。。。。。。。。 -->
 			</div>
 			<!--layout_body end -->
-			<div class="layout_side right">
+			<div class="layout_side right w_235">
 				 <div class="advert">
 					 	<a href="##">
 					 		<img src="src/pic/ad_01.jpg"/>					 
@@ -177,7 +299,7 @@
 				<!-- 广告 3 -->
 				<!-- panle -->
 				<div class="panel">
-					<div class="side_header border_blue"><span>销量排行</span></div>
+					<div class="side_header"><span>销量排行</span></div>
 					 <ul class="index_notice">
 					 	<li><i>1</i><a href="">系列讲座：秀情老师“情学好问”第七场</a></li>
 					 	<li><i>2</i><a href="">小学三四年级面授暑假班课程上线啦</a></li>
@@ -192,7 +314,7 @@
 				<!-- panle -->
 				<!-- panle -->
 				<div class="panel">
-					<div class="side_header border_blue"><span>口碑排行</span></div>
+					<div class="side_header"><span>口碑排行</span></div>
 					 <ul class="index_notice">
 					 	<li><i>1</i><a href="">系列讲座：秀情老师“情学好问”第七场</a></li>
 					 	<li><i>2</i><a href="">小学三四年级面授暑假班课程上线啦</a></li>
@@ -230,7 +352,7 @@
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>
-            <div class="area">
+            <div class="foot_area">
             <p>
                 北京学而思教育科技有限公司
                 <a href="http://www.xueersi.com/">网校首页</a>
