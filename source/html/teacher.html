@@ -36,9 +36,9 @@
 	<!-- 内容 start-->
 	<div id="middle">
 		<div class="layout">
-			<div class="layout_body left">
+			<div class="layout_body left w_730">
 				<!--老师筛选 -->
-				<div class="ui_filter">
+				<div class="ui_filter ">
 					<div class="filter_handle">
 						<h2>一年级</h2>
 						<ul class="filter_handle_items">
@@ -63,32 +63,16 @@
 							<a>语文</a>
 						</dd>
 					</dl>
-					<dl class="filter_item filter_other expand / collapsed">
-						<dt>学科</dt>
-						<dd>
-							<a>数学</a>
-							<a>语文</a>
-						</dd>
-					</dl>
-					<dl class="filter_item filter_other">
-						<dt>学科</dt>
-						<dd>
-							<a class="current">数学</a>
-							<a>语文</a>
-						</dd>
-					</dl>
-					<div class="filter_more">
-						<p>更多</p>
-					</div>
+					
 				</div>
 				<!--老师筛选 end-->
 				<!-- 老师排序工具条 -->
-			    <div class="ui_sortbar sort_teacher sort_course">
+			    <div class="ui_sortbar sort_teacher">
 			    	<ul>
 			    		<li class="sort_num">排名</li>
 			    		<li class="sort_avatar">老师</li>
 			    		<li class="sort_course_num">
-			    			<a>
+			    			<a class="current">
 			    				授课数量 <em class="icon icon_trend_top"></em>
 			    			</a>
 			    		</li>
@@ -114,25 +98,54 @@
 				<!-- 老师排序工具条 end-->
 				<!-- 老师排序列表 -->
 				    <div class="ui_teachers">
-			     	<div class="teacher_item">
-			     	 <i class="num">1</i>
-			     		<div class="avatar">头像---名字</div>
-			     		<span class="course_num">12345</span>
-			     		<span class="trend">3465</span>
-			     		<span class="student_num">5678</span>
-			     		<span class="new_trend">34215</span>
-			     		<div class="ui_follow following"> <em class="icon icon_succeed icon_add"></em>
-			     			关注/已关注 <i class="line line_gray">|</i>
-			     			<a href="" class="btn_cancel">取消</a>
-			     		</div>
-			     	</div>
- 			     </div>
+				    	<div class="teacher_item"> <i class="num num_one">1</i>
+				    		<div class="avatar">头像---名字</div>
+				    		<span class="course_num">12345</span>
+				    		<span class="trend">3465</span>
+				    		<span class="student_num">5678</span>
+				    		<span class="new_trend">34215</span>
+				    		<div class="ui_follow following"> <em class="icon icon_succeed icon_add"></em>
+				    			<a href="" class="btn_cancel">取消</a>
+				    		</div>
+				    	</div>
+				    	<div class="teacher_item"> <i class="num num_two">2</i>
+				    		<div class="avatar">头像---名字</div>
+				    		<span class="course_num">12345</span>
+				    		<span class="trend">3465</span>
+				    		<span class="student_num">5678</span>
+				    		<span class="new_trend">34215</span>
+				    		<div class="ui_follow following"> <em class="icon icon_succeed icon_add"></em>
+				    			<a href="" class="btn_cancel">取消</a>
+				    		</div>
+				    	</div>
+				    	<div class="teacher_item"> <i class="num num_three">3</i>
+				    		<div class="avatar">头像---名字</div>
+				    		<span class="course_num">12345</span>
+				    		<span class="trend">3465</span>
+				    		<span class="student_num">5678</span>
+				    		<span class="new_trend">34215</span>
+				    		<div class="ui_follow following"> <em class="icon icon_succeed icon_add"></em>
+				    			<a href="" class="btn_cancel">取消</a>
+				    		</div>
+				    	</div>
+				    	<div class="teacher_item"> <i class="num">4</i>
+				    		<div class="avatar">头像---名字</div>
+				    		<span class="course_num">12345</span>
+				    		<span class="trend">3465</span>
+				    		<span class="student_num">5678</span>
+				    		<span class="new_trend">34215</span>
+				    		<div class="ui_follow following"> <em class="icon icon_succeed icon_add"></em>
+				    			<a href="" class="btn_cancel">取消</a>
+				    		</div>
+				    	</div>
+				    	<!-- repeat -->
+				    </div>
 				<!-- 老师排序列表 end -->
 				<div id="pages">=====翻页=====</div>
 				<!-- 翻页。。。。。。。。。 -->
 			</div>
 			<!--layout_body end -->
-			<div class="layout_side right">
+			<div class="layout_side right w_235">
 				 <div class="advert">
 					 	<a href="##">
 					 		<img src="src/pic/ad_01.jpg"/>					 
@@ -142,7 +155,7 @@
 			
 				<!-- panle -->
 				<div class="panel">
-					<div class="side_header border_blue"><span>最新发布</span></div>
+					<div class="side_header"><span>最新发布</span></div>
 					<div class="panel_content">
 						<!--ui_feed  -->
 						<div class="ui_feed">
@@ -150,14 +163,14 @@
 								<a href="##" class="userpic J_userinfo">
 									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
 							</div>
-							<div class="aaa">
-								<a href="" class="ui_username">
-									初一年级 <i>V</i><span>发布了一份资料</span>
-								</a>
-								<div class="feed_text">
-									秀情老师数学加油站系列讲座
-								</div>
-							</div>
+							<div class="feed_detail">
+		                		<a href="" class="ui_username">
+		                			初一年级 <i>V</i><span>发布了一份资料</span>
+		                		</a>
+		                		<div class="feed_text">
+		                			<a href="">秀情老师数学加油站系列讲座第十二</a>
+		                		</div>
+		                	</div>
 						</div>
 						<!--ui_feed end -->
 					</div>
@@ -191,7 +204,7 @@
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>
-            <div class="area">
+            <div class="foot_area">
             <p>
                 北京学而思教育科技有限公司
                 <a href="http://www.xueersi.com/">网校首页</a>
