@@ -27,21 +27,16 @@
 @import "list.less";
 @import "ui_filter.less";
 @import "ui_sortbar.less";
-@import "ui_courses.less";
+@import "ui_teachers.less";
 
 
-/*===================/课程频道页/=====================*/
+/*===================/教师排行页/=====================*/
 
-.menu_pd_title {
-		height: 55px;line-height: 55px;font-size: 12px;color: #666;
-		a {color: #999;}
-}
+.panel .ui_feed {overflow:hidden;border-bottom: 1px dashed #F1F1F1;padding-bottom:10px;margin-bottom:15px;}
+.panel .ui_feed .ui_avatar {float: left;width: 50px;height: 50px;}
 
-ul.notice_list {
-	overflow: hidden;
-	li {
-		height: 25px;line-height: 25px;padding-left: 10px;overflow: hidden; font-size: @f12;
-		i {display:inline-block;font-size: @f12;padding-right: 10px; text-indent:0em;}
-	}
-}
 
+.panel .ui_feed .feed_detail {float: right;width: 175px;}
+.panel .ui_feed .feed_detail span {color:@g3*3;}
+.panel .ui_feed .feed_detail .feed_bar {height:20px;line-height:20px;}
+.panel .ui_feed .feed_detail .feed_bar span {float:right; text-align:right;}

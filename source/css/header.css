@@ -123,7 +123,7 @@ button,
 input,
 select,
 textarea {
-  font: 12px/1.5 tahoma, arial, "\5b8b\4f53", sans-serif;
+  font: 12px/1.5 arial, tahoma, "\5b8b\4f53", sans-serif;
 }
 body {
   _background-image: url(about:blank);
@@ -413,7 +413,7 @@ table {
   background-position: 0 0;
 }
 .icon_shopping {
-  background-position: -26px -74px;
+  background-position: -26px -75px;
 }
 .icon_message {
   background-position: -26px -99px;
@@ -485,13 +485,13 @@ table {
   background-position: -127px -211px;
 }
 .icon_thumbs_up {
-  background-position: -75px -49px;
+  background-position: -69px -48px;
 }
 .icon_rmb {
-  background-position: -70px 0;
+  background-position: -65px 4px;
 }
 .icon_gray_user {
-  background-position: -75px -25px;
+  background-position: -71px -24px;
 }
 .icon_clock {
   background-position: -75px -75px;
@@ -718,6 +718,9 @@ h1.logo a {
 }
 #header .header_box ul.nav li a {
   color: #333333;
+}
+#header .header_box ul.nav li a:hover {
+  color: #cc0000;
 }
 #header .header_box ul.nav li.current {
   border-bottom: 4px solid #cc0000;

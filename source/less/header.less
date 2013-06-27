@@ -38,7 +38,13 @@ h1.logo {
             float: @l;width: 400px;height: 45px;
             li {
               float: @l;display: inline;line-height: 45px;margin:6px 10px 0 30px;font-family: @fw;font-size: @f18;
-                a {color:@g3;}
+                a {
+                color:@g3;
+                &:hover {
+                      color:@r0;
+                      }
+                }
+
           }
           li.current {
              border-bottom: 4px solid  @r0;

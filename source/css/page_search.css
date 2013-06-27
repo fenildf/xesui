@@ -1337,15 +1337,43 @@ ul.filter_handle_items {
 .course_detail .course_func i {
   float: left;
 }
-/*===================/课程频道页/=====================*/
-.menu_pd_title {
-  height: 55px;
-  line-height: 55px;
-  font-size: 12px;
-  color: #666;
+/*==================/搜课/====================*/
+.ui_searchbar {
+  overflow: hidden;
+  margin: 20px 0 15px 0;
 }
-.menu_pd_title a {
-  color: #999;
+.ui_searchbar .search_head {
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #0175b2;
+  font-weight: bold;
+}
+.ui_searchbar .search_group {
+  overflow: hidden;
+}
+.ui_searchbar .search_group .search_keyword {
+  float: left;
+  width: 658px;
+  border: 1px solid #3399fe;
+  line-height: 33px;
+}
+.ui_searchbar .search_group .btn_blue {
+  float: left;
+  width: 70px;
+  height: 35px;
+  color: #fff;
+  font-size: 14px;
+  background: #3399fe;
+  border: 0;
+  border-radius: 0;
+}
+.ui_searchbar .search_tips {
+  height: 37px;
+  line-height: 37px;
+  background: #f4f0ef;
+  padding-left: 15px;
+  color: #666;
 }
 ul.notice_list {
   overflow: hidden;
@@ -1355,7 +1383,7 @@ ul.notice_list li {
   line-height: 25px;
   padding-left: 10px;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 14px;
 }
 ul.notice_list li i {
   display: inline-block;
