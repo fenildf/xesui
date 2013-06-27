@@ -11,7 +11,6 @@
 	vertical-align: @t;
 	margin-top:1px;
 	background-image:url("@{iconpath}");
-	background-position: 20px 20px;
   	background-repeat: no-repeat;
 }
 
@@ -50,7 +49,9 @@
  *--------------------------------------------
  *课程列表，课程动态，课程评论，购物车推荐课程
  *icon_chevron_right:老师轮播图右侧按钮;
+ *icon_chevron_right_reverse:老师轮播图右侧变暗按钮;
  *icon_chevron_left:老师轮播图左侧按钮;
+ *icon_chevron_left_reverse:老师轮播图左侧变亮按钮;
  *icon_yellow_sign:课程标题橙色标记
  *icon_thumbs_up:课程功能区赞图标;
  *icon_rmb:课程功能区价格图标;
@@ -63,6 +64,7 @@
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
+ *icon_info_search:搜索图标
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -92,7 +94,15 @@
 	width:238px;
 	height:41px;
 } 
-.icon_forward {width:150px; height:36px;}
+.icon_forward {
+	width:150px; 
+	height:36px;
+}
+.icon_follow_add{
+	width:14px;
+	height:14px;
+	opacity: 0.5;
+}
 .icon_new 				{ background-position: 0 0; }
 .icon_shopping			{ background-position: -26px -74px;}
 .icon_message 			{ background-position: -26px -99px; }
@@ -123,6 +133,9 @@
 
 .icon_chevron_right 	{ background-position: -75px -225px; }
 .icon_chevron_left		{ background-position: -75px -200px; }
+.icon_chevron_right_reverse{ background-position: -75px -251px;}
+.icon_chevron_left_reverse{ background-position: -75px -275px; }
+
 .icon_yellow_sign		{ background-position: -127px -211px; }
 .icon_thumbs_up			{ background-position: -75px -49px; }
 .icon_rmb				{ background-position: -70px 0;}
@@ -134,14 +147,19 @@
 .icon_tv			    { background-position: -75px -175px; }
 
 .icon_info_sign 		{ background-position: -75px -75px; }
+.icon_info_search 		{ background-position: -50px 0; }
 
-.icon_follow_add 		{ background-position: 0 0; }
-.icon_follow_cancel     { background-position: 0 0; }
+.icon_follow_add 		{ background-position: -50px -177px; }
 
 .icon_coursecard 		{ background-position: -123px -375px; }
 .icon_guide 		 	{ background-position: -123px -420px; }
 .icon_courseselect 		{ background-position: -123px -466px; }
 .icon_forward 			{ background-position: -127px -366px; }
+
+.icon_arrow_up 			{ background-position: -50px -200px; }
+.icon_arrow_down 		{ background-position: -50px -225px; }
+ 			
+
 
 
 
