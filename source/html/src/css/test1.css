@@ -159,6 +159,7 @@ h1.logo  a {display: block; height:55px;text-indent: -99999em;background: url(/x
 
 
 
+
 /**
  * [边栏部分的标题]
  * @type {[type]}
@@ -204,16 +205,10 @@ ul.index_notice li i {display:inline-block;font-size: 18px;padding-right: 10px;f
 .layout_body .border_blue {}
 .layout_body .border_blue span {float: left;font-size: 14px;font-weight: bold;line-height: 40px;}
 
-/**
- * [首页]
- * @type {[type]}
- */
+.header_setting {margin:10px 0 0 0;}
 
-.content_box {overflow: hidden;}
-.content_box .feed_text {width: 570px;}
-.content_box .border_none {border: 0;} 
-
-
+.panel {overflow: hidden;}
+.panel_content {overflow: hidden;}
 
 /**
  * [ui_feed 动态]
@@ -226,10 +221,28 @@ ul.index_notice li i {display:inline-block;font-size: 18px;padding-right: 10px;f
 .feed_detail {float: left;display: inline;margin-left:10px;}
 .feed_detail .ui_username {display:inline-block;font-size: 14px;line-height:25px;}
 .feed_detail .feed_text {line-height: 180%;color: #666;}
-.feed_detail .feed_text a {color: #006699;}
+.feed_detail .feed_text a {color: #006699;  }
 
 
+/*头像*/
+.ui_avatar {width:50px;position: relative; overflow: hidden;}
+.ui_avatar .prev,.ui_avatar .next {width:21px;height:21px;text-indent: -99999em; display: inline-block;position: absolute; z-index: 10;top: 85px;}
+.ui_avatar .prev {left: 0; background: url(../img/icon_l1.png) no-repeat;}
+.ui_avatar .next {right: 0; background: url(../img/icon_r2.png) no-repeat;}
+.ui_avatar ul.avatar_items {overflow: hidden;}
+.ui_avatar ul.avatar_items li a {display: block; text-align: center;line-height: 180%;}
+.ui_avatar ul.avatar_items li img {width: 50px;height: 50px;}
 
+.ui_avatar .userpic img{width: 50px;height: 50px;}
+
+/**
+ * [首页]
+ * @type {[type]}
+ */
+
+.content_box {overflow: hidden;}
+.content_box .feed_text {width: 570px;}
+.content_box .border_none {border: 0;} 
 
 /**
  * [课程频道页]
@@ -259,6 +272,18 @@ ul.index_notice li i {display:inline-block;font-size: 18px;padding-right: 10px;f
 
 
 ul.filter_handle_items {display: none;}
+
+
+/*===================================================================================================================
+========================================================================================================================*/
+
+
+
+
+
+
+
+
 
 
 /*课程页和教师页--排序标题*/
@@ -297,16 +322,6 @@ ul.filter_handle_items {display: none;}
 .course_detail  .course_func span strong {color: #cc0000;}
 .course_detail  .course_func i {float: left;}
 
-/*头像*/
-.ui_avatar {width:50px;position: relative; overflow: hidden;}
-.ui_avatar .prev,.ui_avatar .next {width:21px;height:21px;text-indent: -99999em; display: inline-block;position: absolute; z-index: 10;top: 85px;}
-.ui_avatar .prev {left: 0; background: url(../img/icon_l1.png) no-repeat;}
-.ui_avatar .next {right: 0; background: url(../img/icon_r2.png) no-repeat;}
-.ui_avatar ul.avatar_items {overflow: hidden;}
-.ui_avatar ul.avatar_items li a {display: block; text-align: center;line-height: 180%;}
-.ui_avatar ul.avatar_items li img {width: 50px;height: 50px;}
-
-.ui_avatar .userpic img{width: 50px;height: 50px;}
 
 /*名称*/
 .username {color: #999;}
@@ -327,8 +342,6 @@ ul.filter_handle_items {display: none;}
 
 
 /*side*/
-.panel {overflow: hidden;}
-.panel_content {overflow: hidden;}
 
 /*老师排行----最新发布*/
 .panel .ui_feed {border-bottom: 1px dashed #F1F1F1;}

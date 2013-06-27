@@ -1,3 +1,18 @@
-#header {
-  color: #4d926f;
-}
+/**
+ * 调用样式模块
+ */
+@import "../css/header.css";
+@import "/source/css/base.css";
+@import "reset.css";
+@import "variables.css";
+/*公用*/
+@import "variables.css";
+@import "icon.css";
+@import "button.css";
+@import "form.css";
+
+@import "css/header.css";
+@import "list.css";
+@import "nav.css";
+@import "search.css";
+

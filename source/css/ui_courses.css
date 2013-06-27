@@ -1,108 +1,12 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程
+ */
 /**
  * Button 公用样式
- */
-/**
- * Colors
- *---------------------------
- */
-/**
- * 全站链接样式
- *
- */
-/**
- * font-family
- *fa:font-family:"Arial";
- *fg:font-family:"Georgia";
- *ft:font-family:"Tahoma";
- *fl:font-family:"Lucida Console";
- *fs:font-family:"宋体";
- *fw:font-family:"Microsoft YaHei";
- *------------------------------------
- */
-/**
- * padding值设定
- *
- *-----------------------------------------------
- */
-/**
- * margin值设定
- *@margin0, @margin5
- *-------------------------------------------------
- */
-/**
- * width值设定
- *@w1=width:1px;
- *可以使用计算值调用 eg:width:20px=20*@w1;
- *-------------------------------------------------
- */
-/**
- * font-size:
- *f0:font-size:0;
- *f10:font-size:0;
- *f12:font-size:12px;
- *f13:font-size:13px;
- *f14:font-size:14px;
- *f16:font-size:16px;
- *f18:font-size:18px;
- *f20:font-size:20px;
- *f24:font-size:24px;
- *------------------------------------
- */
-/**
- * Align & Direction
- * l:left
- * r:right
- * c:center
- * t:top
- * m:middle
- * b:bottom
- *ti:text-index:-9999em;
- *--------------------------------------
- */
-/**
- * HL:high-light属性设置
- * hl14:high-light:14px;
- * hl16:high-light:16px;
- * hl18:high-light:18px;
- * hl20:high-light:20px;
- * hl22:high-light:22px;
- * hl24:high-light:24px;
- * hl150:high-light:150%;
- * hl180:high-light:180%;
- *--------------------------------------
- */
-/**
- * border设置
- * bbr:base border redius:3px;
- *--------------------------------------
- */
-/**
- * button
- * btnColor:btn-color:#fff;
- * btnfh:btn-first-height;
- * btnzh:btn-zero-high-light:0%; //没有渐变
- * btnsh:btn-zero-high-light:5%; //渐变从5%开始
- *--------------------------------------
- */
-/**
- * 雪碧图路径设置
- *----------------------------------------
- */
-/**
- * table设置
- *tbg: tableBackground
- *tbga: tableBackgroundAccent
- *tbhb:table-th-background
- *tborder:table-border
- *----------------------------------------
- */
-/**
- * Form设置
- *tbg: tableBackground
- *tbga: tableBackgroundAccent
- *tbhb:table-th-background
- *tborder:table-border
- *----------------------------------------
  */
 .icon {
   display: inline-block;
@@ -321,4 +225,185 @@
 }
 .icon_forward {
   background-position: -127px -366px;
+}
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *------------------------------------
+ */
+/**
+ * padding值设定
+ *
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@margin0, @margin5
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用 eg:width:20px=20*@w1;
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f18:font-size:18px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *ti:text-index:-9999em;
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ * hl150:high-light:150%;
+ * hl180:high-light:180%;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+.ui_courses {
+  overflow: hidden;
+}
+.ui_courses .ui_avatar {
+  float: left;
+  display: inline;
+  height: 110px;
+  margin: 10px;
+}
+.course_item {
+  overflow: hidden;
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+  margin-bottom: 10px;
+}
+/*内容部分*/
+.course_detail {
+  float: left;
+  display: inline;
+  width: 645px;
+}
+.course_detail .course_title {
+  font-size: 18px;
+  font-family: 微软雅黑;
+  color: #333;
+  font-weight: normal;
+  padding: 7px 0;
+}
+.course_detail .course_title em {
+  display: inline-block;
+  width: 35px;
+  line-height: 17px;
+  background: url(/xesui/src/img/icon_1.png) no-repeat;
+  color: #fff;
+  font-size: 12px;
+  padding-left: 3px;
+}
+.course_detail .course_title strong {
+  color: #cc0000;
+  font-size: 14px;
+}
+.course_detail .course_info {
+  height: 25px;
+  color: #999;
+  font-size: 12px;
+}
+.course_detail .course_info strong {
+  color: #cc0000;
+}
+.course_detail .course_func {
+  line-height: 30px;
+}
+.course_detail .course_func button {
+  float: left;
+  width: 75px;
+  height: 27px;
+  line-height: 27px;
+  border-radius: 2px;
+  background: #cc0000;
+  background: -webkit-linear-gradient(top, #f8f8f8, #f4f2f3);
+  font-size: 12px;
+  color: #cc0000;
+  font-family: 微软雅黑;
+  cursor: pointer;
+  text-shadow: 2px 3px 5px #f1f1f1;
+  border: 1px solid #cecece;
+}
+.course_detail .course_func span {
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.course_detail .course_func span strong {
+  color: #cc0000;
+}
+.course_detail .course_func i {
+  float: left;
 }

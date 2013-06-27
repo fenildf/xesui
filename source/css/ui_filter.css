@@ -1,5 +1,9 @@
+@charset "UTF-8";
 /**
- * Base style
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程筛选
  */
 /**
  * Colors
@@ -104,79 +108,84 @@
  *tborder:table-border
  *----------------------------------------
  */
-/**
- * Typography
- *---------------------------
- */
-.bl {
-  clear: both;
+.ui_filter {
+  overflow: hidden;
 }
-.fl {
+/*===================/年级列表/=====================*/
+.ui_filter .filter_handle {
+  overflow: hidden;
+  height: 28px;
+  line-height: 28px;
+  border-bottom: 1px solid #4a9fdb;
+  _zoom: 1;
+}
+.ui_filter .filter_handle h2 {
   float: left;
-}
-.fr {
-  float: right;
-}
-.n {
-  font-weight: normal;
-  font-style: normal;
-}
-.b {
-  font-weight: bold;
-}
-.tc {
+  display: inline;
+  width: 77px;
+  background: #4a9fdb;
   text-align: center;
+  color: #ffffff;
 }
-.tl {
-  text-align: left;
+.ui_filter .filter_handle p.more {
+  float: right;
+  font-size: 12px;
+  color: #999999;
 }
-.tr {
-  text-align: right;
+/*===================/学科分类/=====================*/
+.ui_filter .filter_item {
+  height: 37px;
+  overflow: hidden;
+  border-left: 1px solid #eeebe9;
+  border-right: 1px solid #eeebe9;
+  border-bottom: 1px dashed #e6e6e6;
+  margin: 0;
+  font-size: 12px;
+  background: #ffffff;
 }
-.red {
-  color: #cc0000;
+.ui_filter .filter_item dt {
+  float: left;
+  width: 77px;
+  line-height: 37px;
+  text-align: center;
+  background: #f7f6f5;
+  font-weight: bold;
+  color: #333333;
 }
-.line {
-  display: inline-block;
-  padding: 0 10px;
-  color: #999;
+.ui_filter .filter_item dd {
+  float: left;
+  line-height: 37px;
 }
-.hidden {
+.ui_filter .filter_item dd a {
+  margin: 0 6px;
+  color: #666666;
+}
+.ui_filter .filter_item dd a.current {
+  padding: 2px 6px;
+  background: #4a9fdb;
+  color: #ffffff;
+}
+/*===================/更多条件/=====================*/
+.ui_filter .filter_more {
+  overflow: hidden;
+  position: relative;
+  height: 22px;
+  border-top: 5px solid #eeebe9;
+}
+.ui_filter .filter_more p {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 87px;
+  background: #eeebe9;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+/*===================/扩展样式/=====================*/
+ul.filter_handle_items {
   display: none;
 }
-.show {
-  display: block;
+.ui_filter .border_none {
+  border-bottom: 0;
 }
-.border_none {
-  border: 0;
-}
-/**
- * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
- * 可以在less文件中使用.border-radius(5px)调用
- *--------------------------------------------------------------------
- */
-/**
- * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
- * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
- *------------------------------------------------------
- */
-/**
- * 用.placeholder(argument)为placeholder设定一个颜色值
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用background-color(@color)调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用border-color(@color)调用
- *----------------------------------------------------
- */

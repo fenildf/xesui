@@ -6,8 +6,7 @@
 	<title>新版学而思网校首页</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
-
+	<link href="../css/page_index.css" type="text/css" rel="stylesheet" />	
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -22,12 +21,18 @@
 				<li><a href="#">逛论坛</a></li>
 			</ul>
 			<div class="search">
-				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师"> <button>搜索</button>
+				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search"> <button class="head_btn_search">搜索</button>
 			</div>
+			<div class="shopcar"><a href=""><em class="icon icon_shopping">购物车</em></a></div>
 			<ul class="topbar">
-				<li><a href=""><em class="icon icon_car">购物车</em></a></li>
-				<li><a href="">登录</a><i>|</i></li>
-				<li><a href="">注册</a></li>
+				<li class=""><a href="##">登录</a></li>
+				<li class=""><i class="line">|</i></li>
+				<li><a href="##">注册</a></li>
+			</ul>
+			<ul class="loginbar hidden">
+				<li class=""><em class="icon icon_shopping">购物车</em></li>
+				
+				<li><em class="icon icon_shopping">购物车</em></li>
 			</ul>
 		</div>
 	</div>
@@ -98,7 +103,7 @@
 
 		<div class="layout">
 			<div class="layout_body left w_655">
-				<div class="main_header border_blue">
+				<div class="main_header border_blue w_645">
 					<ul class="nav_links">
 						<li class="current" >
 							<a href="#">全部</a><i class="line line_blue">|</i>
@@ -242,7 +247,7 @@
 				<!-- panle -->
 				<div class="panel">
 					<div class="side_header border_blue"><span>最新公告</span></div>
-					 <ul class="index_notice">
+					 <ul class="ui_list index_notice">
 					 	<li><i>·</i><a href="">系列讲座：秀情老师“情学好问”第七场</a></li>
 					 	<li><i>·</i><a href="">小学三四年级面授暑假班课程上线啦</a></li>
 					 	<li><i>·</i><a href="">新课上线：科学课全新上线啦</a></li>

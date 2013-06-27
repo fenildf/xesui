@@ -1,5 +1,9 @@
+@charset "UTF-8";
 /**
- * Base style
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程页和教师页--排序标题
  */
 /**
  * Colors
@@ -104,79 +108,56 @@
  *tborder:table-border
  *----------------------------------------
  */
-/**
- * Typography
- *---------------------------
- */
-.bl {
-  clear: both;
+/*=============/课程/==================*/
+.ui_sortbar {
+  overflow: hidden;
+  height: 36px;
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+  margin: 10px 0 15px 0;
 }
-.fl {
+.ui_sortbar li {
   float: left;
+  line-height: 36px;
+  font-size: 12px;
+  margin: 0 30px 0 5px;
 }
-.fr {
-  float: right;
+.ui_sortbar li a {
+  color: #666;
 }
-.n {
-  font-weight: normal;
-  font-style: normal;
+.ui_sortbar li a.current {
+  background: #4a9fdb;
+  padding: 2px 6px;
+  color: #fff;
 }
-.b {
+.ui_sortbar li.sort_title {
+  margin: 0 0 0 15px;
   font-weight: bold;
 }
-.tc {
-  text-align: center;
+/*=============/教师/==================*/
+.sort_teacher {
+  overflow: hidden;
 }
-.tl {
-  text-align: left;
+.sort_teacher li {
+  margin: 0;
 }
-.tr {
-  text-align: right;
+.sort_teacher li.sort_num {
+  width: 30px;
+  margin: 0 15px;
 }
-.red {
-  color: #cc0000;
+.sort_teacher li.sort_avatar {
+  width: 130px;
+  padding-left: 30px;
 }
-.line {
-  display: inline-block;
-  padding: 0 10px;
-  color: #999;
+.sort_teacher li.sort_course_num {
+  width: 100px;
 }
-.hidden {
-  display: none;
+.sort_teacher li.sort_trend {
+  width: 100px;
 }
-.show {
-  display: block;
+.sort_teacher li.sort_student_num {
+  width: 100px;
 }
-.border_none {
-  border: 0;
+.sort_teacher li.sort_new_trend {
+  width: 100px;
 }
-/**
- * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
- * 可以在less文件中使用.border-radius(5px)调用
- *--------------------------------------------------------------------
- */
-/**
- * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
- * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
- *------------------------------------------------------
- */
-/**
- * 用.placeholder(argument)为placeholder设定一个颜色值
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用background-color(@color)调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用border-color(@color)调用
- *----------------------------------------------------
- */
