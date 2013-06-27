@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程筛选
+ */
+
+@import "variables.less";
+
+.ui_filter {
+	overflow: hidden;
+	
+}
+
+/*===================/年级列表/=====================*/
+.ui_filter .filter_handle {
+	overflow: hidden;height: 28px;line-height: 28px;border-bottom: 1px solid #4a9fdb;_zoom:1;
+	h2 {
+		float: @l;display: inline;width: 77px;background: #4a9fdb; text-align: @c;color: @white;
+		
+	}
+	p.more {
+			float: @r;font-size: @f12;color: @g3 * 3;
+			
+		}
+}
+
+/*===================/学科分类/=====================*/
+.ui_filter .filter_item {
+	height: 37px; overflow: hidden;border-left: 1px solid #eeebe9;border-right: 1px solid #eeebe9;border-bottom: 1px dashed #e6e6e6;margin: 0;font-size: @f12;background: @white;
+	dt {float: left;width:77px;line-height: 37px;text-align: center;background: #f7f6f5;font-weight: bold;color: @g3;}
+	dd {
+		float: left;line-height: 37px;
+		 a {margin: 0 6px;color: @g3 * 2;}
+		 a.current {padding: 2px 6px;background: #4a9fdb;color: @white;}
+	}
+}
+
+
+/*===================/更多条件/=====================*/
+.ui_filter .filter_more {
+	overflow: hidden; position: relative;height: 22px;border-top: 5px solid #eeebe9;
+	p {position: absolute;right: 0;top: -1px; width: 87px;background: #eeebe9; text-align: @c;font-size: @f12;color: @g3 * 2;}
+}
+
+/*===================/扩展样式/=====================*/
+ul.filter_handle_items {display: none;}
+.ui_filter .border_none {border-bottom:0;}

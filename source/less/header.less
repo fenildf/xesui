@@ -1,0 +1,90 @@
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:40:57
+ * @version $Id$
+ */
+
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+@import "icon.less";
+@import "form.less";
+@import "button.less";
+/*图标，表单，按钮*/
+
+
+#header {
+      height:55px; overflow: hidden;box-shadow:0 2px 12px #ddd;margin:0;position: relative;z-index: 100;
+     .header_box {
+          width: 980px;margin:0 auto;overflow: hidden;
+       }
+}
+
+/*logo*/
+h1.logo {
+         float: @l;display: inline;width: 260px; 
+         a {
+             display: block; height:55px;text-indent:@ti ;background: url(/xesui/src/img/logo.png) no-repeat;
+           }
+}
+
+
+
+/*菜单*/
+
+#header .header_box ul.nav {
+            float: @l;width: 400px;height: 45px;
+            li {
+              float: @l;display: inline;line-height: 45px;margin:6px 10px 0 30px;font-family: @fw;font-size: @f18;
+                a {color:@g3;}
+          }
+          li.current {
+             border-bottom: 4px solid  @r0;
+                 a {
+                  color: @r0;
+                  &:hover {
+                      color:@r0;
+                      }
+                  }
+          }
+}
+
+
+/*搜索*/
+
+#header .header_box .search {
+	float:left;width: 180px;height: 30px; margin-top: 12px;border-radius: 16px;border:1px solid #ccc;position: relative;
+	    .head_top_search {
+	          width:140px;height: 20px; border: 0;margin:@margin5 @margin0 @margin0 @margin5 * 2;
+	       }
+	 .head_btn_search {
+	          width:15px;height:15px; background:url("@{iconpath}") -49px 0 no-repeat transparent; text-indent:@ti;position: absolute; right:12px;top:7px; z-index:10;
+	       }
+}
+
+
+/*购物车*/
+#header .header_box .shopcar {
+      float:@l;width:20px;padding-top:18px;margin-left:@margin5*3;
+}
+
+/*未登录*/
+#header .header_box ul.topbar {
+    float:@r;width: 90px;padding-top:18px;
+      li {
+         float: @l;font-size:@f14;
+         a {
+             color:@g3 * 3;
+            }
+      }
+	
+}
+
+/*已登录*/
+
+.loginbar {
+	li {}
+}
+

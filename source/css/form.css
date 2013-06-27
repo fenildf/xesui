@@ -140,6 +140,20 @@
 .red {
   color: #cc0000;
 }
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
+}
 /**
  * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
  * 可以在less文件中使用.border-radius(5px)调用
@@ -180,9 +194,7 @@ fieldset {
   border: 0;
 }
 label {
-  display: block;
-  text-align: right;
-  width: 60px;
+  text-align: left;
 }
 textarea {
   height: auto;
@@ -206,26 +218,12 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  display: inline-block;
-  padding: 2px 5px;
-  margin: 4px 4px 0;
-  *margin-top: 0;
-  /* IE7 */
-
-  margin-top: 1px \9;
-  /* IE8-9 */
-
   vertical-align: middle;
-  line-height: 20px;
   font-size: 12px;
 }
 /**
  * 设定表单元素placeholder的字体颜色值
  */
-input[type="text"],
-textarea {
-  padding: 3px 5px;
-}
 input[type="text"]:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #999999;

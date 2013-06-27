@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程页和教师页--排序标题
+ */
+
+@import "variables.less";
+
+
+/*=============/课程/==================*/
+.ui_sortbar {
+		overflow: hidden;height: 36px;border:1px solid #ededed;background: #fcfcfc;margin:10px 0 15px 0;
+		li {
+			float: left;line-height: 36px;font-size: 12px;margin:0 30px 0 5px;
+			a {color: #666;}
+			a.current {background: #4a9fdb;padding: 2px 6px;color: #fff;}
+		}
+		li.sort_title {margin:0 0 0 15px;font-weight: bold;}
+}
+
+/*=============/教师/==================*/
+.sort_teacher {overflow: hidden;}
+.sort_teacher li {margin: 0;}
+.sort_teacher li.sort_num {width: 30px;margin:0 15px;}
+.sort_teacher li.sort_avatar {width: 130px;padding-left: 30px;}
+.sort_teacher li.sort_course_num {width: 100px;}
+.sort_teacher li.sort_trend {width: 100px;}
+.sort_teacher li.sort_student_num {width: 100px;}
+.sort_teacher li.sort_new_trend {width: 100px;}

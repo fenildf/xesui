@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/**
+ * 
+ * authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 11:44:46
+ * @version $Id$  公用底部
+ */
+
+
+@import "variables.less";
+
+#footer {width: @w100; border-top: 1px solid #e5e5e5;padding:@pad0;}
+
+/*===============/下：关于我们部分/====================*/
+
+#footer .foot_area {
+			padding:4*@pad5 @pad0;
+		  p {
+		  	text-align: @c;line-height: @hl180;
+		  	a:link {padding: @pad0 @pad5; color: @g3;}
+		  	p.link {padding-top: 3*@pad5; }
+		  }
+}
+
+
+/*===============/上：学习经验分享/====================*/
+
+#footer .foot_service {
+			width: 980px;margin:0 auto;overflow: hidden; padding-bottom: 4*@pad5;border-bottom: 1px solid #F1F1F1;
+		 a { 
+		 	float: @l; display: inline; width: 140px; overflow: hidden; cursor: pointer; height: 56px; margin: 2*@margin5 2*@margin5 @margin0 4*@margin5; padding-left: 68px; text-decoration: none;
+		 	p {line-height: @hl150; color: #666;  text-align: left;}
+		 }
+		 a.service_share {background: url(http://www.xueersi.com/static/img/icon/A1_01.gif) no-repeat;}
+		 a.service_live {background: url(http://www.xueersi.com/static/img/icon/A2_01.gif) no-repeat;}
+		 a.service_system {background: url(http://www.xueersi.com/static/img/icon/A3_01.gif) no-repeat;}
+		 a.service_interaction {background: url(http://www.xueersi.com/static/img/icon/A4_01.gif) no-repeat;}
+		 a.service_share:hover {background: url(http://www.xueersi.com/static/img/icon/A1.gif) no-repeat;}
+		 a.service_live:hover {background: url(http://www.xueersi.com/static/img/icon/A2.gif) no-repeat;}
+		 a.service_system:hover {background: url(http://www.xueersi.com/static/img/icon/A3.gif) no-repeat;}
+		 a.service_interaction:hover {background: url(http://www.xueersi.com/static/img/icon/A4.gif) no-repeat;}
+		 a span {display: block;line-height: 22px; font-weight: bold;color: @g3;}
+
+}

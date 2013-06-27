@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+ * 
+ * authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 11:44:46
+ * @version $Id$  首页登录框部分
+ */
+
+@import "variables.less";
+.index_login {
+		width:980px; margin: 0 auto; position: relative;z-index: 11;top:15px;
+          .login_from {
+			 width: 318px;height: 368px;overflow: hidden;border: 1px solid #cfdede;background: #fbfdfd;position: absolute;top:0;right:0;
+			
+		}
+
+}
+
+ /*====================/上：登录框和登录按钮部份/==========================*/
+
+.index_login .login_from  .login_input {
+			 		width:282px;height: 207px;margin:0 auto;overflow: hidden;
+			 		p {
+			 			overflow: hidden;
+			 			input.input_text {width:265px;height: 30px;border: 1px solid #cfdede;color: #ccc;margin-top: 18px;padding-left: 15px;}
+			 			 label {
+			 				float: @l;display: inline;line-height: 40px;color: @g3 * 3;
+			 				input {vertical-align: middle;}
+			 			}
+			 			span {
+			 			      float: @r;display: inline;line-height: 40px;color:  @g3 * 3;
+			 			      a {color:  @g3 * 3;}
+			 			    }
+			 			button.btn {
+			 						width:281px;height: 42px;margin-top:5px;line-height: 42px;border-radius: 5px;background: @r0;background: -webkit-linear-gradient(top,#e72501, #bd1c01);font-size: 18px;color: #fff;font-family: @fw; text-shadow:2px 3px 5px #f1f1f1;
+			 					}
+			 		}
+			}
+
+/*====================/下：登录信息说明部份/==========================*/
+
+
+.index_login .login_from  .login_infor {
+           			 border-top: 1px solid #cfdede;
+           			 p {width: 282px;margin: 0 auto;overflow: hidden;}
+           			 .infor_reg {
+           			       line-height: 42px;color:  @g3 * 2;
+           			       a {color: #006699;}
+           			      }
+           			 
+           			 .infor_app  {
+           			             overflow: hidden;margin-bottom: 10px;
+           			 			a.app_qq,a.app_weibo{float: @l;display: inline;width: 138px;height: 47px; text-indent: @ti;}
+           			 			a.app_qq {background: url(/xesui/src/img/qq.jpg) no-repeat;}
+           			 			a.app_weibo {float:@r;background: url(/xesui/src/img/weibo.jpg) no-repeat;}
+           			 	}
+           			 	.infor_text {line-height:25px;color: #999;}
+            }
+
+
+
+

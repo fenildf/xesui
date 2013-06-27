@@ -1,5 +1,9 @@
+@charset "UTF-8";
 /**
- * Base style
+ * 
+ * authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 11:44:46
+ * @version $Id$  公用底部
  */
 /**
  * Colors
@@ -104,79 +108,77 @@
  *tborder:table-border
  *----------------------------------------
  */
-/**
- * Typography
- *---------------------------
- */
-.bl {
-  clear: both;
+#footer {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  padding: 0px;
 }
-.fl {
-  float: left;
+/*===============/下：关于我们部分/====================*/
+#footer .foot_area {
+  padding: 20px 0px;
 }
-.fr {
-  float: right;
-}
-.n {
-  font-weight: normal;
-  font-style: normal;
-}
-.b {
-  font-weight: bold;
-}
-.tc {
+#footer .foot_area p {
   text-align: center;
+  line-height: 180%;
 }
-.tl {
+#footer .foot_area p a:link {
+  padding: 0px 5px;
+  color: #333333;
+}
+#footer .foot_area p p.link {
+  padding-top: 15px;
+}
+/*===============/上：学习经验分享/====================*/
+#footer .foot_service {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F1F1F1;
+}
+#footer .foot_service a {
+  float: left;
+  display: inline;
+  width: 140px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 56px;
+  margin: 10px 10px 0px 20px;
+  padding-left: 68px;
+  text-decoration: none;
+}
+#footer .foot_service a p {
+  line-height: 150%;
+  color: #666;
   text-align: left;
 }
-.tr {
-  text-align: right;
+#footer .foot_service a.service_share {
+  background: url(http://www.xueersi.com/static/img/icon/A1_01.gif) no-repeat;
 }
-.red {
-  color: #cc0000;
+#footer .foot_service a.service_live {
+  background: url(http://www.xueersi.com/static/img/icon/A2_01.gif) no-repeat;
 }
-.line {
-  display: inline-block;
-  padding: 0 10px;
-  color: #999;
+#footer .foot_service a.service_system {
+  background: url(http://www.xueersi.com/static/img/icon/A3_01.gif) no-repeat;
 }
-.hidden {
-  display: none;
+#footer .foot_service a.service_interaction {
+  background: url(http://www.xueersi.com/static/img/icon/A4_01.gif) no-repeat;
 }
-.show {
+#footer .foot_service a.service_share:hover {
+  background: url(http://www.xueersi.com/static/img/icon/A1.gif) no-repeat;
+}
+#footer .foot_service a.service_live:hover {
+  background: url(http://www.xueersi.com/static/img/icon/A2.gif) no-repeat;
+}
+#footer .foot_service a.service_system:hover {
+  background: url(http://www.xueersi.com/static/img/icon/A3.gif) no-repeat;
+}
+#footer .foot_service a.service_interaction:hover {
+  background: url(http://www.xueersi.com/static/img/icon/A4.gif) no-repeat;
+}
+#footer .foot_service a span {
   display: block;
+  line-height: 22px;
+  font-weight: bold;
+  color: #333333;
 }
-.border_none {
-  border: 0;
-}
-/**
- * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
- * 可以在less文件中使用.border-radius(5px)调用
- *--------------------------------------------------------------------
- */
-/**
- * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
- * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
- *------------------------------------------------------
- */
-/**
- * 用.placeholder(argument)为placeholder设定一个颜色值
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用background-color(@color)调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用border-color(@color)调用
- *----------------------------------------------------
- */

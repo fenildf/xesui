@@ -1,5 +1,10 @@
+@charset "UTF-8";
 /**
- * Base style
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 11:36:00
+ * @version $Id$
+ *@ layout.css  框架和公用样式
  */
 /**
  * Colors
@@ -104,79 +109,68 @@
  *tborder:table-border
  *----------------------------------------
  */
-/**
- * Typography
- *---------------------------
- */
-.bl {
-  clear: both;
+/**/
+#container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
 }
-.fl {
+.layout {
+  width: 980px;
+  margin: auto;
+  overflow: hidden;
+}
+.layout_body {
+  overflow: hidden;
+}
+.layout_side {
+  overflow: hidden;
+}
+.layout_content {
+  overflow: hidden;
+}
+/*公用样式*/
+.panle {
+  overflow: hidden;
+}
+.panel_content {
+  overflow: hidden;
+}
+.left {
   float: left;
+  display: inline;
 }
-.fr {
+.right {
   float: right;
+  display: inline;
 }
-.n {
-  font-weight: normal;
-  font-style: normal;
+.w_215 {
+  width: 215px;
 }
-.b {
-  font-weight: bold;
+.w_235 {
+  width: 235px;
 }
-.tc {
-  text-align: center;
+.w_310 {
+  width: 310px;
+  margin-right: 5px;
 }
-.tl {
-  text-align: left;
+.w_655 {
+  width: 655px;
+  border-right: 1px solid #e5e5e5;
 }
-.tr {
-  text-align: right;
+.w_645 {
+  width: 645px;
 }
-.red {
-  color: #cc0000;
+.w_730 {
+  width: 730px;
 }
-.line {
-  display: inline-block;
-  padding: 0 10px;
-  color: #999;
-}
-.hidden {
-  display: none;
-}
-.show {
-  display: block;
-}
-.border_none {
-  border: 0;
+.w_740 {
+  width: 740px;
 }
 /**
- * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
- * 可以在less文件中使用.border-radius(5px)调用
- *--------------------------------------------------------------------
+ * [广告块]
+ *
  */
-/**
- * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
- * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
- *------------------------------------------------------
- */
-/**
- * 用.placeholder(argument)为placeholder设定一个颜色值
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用background-color(@color)调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用border-color(@color)调用
- *----------------------------------------------------
- */
+.advert {
+  margin-top: 10px;
+}
