@@ -38,7 +38,7 @@ button,
 input,
 select,
 textarea {
-  font: 12px/1.5 tahoma, arial, "\5b8b\4f53", sans-serif;
+  font: 12px/1.5 arial, tahoma, "\5b8b\4f53", sans-serif;
 }
 body {
   _background-image: url(about:blank);

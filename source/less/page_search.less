@@ -30,17 +30,25 @@
 @import "ui_courses.less";
 
 
-/*===================/课程频道页/=====================*/
+/*==================/搜课/====================*/
 
-.menu_pd_title {
-		height: 55px;line-height: 55px;font-size: 12px;color: #666;
-		a {color: #999;}
+.ui_searchbar {
+	overflow: hidden;margin:20px 0 15px 0;
+	.search_head {height: 26px;line-height: 26px;font-size: 14px;color: #0175b2;font-weight: bold;}
+	.search_group  {
+		overflow: hidden;
+		.search_keyword {float:left;width:658px;border: 1px solid #3399fe;line-height: 33px;}
+		.btn_blue {float:left;width:70px;height:35px;color:#fff;font-size:14px;background: #3399fe;border:0;border-radius: 0;}
+	}
+	.search_tips {height: 37px;line-height: 37px;background: #f4f0ef;padding-left: 15px;color: #666;}
 }
+
+
 
 ul.notice_list {
 	overflow: hidden;
 	li {
-		height: 25px;line-height: 25px;padding-left: 10px;overflow: hidden; font-size: @f12;
+		height: 25px;line-height: 25px;padding-left: 10px;overflow: hidden; font-size: @f14;
 		i {display:inline-block;font-size: @f12;padding-right: 10px; text-indent:0em;}
 	}
 }

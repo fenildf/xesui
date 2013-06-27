@@ -1263,103 +1263,95 @@ ul.filter_handle_items {
 /**
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 17:57:54
- * @version $Id$ 课程
+ * @date    2013-06-27 19:52:31
+ * @version $Id$  老师排行
  */
-.ui_courses {
+.ui_teachers {
   overflow: hidden;
 }
-.ui_courses .ui_avatar {
-  float: left;
-  display: inline;
-  height: 110px;
-  margin: 10px;
-}
-.course_item {
+.teacher_item {
   overflow: hidden;
-  border: 1px solid #ededed;
-  background: #fcfcfc;
-  margin-bottom: 10px;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px dashed #F1F1F1;
 }
-/*内容部分*/
-.course_detail {
+.teacher_item .num,
+.avatar,
+.course_num,
+.trend,
+.student_num,
+.new_trend,
+.ui_follow {
   float: left;
   display: inline;
-  width: 645px;
+  text-align: center;
 }
-.course_detail .course_title {
-  font-size: 18px;
-  font-family: "Microsoft YaHei";
-  color: #333333;
-  font-weight: normal;
-  padding: 7px 0;
-}
-.course_detail .course_title em {
-  display: inline-block;
-  width: 35px;
-  line-height: 17px;
-  background: url(/xesui/src/img/icon_1.png) no-repeat;
-  color: #ffffff;
-  font-size: 12px;
-  padding-left: 3px;
-}
-.course_detail .course_title strong {
+.teacher_item .num {
+  width: 30px;
+  margin: 0 15px;
+  background: url(/xesui/src/img/bg1.jpg) 0 -231px no-repeat;
   font-size: 14px;
-}
-.course_detail .course_info {
-  height: 25px;
-  color: #999999;
-  font-size: 12px;
-}
-.course_detail .course_func {
-  margin-top: 5px;
-}
-.course_detail .course_func .btn_audition {
-  float: left;
-  width: 75px;
-  height: 25px;
-  line-height: 25px;
-  background: url(/xesui/src/img/btn_course.png) no-repeat;
-  text-indent: 20px;
-  color: #cc0000;
-  text-decoration: none;
-}
-.course_detail .course_func .btn_audition:hover {
-  background: url(/xesui/src/img/btn_course_hover.png) no-repeat;
-  color: #ffffff;
-}
-.course_detail .course_func span {
-  float: left;
-  font-size: 14px;
-  margin: 0 10px;
-  color: #999999;
-}
-.course_detail .course_func i {
-  float: left;
-}
-/*===================/课程频道页/=====================*/
-.menu_pd_title {
-  height: 55px;
-  line-height: 55px;
-  font-size: 12px;
-  color: #666;
-}
-.menu_pd_title a {
+  font-weight: bold;
   color: #999;
+  font-style: italic;
 }
-ul.notice_list {
+.teacher_item .avatar {
+  width: 130px;
+}
+.teacher_item .course_num {
+  width: 100px;
+}
+.teacher_item .trend {
+  width: 100px;
+}
+.teacher_item .student_num {
+  width: 100px;
+}
+.teacher_item .new_trend {
+  width: 100px;
+}
+.teacher_item .ui_follow {
+  width: 110px;
+}
+.teacher_item .num_one {
+  background-position: 2px 15px;
+  color: #fff;
+  font-size: 18px;
+}
+.teacher_item .num_two {
+  background-position: 2px -69px;
+  color: #fff;
+  font-size: 18px;
+}
+.teacher_item .num_three {
+  background-position: 2px -150px;
+  color: #fff;
+  font-size: 18px;
+}
+/*===================/教师排行页/=====================*/
+.panel .ui_feed {
   overflow: hidden;
+  border-bottom: 1px dashed #F1F1F1;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
-ul.notice_list li {
-  height: 25px;
-  line-height: 25px;
-  padding-left: 10px;
-  overflow: hidden;
-  font-size: 12px;
+.panel .ui_feed .ui_avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
 }
-ul.notice_list li i {
-  display: inline-block;
-  font-size: 12px;
-  padding-right: 10px;
-  text-indent: 0em;
+.panel .ui_feed .feed_detail {
+  float: right;
+  width: 175px;
+}
+.panel .ui_feed .feed_detail span {
+  color: #999999;
+}
+.panel .ui_feed .feed_detail .feed_bar {
+  height: 20px;
+  line-height: 20px;
+}
+.panel .ui_feed .feed_detail .feed_bar span {
+  float: right;
+  text-align: right;
 }
