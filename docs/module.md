@@ -39,86 +39,28 @@
 ## 组件
 根据功能模块加上效果拼凑出来的组件
 
-|    name    |    feature    |    description
-|:----------:| ------------- | -----------------------------
-| loading    | 加载状态
-| dialog     | 模拟弹窗
-| tips       | 信息提示
-| button     | 按钮组件
-| nav        | 导航组件
-| breadcrumb | 
-| tab        | 页签切换
-| userinfo   | 用户信息
-| calendar   | 日历组件
-| resizable  | 
-| preview    |
-| pages      |
-| scrollspy  |
-| collapse   |
-| carousel   |
-| grid       |
-| dropdown   |
-| win        |
-| mask       |
+|    name    | feature |    description
+|:----------:| ------- | -----------------------------
+| loading    | 加载状态 | 公用的模块、组件、页面加载loading状态
+| dialog     | 模拟弹窗 | 弹层封装，可扩展：alert、popover、
+| tips       | 信息提示 | 信息提示，可以是鼠标划过，可以是页面加载等，分为：error、success、info
+| button     | 按钮组件 | 
+| nav        | 导航组件 | 导航：tabs、pills、list、text等
+| breadcrumb | 面包屑类 | 
+| tab        | 页签切换 | tab页签切换效果，可以放到nav-tab中
+| userinfo   | 用户信息 | 用户信息展示：ui_userinfo / ui_username / ui_avatar 
+| calendar   | 日历组件 | 封装后的日历控件，在请假中会有体现
+| resizable  | 调整尺寸 | 给指定元素增加调节尺寸的方法，依赖于dragdrop模块
+| preview    | 预览组件 | 整站的图片预览模块：如果设置外框则宽度不能超过外框，高度成比例自适应
+| pages      | 页面操作 | 
+| scrollspy  | 滚动监听 | 根据滚动的位置自动更新导航条中相应的导航项。拖动下面区域的滚动条，使其低于导航条的位置，注意观察active类的变化。下拉菜单中的子项也会跟着变为高亮状态。
+| collapse   | 折叠效果 | 手风琴折叠效果
+| carousel   | 图片轮播 | 会封装几种情况：带有缩略图、带数字、带上下一张按钮等
+| grid       | 列表操作 | 列表排序、拖拽、可编辑等
+| dropdown   | 下拉列表 | 模拟下拉框
+| win        | 窗体相关 | window窗体操作
+| mask       | 公用遮罩 | 公共的遮罩层，可提供几种背景：白色、黑色、半透明、带斜线等
 
-### ui.mask
-遮罩
 
-### ui.loading
-加载
-
-### ui.dialog
-弹层
-
-### ui.alert
-警告
-
-### ui.tips
-提示信息
-
-### ui.popover
-气泡提示
-
-### ui.button
-按钮
-
-### ui.nav
-导航
-
-### ui.breadcrumb
-面包屑
-
-### ui.pages
-分页
-
-### ui.dropdown
-下拉框
-
-### ui.scrollspy
-滚动监听
-
-### ui.tab
-标签页
-
-### ui.collapse
-折叠
-
-### ui.carousel
-轮播
-
-### ui.grid
-列表
-
-### ui.userInfo
-用户信息
-
-### ui.calendar
-日历
-
-### ui.resizable
-调整大小
-
-### ui.preview
-预览组件
 
 ## 插件
