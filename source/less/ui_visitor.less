@@ -1,0 +1,33 @@
+/**
+ * ui_visitor.less
+ * 最近访客
+ */
+@import "variables.less";
+@import "base.less";
+@import "reset.less";
+ul li{
+	display: inline-block;
+	zoom: 1;
+	width: 32%;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 12px;
+}
+.stupic{
+	width:50px;
+	text-align:center;
+	font-size:@f12;
+	line-height:@hl20;
+	a{
+		img{
+			width:50px;
+			height:50px;
+		}
+	}
+	.latesttime{
+		color:darken(@g3,-50%);
+		white-space: nowrap;
+		overflow:hidden;
+	}
+}

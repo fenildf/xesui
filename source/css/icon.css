@@ -17,6 +17,7 @@
  *fl:font-family:"Lucida Console";
  *fs:font-family:"宋体";
  *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
  *------------------------------------
  */
 /**
@@ -114,7 +115,6 @@
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
-  background-position: 20px 20px;
   background-repeat: no-repeat;
 }
 /**
@@ -152,7 +152,9 @@
  *--------------------------------------------
  *课程列表，课程动态，课程评论，购物车推荐课程
  *icon_chevron_right:老师轮播图右侧按钮;
+ *icon_chevron_right_reverse:老师轮播图右侧变暗按钮;
  *icon_chevron_left:老师轮播图左侧按钮;
+ *icon_chevron_left_reverse:老师轮播图左侧变亮按钮;
  *icon_yellow_sign:课程标题橙色标记
  *icon_thumbs_up:课程功能区赞图标;
  *icon_rmb:课程功能区价格图标;
@@ -165,7 +167,11 @@
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
+<<<<<<< HEAD
  *icon_info_search:警告框图标;
+=======
+ *icon_info_search:搜索图标
+>>>>>>> eafd5bf266c09c555e61374d6ce97e9749eaacbe
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -198,6 +204,11 @@
 .icon_forward {
   width: 150px;
   height: 36px;
+}
+.icon_follow_add {
+  width: 14px;
+  height: 14px;
+  opacity: 0.5;
 }
 .icon_new {
   background-position: 0 0;
@@ -271,6 +282,12 @@
 .icon_chevron_left {
   background-position: -75px -200px;
 }
+.icon_chevron_right_reverse {
+  background-position: -75px -251px;
+}
+.icon_chevron_left_reverse {
+  background-position: -75px -275px;
+}
 .icon_yellow_sign {
   background-position: -127px -211px;
 }
@@ -303,12 +320,15 @@
 }
 .icon_info_search {
   background-position: -50px 0;
+<<<<<<< HEAD
 }
 .icon_follow_add {
   background-position: 0 0;
+=======
+>>>>>>> eafd5bf266c09c555e61374d6ce97e9749eaacbe
 }
-.icon_follow_cancel {
-  background-position: 0 0;
+.icon_follow_add {
+  background-position: -50px -177px;
 }
 .icon_coursecard {
   background-position: -123px -375px;
@@ -321,4 +341,10 @@
 }
 .icon_forward {
   background-position: -127px -366px;
+}
+.icon_arrow_up {
+  background-position: -50px -200px;
+}
+.icon_arrow_down {
+  background-position: -50px -225px;
 }

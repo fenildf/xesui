@@ -62,6 +62,7 @@ a {
  *fl:font-family:"Lucida Console";
  *fs:font-family:"宋体";
  *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
  *------------------------------------
  */
 /**
@@ -158,10 +159,10 @@ a {
   line-height: 22px;
 }
 .list_blue a {
-  color: #0078b0;
+  color: #329bca;
 }
 .list_blue a:hover {
-  color: #0078b0;
+  color: #329bca;
 }
 .list_black a {
   color: #333333;
