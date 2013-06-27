@@ -1,4 +1,166 @@
 /**
+ * ui_follow.less 公用样式
+ */
+/**
+ * Button 公用样式
+ */
+/**
+ * Base style
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+.btn {
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.btn_text {
+  border: none;
+  background: none;
+}
+/**
+ * 按钮按大小分类
+ * large:10px 20px;
+ * small:5px 5px;
+ * medium:5px 20px;
+ */
+.btn_large {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.btn_small {
+  padding: 5px 5px;
+}
+.btn_medium {
+  padding: 5px 20px;
+}
+/**
+ * 按钮按颜色分类
+ * gray：取消按钮，
+ * red：提交类按钮以及课程列表听课按钮激活状态
+ * blue：页面按钮
+ * orange:关注按钮;
+ */
+.btn_gray {
+  border: 1px solid #cfcfcf;
+  background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
+}
+.btn_red {
+  color: #ffffff;
+  border: 1px solid #880000;
+  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+}
+.btn_blue {
+  color: #ffffff;
+  border: 1px solid #377ece;
+  background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  background: -moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+}
+.btn_sky {
+  color: #ffffff;
+  border: 1px solid #339afe;
+  background-color: #339afe;
+}
+.btn_orange {
+  color: #ffffff;
+  border: 1px solid #ff870f;
+  background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
+  background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
+}
+/**
+ * 按钮按功能分类(默认样式)
+ * 
+ */
+.btn_disable {
+  color: #eee;
+  border: 1px solid #c5c5c5;
+  text-shadow: 1px 0px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
+
+}
+/**
  * Button 公用样式
  */
 /**
@@ -113,7 +275,6 @@
   text-align: center;
   vertical-align: top;
   margin-top: 1px;
-  text-indent: -9999em;
   background-image: url("../img/icon.png");
   background-repeat: no-repeat;
 }
@@ -169,11 +330,7 @@
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
-<<<<<<< HEAD
- *icon_info_search:警告框图标;
-=======
  *icon_info_search:搜索图标
->>>>>>> eafd5bf266c09c555e61374d6ce97e9749eaacbe
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -322,12 +479,6 @@
 }
 .icon_info_search {
   background-position: -50px 0;
-<<<<<<< HEAD
-}
-.icon_follow_add {
-  background-position: 0 0;
-=======
->>>>>>> eafd5bf266c09c555e61374d6ce97e9749eaacbe
 }
 .icon_follow_add {
   background-position: -50px -177px;
@@ -355,4 +506,53 @@
 }
 .icon_square_gray {
   background-position: -50px -75px;
+}
+.ui_follow {
+  color: #666666;
+  padding: 2px 5px;
+  display: inline-block;
+  border: 1px solid #cfcfcf;
+  background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
+}
+.ui_follow em {
+  font-weight: bold;
+  padding-right: 3px;
+}
+.ui_follow a {
+  color: #329bca;
+  padding-left: 2px;
+}
+.ui_follow .addsucess {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  opacity: 0.5;
+  background-position: -50px -177px;
+}
+.add {
+  text-decoration: none;
+  vertical-align: top;
+}
+.add:hover {
+  color: #ffffff;
+  border: 1px solid #ff870f;
+  background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
+  background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
+}
+.add em {
+  font-family: "verdana";
+  font-size: 12px;
+}
+.hidden {
+  color: #b3b3b3;
 }

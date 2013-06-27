@@ -1,5 +1,8 @@
 /**
- * Button 公用样式
+ * *name.css
+ *ui_username
+ *用户，年级名称加"V"
+ *默认为.ui_username小V，大小V分为BLUE(.b)以及YELLOW(.y)两种样式
  */
 /**
  * Colors
@@ -105,6 +108,9 @@
  *tborder:table-border
  *----------------------------------------
  */
+/**
+ * Button 公用样式
+ */
 .icon {
   display: inline-block;
   width: 20px;
@@ -113,7 +119,6 @@
   text-align: center;
   vertical-align: top;
   margin-top: 1px;
-  text-indent: -9999em;
   background-image: url("../img/icon.png");
   background-repeat: no-repeat;
 }
@@ -169,11 +174,7 @@
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
-<<<<<<< HEAD
- *icon_info_search:警告框图标;
-=======
  *icon_info_search:搜索图标
->>>>>>> eafd5bf266c09c555e61374d6ce97e9749eaacbe
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -322,12 +323,6 @@
 }
 .icon_info_search {
   background-position: -50px 0;
-<<<<<<< HEAD
-}
-.icon_follow_add {
-  background-position: 0 0;
-=======
->>>>>>> eafd5bf266c09c555e61374d6ce97e9749eaacbe
 }
 .icon_follow_add {
   background-position: -50px -177px;
@@ -355,4 +350,60 @@
 }
 .icon_square_gray {
   background-position: -50px -75px;
+}
+.ui_username,
+.ui_username_large {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0px;
+}
+.ui_username .b {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  background-position: -99px 0;
+}
+.ui_username .y {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  background-position: -100px -26px;
+}
+.ui_username_large .b {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  width: 23px;
+  background-position: -100px -50px;
+}
+.ui_username_large .y {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  width: 23px;
+  background-position: -100px -75px;
 }
