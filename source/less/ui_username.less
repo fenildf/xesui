@@ -1,0 +1,35 @@
+/**
+ * *name.css
+ *ui_username
+ *用户，年级名称加"V"
+ *默认为.ui_username小V，大小V分为BLUE(.b)以及YELLOW(.y)两种样式
+ */
+@import "variables.less";
+@import "icon.less";
+.ui_username,
+.ui_username_large
+{
+	display: inline-block;
+	vertical-align: @t;
+	padding-left:@pad0;
+}
+.ui_username{
+	.b{
+		.icon;
+		.icon_bverify;
+	}
+	.y{
+		.icon;
+		.icon_yverify; 
+	}
+}
+.ui_username_large{
+	.b{
+		.icon;
+		.icon_bbverify;
+	}
+	.y{
+		.icon;
+		.icon_byverify;
+	}
+}

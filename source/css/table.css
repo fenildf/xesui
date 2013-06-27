@@ -18,6 +18,7 @@
  *fl:font-family:"Lucida Console";
  *fs:font-family:"宋体";
  *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
  *------------------------------------
  */
 /**
@@ -132,7 +133,7 @@ table {
   border-bottom: 1px solid #e2e2e2;
 }
 .table td a {
-  color: #0078b0;
+  color: #329bca;
   text-decoration: none;
 }
 /**

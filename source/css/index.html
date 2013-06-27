@@ -8,13 +8,23 @@
 <link href="list.css" rel="stylesheet" type="text/css" />
 <link href="nav.css" rel="stylesheet" type="text/css" />
 <link href="search.css" rel="stylesheet" type="text/css" />
+<link href="ui_follow.css" rel="stylesheet" type="text/css" />
+<link href="ui_username.css" rel="stylesheet" type="text/css" />
+<link href="ui_visitor.css" rel="stylesheet" type="text/css" />
 <style>
 	.video{
 		margin: 50px 0 0 150px;
+		padding:100px 0; 
 	}
 	.tab{
 		width: 500px;
 		margin: 0 auto;
+	}
+	li{
+		list-style: none;
+	}
+	.navright{
+		width: 190px;
 	}
 </style>
 </head>
@@ -105,13 +115,66 @@
 			<div class="search_tips">刘明文字刘明文字刘明“<strong class="red">刘明文字</strong>”刘明文字刘明文字刘明文字刘明文字刘明文字
 		</div>
 		<div style="height:50px;"></div>
-		<p ><i class="icon icon_coursecard  "></i>我的网校</p>
+		<p ><i class="icon icon_square_orange"></i>我的网校</p>
 		<div style="height:10px;"></div>
-		<div class="ui_follow ">
-		   <em class="icon icon_add"></em>关注
-		   <span>不关注<em class="icon icon_add"></em></span>
-		</div>
+			<div class="ui_follow add">
+				  <em>+</em>关注
+			</div>
 
+			<div class="ui_follow">
+				  <em class="addsucess"></em>已关注
+				  <i class="line">|</i>
+				  <a href="#" class="btn_cancel">取消</a>
+			</div>
+
+			<div class="ui_follow hidden">
+				<em class="addsucess"></em>已关注
+			</div>
+		<div style="height:10px;"></div>
+
+	<a class="ui_username ui_username_large">初一<i class="b"></i></a>
+	<a class="ui_username">初一<i class="y"></i></a>
+		<div style="height:10px;"></div>
+		<div class="navright">
+		<ul>
+			<li>
+				<div class="stupic">
+					<a href="#">
+						<img src="../img/stupic.png" alt="">
+						<span>李四</span>
+					</a>
+					<div class="latesttime">10个小时后</div>
+				</div>
+			</li>
+			<li>
+				<div class="stupic">
+					<a href="#">
+						<img src="../img/stupic.png" alt="">
+						<span>李四</span>
+					</a>
+					<div class="latesttime">10个小时后</div>
+				</div>
+			</li>
+			<li>
+				<div class="stupic">
+					<a href="#">
+						<img src="../img/stupic.png" alt="">
+						<span>李四</span>
+					</a>
+					<div class="latesttime">10个小时后</div>
+				</div>
+			</li>
+			<li>
+				<div class="stupic">
+					<a href="#">
+						<img src="../img/stupic.png" alt="">
+						<span>李四</span>
+					</a>
+					<div class="latesttime">10个小时后</div>
+				</div>
+			</li>
+		</ul>
+		</div>
 	</div>
 </div>
 </body>

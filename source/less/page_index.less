@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+
+@import "icon.less";
+@import "form.less";
+@import "name.less";
+@import "button.less";
+/*图标，表单，按钮*/
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+/*头部，内容，底部*/
+
+@import "picture.less";
+@import "index_login.less";
+@import "title.less";
+@import "ui_feed.less";
+@import "ui_avatar.less";
+@import "list.less";
+
+/*================/ 首页 /========================*/
+ 
+.content_box {overflow: hidden;}
+.content_box .feed_text {width: 570px;}
+.content_box .border_none {border: 0;} 
+
+ul.index_notice {
+	overflow: hidden;padding: 10px 0;
+	li {
+		height: 30px;line-height: 30px;padding-left: 10px;overflow: hidden; font-size: @f14;
+		i {display:inline-block;font-size: @f18;padding-right: 10px;}
+	}
+}
+	
+

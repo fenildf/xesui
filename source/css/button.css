@@ -17,6 +17,7 @@
  *fl:font-family:"Lucida Console";
  *fs:font-family:"宋体";
  *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
  *------------------------------------
  */
 /**
@@ -124,9 +125,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.b {
-  font-weight: bold;
-}
 .tc {
   text-align: center;
 }
@@ -138,6 +136,20 @@
 }
 .red {
   color: #cc0000;
+}
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
 }
 /**
  * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
@@ -155,11 +167,6 @@
  *----------------------------------------------------
  */
 /**
- * 
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
  * 可以换背景颜色
  * 可以在less文件中使用background-color(@color)调用
  *----------------------------------------------------
@@ -169,15 +176,21 @@
  * 可以在less文件中使用border-color(@color)调用
  *----------------------------------------------------
  */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
 .btn {
   display: inline-block;
-  font-size: 12px;
-  padding: 5px 20px;
-  line-height: 20px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  position: relative;
   text-decoration: none;
   border-radius: 3px;
   -moz-border-radius: 3px;

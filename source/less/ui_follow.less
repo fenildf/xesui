@@ -1,0 +1,38 @@
+/**
+ * ui_follow.less 公用样式
+ */
+@import	"button.less";
+@import "icon.less";
+.ui_follow{
+	color:@g3+#333333;
+	padding:2px 5px;
+	display:inline-block;
+	.btn_gray;
+	em{
+		font-weight:bold;
+		padding-right:3px;
+	}
+	a{
+		color:@linkcolor;   
+	    padding-left:2px;
+	}
+	.addsucess{
+		.icon;
+		.icon_follow_add;
+	}
+	}
+	.add{
+		text-decoration: none;
+		vertical-align:top;
+		&:hover{
+			color:@white;
+			.btn_orange;
+		}
+		em{
+			font-family:@fd; 
+			font-size:12px;
+		}
+	}
+	.hidden{
+		color:darken((@g3+#333333), -30%)
+	}

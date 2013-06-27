@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
+    <link href="../css/page_teacher.css" type="text/css" rel="stylesheet" />
 
 <body>
 	<!--头部  start-->
@@ -23,12 +23,18 @@
 				<li><a href="#">逛论坛</a></li>
 			</ul>
 			<div class="search">
-				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师"> <button>搜索</button>
+				<input type="text" name="q" id="" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search"> <button class="head_btn_search">搜索</button>
 			</div>
+			<div class="shopcar"><a href=""><em class="icon icon_shopping">购物车</em></a></div>
 			<ul class="topbar">
-				<li><a href=""><em class="icon icon_car">购物车</em></a></li>
-				<li><a href="">登录</a><i>|</i></li>
-				<li><a href="">注册</a></li>
+				<li class=""><a href="##">登录</a></li>
+				<li class=""><i class="line">|</i></li>
+				<li><a href="##">注册</a></li>
+			</ul>
+			<ul class="loginbar hidden">
+				<li class=""><em class="icon icon_shopping">购物车</em></li>
+				
+				<li><em class="icon icon_shopping">购物车</em></li>
 			</ul>
 		</div>
 	</div>
@@ -50,17 +56,27 @@
 						<p class="more">共有<strong>84</strong>名老师
 					</div>
 					<dl class="filter_item">
-						<dt>学科</dt>
+						<dt>年级</dt>
 						<dd>
-							<a>数学</a>
-							<a>语文</a>
+							<a href="#" class="current">一年级</a>
+							<a href="#">二年级</a>
+							<a href="#">三年级</a>
+							<a href="#">四年级</a>
+							<a href="#">五年级</a>
+							<a href="#">六年级</a>
+							<a href="#">初一</a>
+							<a href="#">初二</a>
+							<a href="#">初三</a>
+							<a href="#">高一</a>
+							<a href="#">高二</a>
+							<a href="#">高三</a>
 						</dd>
 					</dl>
 					<dl class="filter_item">
 						<dt>学科</dt>
 						<dd>
-							<a>数学</a>
-							<a>语文</a>
+							<a href="#" class="current">数学</a>
+							<a href="#">语文</a>
 						</dd>
 					</dl>
 					
@@ -165,11 +181,42 @@
 							</div>
 							<div class="feed_detail">
 		                		<a href="" class="ui_username">
-		                			初一年级 <i>V</i><span>发布了一份资料</span>
-		                		</a>
+		                			初一年级 <i>V</i>
+		                		</a><span>发布了一份资料</span>
 		                		<div class="feed_text">
 		                			<a href="">秀情老师数学加油站系列讲座第十二</a>
 		                		</div>
+		                		<div class="feed_bar"><span>5小时前</span></div>
+		                	</div>
+						</div>
+						<div class="ui_feed">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="feed_detail">
+		                		<a href="" class="ui_username">
+		                			初一年级 <i>V</i>
+		                		</a><span>发布了一份资料</span>
+		                		<div class="feed_text">
+		                			<a href="">秀情老师数学加油站系列讲座第十二</a>
+		                		</div>
+		                		<div class="feed_bar"><span>5小时前</span></div>
+		                	</div>
+						</div>
+						<div class="ui_feed">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="feed_detail">
+		                		<a href="" class="ui_username">
+		                			初一年级 <i>V</i>
+		                		</a><span>发布了一份资料</span>
+		                		<div class="feed_text">
+		                			<a href="">秀情老师数学加油站系列讲座第十二</a>
+		                		</div>
+		                		<div class="feed_bar"><span>5小时前</span></div>
 		                	</div>
 						</div>
 						<!--ui_feed end -->
@@ -189,18 +236,18 @@
 
 	<div id="footer">
             <div class="foot_service">
-            	<a class="service_share"> <strong>学习经验分享</strong>
+            	<a class="service_share"> <span>学习经验分享</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
-            	<a class="service_live"> <strong>直播学习指导</strong>
+            	<a class="service_live"> <span>直播学习指导</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_system">
-            		<strong>专业的学习规划体系</strong>
+            		<span>专业的学习规划体系</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_interaction">
-            		<strong>有趣的互动视频</strong>
+            		<span>有趣的互动视频</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>

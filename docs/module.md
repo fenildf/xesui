@@ -1,10 +1,13 @@
 #模块组件
 
 ## 模块
-小的功能模块
+
+> 没有前缀，直接挂接到xue方法下
+> 
+> 小的功能模块
 
 
-|     name     |  feature  | 描述
+|     name     |  feature  | description
 |:------------:| --------- |--------------------------
 | cookie       | Cookie操作 | set / get / del 方法
 | form         | 表单操作   | 全选/反选，获取or设置单选/多选框的值…
@@ -37,67 +40,40 @@
 
 
 ## 组件
-根据功能模块加上效果拼凑出来的组件
+
+> 挂接到xue.ui下面（以ui前缀命名）
+> 
+> 根据功能模块加上效果拼凑出来的组件
+
+|    name    |  feature  |    description
+|:----------:| --------- | -----------------------------
+| loading    | 加载状态 | 公用的模块、组件、页面加载loading状态
+| dialog     | 模拟弹窗 | 弹层封装，可扩展：alert、popover、
+| tips       | 信息提示 | 信息提示，可以是鼠标划过，可以是页面加载等，分为：error、success、info
+| button     | 按钮组件 | 
+| nav        | 导航组件 | 导航：tabs、pills、list、text等
+| breadcrumb | 面包屑类 | 
+| tab        | 页签切换 | tab页签切换效果，可以放到nav-tab中
+| userinfo   | 用户信息 | 用户信息展示：ui_userinfo / ui_username / ui_avatar 
+| calendar   | 日历组件 | 封装后的日历控件，在请假中会有体现
+| resizable  | 调整尺寸 | 给指定元素增加调节尺寸的方法，依赖于dragdrop模块
+| preview    | 预览组件 | 整站的图片预览模块：如果设置外框则宽度不能超过外框，高度成比例自适应
+| pages      | 页面操作 | 
+| scrollspy  | 滚动监听 | 根据滚动的位置自动更新导航条中相应的导航项。
+| collapse   | 折叠效果 | 手风琴折叠效果
+| carousel   | 图片轮播 | 会封装几种情况：带有缩略图、带数字、带上下一张按钮等
+| grid       | 列表操作 | 列表排序、拖拽、可编辑等
+| dropdown   | 下拉列表 | 模拟下拉框
+| win        | 窗体相关 | window窗体操作
+| mask       | 公用遮罩 | 公共的遮罩层，可提供几种背景：白色、黑色、半透明、带斜线等
 
 
-### ui.mask
-遮罩
-
-### ui.loading
-加载
-
-### ui.dialog
-弹层
-
-### ui.alert
-警告
-
-### ui.tips
-提示信息
-
-### ui.popover
-气泡提示
-
-### ui.button
-按钮
-
-### ui.nav
-导航
-
-### ui.breadcrumb
-面包屑
-
-### ui.pages
-分页
-
-### ui.dropdown
-下拉框
-
-### ui.scrollspy
-滚动监听
-
-### ui.tab
-标签页
-
-### ui.collapse
-折叠
-
-### ui.carousel
-轮播
-
-### ui.grid
-列表
-
-### ui.userInfo
-用户信息
-
-### ui.calendar
-日历
-
-### ui.resizable
-调整大小
-
-### ui.preview
-预览组件
 
 ## 插件
+
+> 挂接到xue.plus下面（以plus前缀命名）
+> 
+> 根据模块、组件编写出来的插件；
+> 
+> 需要注册到xue.plus类中
+

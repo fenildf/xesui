@@ -1,0 +1,368 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:40:19
+ * @version $Id$  头像
+ */
+/**
+ * Button 公用样式
+ */
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  text-indent: -9999em;
+  background-image: url("../img/icon.png");
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+}
+/**
+ *icon按钮样式
+ * <em>于icon图片类，<i>用于文字类
+ *
+ *认证加V以及顶部图标
+ *icon_bverify：蓝V
+ *icon_bbverify：大蓝V
+ *icon_yverify：黄V
+ *icon_byverify：大黄V
+ *icon_new:有新消息状态;
+ *icon_shopping：顶部购物图标
+ *icon_messages：顶部信息图标
+ *icon_settsings：顶部设置图标
+ *-------------------------------------------
+ *nav-list图标
+ *icon_home:我的网校;
+ *icon_star:我的收藏;
+ *icon_heart:我的关注; 
+ *icon_th:我的错题本; 
+ *icon_exam:我的考试;
+ *icon_report:效果报告;
+ *icon_schedule:课程表;
+ *icon_shield:我的挑战;
+ *icon_diamond:金币兑礼;
+
+ *--------------------------------------------
+ *个人中心头部icons
+ *icon_lv:个人学力;
+ *icon_user:个人学习经历;
+ *icon_orders:个人订单;
+ *icon_coins:个人金币;
+ *icon_card:激活听课证;
+ *--------------------------------------------
+ *课程列表，课程动态，课程评论，购物车推荐课程
+ *icon_chevron_right:老师轮播图右侧按钮;
+ *icon_chevron_left:老师轮播图左侧按钮;
+ *icon_yellow_sign:课程标题橙色标记
+ *icon_thumbs_up:课程功能区赞图标;
+ *icon_rmb:课程功能区价格图标;
+ *icon_gray_user:课程功能区总学员数图标;
+ *icon_clock:课程功能区请假按钮;
+ *icon_word:课程功能区资料按钮;
+ *icon_horn:课程功能区续保按钮;
+ *icon_manuscript:课程功能区考试按钮;
+ *icon_tv:课程功能区直播按钮;
+ *--------------------------------------------
+ *alert图标
+ *icon_info_sign:警告框图标;
+ *icon_info_search:警告框图标;
+ *-------------------------------------------
+ *关注按钮
+ *icon_add：关注添加图标
+ *icon_gray_add：未关注图标
+ *-------------------------------------------
+ *icon_coursecard:课程卡大图标;
+ *icon_guide:新手指南;
+ *icon_courseselect:怎样选课图标;
+ *icon_forward:去看看按钮;
+ *
+ */
+.icon_bbverify,
+.icon_byverify {
+  width: 23px;
+}
+.icon_lv {
+  width: 30px;
+  height: 15px;
+}
+.icon_yellow_sign {
+  width: 35px;
+  height: 17px;
+}
+.icon_coursecard,
+.icon_courseselect,
+.icon_guide {
+  width: 238px;
+  height: 41px;
+}
+.icon_forward {
+  width: 150px;
+  height: 36px;
+}
+.icon_new {
+  background-position: 0 0;
+}
+.icon_shopping {
+  background-position: -26px -75px;
+}
+.icon_message {
+  background-position: -26px -99px;
+}
+.icon_settings {
+  background-position: -23px -124px;
+}
+.icon_bverify {
+  background-position: -99px 0;
+}
+.icon_bbverify {
+  background-position: -100px -50px;
+}
+.icon_yverify {
+  background-position: -100px -26px;
+}
+.icon_byverify {
+  background-position: -100px -75px;
+}
+.icon_home {
+  background-position: 0 -24px;
+}
+.icon_star {
+  background-position: 0 -50px;
+}
+.icon_heart {
+  background-position: 0 -75px;
+}
+.icon_th {
+  background-position: 0 0;
+}
+.icon_exam {
+  background-position: 0 0;
+}
+.icon_report {
+  background-position: 0 0;
+}
+.icon_schedule {
+  background-position: 0 0;
+}
+.icon_user {
+  background-position: 0 -100px;
+}
+.icon_shield {
+  background-position: 0 -125px;
+}
+.icon_diamond {
+  background-position: 0 -150px;
+}
+.icon_lv {
+  background-position: -127px 0;
+}
+.icon_orders {
+  background-position: -50px -125px;
+}
+.icon_coins {
+  background-position: -22px -25px;
+}
+.icon_card {
+  background-position: -24px -50px;
+}
+.icon_chevron_right {
+  background-position: -75px -225px;
+}
+.icon_chevron_left {
+  background-position: -75px -200px;
+}
+.icon_yellow_sign {
+  background-position: -127px -211px;
+}
+.icon_thumbs_up {
+  background-position: -69px -48px;
+}
+.icon_rmb {
+  background-position: -65px 4px;
+}
+.icon_gray_user {
+  background-position: -71px -24px;
+}
+.icon_clock {
+  background-position: -75px -75px;
+}
+.icon_word {
+  background-position: -75px -100px;
+}
+.icon_horn {
+  background-position: -75px -125px;
+}
+.icon_manuscript {
+  background-position: -75px -150px;
+}
+.icon_tv {
+  background-position: -75px -175px;
+}
+.icon_info_sign {
+  background-position: -75px -75px;
+}
+.icon_info_search {
+  background-position: -50px 0;
+}
+.icon_follow_add {
+  background-position: 0 0;
+}
+.icon_follow_cancel {
+  background-position: 0 0;
+}
+.icon_coursecard {
+  background-position: -123px -375px;
+}
+.icon_guide {
+  background-position: -123px -420px;
+}
+.icon_courseselect {
+  background-position: -123px -466px;
+}
+.icon_forward {
+  background-position: -127px -366px;
+}
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *------------------------------------
+ */
+/**
+ * padding值设定
+ *
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@margin0, @margin5
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用 eg:width:20px=20*@w1;
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f18:font-size:18px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *ti:text-index:-9999em;
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ * hl150:high-light:150%;
+ * hl180:high-light:180%;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+.ui_avatar {
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.ui_avatar .prev,
+.ui_avatar .next {
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: 85px;
+}
+.ui_avatar .prev {
+  left: 0;
+}
+.ui_avatar .next {
+  right: 0;
+}
+.ui_avatar ul.avatar_items {
+  overflow: hidden;
+}
+.ui_avatar ul.avatar_items li a {
+  display: block;
+  text-align: center;
+  line-height: 180%;
+  color: #666666;
+}
+.ui_avatar ul.avatar_items li img {
+  width: 50px;
+  height: 50px;
+}
+.ui_avatar .userpic img {
+  width: 50px;
+  height: 50px;
+}

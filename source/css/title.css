@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:24:01
+ * @version $Id$
+ */
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *------------------------------------
+ */
+/**
+ * padding值设定
+ *
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@margin0, @margin5
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用 eg:width:20px=20*@w1;
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f18:font-size:18px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *ti:text-index:-9999em;
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ * hl150:high-light:150%;
+ * hl180:high-light:180%;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+.side_header {
+  height: 42px;
+  line-height: 42px;
+}
+.side_header span {
+  color: #999999;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  text-align: left;
+}
+.border_blue {
+  border-bottom: 1px solid #0076b3;
+}
+.border_blue span {
+  float: right;
+  color: #0076b3;
+  text-align: right;
+  font-size: 20px;
+}
+.main_header {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.main_header .nav_links {
+  width: 645px;
+  height: 42px;
+  overflow: hidden;
+}
+.main_header .nav_links li {
+  float: left;
+  display: inline;
+  line-height: 42px;
+}
+.main_header .nav_links li a {
+  color: #006699;
+  font-size: 14px;
+}
+.main_header .nav_links li.current a {
+  font-weight: bold;
+}
+.main_header .nav_links li i {
+  font-style: normal;
+  color: #ccc;
+  display: inline-block;
+  padding: 0 8px;
+}
+.border_blue .nav_links {
+  width: 645px;
+  height: 42px;
+  overflow: hidden;
+}
+.border_blue .nav_links li {
+  float: left;
+  display: inline;
+  line-height: 42px;
+}
+.border_blue .nav_links li a {
+  color: #006699;
+  font-size: 14px;
+}
+.border_blue .nav_links li.current a {
+  font-weight: bold;
+}
+.border_blue .nav_links li i {
+  font-style: normal;
+  color: #ccc;
+  display: inline-block;
+  padding: 0 8px;
+}
+.layout_body .border_blue span {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.header_setting {
+  margin: 10px 0 0 0;
+}
