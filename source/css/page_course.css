@@ -485,13 +485,13 @@ table {
   background-position: -127px -211px;
 }
 .icon_thumbs_up {
-  background-position: -75px -49px;
+  background-position: -69px -48px;
 }
 .icon_rmb {
-  background-position: -70px 0;
+  background-position: -65px 4px;
 }
 .icon_gray_user {
-  background-position: -75px -25px;
+  background-position: -71px -24px;
 }
 .icon_clock {
   background-position: -75px -75px;
@@ -967,9 +967,9 @@ h1.logo a {
   line-height: 42px;
 }
 .side_header span {
-  color: #999;
-  font-size: 20px;
-  font-family: 微软雅黑;
+  color: #999999;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
   text-align: left;
 }
 .border_blue {
@@ -979,6 +979,7 @@ h1.logo a {
   float: right;
   color: #0076b3;
   text-align: right;
+  font-size: 20px;
 }
 .main_header {
   overflow: hidden;
@@ -1285,8 +1286,8 @@ ul.filter_handle_items {
 }
 .course_detail .course_title {
   font-size: 18px;
-  font-family: 微软雅黑;
-  color: #333;
+  font-family: "Microsoft YaHei";
+  color: #333333;
   font-weight: normal;
   padding: 7px 0;
 }
@@ -1295,47 +1296,40 @@ ul.filter_handle_items {
   width: 35px;
   line-height: 17px;
   background: url(/xesui/src/img/icon_1.png) no-repeat;
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   padding-left: 3px;
 }
 .course_detail .course_title strong {
-  color: #cc0000;
   font-size: 14px;
 }
 .course_detail .course_info {
   height: 25px;
-  color: #999;
+  color: #999999;
   font-size: 12px;
-}
-.course_detail .course_info strong {
-  color: #cc0000;
 }
 .course_detail .course_func {
-  line-height: 30px;
+  margin-top: 5px;
 }
-.course_detail .course_func button {
+.course_detail .course_func .btn_audition {
   float: left;
   width: 75px;
-  height: 27px;
-  line-height: 27px;
-  border-radius: 2px;
-  background: #cc0000;
-  background: -webkit-linear-gradient(top, #f8f8f8, #f4f2f3);
-  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+  background: url(/xesui/src/img/btn_course.png) no-repeat;
+  text-indent: 20px;
   color: #cc0000;
-  font-family: 微软雅黑;
-  cursor: pointer;
-  text-shadow: 2px 3px 5px #f1f1f1;
-  border: 1px solid #cecece;
+  text-decoration: none;
+}
+.course_detail .course_func .btn_audition:hover {
+  background: url(/xesui/src/img/btn_course_hover.png) no-repeat;
+  color: #ffffff;
 }
 .course_detail .course_func span {
   float: left;
   font-size: 14px;
   margin: 0 10px;
-}
-.course_detail .course_func span strong {
-  color: #cc0000;
+  color: #999999;
 }
 .course_detail .course_func i {
   float: left;
@@ -1352,11 +1346,10 @@ ul.filter_handle_items {
 }
 ul.notice_list {
   overflow: hidden;
-  padding: 10px 0;
 }
 ul.notice_list li {
-  height: 30px;
-  line-height: 30px;
+  height: 25px;
+  line-height: 25px;
   padding-left: 10px;
   overflow: hidden;
   font-size: 12px;
