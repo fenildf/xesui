@@ -4,7 +4,7 @@
 小的功能模块
 
 
-|     name     |  feature  | 描述
+|     name     |  feature  | description
 |:------------:| --------- |--------------------------
 | cookie       | Cookie操作 | set / get / del 方法
 | form         | 表单操作   | 全选/反选，获取or设置单选/多选框的值…
@@ -39,6 +39,27 @@
 ## 组件
 根据功能模块加上效果拼凑出来的组件
 
+|    name    |    feature    |    description
+|:----------:| ------------- | -----------------------------
+| loading    | 加载状态
+| dialog     | 模拟弹窗
+| tips       | 信息提示
+| button     | 按钮组件
+| nav        | 导航组件
+| breadcrumb | 
+| tab        | 页签切换
+| userinfo   | 用户信息
+| calendar   | 日历组件
+| resizable  | 
+| preview    |
+| pages      |
+| scrollspy  |
+| collapse   |
+| carousel   |
+| grid       |
+| dropdown   |
+| win        |
+| mask       |
 
 ### ui.mask
 遮罩
