@@ -5,13 +5,13 @@
 
 name  |  pages  |  status
 ------|---------|----------
-首   页|    1    |  <input type="checkbox">
-课程列表|    1   | <input type="checkbox">
-教师排行|    1   | <input type="checkbox">
-登录注册|    1   | <input type="checkbox">
-课程卡  |    1   | <input type="checkbox">
-帮助中心|    N   | <input type="checkbox">
-错误页面|    1   | <input type="checkbox">
+首   页|    1    |  ✅
+课程列表|    1   | ❏
+教师排行|    1   | ◽
+登录注册|    1   | ◽
+课程卡  |    1   | ◽
+帮助中心|    N   | ✓
+错误页面|    1   | ✔
 
 
 ## 我的网校
