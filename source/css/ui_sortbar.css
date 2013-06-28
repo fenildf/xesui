@@ -21,6 +21,7 @@
  *fl:font-family:"Lucida Console";
  *fs:font-family:"宋体";
  *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
  *------------------------------------
  */
 /**
@@ -123,7 +124,10 @@
   margin: 0 30px 0 5px;
 }
 .ui_sortbar li a {
-  color: #666;
+  color: #666666;
+}
+.ui_sortbar li a em {
+  margin-top: 14px;
 }
 .ui_sortbar li a.current {
   background: #4a9fdb;

@@ -6,12 +6,12 @@
 *    <li>1<a>中华人民共和国--学而思网校</a></li>
 *</ul ol>
 */
-/**
- * Reset文件
- */
-body {
-  font-size: 100%;
-  font-family: arial;
+@charset "UTF-8";
+/*///import reset.css*/
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
 }
 body,
 h1,
@@ -20,31 +20,115 @@ h3,
 h4,
 h5,
 h6,
+hr,
 p,
+blockquote,
+dl,
+dt,
+dd,
 ul,
-ol {
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
   margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 arial, tahoma, "\5b8b\4f53", sans-serif;
+}
+body {
+  _background-image: url(about:blank);
+  /*用浏览器空白页面作为背景*/
+
+  _background-attachment: fixed;
+  position: relative;
+  /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new,courier,monospace;
+}
+small {
+  font-size: 12px;
 }
 ul,
 ol {
-  padding-left: 0;
-  list-style-type: none;
+  list-style: none;
 }
 img {
-  display: block;
   border: 0;
+}
+a,
+a:link {
+  text-decoration: none;
+  color: #006699;
+}
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+  color: #cc0000;
+}
+a:active {
+  text-decoration: underline;
+  color: #F00;
+}
+ul,
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+strong {
+  color: #cc0000;
+  font-weight: normal;
+}
+button {
+  font-size: 100%;
+  border: 0;
+  cursor: pointer;
+}
+input,
+select,
+textarea {
+  font-size: 100%;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-button,
-input {
-  *overview: visiable;
-  line-height: normal;
-}
-a {
-  text-decoration: none;
 }
 /**
  * Colors

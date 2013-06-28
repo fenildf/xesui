@@ -138,6 +138,20 @@
 .red {
   color: #cc0000;
 }
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
+}
 /**
  * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
  * 可以在less文件中使用.border-radius(5px)调用

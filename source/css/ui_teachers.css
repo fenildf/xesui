@@ -20,7 +20,7 @@
 .trend,
 .student_num,
 .new_trend,
-.ui_follow {
+.follow_con {
   float: left;
   display: inline;
   text-align: center;
@@ -49,7 +49,7 @@
 .teacher_item .new_trend {
   width: 100px;
 }
-.teacher_item .ui_follow {
+.teacher_item .follow_con {
   width: 110px;
 }
 .teacher_item .num_one {

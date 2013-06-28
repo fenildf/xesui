@@ -25,11 +25,6 @@
   display: inline;
   margin-left: 10px;
 }
-.feed_detail .ui_username {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 25px;
-}
 .feed_detail .feed_text {
   line-height: 180%;
   color: #666;

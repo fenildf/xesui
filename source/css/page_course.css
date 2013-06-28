@@ -25,9 +25,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.b {
-  font-weight: bold;
-}
 .tc {
   text-align: center;
 }
@@ -70,11 +67,6 @@
  *----------------------------------------------------
  */
 /**
- * 
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
  * 可以换背景颜色
  * 可以在less文件中使用background-color(@color)调用
  *----------------------------------------------------
@@ -82,6 +74,16 @@
 /**
  * 可以换背景颜色
  * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用.alpha(opacity的值)调用
  *----------------------------------------------------
  */
 /*///import reset.css*/
@@ -223,6 +225,7 @@ table {
  *fl:font-family:"Lucida Console";
  *fs:font-family:"宋体";
  *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
  *------------------------------------
  */
 /**
@@ -324,7 +327,6 @@ table {
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
-  background-position: 20px 20px;
   background-repeat: no-repeat;
 }
 /**
@@ -360,10 +362,12 @@ table {
  *icon_coins:个人金币;
  *icon_card:激活听课证;
  *--------------------------------------------
- *课程列表，课程动态，课程评论，购物车推荐课程
+ *课程列表，课程动态，课程评论，购物车推荐课程;
  *icon_chevron_right:老师轮播图右侧按钮;
+ *icon_chevron_right_reverse:老师轮播图右侧变暗按钮;
  *icon_chevron_left:老师轮播图左侧按钮;
- *icon_yellow_sign:课程标题橙色标记
+ *icon_chevron_left_reverse:老师轮播图左侧变亮按钮;
+ *icon_yellow_sign:课程标题橙色标记;
  *icon_thumbs_up:课程功能区赞图标;
  *icon_rmb:课程功能区价格图标;
  *icon_gray_user:课程功能区总学员数图标;
@@ -372,10 +376,13 @@ table {
  *icon_horn:课程功能区续保按钮;
  *icon_manuscript:课程功能区考试按钮;
  *icon_tv:课程功能区直播按钮;
+ *icon_square_orange: 排行橘色图标;
+ *icon_square_gray:排行灰色图标;
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
- *icon_info_search:警告框图标;
+ *icon_info_search:搜索图标
+
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -409,6 +416,11 @@ table {
   width: 150px;
   height: 36px;
 }
+.icon_follow_add {
+  width: 14px;
+  height: 14px;
+  opacity: 0.5;
+}
 .icon_new {
   background-position: 0 0;
 }
@@ -422,7 +434,7 @@ table {
   background-position: -23px -124px;
 }
 .icon_bverify {
-  background-position: -99px 0;
+  background-position: -99px 2px;
 }
 .icon_bbverify {
   background-position: -100px -50px;
@@ -481,6 +493,12 @@ table {
 .icon_chevron_left {
   background-position: -75px -200px;
 }
+.icon_chevron_right_reverse {
+  background-position: -75px -251px;
+}
+.icon_chevron_left_reverse {
+  background-position: -75px -275px;
+}
 .icon_yellow_sign {
   background-position: -127px -211px;
 }
@@ -488,7 +506,7 @@ table {
   background-position: -69px -48px;
 }
 .icon_rmb {
-  background-position: -65px 4px;
+  background-position: -65px 3px;
 }
 .icon_gray_user {
   background-position: -71px -24px;
@@ -515,10 +533,7 @@ table {
   background-position: -50px 0;
 }
 .icon_follow_add {
-  background-position: 0 0;
-}
-.icon_follow_cancel {
-  background-position: 0 0;
+  background-position: -50px -177px;
 }
 .icon_coursecard {
   background-position: -123px -375px;
@@ -531,6 +546,18 @@ table {
 }
 .icon_forward {
   background-position: -127px -366px;
+}
+.icon_arrow_up {
+  background-position: -50px -200px;
+}
+.icon_arrow_down {
+  background-position: -50px -225px;
+}
+.icon_square_orange {
+  background-position: -47px -48px;
+}
+.icon_square_gray {
+  background-position: -47px -73px;
 }
 /**
  *From 公用样式
@@ -602,8 +629,7 @@ textarea::-webkit-input-placeholder {
   line-height: 20px;
   display: inline-block;
   vertical-align: bottom;
-  font-size: 12px;
-  font-family: "Microsoft YaHei";
+  font-size: 14px;
 }
 .ui_username_large {
   font-size: 20px;
@@ -878,6 +904,24 @@ h1.logo a {
 .advert {
   margin-top: 10px;
 }
+.mtop_10 {
+  margin-top: 10px;
+}
+.mtop_20 {
+  margin-top: 20px;
+}
+.mtop_30 {
+  margin-top: 30px;
+}
+.ptop_10 {
+  padding-top: 10px;
+}
+.ptop_20 {
+  padding-top: 20px;
+}
+.ptop_30 {
+  padding-top: 30px;
+}
 /**
  * 
  * authors alex liu (liuyanbin@xueersi.com)
@@ -1103,10 +1147,10 @@ h1.logo a {
   line-height: 22px;
 }
 .list_blue a {
-  color: #0078b0;
+  color: #329bca;
 }
 .list_blue a:hover {
-  color: #0078b0;
+  color: #329bca;
 }
 .list_black a {
   color: #333333;
@@ -1222,7 +1266,10 @@ ul.filter_handle_items {
   margin: 0 30px 0 5px;
 }
 .ui_sortbar li a {
-  color: #666;
+  color: #666666;
+}
+.ui_sortbar li a em {
+  margin-top: 14px;
 }
 .ui_sortbar li a.current {
   background: #4a9fdb;
@@ -1311,6 +1358,9 @@ ul.filter_handle_items {
   color: #999999;
   font-size: 12px;
 }
+.course_detail .course_info strong {
+  font-weight: bold;
+}
 .course_detail .course_func {
   margin-top: 5px;
 }
@@ -1358,8 +1408,8 @@ ul.notice_list li {
   font-size: 12px;
 }
 ul.notice_list li i {
-  display: inline-block;
-  font-size: 12px;
-  padding-right: 10px;
+  color: #ffffff;
   text-indent: 0em;
+  margin-right: 5px;
+  margin-top: 3px;
 }
