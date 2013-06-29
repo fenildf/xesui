@@ -181,7 +181,7 @@ a:link {
 }
 a:visited {
   text-decoration: none;
-  color: #333;
+  color: #006699;
 }
 a:hover {
   text-decoration: underline;
@@ -574,7 +574,6 @@ table {
  *table元素已经设定了BG和border-collapse属性
  */
 form {
-  margin: 0 0 20px;
   font-size: 12px;
 }
 fieldset {
@@ -585,7 +584,6 @@ fieldset {
 label {
   display: block;
   text-align: right;
-  width: 60px;
 }
 textarea {
   height: auto;
@@ -610,9 +608,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  vertical-align: middle;
   font-size: 12px;
-  cursor: pointer;
 }
 /**
  * 设定表单元素placeholder的字体颜色值
@@ -938,6 +934,9 @@ h1.logo a {
 }
 .ptop_30 {
   padding-top: 30px;
+}
+.font14 {
+  font-size: 14px;
 }
 /**
  * 
@@ -1293,7 +1292,7 @@ ul.filter_handle_items {
   margin: 0 15px;
 }
 .sort_teacher li.sort_avatar {
-  width: 130px;
+  width: 145px;
   padding-left: 30px;
 }
 .sort_teacher li.sort_course_num {
@@ -1354,6 +1353,9 @@ ul.filter_handle_items {
 .course_detail .course_title strong {
   font-size: 14px;
 }
+.course_detail .course_title a {
+  color: #333333;
+}
 .course_detail .course_info {
   height: 25px;
   color: #999999;
@@ -1387,6 +1389,12 @@ ul.filter_handle_items {
 }
 .course_detail .course_func i {
   float: left;
+}
+.course_detail .course_func .tools {
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #006699;
 }
 /*===================/课程频道页/=====================*/
 .menu_pd_title {

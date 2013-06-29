@@ -7,8 +7,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
-
+    <link href="../css/page_404.css" type="text/css" rel="stylesheet" />	
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -23,18 +22,24 @@
 				<li><a href="#">逛论坛</a></li>
 			</ul>
 			<div class="search">
-				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师"> <button>搜索</button>
+				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search"> <button class="head_btn_search">搜索</button>
 			</div>
+			<div class="shopcar"><a href=""><em class="icon icon_shopping">购物车</em></a></div>
 			<ul class="topbar">
-				<li><a href=""><em class="icon icon_car">购物车</em></a></li>
-				<li><a href="">登录</a><i>|</i></li>
-				<li><a href="">注册</a></li>
+				<li class=""><a href="##">登录</a></li>
+				<li class=""><i class="line">|</i></li>
+				<li><a href="##">注册</a></li>
+			</ul>
+			<ul class="loginbar hidden">
+				<li class=""><em class="icon icon_shopping">购物车</em></li>
+				
+				<li><em class="icon icon_shopping">购物车</em></li>
 			</ul>
 		</div>
 	</div>
 	<!-- 头部 end-->
 	<!-- 内容 start-->
-	<div id="middle">
+	<div id="container">
 		<div class="layout">
 			<!-- 404 -->
 			<div class="page_404">
@@ -45,25 +50,12 @@
 				</div>
 				<p class="page_404_time">倒计时</p>
 				<ul class="page_404_info">
-					<li>我们正在联系火星总部查找您需要的页面，请返回等待信息.....</li>
-					<li> <i>·</i>
-						不要返回吗？
-					</li>
-					<li> <i>·</i>
-						确定不要返回吗？
-					</li>
-					<li>
-						<i>·</i>
-						真的确定不要返回吗？
-					</li>
-					<li>
-						<i>·</i>
-						真的真的确定不要返回吗？
-					</li>
-					<li>
-						<i>·</i>
-						好吧，还是随便你要不要确定返回吧
-					</li>
+					<li class="title">我们正在联系火星总部查找您需要的页面，请返回等待信息.....</li>
+					<li>不要返回吗？</li>
+					<li>确定不要返回吗？</li>
+					<li>真的确定不要返回吗？</li>
+					<li>真的真的确定不要返回吗？</li>
+					<li>好吧，还是随便你要不要确定返回吧</li>
 				</ul>
 			</div>
 			<!-- 404 end-->
@@ -75,22 +67,22 @@
 
 	<div id="footer">
             <div class="foot_service">
-            	<a class="service_share"> <strong>学习经验分享</strong>
+            	<a class="service_share"> <span>学习经验分享</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
-            	<a class="service_live"> <strong>直播学习指导</strong>
+            	<a class="service_live"> <span>直播学习指导</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_system">
-            		<strong>专业的学习规划体系</strong>
+            		<span>专业的学习规划体系</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_interaction">
-            		<strong>有趣的互动视频</strong>
+            		<span>有趣的互动视频</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>
-            <div class="area">
+            <div class="foot_area">
             <p>
                 北京学而思教育科技有限公司
                 <a href="http://www.xueersi.com/">网校首页</a>

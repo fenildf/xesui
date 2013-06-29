@@ -283,7 +283,7 @@ a:link {
 }
 a:visited {
   text-decoration: none;
-  color: #333;
+  color: #006699;
 }
 a:hover {
   text-decoration: underline;
@@ -318,20 +318,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.ui_visitor ul li {
-  display: inline-block;
-  zoom: 1;
-  width: 32%;
-  margin-top: 10px;
-  vertical-align: top;
-  text-align: center;
-  font-size: 12px;
-}
 .stupic {
+  float: left;
+  display: inline;
   width: 50px;
   text-align: center;
   font-size: 12px;
   line-height: 20px;
+  margin: 0 10px 15px 10px;
+}
+.stupic a {
+  color: #333333;
 }
 .stupic a img {
   width: 50px;

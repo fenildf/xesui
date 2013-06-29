@@ -155,3 +155,32 @@
   font-size: 24px;
   padding-left: 5px;
 }
+.user_student .user_detail .user_level {
+  padding: 5px 0;
+  color: #666666;
+}
+.user_student .user_detail .user_level em {
+  margin-top: 2px;
+}
+.user_student .user_detail .user_profile {
+  color: #666666;
+  font-size: 14px;
+}
+.user_student .user_detail .user_profile .icon_user {
+  background-position: 2px -100px;
+}
+.user_student .user_detail .user_statistics {
+  line-height: 30px;
+  color: #666666;
+  font-size: 14px;
+}
+.user_student .user_func {
+  float: right;
+  display: inline;
+  border-left: 1px dashed #9fadb0;
+  padding: 65px 0 0 35px;
+}
+.user_student .user_func li {
+  font-size: 14px;
+  line-height: 25px;
+}

@@ -181,7 +181,7 @@ a:link {
 }
 a:visited {
   text-decoration: none;
-  color: #333;
+  color: #006699;
 }
 a:hover {
   text-decoration: underline;
@@ -574,7 +574,6 @@ table {
  *table元素已经设定了BG和border-collapse属性
  */
 form {
-  margin: 0 0 20px;
   font-size: 12px;
 }
 fieldset {
@@ -585,7 +584,6 @@ fieldset {
 label {
   display: block;
   text-align: right;
-  width: 60px;
 }
 textarea {
   height: auto;
@@ -610,9 +608,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  vertical-align: middle;
   font-size: 12px;
-  cursor: pointer;
 }
 /**
  * 设定表单元素placeholder的字体颜色值

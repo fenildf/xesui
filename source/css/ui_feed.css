@@ -150,6 +150,21 @@
 .feed_detail .feed_bar span a strong {
   color: #999999;
 }
+.feed_detail .feed_text_my {
+  overflow: hidden;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.feed_detail .feed_text_my .my {
+  float: left;
+  width: 30px;
+  color: #333333;
+}
+.feed_detail .feed_text_my .my_info {
+  float: left;
+  width: 630px;
+  color: #999999;
+}
 .feed_comment {
   border: 1px solid #ededed;
   background: #fcfcfc;

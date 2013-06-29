@@ -114,12 +114,12 @@
 }
 .ui_comment form.comment_form {
   overflow: hidden;
+  margin-bottom: 10px;
 }
 .ui_comment form.comment_form .comment_title {
   line-height: 25px;
   font-size: 14px;
   color: #999999;
-  display: none;
 }
 .ui_comment form.comment_form .comment_textarea {
   overflow: hidden;
@@ -180,4 +180,11 @@
   line-height: 50px;
   text-align: center;
   font-size: 14px;
+}
+.comment_num_all {
+  height: 25px;
+  line-height: 25px;
+  text-align: right;
+  border-top: 1px dashed  #ededed;
+  color: #999999;
 }

@@ -397,6 +397,9 @@
 .course_detail .course_title strong {
   font-size: 14px;
 }
+.course_detail .course_title a {
+  color: #333333;
+}
 .course_detail .course_info {
   height: 25px;
   color: #999999;
@@ -430,4 +433,10 @@
 }
 .course_detail .course_func i {
   float: left;
+}
+.course_detail .course_func .tools {
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #006699;
 }

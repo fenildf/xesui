@@ -181,7 +181,7 @@ a:link {
 }
 a:visited {
   text-decoration: none;
-  color: #333;
+  color: #006699;
 }
 a:hover {
   text-decoration: underline;
@@ -574,7 +574,6 @@ table {
  *table元素已经设定了BG和border-collapse属性
  */
 form {
-  margin: 0 0 20px;
   font-size: 12px;
 }
 fieldset {
@@ -585,7 +584,6 @@ fieldset {
 label {
   display: block;
   text-align: right;
-  width: 60px;
 }
 textarea {
   height: auto;
@@ -610,9 +608,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  vertical-align: middle;
   font-size: 12px;
-  cursor: pointer;
 }
 /**
  * 设定表单元素placeholder的字体颜色值
@@ -938,6 +934,9 @@ h1.logo a {
 }
 .ptop_30 {
   padding-top: 30px;
+}
+.font14 {
+  font-size: 14px;
 }
 /**
  * 
@@ -1293,7 +1292,7 @@ ul.filter_handle_items {
   margin: 0 15px;
 }
 .sort_teacher li.sort_avatar {
-  width: 130px;
+  width: 145px;
   padding-left: 30px;
 }
 .sort_teacher li.sort_course_num {
@@ -1344,7 +1343,7 @@ ul.filter_handle_items {
   font-style: italic;
 }
 .teacher_item .avatar {
-  width: 130px;
+  width: 150px;
 }
 .teacher_item .course_num {
   width: 100px;
@@ -1375,6 +1374,20 @@ ul.filter_handle_items {
   background-position: 2px -150px;
   color: #fff;
   font-size: 18px;
+}
+.teacher_item .avatar p {
+  margin-top: 18px;
+}
+.teacher_item .avatar a {
+  float: left;
+  margin-left: 10px;
+}
+.teacher_item .avatar a img {
+  width: 50px;
+  height: 50px;
+}
+.teacher_item .avatar a.ui_username {
+  margin-top: 15px;
 }
 /**
  * ui_follow.less 公用样式

@@ -196,7 +196,6 @@
  *----------------------------------------------------
  */
 form {
-  margin: 0 0 20px;
   font-size: 12px;
 }
 fieldset {
@@ -207,7 +206,6 @@ fieldset {
 label {
   display: block;
   text-align: right;
-  width: 60px;
 }
 textarea {
   height: auto;
@@ -232,9 +230,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  vertical-align: middle;
   font-size: 12px;
-  cursor: pointer;
 }
 /**
  * 设定表单元素placeholder的字体颜色值
