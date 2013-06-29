@@ -24,6 +24,7 @@
 | array        | 数组扩展   | ![checked icon](../src/img/checkbox.png) | [查看](#array)
 | object       | 对象扩展   | ![checked icon](../src/img/checkbox.png) | [查看](#object)
 | url          | 地址操作   | ![checked icon](../src/img/checkbox.png) | [查看](#url)
+| domain       | 域名操作   | ![checked icon](../src/img/checkbox.png) | [查看](#domain)
 | json         | 数据操作   | ![checked icon](../src/img/checkbox.png) | [查看](#json)
 | data         | 数据操作   | ![checked icon](../src/img/checkbox.png) | [查看](#data)
 | ajax         | 异步请求   | ![checked icon](../src/img/checkbox.png) | [查看](#ajax)
@@ -35,6 +36,10 @@
 | scroll       | 滚动操作   | ![checked icon](../src/img/checkbox.png) | [查看](#scroll)
 | localstorage | 本地存储   | ![checked icon](../src/img/checkbox.png) | [查看](#ls)
 | tools        | 工具集合   | ![checked icon](../src/img/checkbox.png) | [查看](#tools)
+| swf          | 对象封装   | ![checked icon](../src/img/checkbox.png) | [查看](#swf)
+| queue        | 队列模块   | ![checked icon](../src/img/checkbox.png) | [查看](#queue)
+| iframe       | 框架操作   | ![checked icon](../src/img/checkbox.png) | [查看](#iframe)
+| knowledge    | 知识点类   | ![checked icon](../src/img/checkbox.png) | [查看](#knowledge)
 
 
 ### 1.2 模块详情
@@ -91,6 +96,10 @@
 
 > 转义、根据参数名获取参数值、json转化为URL字符
 
+#### [domain](id:domain)
+
+> 获取domain，设置domain等操作
+
 #### [json](id:json)
 
 > decode / encode / parse / stringify
@@ -135,12 +144,137 @@
 
 > base64转换
 
+#### [swf](id:swf)
+
+> swf对象封装
+
+#### [queue](id:queue)
+
+> 队列模块：引入队列机制
+> 
+
+#### [iframe](id:iframe)
+
+> 框架操作：获取内部节点、设置高度、刷新、获取URL地址等
+
+#### [knowledge](id:knowledge)
+
+> 知识点操作
 
 
 
-## 2. 组件
+## 2. 方法
 
-### 2.1 组件概览
+### 2.1 方法概览
+
+| name       | feature |                  status                 |    description
+|------------| ------- |:---------------------------------------:|:------------------:
+| add        | 模块添加 | ![checked icon](../src/img/checkbox.png) | [查看](#add)
+| us         | 模块使用 | ![checked icon](../src/img/checkbox.png) | [查看](#use)
+| extend     | 方法扩展 | ![checked icon](../src/img/checkbox.png) | [查看](#extend)
+| get        | 获取对象 | ![checked icon](../src/img/checkbox.png) | [查看](#get)
+| set        | 设置对象 | ![checked icon](../src/img/checkbox.png) | [查看](#set)
+| del        | 删除对象 | ![checked icon](../src/img/checkbox.png) | [查看](#del)
+| check      | 检测对象 | ![checked icon](../src/img/checkbox.png) | [查看](#check)
+| sort       | 数字排序 | ![checked icon](../src/img/checkbox.png) | [查看](#sort)
+| trim       | 去除空格 | ![checked icon](../src/img/checkbox.png) | [查看](#trim)
+| unique     | 去除重复 | ![checked icon](../src/img/checkbox.png) | [查看](#unique)
+| loader       | 加载对象 | ![checked icon](../src/img/checkbox.png) | [查看](#loader)
+
+
+
+### 2.2 方法详情
+
+
+#### [add](id:add)
+
+> 动态添加模块：如果页面中没有该模块，通过异步调用模块文件
+
+#### [use](id:use)
+
+> 动态使用模块：动态调用的模块必须在此方法下使用（方案待定）
+
+#### [extend](id:extend)
+
+> 对象扩展，所有需要扩展到xue对象下的必须通过此方法
+> 
+> 此方法主要是可以将子类注册到xue主类下，方便调用，
+>
+    例如：将 xue.string.trim 注册为 xue.trim
+
+
+
+#### [get](id:get)
+
+> 这是一个全局方法：xue.get();
+>
+> 通过参数设置get的具体请求类型：
+> 
+  - 可以是ajax的get请求，
+  - 也可是get一个变量 / Cookie / localstorage的值，
+  - 也可以是get一个方法
+
+
+#### [set](id:set)
+
+> 全局方法：xue.set();
+> 
+> 通过参数设置set的具体类型：
+>
+  - 可以是set一个变量 / Cookie / localstorage的值；
+  - 可以是set一个对象；
+  - 可以是set一个方法；
+
+
+#### [del](id:del)
+
+> 全局方法：xue.del();
+> 
+> 通过参数设置del的具体类型：
+> 
+  - 可以del一个变量 / Cookie / localstorage；
+  - 可以del一个对象；
+  - 可以del一个方法；
+
+#### [check](id:check)
+
+> 对象检测：xue.check();
+> 
+> 此方法是用来检测对象情况：是否存在、是否有效
+
+#### [trim](id:trim)
+
+> 去除空格：xue.trim();
+> 
+> 将string.trim()方法注册到xue下，方便调用
+
+#### [unique](id:unique)
+
+> 去重方法：xue.unique();
+> 
+> 可以去除数组中的重复
+
+#### [loader](id:loader)
+
+> 异步加载：xue.loader();
+> 
+> 此方法可以动态加载JS、CSS等资源文件
+> 通过参数设置load对象类型：
+> 
+  - 可以是JS、CSS资源文件；
+  - 可以是HTML页面文件；
+  - 可以是ajax请求；
+
+
+
+
+
+
+
+
+## 3. 组件
+
+### 3.1 组件概览
 
 > 挂接到xue.ui下面（以ui前缀命名）
 > 
@@ -167,9 +301,10 @@ grid       | 列表操作 | ![checked icon](../src/img/checkbox.png) | [查看](
 mask       | 公用遮罩 | ![checked icon](../src/img/checkbox.png) | [查看](#mask)
 loading    | 加载状态 | ![checked icon](../src/img/checkbox.png) | [查看](#loading)
 button     | 按钮组件 | ![checked icon](../src/img/checkbox.png) | [查看](#button)
-
+player     | 播放器类 | ![checked icon](../src/img/checkbox.png) | [查看](#player)
+upload     | 上传组件 | ![checked icon](../src/img/checkbox.png) | [查看](#upload)
  
-### 2.2 详细情况
+### 3.2 详细情况
 
 
 #### [模拟弹窗](id:dialog) : ui.dialog
@@ -242,6 +377,17 @@ button     | 按钮组件 | ![checked icon](../src/img/checkbox.png) | [查看](
 
 
 #### [按钮组件](id:button)  : ui.button
+
+
+
+#### [播放器类](id:player) : ui.player
+
+> 调用视频播放器接口
+
+#### [上传组件](id:upload) : ui.upload
+
+> 头像、图片、文件上传组件
+
 
 
 ### [](id:) 
