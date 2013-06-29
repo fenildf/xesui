@@ -1,4 +1,4 @@
-![XESUI icon](src/img/xesui_logo_120.png)
+![XESUI icon](src/img/xesui_logo_100.png)
 
 #XESUI v0.4.6.29
 
@@ -13,17 +13,17 @@
 
 ## 使用帮助
 
-1. [文件结构](https://github.com/xueersi/xesui/blob/master/docs/structures.md)：文档目录结构 
-    - html: [../html/](https://github.com/xueersi/xesui/tree/master/source/html)  
-    - less: [../less/](https://github.com/xueersi/xesui/tree/master/source/less) 
-    - css:  [../css/](https://github.com/xueersi/xesui/tree/master/source/css)   
-    - img:  [../img/](https://github.com/xueersi/xesui/tree/master/source/img)   
-    - js:   [../js/](https://github.com/xueersi/xesui/tree/master/source/js)     
+1. [文件结构](docs/structures.md)：文档目录结构 
+    - html: [../html/](source/html)  
+    - less: [../less/](source/less) 
+    - css:  [../css/](source/css)   
+    - img:  [../img/](source/img)   
+    - js:   [../js/](source/js)     
        
-2. [命名规则](https://github.com/xueersi/xesui/blob/master/docs/nomenclature.md)：CSS、JS命名规则
-3. [结构文档](https://github.com/xueersi/xesui/blob/master/docs/DOM.html)：DOM结构
-4. [模块组件](https://github.com/xueersi/xesui/blob/master/docs/module.md)：模块组件组件介绍
-5. [加载方式](https://github.com/xueersi/xesui/blob/master/docs/loader.md)：文件加载方式
+2. [命名规则](docs/nomenclature.md)：CSS、JS命名规则
+3. [结构文档](docs/DOM.html)：DOM结构
+4. [模块组件](docs/module.md)：模块组件组件介绍
+5. [加载方式](docs/loader.md)：文件加载方式
 6. [在线演示]
 7. [压缩工具]
 8. on [github](https://github.com/xueersi/xesui)
@@ -33,10 +33,10 @@
 
 * **v0.4.0629** ：
 
-    - 制作xesui的LOGO
+    - 制作了2个XESUI的LOGO：
         
         ![XESUI icon](src/img/xesui_logo_100.png)
-        ![XESUI icon](src/img/xesui_logo_120.png)
+        ![XESUI icon](src/img/xesui_logo_120_100.png)
         
     - 页面完成情况：14 / 46
     - 模块、组件、方法说明文档及状态
