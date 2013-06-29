@@ -34,8 +34,12 @@
 * **v0.4.0629** ：
 
     - 制作xesui的LOGO
+        
+        ![XESUI icon](src/img/xesui_logo_100.png)
+        ![XESUI icon](src/img/xesui_logo_120.png)
+        
     - 页面完成情况：14 / 46
-    - 
+    - 模块、组件、方法说明文档及状态
 
 
 * **v0.4.0628** ：
