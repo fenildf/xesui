@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/**
+ * @authors sam shih
+ * @学习中心个人设置个页面单独样式
+ */
+
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+
+@import "icon.less";
+@import "form.less";
+@import "name.less";
+@import "button.less";
+@import "table.less";
+/*图标，表单，按钮*/
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+/*头部，内容，底部*/
+
+
+@import "title.less";
+@import "ui_avatar.less";
+@import "list.less";
+@import "ui_filter.less";
+@import "ui_sortbar.less";
+@import "ui_teachers.less";
+@import "side_nav.less"; //学习中心个人设置左侧导航
+
+
+
+
+/*=============/课程/==================*/
+.setting_menu {overflow: hidden;height: 50px;line-height: 50px;border-bottom: 1px dotted #ccc;}
+.setting_menu span {float: left;}
+.setting_menu span strong {font-size: 20px;}
+.setting_menu a {float: right;}
+
+.setting_search {height: 30px; margin: 30px 0 0 0;color: 2*@g3;}
+.setting_search p {float: right;}
+
+.nav_setting li {text-align: center;}
+.nav_setting li.current a {padding: 2px 10px;background: #4a9eda;color: #fff;}
+.nav_help {}
+.nav_help li {text-align: left;padding-left: 15px;}
+.nav_help li.current a {font-weight: bold;}
+
+/*=============/充值记录/==================*/
+
+/*=============/代金卡/==================*/
+
+/*=============/代金卡激活/==================*/
+.right-content{
+	padding:20px 60px 10px 60px;
+	p{
+		height:50px;
+		line-heihgt:50px;
+	}
+	form{
+		div{
+			margin:10px 0;
+			label{
+				height:18px;
+				float:left;
+				line-height:20px;
+			}
+			input{
+				width:146px;
+				padding:1px 2px;
+			}
+		}
+		button{
+				.btn;
+				.btn_red;
+				margin-left:50px;
+				dispblay:block;
+				padding:3px 15px;
+				margin-right:10px;
+			}
+		a{
+			color:@linkcolor;
+		}
+	}
+}
+/*=============/基本资料/==================*/
+.user_profile{
+	p{
+		height:40px;
+		line-height:40px;
+		label{
+			width:60px;
+			text-align:@r;
+			float:left;
+		}
+		input[type="radio"]{
+			width:20px;
+		}
+		input[type="checkbox"]{
+			margin:1px 5px 0 3px;
+			vertical-align: middle;
+		}
+	}
+	div{
+		overflow:hidden;
+		.labelgroup{
+			width:250px;
+			float:left;
+			margin:3px 0;
+			label{
+				float:left;
+				input{ width:20px;}
+				margin-right:35px;
+				margin-bottom:6px;
+			}
+		}
+	}
+	form {
+		button{
+			margin-left:60px;
+		}
+	}
+	
+}
+/*=============/收货地址/==================*/
+.user_address{
+	b{
+		line-height:30px;
+	}
+	p{
+		label{
+			width:90px;
+			text-align:@r;
+			float:left;
+		}
+	}
+	form{
+		margin-bottom:20px;
+		button{
+			margin-left:90px;
+		}
+	}
+}
+/*=============/我要充值/==================*/
+.paylists{
+	line-height:@hl22;
+	.setting_menu{
+		margin-bottom:10px;
+	}
+	.pay_info{
+		color:#5b5b5b;
+		padding:10px 50px;
+		strong{
+			color:@g3;
+			font-weight:bold;
+		}
+	}
+	.pay_tips{
+		color:#adadad;
+		overflow:hidden;
+		background:#FAFAFA;
+		padding:10px 20px;
+
+	}
+}

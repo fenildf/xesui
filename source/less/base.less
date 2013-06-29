@@ -21,6 +21,9 @@
 	font-weight:normal;
 	font-style:normal;
 }
+.b{
+	font-weight:bold;
+}
 .tc{
 	text-align:@c;
 }
@@ -86,6 +89,21 @@
     color: @placecolor;
   }
 }
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+.mixin(dark,@color){
+	color:darken(@color, 10%);
+}
+.mixin (light, @color) {
+    color: lighten(@color, 10%);
+}
+.mixin (@_, @color) {
+    display: block;
+}
+
 /**
  * 可以换背景颜色
  * 可以在less文件中使用background-color(@color)调用

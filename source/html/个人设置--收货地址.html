@@ -7,7 +7,9 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
+    <link href="../css/ui_settingbar.css" type="text/css" rel="stylesheet" />
+    <link href="../css/side_nav.css" type="text/css" rel="stylesheet" />
+	
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -34,41 +36,48 @@
 	<!-- 头部 end-->
 	<!-- 内容 start-->
 	<div id="middle">
-		
 		<div class="layout">
 			<div class="layout_body right w_740">
-				<div class="main_header border_blue setting_"><span>充值记录</span></div>
+				<div class="main_header border_blue header_setting"><span>收货地址</span></div>
 				<!-- main_header -->
-				<div class="setting_menu">
-					<span>
-						目前您的账户余额： <strong>￥980</strong>
-					</span>
-					<a href="">现在去充值</a>
-				</div>
-				<!-- setting_menu -->				
-				<div class="setting_search">
-					<p>
-						<span>
-							按时间查询
+				<div class="right-content user_profile user_address">
+					<b>新增收货地址</b>
+					<form>
+						<p><label>收货人姓名：</label><input type="text"></p>
+						<p><label>手机：</label><input type="text"></p>
+						<p><label>省份/直辖市：</label>
 							<select>
-								<option>20130101</option>
+							  <option>北京</option>
+							  <option>上海</option>
+							  <option>江苏</option>
 							</select>
-							至
 							<select>
-								<option>20130101</option>
+							  <option>海淀</option>
+							  <option>朝阳</option>
+							  <option>丰台</option>
 							</select>
-						</span>
-						<button>搜索</button>
-					</p>
-				</div>
-				<!-- setting_search -->
-                 <table class="ui_table text_c">
+							<select>
+							  <option>中关村</option>
+							  <option>四季青</option>
+							  <option>五道口</option>
+							</select>
+						</p>
+						<p><label>详细地址：</label><input type="text"></p>
+						<p><label>邮政编码：</label><input type="text"></p>
+						<p>
+							<label class="checkbox inline">
+							<input type="checkbox" value="option1">默认地址
+						</p>
+						<button type="submit" class="btn btn-primary btn-danger">保存</button>
+					</form>
+					<b>已保存的有效地址：</b>
+					<table class="table text_c">
                  	<thead>
                  		<tr class="text_r">
-                 			<th>流水号</th>
-                 			<th>充值时间</th>
-                 			<th>充值金额</th>
-                 			<th class="text_l">充值类型</th>
+                 			<th>收货人</th>
+                 			<th>地址</th>
+                 			<th>手机号</th>
+                 			<th class="text_l">操作</th>
                  		</tr>
                  	</thead>
                  	<tbody>
@@ -106,6 +115,8 @@
                  	
                  </table>
 				<!-- table -->
+				</div>
+				<!-- setting_search -->
 			</div>
 			<!--layout_body end -->
 			<div class="layout_side left w_215">

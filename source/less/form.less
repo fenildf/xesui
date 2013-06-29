@@ -14,9 +14,9 @@ fieldset {
   border: 0;
 }
 label {
- 
-  text-align:@l;
-  
+  display: block;
+  text-align:@r;
+  width:60*@w1;
 }
 textarea{
   height: auto;
@@ -26,6 +26,7 @@ textarea{
  * 设定select, checkbox样式
  */
 select,
+label,
 textarea,
 input[type="text"],
 input[type="password"],
@@ -43,6 +44,7 @@ input[type="color"],
 .uneditable-input{
     vertical-align:@m;
     font-size:@f12;
+    cursor: pointer;
 }
 /**
  * 设定表单元素placeholder的字体颜色值

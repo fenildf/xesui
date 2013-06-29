@@ -7,7 +7,9 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
+    <link href="../css/ui_settingbar.css" type="text/css" rel="stylesheet" />
+    <link href="../css/side_nav.css" type="text/css" rel="stylesheet" />
+
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -37,81 +39,24 @@
 		
 		<div class="layout">
 			<div class="layout_body right w_740">
-				<div class="main_header border_blue setting_"><span>充值记录</span></div>
-				<!-- main_header -->
-				<div class="setting_menu">
-					<span>
-						目前您的账户余额： <strong>￥980</strong>
-					</span>
-					<a href="">现在去充值</a>
-				</div>
-				<!-- setting_menu -->				
-				<div class="setting_search">
-					<p>
-						<span>
-							按时间查询
-							<select>
-								<option>20130101</option>
-							</select>
-							至
-							<select>
-								<option>20130101</option>
-							</select>
-						</span>
-						<button>搜索</button>
-					</p>
-				</div>
+				<div class="main_header border_blue header_setting"><span>听课证激活</span></div>
 				<!-- setting_search -->
-                 <table class="ui_table text_c">
-                 	<thead>
-                 		<tr class="text_r">
-                 			<th>流水号</th>
-                 			<th>充值时间</th>
-                 			<th>充值金额</th>
-                 			<th class="text_l">充值类型</th>
-                 		</tr>
-                 	</thead>
-                 	<tbody>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>网上银行</td>
-                 		</tr>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>支付宝</td>
-                 		</tr>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>学生卡</td>
-                 		</tr>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>银行汇款</td>
-                 		</tr>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>网上银行</td>
-                 		</tr>
-                 	</tbody>
-                 	
-                 </table>
-				<!-- table -->
+				<!--right content-->
+					<div class="right-content">
+					<p>将卡号和密码输入下方输入框</p>
+					<form action="">
+						<div><label for="">卡号：</label><input type="text"></div>
+						<div><label for="">密码：</label><input type="text"></div>
+						<button>激活</button>
+					</form>
+					<p>如果您对激活课程绑定卡有任何问题，请查看帮助中心或拔打400-610-8908</p>
+					<!-- table -->
+				</div>
 			</div>
 			<!--layout_body end -->
 			<div class="layout_side left w_215">
 			  <ul class="side_nav nav_setting">
 			  	<li class="nav_header"><span>个人设置</span></li>
-
 			  	<li class="current">
 			  		<a href="#">基本资料</a>
 			  	</li>

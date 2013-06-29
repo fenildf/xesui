@@ -7,7 +7,10 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
+    <link href="../css/ui_settingbar.css" type="text/css" rel="stylesheet" />
+    <link href="../css/side_nav.css" type="text/css" rel="stylesheet" />
+    <link href="../css/nav.css" type="text/css" rel="stylesheet" />
+	
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -37,75 +40,44 @@
 		
 		<div class="layout">
 			<div class="layout_body right w_740">
-				<div class="main_header border_blue setting_"><span>充值记录</span></div>
+				<div class="main_header border_blue header_setting"><span>我要充值</span></div>
 				<!-- main_header -->
-				<div class="setting_menu">
-					<span>
-						目前您的账户余额： <strong>￥980</strong>
-					</span>
-					<a href="">现在去充值</a>
-				</div>
-				<!-- setting_menu -->				
-				<div class="setting_search">
-					<p>
-						<span>
-							按时间查询
-							<select>
-								<option>20130101</option>
-							</select>
-							至
-							<select>
-								<option>20130101</option>
-							</select>
-						</span>
-						<button>搜索</button>
-					</p>
-				</div>
+				<ul class="nav nav_pills">
+				    <li class="current"><a href="#">学习卡充值</a></li>
+				    <li><a href="#">网上银行</a></li>
+				    <li><a href="#">银行汇款</a></li>
+  				</ul>
 				<!-- setting_search -->
-                 <table class="ui_table text_c">
-                 	<thead>
-                 		<tr class="text_r">
-                 			<th>流水号</th>
-                 			<th>充值时间</th>
-                 			<th>充值金额</th>
-                 			<th class="text_l">充值类型</th>
-                 		</tr>
-                 	</thead>
-                 	<tbody>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>网上银行</td>
-                 		</tr>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>支付宝</td>
-                 		</tr>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>学生卡</td>
-                 		</tr>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>银行汇款</td>
-                 		</tr>
-                 		<tr>
-                 			<td>200000001</td>
-                 			<td>2013-01-11</td>
-                 			<td>10000</td>
-                 			<td>网上银行</td>
-                 		</tr>
-                 	</tbody>
-                 	
-                 </table>
-				<!-- table -->
+				<div class="paylists">
+					<div class="right-content">
+						<p>请刮开代金卡背面覆盖在密码上的图层，将卡号和密码输入下方输入框</p>
+						<form action="">
+							<div><label for="">卡号：</label><input type="text"></div>
+							<div><label for="">密码：</label><input type="text"></div>
+							<button>激活</button><a href="">查看激活记录</a>
+						</form>
+					<!-- table -->
+					</div>
+				</div>
+				<div class="paylists">
+					<div class="setting_menu">
+						<span>
+							目前您的金币余额： <strong>000</strong>
+						</span>
+					</div>
+					 <p>如果您要汇款至我们公司，请汇入如下银行</p>
+					 <p class="pay_info">
+					 	<strong>开户名：</strong>北京学而思教育科技有限公司</br>
+					 	<strong>开户行：</strong>兴业银行北京魏公村支行</br>
+					 	<strong>账号：</strong>3232 2323 565656 24
+					 </p>
+					 <div class="pay_tips">
+					 	温馨提示：
+						<p>1. 请务必在“银行汇款单”事由栏里注明您的姓名，联系方式，所选课程及是否需要发票</p>
+						<p>2. 我们建议您选择在线充值学习卡充值，银行汇款可能需要数天的时间才能充值成功</p>
+					 </div>
+				</div>
+				<div class="paylists"></div>
 			</div>
 			<!--layout_body end -->
 			<div class="layout_side left w_215">
