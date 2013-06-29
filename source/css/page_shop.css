@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /**
- * @authors sam shih
- * @学习中心个人设置个页面单独样式
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
  */
 /**
  * Base style
@@ -624,26 +626,6 @@ textarea::-webkit-input-placeholder {
   color: #999999;
 }
 /**
-*name.css
-*ui_username
-*用户，年级名称加"V"
-*
-*div>a+i.icon
-   <a class="ui_username">userName<i class="icon icon_verifty_teacher">V</i></a>
-*/
-.ui_username,
-.ui_username_large {
-  color: #333333;
-  line-height: 20px;
-  display: inline-block;
-  vertical-align: bottom;
-  font-size: 12px;
-  font-family: "Microsoft YaHei";
-}
-.ui_username_large {
-  font-size: 20px;
-}
-/**
  * Button 公用样式
  */
 .btn {
@@ -732,48 +714,6 @@ textarea::-webkit-input-placeholder {
   background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
   /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
 
-}
-/**
- *Table 公用样式
- *table元素已经设定了BG和border-collapse属性
- */
-table {
-  max-width: 100%;
-  background-color: #fbfbfb;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.table {
-  width: 100%;
-  font-size: 12px;
-  color: #333333;
-  margin-bottom: 20px;
-  border: 1px solid #e2e2e2;
-}
-.table th,
-.table td {
-  padding: 10px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: top;
-  border-top: 1px dotted #e2e2e2;
-}
-.table th {
-  font-weight: bold;
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #e2e2e2;
-}
-.table td a {
-  color: #329bca;
-}
-/**
- * table with the solid border
- *具体在学习中心-个人设置-我的订单使用
- *------------------------------------
- */
-.table-solid th,
-.table-solid td {
-  border: 1px solid #e2e2e2;
 }
 /*图标，表单，按钮*/
 /**
@@ -1060,563 +1000,143 @@ h1.logo a {
 }
 /*头部，内容，底部*/
 /**
- * 
- * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 14:24:01
- * @version $Id$ 所有标题
+ *Table 公用样式
+ *table元素已经设定了BG和border-collapse属性
  */
-.side_header {
-  height: 42px;
-  line-height: 42px;
+table {
+  max-width: 100%;
+  background-color: #fbfbfb;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.side_header span {
-  color: #999999;
-  font-size: 16px;
-  font-family: "Microsoft YaHei";
-  text-align: left;
-}
-.main_header {
-  overflow: hidden;
+.table {
+  width: 100%;
+  font-size: 12px;
+  color: #333333;
   margin-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #e2e2e2;
 }
-.main_header .nav_links {
-  width: 645px;
-  height: 42px;
-  overflow: hidden;
-}
-.main_header .nav_links li {
-  float: left;
-  display: inline;
-  line-height: 42px;
-}
-.main_header .nav_links li a {
-  color: #006699;
-  font-size: 14px;
-}
-.main_header .nav_links li i {
-  font-style: normal;
-  color: #ccc;
-  display: inline-block;
-  padding: 0 8px;
-}
-.main_header .nav_links li.current {
-  background: url(/xesui/src/img/ins.jpg) 25px 37px no-repeat;
-}
-.main_header .nav_links li.current a {
-  font-weight: bold;
-}
-.border_blue {
-  border-bottom: 1px solid #0076b3;
-}
-.layout_body .border_blue .nav_links li.current {
-  background: none;
-}
-.layout_body .border_blue span {
-  float: left;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 40px;
-}
-.side_header .border_blue span {
-  float: right;
-  color: #0076b3;
-  text-align: right;
-  font-size: 20px;
-}
-.header_setting {
-  margin: 10px 0 0 0;
-}
-/**
- * 
- * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 14:40:19
- * @version $Id$  头像
- */
-.ui_avatar {
-  width: 50px;
-  position: relative;
-  overflow: hidden;
-}
-.ui_avatar .prev,
-.ui_avatar .next {
-  width: 21px;
-  height: 21px;
-  display: inline-block;
-  position: absolute;
-  z-index: 10;
-  top: 85px;
-}
-.ui_avatar .prev {
-  left: 0;
-}
-.ui_avatar .next {
-  right: 0;
-}
-.ui_avatar ul.avatar_items {
-  overflow: hidden;
-}
-.ui_avatar ul.avatar_items li a {
-  display: block;
-  text-align: center;
-  line-height: 180%;
-  color: #666666;
-}
-.ui_avatar ul.avatar_items li img {
-  width: 50px;
-  height: 50px;
-}
-.ui_avatar .userpic img {
-  width: 50px;
-  height: 50px;
-}
-/**
-*list.css
-*ui_list
-*所有有序，无序列表
-*<ul ol>
-*    <li>1<a>中华人民共和国--学而思网校</a></li>
-*</ul ol>
-*/
-.ui_list {
-  list-style-type: none;
-  padding-left: 5px;
+.table th,
+.table td {
+  padding: 10px;
   line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  border-top: 1px dotted #e2e2e2;
 }
-.list_blue {
-  line-height: 22px;
+.table th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #e2e2e2;
 }
-.list_blue a {
+.table td a {
   color: #329bca;
-}
-.list_blue a:hover {
-  color: #329bca;
-}
-.list_black a {
-  color: #333333;
-}
-.list_black a:hover {
-  color: #333333;
 }
 /**
- * 
- * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 17:57:54
- * @version $Id$ 课程筛选
+ * table with the solid border
+ *具体在学习中心-个人设置-我的订单使用
+ *------------------------------------
  */
-.ui_filter {
+.table-solid th,
+.table-solid td {
+  border: 1px solid #e2e2e2;
+}
+/*================/ 支付 /========================*/
+.header_shop {
+  width: 980px;
+  margin: 0 auto;
   overflow: hidden;
 }
-/*===================/年级列表/=====================*/
-.ui_filter .filter_handle {
+.header_shop h1.logo {
+  float: none;
   overflow: hidden;
-  height: 28px;
-  line-height: 28px;
-  border-bottom: 1px solid #4a9fdb;
-  _zoom: 1;
 }
-.ui_filter .filter_handle h2 {
-  float: left;
-  display: inline;
-  width: 77px;
-  background: #4a9fdb;
-  text-align: center;
-  color: #ffffff;
+.header_shop h1.logo a {
+  height: 45px;
+  background: url(/xesui/src/img/logo_shop.jpg) no-repeat;
 }
-.ui_filter .filter_handle p.more {
+.header_shop .pay_step {
+  height: 30px;
+  background: url(/xesui/src/img/shop_line.jpg) 0 10px repeat-x;
+}
+.header_shop .pay_step ul {
   float: right;
-  font-size: 12px;
-  color: #999999;
 }
-/*===================/学科分类/=====================*/
-.ui_filter .filter_item {
-  height: 37px;
-  overflow: hidden;
-  border-left: 1px solid #eeebe9;
-  border-right: 1px solid #eeebe9;
-  border-bottom: 1px dashed #e6e6e6;
-  margin: 0;
-  font-size: 12px;
-  background: #ffffff;
-}
-.ui_filter .filter_item dt {
+.header_shop .pay_step ul li {
   float: left;
-  width: 77px;
-  line-height: 37px;
+  width: 120px;
+  background: url(/xesui/src/img/shop_1.jpg) center 1px no-repeat;
+  font-family: "Microsoft YaHei";
   text-align: center;
-  background: #f7f6f5;
-  font-weight: bold;
-  color: #333333;
 }
-.ui_filter .filter_item dd {
-  float: left;
-  line-height: 37px;
-}
-.ui_filter .filter_item dd a {
-  margin: 0 6px;
-  color: #666666;
-}
-.ui_filter .filter_item dd a.current {
-  padding: 2px 6px;
-  background: #4a9fdb;
+.header_shop .pay_step ul li .text_num {
+  display: block;
   color: #ffffff;
+  padding: 2px 0 5px 0;
 }
-/*===================/更多条件/=====================*/
-.ui_filter .filter_more {
-  overflow: hidden;
-  position: relative;
-  height: 22px;
-  border-top: 5px solid #eeebe9;
+.header_shop .pay_step ul li p {
+  color: #4b9fdb;
 }
-.ui_filter .filter_more p {
-  position: absolute;
-  right: 0;
-  top: -1px;
-  width: 87px;
-  background: #eeebe9;
-  text-align: center;
-  font-size: 12px;
-  color: #666666;
+.header_shop .pay_step ul .next_step {
+  background: url(/xesui/src/img/shop_2.jpg) -3px 1px no-repeat;
 }
-/*===================/扩展样式/=====================*/
-ul.filter_handle_items {
-  display: none;
-}
-.ui_filter .border_none {
-  border-bottom: 0;
-}
-/**
- * 
- * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 17:57:54
- * @version $Id$ 课程页和教师页--排序标题
- */
-/*=============/课程/==================*/
-.ui_sortbar {
-  overflow: hidden;
-  height: 36px;
-  border: 1px solid #ededed;
-  background: #fcfcfc;
-  margin: 10px 0 15px 0;
-}
-.ui_sortbar li {
-  float: left;
-  line-height: 36px;
-  font-size: 12px;
-  margin: 0 30px 0 5px;
-}
-.ui_sortbar li a {
-  color: #666666;
-}
-.ui_sortbar li a em {
-  margin-top: 14px;
-}
-.ui_sortbar li a.current {
-  background: #4a9fdb;
-  padding: 2px 6px;
-  color: #fff;
-}
-.ui_sortbar li.sort_title {
-  margin: 0 0 0 15px;
-  font-weight: bold;
-}
-/*=============/教师/==================*/
-.sort_teacher {
-  overflow: hidden;
-}
-.sort_teacher li {
-  margin: 0;
-}
-.sort_teacher li.sort_num {
-  width: 30px;
-  margin: 0 15px;
-}
-.sort_teacher li.sort_avatar {
-  width: 145px;
-  padding-left: 30px;
-}
-.sort_teacher li.sort_course_num {
-  width: 100px;
-}
-.sort_teacher li.sort_trend {
-  width: 100px;
-}
-.sort_teacher li.sort_student_num {
-  width: 100px;
-}
-.sort_teacher li.sort_new_trend {
-  width: 100px;
-}
-/**
- * 
- * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 19:52:31
- * @version $Id$  老师排行
- */
-.ui_teachers {
-  overflow: hidden;
-}
-.teacher_item {
-  overflow: hidden;
-  height: 80px;
-  line-height: 80px;
-  border-bottom: 1px dashed #F1F1F1;
-}
-.teacher_item .num,
-.avatar,
-.course_num,
-.trend,
-.student_num,
-.new_trend,
-.follow_con {
-  float: left;
-  display: inline;
-  text-align: center;
-}
-.teacher_item .num {
-  width: 30px;
-  margin: 0 15px;
-  background: url(/xesui/src/img/bg1.jpg) 0 -231px no-repeat;
-  font-size: 14px;
-  font-weight: bold;
-  color: #999;
-  font-style: italic;
-}
-.teacher_item .avatar {
-  width: 150px;
-}
-.teacher_item .course_num {
-  width: 100px;
-}
-.teacher_item .trend {
-  width: 100px;
-}
-.teacher_item .student_num {
-  width: 100px;
-}
-.teacher_item .new_trend {
-  width: 100px;
-}
-.teacher_item .follow_con {
-  width: 110px;
-}
-.teacher_item .num_one {
-  background-position: 2px 15px;
-  color: #fff;
-  font-size: 18px;
-}
-.teacher_item .num_two {
-  background-position: 2px -69px;
-  color: #fff;
-  font-size: 18px;
-}
-.teacher_item .num_three {
-  background-position: 2px -150px;
-  color: #fff;
-  font-size: 18px;
-}
-.teacher_item .avatar p {
-  margin-top: 18px;
-}
-.teacher_item .avatar a {
-  float: left;
-  margin-left: 10px;
-}
-.teacher_item .avatar a img {
-  width: 50px;
-  height: 50px;
-}
-.teacher_item .avatar a.ui_username {
-  margin-top: 15px;
-}
-/**
- * 学习中心个人设置左侧导航
- */
-/*base,重置，变量*/
-.side_nav {
-  padding: 20px 0;
-  overflow: hidden;
-  border-bottom: 1px solid #e4e4e4;
-  border-right: 1px solid #e4e4e4;
-  background-color: #fbfbfb;
-}
-.side_nav .nav_header {
+.header_shop .pay_step ul .next_step p {
   color: #999999;
-  margin-bottom: 20px;
-  text-align: center;
-  border-bottom: 1px solid #cae0ed;
 }
-.side_nav .nav_header span {
-  position: relative;
-  top: 12px;
-  display: inline-block;
-  padding: 0 10px;
-  z-index: 10;
-  background-color: #fbfbfb;
-}
-.side_nav li {
-  line-height: 24px;
-}
-.side_nav li a {
-  font-size: 14px;
-  color: #0076b8;
-}
-/*=============/课程/==================*/
-.setting_menu {
-  overflow: hidden;
+h2.shopcar_title {
   height: 50px;
   line-height: 50px;
-  border-bottom: 1px dotted #ccc;
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  font-weight: normal;
+  color: #333333;
 }
-.setting_menu span {
-  float: left;
-}
-.setting_menu span strong {
-  font-size: 20px;
-}
-.setting_menu a {
-  float: right;
-}
-.setting_search {
-  height: 30px;
-  margin: 30px 0 0 0;
-  color: #666666;
-}
-.setting_search p {
-  float: right;
-}
-.nav_setting li {
-  text-align: center;
-}
-.nav_setting li.current a {
-  padding: 2px 10px;
-  background: #4a9eda;
-  color: #fff;
-}
-.nav_help li {
-  text-align: left;
-  padding-left: 15px;
-}
-.nav_help li.current a {
-  font-weight: bold;
-}
-/*=============/充值记录/==================*/
-/*=============/代金卡/==================*/
-/*=============/代金卡激活/==================*/
-.right-content {
-  padding: 20px 60px 10px 60px;
-}
-.right-content p {
-  height: 50px;
-  line-heihgt: 50px;
-}
-.right-content form div {
-  margin: 10px 0;
-}
-.right-content form div label {
-  height: 18px;
-  float: left;
-  line-height: 20px;
-}
-.right-content form div input {
-  width: 146px;
-  padding: 1px 2px;
-}
-.right-content form button {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  letter-spacing: 2px;
-  color: #ffffff;
-  border: 1px solid #880000;
-  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
-  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  margin-left: 50px;
-  dispblay: block;
-  padding: 3px 15px;
-  margin-right: 10px;
-}
-.right-content form a {
-  color: #329bca;
-}
-/*=============/基本资料/==================*/
-.user_profile p {
-  height: 40px;
-  line-height: 40px;
-}
-.user_profile p label {
-  width: 60px;
-  text-align: right;
-  float: left;
-}
-.user_profile p input[type="radio"] {
-  width: 20px;
-}
-.user_profile p input[type="checkbox"] {
-  margin: 1px 5px 0 3px;
-  vertical-align: middle;
-}
-.user_profile div {
-  overflow: hidden;
-}
-.user_profile div .labelgroup {
-  width: 250px;
-  float: left;
-  margin: 3px 0;
-}
-.user_profile div .labelgroup label {
-  float: left;
-  margin-right: 35px;
-  margin-bottom: 6px;
-}
-.user_profile div .labelgroup label input {
-  width: 20px;
-}
-.user_profile form button {
-  margin-left: 60px;
-}
-/*=============/收货地址/==================*/
-.user_address b {
-  line-height: 30px;
-}
-.user_address p label {
-  width: 90px;
-  text-align: right;
-  float: left;
-}
-.user_address form {
-  margin-bottom: 20px;
-}
-.user_address form button {
-  margin-left: 90px;
-}
-/*=============/我要充值/==================*/
-.paylists {
-  line-height: 22px;
-}
-.paylists .setting_menu {
+table.table_shop {
+  border: 1px solid #99c7e9;
   margin-bottom: 10px;
 }
-.paylists .pay_info {
-  color: #5b5b5b;
-  padding: 10px 50px;
+table.table_shop th {
+  padding: 0;
+  height: 31px;
+  vertical-align: middle;
+  background: #c0dff4;
+  font-weight: normal;
 }
-.paylists .pay_info strong {
+table.table_shop td {
+  background: #eef9ff;
+  border-top: 1px dashed #eeebe9;
+  font-size: 14px;
+}
+table.table_shop td a:link {
   color: #333333;
+}
+table.table_shop td span {
+  color: #999999;
+  padding-left: 20px;
+}
+table.table_shop .text_l {
+  text-align: left;
+  padding-left: 20px;
+}
+table.table_shop .text_r {
+  text-align: right;
+  padding-right: 20px;
+}
+table.table_shop .tfoot td {
+  background: #fff;
+  border: 0;
+}
+table.table_shop .tfoot .money {
   font-weight: bold;
 }
-.paylists .pay_tips {
-  color: #adadad;
+.order_button {
   overflow: hidden;
-  background: #FAFAFA;
-  padding: 10px 20px;
+}
+.order_button .btn {
+  float: right;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  margin-left: 10px;
 }

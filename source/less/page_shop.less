@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+
+@import "icon.less";
+@import "form.less";
+@import "button.less";
+/*图标，表单，按钮*/
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+/*头部，内容，底部*/
+
+@import "table.less";
+
+
+/*================/ 支付 /========================*/
+ 
+
+.header_shop {
+	width:980px;margin:0 auto;overflow:hidden;
+	h1.logo {
+		float:none;overflow:hidden;
+		a {height:45px;background: url(/xesui/src/img/logo_shop.jpg) no-repeat;}
+	}
+	.pay_step {
+		height:30px;background: url(/xesui/src/img/shop_line.jpg) 0 10px repeat-x;
+		ul {
+			float:right;
+			li {
+				float:left;width:120px;background: url(/xesui/src/img/shop_1.jpg) center 1px no-repeat;font-family:@fw ;text-align:@c;
+				.text_num {display:block;color:@white;padding:2px 0 5px 0;}
+				p {color:#4b9fdb; }
+			}
+			.next_step {
+				background: url(/xesui/src/img/shop_2.jpg) -3px 1px no-repeat;
+				.text_num {}
+				p {color:@g3*3;}
+
+			}
+		}
+	}
+}
+
+
+
+h2.shopcar_title {height:50px;line-height:50px;font-family:@fw ;font-size:@f18;font-weight:normal;color:@g3;}
+
+table.table_shop {
+	border:1px solid #99c7e9;margin-bottom:10px;
+	th {padding:0;height:31px;vertical-align: middle;background:#c0dff4;font-weight:normal;}
+	td {
+		background:#eef9ff;border-top:1px dashed #eeebe9;font-size:@f14;
+		a:link {color:@g3;}
+		span {color:@g3*3;padding-left:20px;}
+	}
+	.text_l {text-align:@l;padding-left:20px;}
+	.text_r {text-align:@r;padding-right:20px;}
+	.tfoot td {background:#fff;border:0;}
+	.tfoot .money {font-weight:bold;}
+}
+
+.order_button {overflow:hidden}
+.order_button .btn {float:right;width:100px;height:30px;font-size:@f14;font-family:@fw;margin-left:10px;}
