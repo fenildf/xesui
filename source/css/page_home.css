@@ -1595,7 +1595,7 @@ ul.filter_handle_items {
  * ui_visitor.less
  * 最近访客
  */
-ul li {
+.ui_visitor ul li {
   display: inline-block;
   zoom: 1;
   width: 32%;

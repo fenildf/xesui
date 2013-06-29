@@ -318,7 +318,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-ul li {
+.ui_visitor ul li {
   display: inline-block;
   zoom: 1;
   width: 32%;
