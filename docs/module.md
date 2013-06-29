@@ -36,6 +36,16 @@
 | [scroll](interactive.md#scroll)   | 滚动      | 滚动距离
 | [localstorage](interactive.md#ls) | 本地存储   | get / set / del
 | [tools](interactive.md#tools)     | 工具集合   | 
+| [swf](interactive.md#swf)         | 对象封装   | 对SWF进行封装
+
+
+
+## 方法
+| name                              | feature   | description
+|-----------------------------------|-----------|----------------------------
+| [add](interactive.md#add)         | 模块添加   | 动态调用模块文件
+| [use](interactive.md#use)         | 模块使用   | 动态调用的模块必须在此方法下使用
+
 
 
 
@@ -66,7 +76,7 @@
 | [dropdown](interactive#dropdown)  | 下拉列表 | 模拟下拉框
 | [win](interactive#win)            | 窗体相关 | window窗体操作
 | [mask](interactive#mask)          | 公用遮罩 | 公共的遮罩层，可提供几种背景：白色、黑色、半透明、带斜线等
-
+| [player](interactive#player)      | 播放器类 | 调用视频播放器接口
 
 
 ## 插件

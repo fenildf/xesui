@@ -14,7 +14,7 @@
 
 /**
  * @name xesui.js
- * @description 声明 xue 包：增加别名“_”
+ * @description 声明 xue 包：增加别名“X”
  * 
  * @module 
  * @submodule 
@@ -25,7 +25,7 @@
  */
 
 
-var _, xue = _ = xue || function(expr, fn) { return xue.dom ? xue.dom(expr, fn) : null; };
+var X, xue = X = xue || function(expr, fn) { return xue.dom ? xue.dom(expr, fn) : null; };
 
-xue.version = '0.4.0626';
+xue.version = '0.4.6';
 xue.id = 'xesui';
