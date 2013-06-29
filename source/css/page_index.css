@@ -25,6 +25,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.b {
+  font-weight: bold;
+}
 .tc {
   text-align: center;
 }
@@ -67,6 +70,11 @@
  *----------------------------------------------------
  */
 /**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
  * 可以换背景颜色
  * 可以在less文件中使用background-color(@color)调用
  *----------------------------------------------------
@@ -86,7 +94,6 @@
  * 可以在less文件中使用.alpha(opacity的值)调用
  *----------------------------------------------------
  */
-/*///import reset.css*/
 /* reset */
 * {
   margin: 0px;
@@ -327,6 +334,7 @@ table {
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
 }
 /**
@@ -382,7 +390,6 @@ table {
  *alert图标
  *icon_info_sign:警告框图标;
  *icon_info_search:搜索图标
-
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -446,7 +453,7 @@ table {
   background-position: -100px -75px;
 }
 .icon_home {
-  background-position: 0 -24px;
+  background-position: 0 -20px;
 }
 .icon_star {
   background-position: 0 -50px;
@@ -576,7 +583,9 @@ fieldset {
   border: 0;
 }
 label {
-  text-align: left;
+  display: block;
+  text-align: right;
+  width: 60px;
 }
 textarea {
   height: auto;
@@ -585,6 +594,7 @@ textarea {
  * 设定select, checkbox样式
  */
 select,
+label,
 textarea,
 input[type="text"],
 input[type="password"],
@@ -602,6 +612,7 @@ input[type="color"],
 .uneditable-input {
   vertical-align: middle;
   font-size: 12px;
+  cursor: pointer;
 }
 /**
  * 设定表单元素placeholder的字体颜色值
@@ -632,7 +643,8 @@ textarea::-webkit-input-placeholder {
   line-height: 20px;
   display: inline-block;
   vertical-align: bottom;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
 }
 .ui_username_large {
   font-size: 20px;
@@ -645,10 +657,12 @@ textarea::-webkit-input-placeholder {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  position: relative;
   text-decoration: none;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  letter-spacing: 2px;
 }
 .btn_text {
   border: none;
@@ -1376,6 +1390,7 @@ h1.logo a {
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
   background-position: -99px 2px;
 }
@@ -1389,6 +1404,7 @@ h1.logo a {
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
   background-position: -100px -23px;
 }
@@ -1402,6 +1418,7 @@ h1.logo a {
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
   width: 23px;
   background-position: -100px -50px;
@@ -1416,6 +1433,7 @@ h1.logo a {
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
   width: 23px;
   background-position: -100px -75px;

@@ -24,6 +24,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.b {
+  font-weight: bold;
+}
 .tc {
   text-align: center;
 }
@@ -66,6 +69,11 @@
  *----------------------------------------------------
  */
 /**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
  * 可以换背景颜色
  * 可以在less文件中使用background-color(@color)调用
  *----------------------------------------------------
@@ -90,10 +98,12 @@
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  position: relative;
   text-decoration: none;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  letter-spacing: 2px;
 }
 .btn_text {
   border: none;
@@ -287,6 +297,7 @@
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
 }
 /**
@@ -342,7 +353,6 @@
  *alert图标
  *icon_info_sign:警告框图标;
  *icon_info_search:搜索图标
-
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -406,7 +416,7 @@
   background-position: -100px -75px;
 }
 .icon_home {
-  background-position: 0 -24px;
+  background-position: 0 -20px;
 }
 .icon_star {
   background-position: 0 -50px;
@@ -550,6 +560,7 @@
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;

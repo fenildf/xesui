@@ -18,6 +18,7 @@
   margin-top: 1px;
   text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
 }
 /**
@@ -73,7 +74,6 @@
  *alert图标
  *icon_info_sign:警告框图标;
  *icon_info_search:搜索图标
-
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -137,7 +137,7 @@
   background-position: -100px -75px;
 }
 .icon_home {
-  background-position: 0 -24px;
+  background-position: 0 -20px;
 }
 .icon_star {
   background-position: 0 -50px;

@@ -80,8 +80,17 @@
  * 可以在less文件中使用border-color(@color)调用
  *----------------------------------------------------
  */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
 @charset "UTF-8";
-/*///import reset.css*/
 /* reset */
 * {
   margin: 0px;
@@ -220,6 +229,7 @@ table {
  *fl:font-family:"Lucida Console";
  *fs:font-family:"宋体";
  *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
  *------------------------------------
  */
 /**

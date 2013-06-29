@@ -122,6 +122,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.b {
+  font-weight: bold;
+}
 .tc {
   text-align: center;
 }
@@ -160,6 +163,11 @@
  */
 /**
  * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
  * 可以在less文件中使用.placeholder()调用
  *----------------------------------------------------
  */
