@@ -29,3 +29,5 @@ var X, xue = X = xue || function(expr, fn) { return xue.dom ? xue.dom(expr, fn) 
 
 xue.version = '0.4.6';
 xue.id = 'xesui';
+
+
