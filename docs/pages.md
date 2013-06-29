@@ -1,7 +1,9 @@
 #页面
 
+> 完成情况 ：**32** / 47
 
-## 前台 6/8
+
+## 前台 `6/8`
 
 name  |                   status                  | description
 ------|:-----------------------------------------:|-----------
@@ -15,7 +17,7 @@ name  |                   status                  | description
 错误页面| ![checked icon](../src/img/checked.png)  |
 
 
-## 我的网校 6/8
+## 我的网校 `6/8`
 
   name  |                   status                | description
 --------|:---------------------------------------:|---------------
@@ -28,7 +30,10 @@ name  |                   status                  | description
 我的评论 | ![checked icon](../src/img/checked.png) |
 我新鲜事 | ![checked icon](../src/img/checked.png) | 细节
 
-## Ta的首页 6/6
+
+
+## Ta的首页 `6/6`
+
 name  |                    status                 | description
 ------|:-----------------------------------------:|---------------
 他的介绍| ![checked icon](../src/img/checked.png)  | 右侧访客、左侧tab的当前箭头
@@ -39,14 +44,17 @@ name  |                    status                 | description
 全部评论| ![checked icon](../src/img/checked.png)  | 评论下面是分页，去掉“查看更多”
 
 
-## 课程页面 0/2
+## 课程页面 `0/2`
+
 name  |                    status                 | description
 ------|:-----------------------------------------:|---------------
 课程详情| ![checked icon](../src/img/checkbox.png) |
 课程学习| ![checked icon](../src/img/checkbox.png) |
 
 
-## 账户设置 13/14
+
+## 账户设置 `13/14`
+
 name  |                    status                 | description
 ------|:-----------------------------------------:|---------------
 充值记录| ![checked icon](../src/img/checked.png)  | 还差：头部、搜索按钮
@@ -66,7 +74,8 @@ name  |                    status                 | description
 
 
 
-## 支付流程 1/4
+## 支付流程 `1/4`
+
 name  |                    status                 | description
 ------|:-----------------------------------------:|---------------
 购物车页| ![checked icon](../src/img/checked.png)  | set1底部“推荐课程”、setp2、setp3
@@ -76,7 +85,8 @@ name  |                    status                 | description
 
 
 
-## 错题本 0/5
+## 错题本 `0/5`
+
   name |                    status                | description
 -------|:----------------------------------------:|---------------
 我的考试| ![checked icon](../src/img/checkbox.png) |
