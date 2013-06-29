@@ -36,14 +36,13 @@
 | [scroll](interactive.md#scroll)   | 滚动      | 滚动距离
 | [localstorage](interactive.md#ls) | 本地存储   | get / set / del
 | [tools](interactive.md#tools)     | 工具集合   | 
-
+| [swf](interactive.md#swf)         | 对象封装   | 对SWF进行封装
 
 
 
 ## 方法
 | name                              | feature   | description
 |-----------------------------------|-----------|----------------------------
-| [use](interactive.md#swf)         | 对象封装   | 对SWF进行封装
 | [add](interactive.md#add)         | 模块添加   | 动态调用模块文件
 | [use](interactive.md#use)         | 模块使用   | 动态调用的模块必须在此方法下使用
 
