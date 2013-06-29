@@ -3,35 +3,39 @@
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
  * @date    2013-06-27 14:24:01
- * @version $Id$
+ * @version $Id$ 所有标题
  */
 
 
 @import "variables.less";
 
-.side_header {height: 42px;line-height: 42px;}
-.side_header span {color:@g3 * 3;font-size: @f16;font-family: @fw;text-align: @l;}
+.side_header {
+		height: 42px;line-height: 42px;
+		span {color:@g3 * 3;font-size: @f16;font-family: @fw;text-align: @l;}
+}
+
+
+.main_header {
+	overflow: hidden;margin-bottom: 20px;border-bottom:1px solid #e5e5e5;
+	.nav_links {
+		width:645px;height: 42px;overflow: hidden;
+		li {
+			float: left;display: inline;line-height: 42px;
+			a {color: #006699;font-size: 14px;}
+			i {font-style: normal;color: #ccc;display: inline-block;padding:0 8px;}
+	    }
+	    li.current {
+	   			 background: url(/xesui/src/img/ins.jpg) 25px 37px no-repeat;
+				 a{font-weight: bold;}
+	    }
+	}
+}
 
 .border_blue {border-bottom:1px solid #0076b3; }
-.border_blue span {float:right;color:#0076b3;text-align: right;font-size: @f20;}
 
-
-.main_header {overflow: hidden;margin-bottom: 20px;}
-.main_header .nav_links {width:645px;height: 42px;overflow: hidden;}
-.main_header .nav_links li {float: left;display: inline;line-height: 42px;}
-.main_header .nav_links li a {color: #006699;font-size: 14px;}
-.main_header .nav_links li.current  a{font-weight: bold;}
-.main_header .nav_links li i {font-style: normal;color: #ccc;display: inline-block;padding:0 8px;}
-
-
-.border_blue .nav_links {}
-.border_blue .nav_links {width:645px;height: 42px;overflow: hidden;}
-.border_blue .nav_links li {float: left;display: inline;line-height: 42px;}
-.border_blue .nav_links li a {color: #006699;font-size: 14px;}
-.border_blue .nav_links li.current  a{font-weight: bold;}
-.border_blue .nav_links li i {font-style: normal;color: #ccc;display: inline-block;padding:0 8px;}
-
-.layout_body .border_blue {}
+.layout_body .border_blue .nav_links li.current {background:none;}
 .layout_body .border_blue span {float: left;font-size: 14px;font-weight: bold;line-height: 40px;}
+
+.side_header .border_blue span {float:right;color:#0076b3;text-align: right;font-size: @f20;}
 
 .header_setting {margin:10px 0 0 0;}

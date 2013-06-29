@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2013-06-28 16:35:11
+ * @version $Id$
+ */
+
+@import "variables.less";
+
+
+.ui_comment {
+	overflow:hidden;
+	form.comment_form {
+		overflow:hidden;
+		.comment_title {line-height:25px;font-size:@f14;color:@g3*3;display:none;}
+		.comment_textarea {
+			overflow:hidden;
+			textarea {width:99%;height:60px;border:1px solid #ededed;}
+		}
+		.comment_func {
+			overflow:hidden;height:50px;
+			.comment_kind {display:none;}
+			.comment_tips {float:left;color:@r0;line-height:50px;}
+			.comment_button {
+					float:right;
+					.comment_size {float:left;line-height:50px;margin-right:10px;color:@g3*3;}
+					.btn_submit {width:67px;height:29px;font-size:@f14;margin:10px 5px 0 0;}
+			}
+		}
+	}
+	.comment_content {
+			overflow:hidden;
+			.comment_list {
+			    border-bottom:1px dashed  #ededed;overflow:hidden;padding-bottom:5px;margin-top:15px;
+					.feed_detail {
+					   width:570px;
+					   .feed_text {
+					   		color:@g3*3;
+					   		strong {font-size:@f14;color:@g3;}
+					   }
+					}
+			}
+
+	}
+	.comment_more {
+			height:50px;line-height:50px; text-align:@c;font-size:@f14;
+	}
+}

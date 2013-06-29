@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
+   <link href="../css/page_home.css" type="text/css" rel="stylesheet" />
 
 <body>
 	<!--头部  start-->
@@ -23,23 +23,29 @@
 				<li><a href="#">逛论坛</a></li>
 			</ul>
 			<div class="search">
-				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师"> <button>搜索</button>
+				<input type="text" name="q" id="" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search"> <button class="head_btn_search">搜索</button>
 			</div>
+			<div class="shopcar"><a href=""><em class="icon icon_shopping">购物车</em></a></div>
 			<ul class="topbar">
-				<li><a href=""><em class="icon icon_car">购物车</em></a></li>
-				<li><a href="">登录</a><i>|</i></li>
-				<li><a href="">注册</a></li>
+				<li class=""><a href="##">登录</a></li>
+				<li class=""><i class="line">|</i></li>
+				<li><a href="##">注册</a></li>
+			</ul>
+			<ul class="loginbar hidden">
+				<li class=""><em class="icon icon_shopping">购物车</em></li>
+				
+				<li><em class="icon icon_shopping">购物车</em></li>
 			</ul>
 		</div>
 	</div>
 	<!-- 头部 end-->
 	<!-- 内容 start-->
-	<div id="middle">
+	<div id="container">
 		<!-- 个人形象 -->
 		<div class="head_user user_student">
 			<div class="user_pic">
-				<img/>		
-				大头像
+				<img src="http://r02.xesimg.com/course/2013/03/27/13643666022708.jpg"/>		
+				
 			</div>
 			<div class="user_detail">
 				<div class="user_name">朱化刚</div>
@@ -78,27 +84,28 @@
 		<div class="layout">
 			<div class="layout_body right w_740">
 				<!-- 提示 -->
-				    <div class="alert alert-block">
+				    <div class="tip tip_danger">
 				    	<button type="button" class="close" data-dismiss="alert">&times;</button>
-				    	<h4>Warning!</h4>
-				    	Best check yo self, you're not...
+				    	
+				    	<em class="icon icon_orders"></em>网校推出课程表功能，帮助大家合理规划学习时间，培养良好的学习习惯<a href="#">去看看</a>
 				    </div>
+
 				<!--  提示 end-->
 				<!--main_header -->
-				<div class="main_header border_blue">
+				<div class="main_header">
 					<ul class="nav_links">
 						<li class="current" >
 							<a href="#">课程</a><i class="line line_blue">|</i>
 						</li>
 						<li>
-							<a href="#">新鲜事</a><i class="line line_blue">|</i>
+							<a href="#">新鲜事</a>
 						</li>
 						
 					</ul>
 				</div>
                 <!-- main_header  -->
                 <!-- tabs -->
-					  <ul class="nav nav-tabs">
+					  <ul class="nav nav_pills">
 					  	<li class="current">
 					  		<a href="#">全部</a>
 					  	</li>
@@ -108,94 +115,129 @@
 					  	<li>
 					  		<a href="#">语文</a>
 					  	</li>
+					  	<li>
+					  		<a href="#">英语</a>
+					  	</li>
+					  	<li>
+					  		<a href="#">物理</a>
+					  	</li>
+					  	<li>
+					  		<a href="#">化学</a>
+					  	</li>
+					  	
 					  </ul>
 			  <!-- tabs end-->
-				<!-- 课程列表 -->
+				<!-- 我的网校课程 -->
 				  <div class="ui_courses">
-				  	<div class="ui_avatar">
-				  		<a href="" class="prev">左</a>
-				  		<ul class="avatar_items">
-				  			<li>
-				  				<a href="" class="userpic J_userinfo">
-				  					<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
-				  				<a class="username J_userinfo">
-				  					userName <em class="icon icon_verifty_teacher">V</em>
+				  	<div class="courses_repeat">
+				  		<div class="course_item">
+				  			<div class="ui_avatar">
+				  				<a href="" class="prev"> <em  class="icon icon_chevron_left" >左</em>
 				  				</a>
-				  			</li>
-				  		
-				  		</ul>
-				  		<a href="" class="next">右</a>
+				  				<ul class="avatar_items">
+				  					<li>
+				  						<a href="#" class="userpic J_userinfo">
+				  							<img src="http://file.xueersi.com/web/13105601335455.jpg" alt=""></a>
+				  						<a href="#" class="username J_userinfo">王雨洁</a>
+				  					</li>
+
+				  				</ul>
+				  				<a href="" class="next"> <em  class="icon icon_chevron_right" >右</em>
+				  				</a>
+				  			</div>
+				  			<!-- 头像 -->				  
+				  			<div class="course_detail">
+				  				<p class="course_title">
+				  					<em>数学</em>
+				  					2013年上学期课外拓展班数学同步课程 <strong>赠送两次直播</strong>
+				  				</p>
+				  				<p class="course_info">
+				  					课程包含 <strong>15</strong>
+				  					讲，
+				  					<strong>3</strong>
+				  					次月考，
+				  					<strong>3</strong>
+				  					次直播
+				  				</p>
+				  				<p class="course_func">
+				  					<a href="#" class="btn_audition">免费试听</a>
+				  					<span>
+				  						<em class="icon icon_rmb"></em>
+				  						<strong>465</strong>
+				  					</span>
+				  					<span>
+				  						<em class="icon icon_gray_user"></em>
+				  						37
+				  					</span>
+				  					<span>
+				  						<em class="icon icon_thumbs_up"></em>
+				  						88
+				  					</span>
+				  				</p>
+				  			</div>
+				  		</div>
+				  		<!-- top -->
+				  		 <ul class="nav nav_tabs">
+				  		 	<li class="current">
+				  		 		<a href="#">1-10</a>
+				  		 	</li>
+				  		 	<li>
+				  		 		<a href="#">11-20</a>
+				  		 	</li>
+				  		 	<li>
+				  		 		<a href="#">21-30</a>
+				  		 	</li>
+				  		 	<li>
+				  		 		<a href="#">31-40</a>
+				  		 	</li>
+				  		 	<li>
+				  		 		<a href="#">41-50</a>
+				  		 	</li>
+				  		 </ul>
+				  		 <!-- nav_tabs -->
+				  		 <ul class="joint_list">
+				  		 	<li>第一讲：多位数计算例多位数<em class="icon icon_manuscript"></em></li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例多位数计算例多位数计算例多位数计算例多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li>第一讲：多位数计算例</li>
+				  		 	<li class="gray">第一讲：多位数计算例</li>
+				  		 	<li class="gray">第一讲：多位数计算例多位数计算例多位数计算例多位数计算例多位数计算例</li>
+				  		 	<li class="gray">第一讲：多位数计算例多位数计算例多位数计算例多位数计算例多位数计算例</li>
+				  		 	<li class="gray">第一讲：多位数计算例</li>
+				  		 </ul>				  		 
 				  	</div>
-				  	<!-- 头像 -->
-				  	<div class="course_detail">
-				  		<p class="course_title">
-				  			2013年上学期课外拓展班数学同步课程 <strong>赠送两次直播</strong>
-				  		</p>
-				  		<p class="course_info">
-				  			课程包含 <strong>15</strong>
-				  			讲，
-				  			<strong>3</strong>
-				  			次月考，
-				  			<strong>3</strong>
-				  			次直播
-				  		</p>
-				  		<p class="course_func">
-				  			<button> <em class="icon icon_arrow_right"></em>
-				  				免费试听
-				  			</button>
-				  			<a> <em class="icon icon_xxxx"></em>
-				  				465
-				  			</a> <i class="line line_gray">|</i>
-				  			<a>
-				  				<em class="icon icon_xxxx"></em>
-				  				37
-				  			</a>
-				  			<a>
-				  				<em class="icon icon_xxxx"></em>
-				  				88
-				  			</a>
-				  		</p>
-				  	</div>
-                   <!-- tabs -->
-					  <ul class="nav nav-tabs">
-					  	<li class="current">
-					  		<a href="#">1-10</a>
-					  	</li>
-					  	<li>
-					  		<a href="#">10-20</a>
-					  	</li>
-					  	<li>
-					  		<a href="#">20-30</a>
-					  	</li>
-					  </ul>
-			  <!-- tabs end-->
-					  <ul>
-					  	<li>第一讲</li>
-					  	<li>第一讲</li>
-					  	<li>第一讲</li>
-					  	<li>第一讲</li>
-					  	<li>第一讲</li>
-					  	<li>第一讲第一讲</li>
-					  	<li>第一讲</li>
-					  	<li>第一讲</li>
-					  </ul>
-				  </div>
-				<!-- 课程列表 end -->
+				  	<!-- repeat -->
+				</div>
+				<!-- 我的网校课程 end -->
 				<div id="pages">=====翻页=====</div>
 				<!-- 翻页。。。。。。。。。 -->
 			</div>
 			<!--layout_body end -->
 			<div class="layout_side left w_215">
 
-				<ul class="nav nav-pills">
+				<ul class="home_side_nav">
 					<li class="current">
-						<a href="#">我的网校</a>
+						<em class="icon icon_home"></em><a href="#">我的网校</a>
 					</li>
 					<li>
-						<a href="#">我的收藏...</a>
+						<em class="icon icon_star"></em><a href="#">我的收藏 (66)</a>
 					</li>
 					<li>
-						<a href="#">我的关注...</a>
+						<em class="icon icon_heart"></em><a href="#">我的关注 (66)</a>
+					</li>
+					<li class="nav_header"><span>学习应用</span></li>
+					<li>
+						<em class="icon icon_th"></em><a href="#">错题本</a>
+					</li>
+					<li>
+						<em class="icon icon_diamond"></em><a href="#">金币换礼</a>
 					</li>
 				</ul>
 			</div>
@@ -208,22 +250,22 @@
 
 	<div id="footer">
             <div class="foot_service">
-            	<a class="service_share"> <strong>学习经验分享</strong>
+            	<a class="service_share"> <span>学习经验分享</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
-            	<a class="service_live"> <strong>直播学习指导</strong>
+            	<a class="service_live"> <span>直播学习指导</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_system">
-            		<strong>专业的学习规划体系</strong>
+            		<span>专业的学习规划体系</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_interaction">
-            		<strong>有趣的互动视频</strong>
+            		<span>有趣的互动视频</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>
-            <div class="area">
+            <div class="foot_area">
             <p>
                 北京学而思教育科技有限公司
                 <a href="http://www.xueersi.com/">网校首页</a>

@@ -357,7 +357,7 @@ table {
  *--------------------------------------------
  *个人中心头部icons
  *icon_lv:个人学力;
- *icon_user:个人学习经历;
+ *icon_user:个人学习经历/学员;
  *icon_orders:个人订单;
  *icon_coins:个人金币;
  *icon_card:激活听课证;
@@ -440,7 +440,7 @@ table {
   background-position: -100px -50px;
 }
 .icon_yverify {
-  background-position: -100px -26px;
+  background-position: -100px -23px;
 }
 .icon_byverify {
   background-position: -100px -75px;
@@ -467,7 +467,7 @@ table {
   background-position: 0 0;
 }
 .icon_user {
-  background-position: 0 -100px;
+  background-position: 8px -98px;
 }
 .icon_shield {
   background-position: 0 -125px;
@@ -486,6 +486,9 @@ table {
 }
 .icon_card {
   background-position: -24px -50px;
+}
+.icon_courses {
+  background-position: -18px -147px;
 }
 .icon_chevron_right {
   background-position: -75px -225px;
@@ -1007,7 +1010,7 @@ h1.logo a {
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
  * @date    2013-06-27 14:24:01
- * @version $Id$
+ * @version $Id$ 所有标题
  */
 .side_header {
   height: 42px;
@@ -1019,18 +1022,10 @@ h1.logo a {
   font-family: "Microsoft YaHei";
   text-align: left;
 }
-.border_blue {
-  border-bottom: 1px solid #0076b3;
-}
-.border_blue span {
-  float: right;
-  color: #0076b3;
-  text-align: right;
-  font-size: 20px;
-}
 .main_header {
   overflow: hidden;
   margin-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .main_header .nav_links {
   width: 645px;
@@ -1046,43 +1041,35 @@ h1.logo a {
   color: #006699;
   font-size: 14px;
 }
-.main_header .nav_links li.current a {
-  font-weight: bold;
-}
 .main_header .nav_links li i {
   font-style: normal;
   color: #ccc;
   display: inline-block;
   padding: 0 8px;
 }
-.border_blue .nav_links {
-  width: 645px;
-  height: 42px;
-  overflow: hidden;
+.main_header .nav_links li.current {
+  background: url(/xesui/src/img/ins.jpg) 25px 37px no-repeat;
 }
-.border_blue .nav_links li {
-  float: left;
-  display: inline;
-  line-height: 42px;
-}
-.border_blue .nav_links li a {
-  color: #006699;
-  font-size: 14px;
-}
-.border_blue .nav_links li.current a {
+.main_header .nav_links li.current a {
   font-weight: bold;
 }
-.border_blue .nav_links li i {
-  font-style: normal;
-  color: #ccc;
-  display: inline-block;
-  padding: 0 8px;
+.border_blue {
+  border-bottom: 1px solid #0076b3;
+}
+.layout_body .border_blue .nav_links li.current {
+  background: none;
 }
 .layout_body .border_blue span {
   float: left;
   font-size: 14px;
   font-weight: bold;
   line-height: 40px;
+}
+.side_header .border_blue span {
+  float: right;
+  color: #0076b3;
+  text-align: right;
+  font-size: 20px;
 }
 .header_setting {
   margin: 10px 0 0 0;

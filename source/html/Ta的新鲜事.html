@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
+   <link href="../css/page_home.css" type="text/css" rel="stylesheet" />
 
 <body>
 	<!--头部  start-->
@@ -23,132 +23,511 @@
 				<li><a href="#">逛论坛</a></li>
 			</ul>
 			<div class="search">
-				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师"> <button>搜索</button>
+				<input type="text" name="q" id="" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search"> <button class="head_btn_search">搜索</button>
 			</div>
+			<div class="shopcar"><a href=""><em class="icon icon_shopping">购物车</em></a></div>
 			<ul class="topbar">
-				<li><a href=""><em class="icon icon_car">购物车</em></a></li>
-				<li><a href="">登录</a><i>|</i></li>
-				<li><a href="">注册</a></li>
+				<li class=""><a href="##">登录</a></li>
+				<li class=""><i class="line">|</i></li>
+				<li><a href="##">注册</a></li>
+			</ul>
+			<ul class="loginbar hidden">
+				<li class=""><em class="icon icon_shopping">购物车</em></li>
+				
+				<li><em class="icon icon_shopping">购物车</em></li>
 			</ul>
 		</div>
 	</div>
 	<!-- 头部 end-->
 	<!-- 内容 start-->
-	<div id="middle">
+	<div id="container">
 		<!-- 老师形象 -->
 		<div class="head_user">
 			<div class="user_pic">
-				<img/>		
-				大头像
+				<img src="http://r02.xesimg.com/course/2013/03/27/13643666022708.jpg"/>		
+				
 			</div>
 			<div class="user_detail">
 				<div class="user_name">
-					王雨洁 <em class="icon icon_verifty_teacher">v</em>
+					王雨洁 <em class="icon icon_byverify">v</em>
 				</div>
 				<div class="user_info">
 					个人信息的中的
 					<br/>		
 					中的个人信算成好吧的
 				</div>
-				<div class="ui_follow following"> <em class="icon icon_succeed icon_add"></em>
-					关注/已关注 <i class="line line_gray">|</i>
-					<a href="" class="btn_cancel">取消</a>
+				<div class="ui_follow follow_cancel"> <em class="addsucess"></em>
+					已关注 <i class="line">|</i>
+					<a href="#" class="btn_cancel">取消</a>
 				</div>
 			</div>
 			<ul class="user_count">
 				<li>
-					<em class="icon icon_peple"></em>
+					<em class="icon icon_user"></em>
 					学员 <strong>1012324</strong>
 				</li>
 				<li>
-					<em class="icon icon_text"></em>
+					<em class="icon icon_courses"></em>
 					课程 <strong>10124</strong>
 				</li>
 			</ul>
 		</div>
 		<!-- 老师形象 end-->
 		<div class="layout">
-			<div class="layout_body left">
+			<div class="layout_body left w_730">
 				<!--main_header -->
-				<div class="main_header border_blue">
+				<div class="main_header">
 					<ul class="nav_links">
-						<li class="current" >
+						<li  class="current">
 							<a href="#">ta的新鲜事</a><i class="line line_blue">|</i>
 						</li>
 						<li>
 							<a href="#">ta的课程</a><i class="line line_blue">|</i>
 						</li>
 						<li>
-							<a href="#">ta的介绍</a><i class="line line_blue">|</i>
+							<a href="#">ta的介绍</a>
 						</li>
-						
-						
+
 					</ul>
 				</div>
                 <!-- main_header  -->
 			
-				<!-- 动态列表 -->
-				    <div class="ui_feed">
-				    	<div class="avatar">头像</div>
-				    	<div class="feed_detail">
-				    		<a href="" class="ui_username">王雨洁</a>
-				    		<div class="feed_text">中华人民共和国中华人民共和国中华人民共和国中华人民共和国中华人民共和国中华人民共和国中华人民共和国</div>
-				    		<div class="feed_media"><img src="" alt="小图" title="小图"></div>
-				    		<div class="feed_media_expand"><img src="" alt="大图图" title="大图图"></div>
-				    		<div class="feed_bar"><a href="">评论</a><a href="">收藏</a>5小时前</div>
-				    		<div class="feed_comment">
-				    			<!-- 评论 -->
-				    			<div class="ui_comment">
-				    				<form action="" class="comment_form">
-				    					<div class="comment_title">发布活动</div>
-				    					<div class="comment_textarea">
-				    						<textarea name="" id="" cols="30" rows="10"></textarea>
-				    					</div>
-				    					<div class="comment_func">
-				    						<div class="comment_kind">
-				    							<ul>
-				    								<li class="kind_img">
-				    									<p> <em class="icon_img"></em>
-				    									</p>
-				    								</li>
-				    								<li class="kind_media"></li>
-				    							</ul>
-				    						</div>
-				    						<div class="comment_tips">请填写内容，长度在10~140之间</div>
-				    						<div class="comment_button">
-				    							<span class="comment_size"> <i class="text_num">1</i>
-				    								/140
-				    							</span>
-				    							<button class="btn_submit">提交</button>
-				    						</div>
-				    					</div>
-				    				</form>
-				    			
-				    			</div>
-				    			<!-- 评论 end-->
-				    		</div>
+				<!-- 新鲜事 -->
+				<div class="content_box">
+					<div class="ui_feed">
+						<div class="ui_avatar avatar_mini">
+							<a href="##" class="userpic J_userinfo">
+								<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+						</div>
+						<div class="feed_detail">
+							<a href="" class="ui_username">
+								初一年级 <i class="icon icon_yverify">V</i>
+							</a>
+							<div class="feed_text">
+								秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+								<a href="">秀情老师数学加油站系列讲座第十二</a>
+							</div>
+							
+							<div class="feed_bar">
+								<span>
+									<a href="#" title="评论">
+										评论 <strong>(17)</strong>
+									</a>
+									<a href="#" title="评论">
+										收藏 <strong>(17)</strong>
+									</a> <i class="S_time">5小时前</i>
+								</span>
+							</div>
+							<div class="feed_comment ">
+								<div class="comment_corner"></div>
+								<!-- 评论 -->
+								<div class="ui_comment">
+									<form action="" class="comment_form">
+										<div class="comment_title">发布活动</div>
+										<div class="comment_textarea">
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+										<div class="comment_func">
+											<div class="comment_kind">
+												<ul>
+													<li class="kind_img">
+														<p> <em class="icon_img"></em>
+														</p>
+													</li>
+													<li class="kind_media"></li>
+												</ul>
+											</div>
+											<div class="comment_tips">请填写内容，长度在10~140之间</div>
+											<div class="comment_button">
+												<span class="comment_size"> <i class="text_num">1</i>
+													/140
+												</span>
+												<button class="btn btn_submit btn_sky">评论</button>
+											</div>
+										</div>
+									</form>
+									<div class="comment_content">
+										<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
 
-				    	</div>
-				    </div>
-				<!-- 动态列表 end -->
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+												<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
+
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+												<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
+
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+
+										<!--评论 repeat -->	
+										<div class="comment_more"><a href="#">点击查看更多评论</a></div>							
+									</div>
+									<!-- 评论内容列表 -->	
+								</div>
+								<!-- 评论块 -->
+							</div>
+ 
+						</div>
+					</div>
+					<div class="ui_feed">
+						<div class="ui_avatar avatar_mini">
+							<a href="##" class="userpic J_userinfo">
+								<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+						</div>
+						<div class="feed_detail">
+							<a href="" class="ui_username">
+								初一年级 <i class="icon icon_yverify">V</i>
+							</a>
+							<div class="feed_text">
+								秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+								<a href="">秀情老师数学加油站系列讲座第十二</a>
+							</div>
+							
+							<div class="feed_bar">
+								<span>
+									<a href="#" title="评论">
+										评论 <strong>(17)</strong>
+									</a>
+									<a href="#" title="评论">
+										收藏 <strong>(17)</strong>
+									</a> <i class="S_time">5小时前</i>
+								</span>
+							</div>
+							<div class="feed_comment hidden">
+								<div class="comment_corner"></div>
+								<!-- 评论 -->
+								<div class="ui_comment">
+									<form action="" class="comment_form">
+										<div class="comment_title">发布活动</div>
+										<div class="comment_textarea">
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+										<div class="comment_func">
+											<div class="comment_kind">
+												<ul>
+													<li class="kind_img">
+														<p> <em class="icon_img"></em>
+														</p>
+													</li>
+													<li class="kind_media"></li>
+												</ul>
+											</div>
+											<div class="comment_tips">请填写内容，长度在10~140之间</div>
+											<div class="comment_button">
+												<span class="comment_size"> <i class="text_num">1</i>
+													/140
+												</span>
+												<button class="btn btn_submit btn_sky">评论</button>
+											</div>
+										</div>
+									</form>
+									<div class="comment_content">
+										<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
+
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+												<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
+
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+												<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
+
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+
+										<!--评论 repeat -->	
+										<div class="comment_more"><a href="#">点击查看更多评论</a></div>							
+									</div>
+									<!-- 评论内容列表 -->	
+								</div>
+								<!-- 评论块 -->
+							</div>
+ 
+						</div>
+					</div>
+					<div class="ui_feed">
+						<div class="ui_avatar avatar_mini">
+							<a href="##" class="userpic J_userinfo">
+								<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+						</div>
+						<div class="feed_detail">
+							<a href="" class="ui_username">
+								初一年级 <i class="icon icon_yverify">V</i>
+							</a>
+							<div class="feed_text">
+								秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+								<a href="">秀情老师数学加油站系列讲座第十二</a>
+							</div>
+							
+							<div class="feed_bar">
+								<span>
+									<a href="#" title="评论">
+										评论 <strong>(17)</strong>
+									</a>
+									<a href="#" title="评论">
+										收藏 <strong></strong>
+									</a> <i class="S_time">5小时前</i>
+								</span>
+							</div>
+							<div class="feed_comment hidden">
+								<div class="comment_corner"></div>
+								<!-- 评论 -->
+								<div class="ui_comment">
+									<form action="" class="comment_form">
+										<div class="comment_title">发布活动</div>
+										<div class="comment_textarea">
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+										<div class="comment_func">
+											<div class="comment_kind">
+												<ul>
+													<li class="kind_img">
+														<p> <em class="icon_img"></em>
+														</p>
+													</li>
+													<li class="kind_media"></li>
+												</ul>
+											</div>
+											<div class="comment_tips">请填写内容，长度在10~140之间</div>
+											<div class="comment_button">
+												<span class="comment_size"> <i class="text_num">1</i>
+													/140
+												</span>
+												<button class="btn btn_submit btn_sky">评论</button>
+											</div>
+										</div>
+									</form>
+									<div class="comment_content">
+										<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
+
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+												<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
+
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+												<div class="comment_list">
+											<div class="ui_avatar avatar_mini">
+												<a href="##" class="userpic J_userinfo">
+													<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+											</div>
+											<div class="feed_detail">
+												<div class="feed_text">
+													<strong>小明：</strong>秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二秀情老师数学加油站系列讲座第十二
+													
+												</div>
+
+												<div class="feed_bar">
+													<span>
+														<i class="S_time">5小时前</i>
+													</span>
+												</div>
+											</div>
+										</div>
+
+										<!--评论 repeat -->	
+										<div class="comment_more"><a href="#">点击查看更多评论</a></div>							
+									</div>
+									<!-- 评论内容列表 -->	
+								</div>
+								<!-- 评论块 -->
+							</div>
+ 
+						</div>
+					</div>
+					<!--动态 repeat -->				
+				</div>
+				<!-- 新鲜事 end -->
+
 				<div id="pages">=====翻页=====</div>
 				<!-- 翻页。。。。。。。。。 -->
 			</div>
 			<!--layout_body end -->
-			<div class="layout_side right">
+			<div class="layout_side right w_235">
 			
 				<!-- panle -->
 				<div class="panel">
-					<div class="side_header border_blue"><span>最近访客</span></div>
-					 <div class="ui_avatar avatar_mini">
-					 	<p>
-					 		<a href="" class="userpic">
-					 			<img src="" alt="最近访客"></a>
-					 		<a class="username">王雨洁</a>
-					 		<span>2小时前</span>
-					 	</p>
+					<div class="side_header"><span>最近访客</span></div>
+					 <div class="panel_content">
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时前</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<!-- 最近访客列表 -->
 					 </div>
-				<!-- 最近访客列表 -->
+				<!-- panel_content -->
 				</div>
 				<!-- panle -->
 			</div>
@@ -161,22 +540,22 @@
 
 	<div id="footer">
             <div class="foot_service">
-            	<a class="service_share"> <strong>学习经验分享</strong>
+            	<a class="service_share"> <span>学习经验分享</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
-            	<a class="service_live"> <strong>直播学习指导</strong>
+            	<a class="service_live"> <span>直播学习指导</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_system">
-            		<strong>专业的学习规划体系</strong>
+            		<span>专业的学习规划体系</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_interaction">
-            		<strong>有趣的互动视频</strong>
+            		<span>有趣的互动视频</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>
-            <div class="area">
+            <div class="foot_area">
             <p>
                 北京学而思教育科技有限公司
                 <a href="http://www.xueersi.com/">网校首页</a>

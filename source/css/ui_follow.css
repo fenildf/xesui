@@ -5,110 +5,6 @@
  * Button 公用样式
  */
 /**
- * Colors
- *---------------------------
- */
-/**
- * 全站链接样式
- *
- */
-/**
- * font-family
- *fa:font-family:"Arial";
- *fg:font-family:"Georgia";
- *ft:font-family:"Tahoma";
- *fl:font-family:"Lucida Console";
- *fs:font-family:"宋体";
- *fw:font-family:"Microsoft YaHei";
- *fd:font-family:"verdana";
- *------------------------------------
- */
-/**
- * padding值设定
- *
- *-----------------------------------------------
- */
-/**
- * margin值设定
- *@margin0, @margin5
- *-------------------------------------------------
- */
-/**
- * width值设定
- *@w1=width:1px;
- *可以使用计算值调用 eg:width:20px=20*@w1;
- *-------------------------------------------------
- */
-/**
- * font-size:
- *f0:font-size:0;
- *f10:font-size:0;
- *f12:font-size:12px;
- *f13:font-size:13px;
- *f14:font-size:14px;
- *f16:font-size:16px;
- *f18:font-size:18px;
- *f20:font-size:20px;
- *f24:font-size:24px;
- *------------------------------------
- */
-/**
- * Align & Direction
- * l:left
- * r:right
- * c:center
- * t:top
- * m:middle
- * b:bottom
- *ti:text-index:-9999em;
- *--------------------------------------
- */
-/**
- * HL:high-light属性设置
- * hl14:high-light:14px;
- * hl16:high-light:16px;
- * hl18:high-light:18px;
- * hl20:high-light:20px;
- * hl22:high-light:22px;
- * hl24:high-light:24px;
- * hl150:high-light:150%;
- * hl180:high-light:180%;
- *--------------------------------------
- */
-/**
- * border设置
- * bbr:base border redius:3px;
- *--------------------------------------
- */
-/**
- * button
- * btnColor:btn-color:#fff;
- * btnfh:btn-first-height;
- * btnzh:btn-zero-high-light:0%; //没有渐变
- * btnsh:btn-zero-high-light:5%; //渐变从5%开始
- *--------------------------------------
- */
-/**
- * 雪碧图路径设置
- *----------------------------------------
- */
-/**
- * table设置
- *tbg: tableBackground
- *tbga: tableBackgroundAccent
- *tbhb:table-th-background
- *tborder:table-border
- *----------------------------------------
- */
-/**
- * Form设置
- *tbg: tableBackground
- *tbga: tableBackgroundAccent
- *tbhb:table-th-background
- *tborder:table-border
- *----------------------------------------
- */
-/**
  * Base style
  */
 /**
@@ -277,6 +173,110 @@
 /**
  * Button 公用样式
  */
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
+ *------------------------------------
+ */
+/**
+ * padding值设定
+ *
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@margin0, @margin5
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用 eg:width:20px=20*@w1;
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f18:font-size:18px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *ti:text-index:-9999em;
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ * hl150:high-light:150%;
+ * hl180:high-light:180%;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
 .icon {
   display: inline-block;
   width: 20px;
@@ -317,7 +317,7 @@
  *--------------------------------------------
  *个人中心头部icons
  *icon_lv:个人学力;
- *icon_user:个人学习经历;
+ *icon_user:个人学习经历/学员;
  *icon_orders:个人订单;
  *icon_coins:个人金币;
  *icon_card:激活听课证;
@@ -400,7 +400,7 @@
   background-position: -100px -50px;
 }
 .icon_yverify {
-  background-position: -100px -26px;
+  background-position: -100px -23px;
 }
 .icon_byverify {
   background-position: -100px -75px;
@@ -427,7 +427,7 @@
   background-position: 0 0;
 }
 .icon_user {
-  background-position: 0 -100px;
+  background-position: 8px -98px;
 }
 .icon_shield {
   background-position: 0 -125px;
@@ -446,6 +446,9 @@
 }
 .icon_card {
   background-position: -24px -50px;
+}
+.icon_courses {
+  background-position: -18px -147px;
 }
 .icon_chevron_right {
   background-position: -75px -225px;
@@ -524,12 +527,10 @@
   height: 22px;
   line-height: 22px;
   color: #666666;
-  padding: 2px 5px;
+  padding: 0 2px;
   display: inline-block;
-  border: 1px solid #cfcfcf;
-  background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
-  background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
-  box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
 }
 .ui_follow em {
   font-weight: bold;
@@ -554,21 +555,28 @@
   height: 14px;
   opacity: 0.5;
   background-position: -50px -177px;
+  margin-top: 4px;
 }
 .add {
   text-decoration: none;
-  vertical-align: top;
-}
-.add:hover {
-  color: #ffffff;
-  border: 1px solid #ff870f;
-  background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
-  background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
 }
 .add em {
   font-family: "verdana";
   font-size: 12px;
+  font-weight: bold;
+}
+.add:hover {
+  color: #ffffff;
+  background: #ffaa36;
+  cursor: pointer;
+  border: 1px solid #ffa12f;
 }
 .hidden {
   color: #b3b3b3;
+}
+.follow_cancel {
+  width: 100px;
+}
+.follow_cancel .line {
+  padding: 0;
 }

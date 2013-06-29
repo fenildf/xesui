@@ -2,8 +2,8 @@
 /**
  * 
  * @authors Your Name (you@example.org)
- * @date    2013-06-27 14:38:03
- * @version $Id$  动态组件
+ * @date    2013-06-28 14:19:25
+ * @version $Id$
  */
 /**
  * Colors
@@ -109,63 +109,49 @@
  *tborder:table-border
  *----------------------------------------
  */
-.ui_feed {
+.head_user {
+  width: 980px;
+  height: 160px;
   overflow: hidden;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #F1F1F1;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto 15px;
 }
-.ui_avatar {
-  overflow: hidden;
-}
-.ui_feed .avatar_mini {
+.head_user .user_pic {
   float: left;
-  display: inline;
-  width: 60px;
+  margin-right: 13px;
 }
-.feed_detail {
+.head_user .user_pic img {
+  width: 134px;
+  height: 134px;
+}
+.head_user .user_detail {
   float: left;
-  display: inline;
-  margin-left: 5px;
 }
-.feed_detail .feed_text {
+.head_user .user_detail .user_name {
+  font-size: 30px;
+  font-family: "Microsoft YaHei";
+}
+.head_user .user_detail .user_name em {
+  margin-top: 14px;
+}
+.head_user .user_detail .user_info {
+  height: 65px;
   line-height: 180%;
-  color: #666;
 }
-.feed_detail .feed_text a {
-  color: #006699;
+.head_user .user_detail .ui_follow .addsucess {
+  margin-left: 3px;
 }
-.feed_detail .feed_bar {
-  overflow: hidden;
-  line-height: 20px;
-  color: #999999;
-}
-.feed_detail .feed_bar span {
+.head_user .user_count {
   float: right;
+  display: inline;
+  margin-top: 65px;
 }
-.feed_detail .feed_bar span a {
-  padding-right: 10px;
+.head_user .user_count li {
+  float: left;
+  width: 120px;
+  font-size: 16px;
 }
-.feed_detail .feed_bar span a strong {
-  color: #999999;
-}
-.feed_comment {
-  border: 1px solid #ededed;
-  background: #fcfcfc;
-  margin-top: 10px;
-  position: relative;
-}
-.feed_comment .ui_comment {
-  width: 640px;
-  margin: 10px auto;
-}
-.feed_comment .comment_corner {
-  width: 16px;
-  height: 9px;
-  background: url(/xesui/src/img/ins_c.jpg) no-repeat;
-  position: absolute;
-  z-index: 10;
-  top: -9px;
-  right: 126px;
+.head_user .user_count li strong {
+  display: block;
+  font-size: 24px;
+  padding-left: 5px;
 }

@@ -188,11 +188,17 @@
  *----------------------------------------------------
  */
 .tip {
-  line-height: 20px;
+  line-height: 24px;
   padding: 6px 12px;
   color: #333333;
+  background: #cc0000;
+  background: -webkit-linear-gradient(top, #fff5da, #ffeec0);
   font-size: 12px;
-  background-color: #fff2f2;
+}
+.tip .close {
+  float: right;
+  background: none;
+  font-size: 18px;
 }
 .tip_danger {
   border: 1px solid;

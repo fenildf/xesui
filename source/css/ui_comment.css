@@ -2,8 +2,8 @@
 /**
  * 
  * @authors Your Name (you@example.org)
- * @date    2013-06-27 14:38:03
- * @version $Id$  动态组件
+ * @date    2013-06-28 16:35:11
+ * @version $Id$
  */
 /**
  * Colors
@@ -109,63 +109,75 @@
  *tborder:table-border
  *----------------------------------------
  */
-.ui_feed {
-  overflow: hidden;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #F1F1F1;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-.ui_avatar {
+.ui_comment {
   overflow: hidden;
 }
-.ui_feed .avatar_mini {
-  float: left;
-  display: inline;
-  width: 60px;
-}
-.feed_detail {
-  float: left;
-  display: inline;
-  margin-left: 5px;
-}
-.feed_detail .feed_text {
-  line-height: 180%;
-  color: #666;
-}
-.feed_detail .feed_text a {
-  color: #006699;
-}
-.feed_detail .feed_bar {
+.ui_comment form.comment_form {
   overflow: hidden;
-  line-height: 20px;
+}
+.ui_comment form.comment_form .comment_title {
+  line-height: 25px;
+  font-size: 14px;
   color: #999999;
+  display: none;
 }
-.feed_detail .feed_bar span {
+.ui_comment form.comment_form .comment_textarea {
+  overflow: hidden;
+}
+.ui_comment form.comment_form .comment_textarea textarea {
+  width: 99%;
+  height: 60px;
+  border: 1px solid #ededed;
+}
+.ui_comment form.comment_form .comment_func {
+  overflow: hidden;
+  height: 50px;
+}
+.ui_comment form.comment_form .comment_func .comment_kind {
+  display: none;
+}
+.ui_comment form.comment_form .comment_func .comment_tips {
+  float: left;
+  color: #cc0000;
+  line-height: 50px;
+}
+.ui_comment form.comment_form .comment_func .comment_button {
   float: right;
 }
-.feed_detail .feed_bar span a {
-  padding-right: 10px;
-}
-.feed_detail .feed_bar span a strong {
+.ui_comment form.comment_form .comment_func .comment_button .comment_size {
+  float: left;
+  line-height: 50px;
+  margin-right: 10px;
   color: #999999;
 }
-.feed_comment {
-  border: 1px solid #ededed;
-  background: #fcfcfc;
-  margin-top: 10px;
-  position: relative;
+.ui_comment form.comment_form .comment_func .comment_button .btn_submit {
+  width: 67px;
+  height: 29px;
+  font-size: 14px;
+  margin: 10px 5px 0 0;
 }
-.feed_comment .ui_comment {
-  width: 640px;
-  margin: 10px auto;
+.ui_comment .comment_content {
+  overflow: hidden;
 }
-.feed_comment .comment_corner {
-  width: 16px;
-  height: 9px;
-  background: url(/xesui/src/img/ins_c.jpg) no-repeat;
-  position: absolute;
-  z-index: 10;
-  top: -9px;
-  right: 126px;
+.ui_comment .comment_content .comment_list {
+  border-bottom: 1px dashed  #ededed;
+  overflow: hidden;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+.ui_comment .comment_content .comment_list .feed_detail {
+  width: 570px;
+}
+.ui_comment .comment_content .comment_list .feed_detail .feed_text {
+  color: #999999;
+}
+.ui_comment .comment_content .comment_list .feed_detail .feed_text strong {
+  font-size: 14px;
+  color: #333333;
+}
+.ui_comment .comment_more {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
 }

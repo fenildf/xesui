@@ -1007,6 +1007,308 @@ h1.logo a {
 }
 /*头部，内容，底部*/
 /**
+ * nav 导航类
+ * 左侧导航：nav_list
+ * tab导航：nav_tabs
+ * 高亮显示：nav_pills
+ * 文本链接：nav_links
+ */
+/**
+ * Button 公用样式
+ */
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  background-image: url("../img/icon.png");
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+}
+/**
+ *icon按钮样式
+ * <em>于icon图片类，<i>用于文字类
+ *
+ *认证加V以及顶部图标
+ *icon_bverify：蓝V
+ *icon_bbverify：大蓝V
+ *icon_yverify：黄V
+ *icon_byverify：大黄V
+ *icon_new:有新消息状态;
+ *icon_shopping：顶部购物图标
+ *icon_messages：顶部信息图标
+ *icon_settsings：顶部设置图标
+ *-------------------------------------------
+ *nav-list图标
+ *icon_home:我的网校;
+ *icon_star:我的收藏;
+ *icon_heart:我的关注; 
+ *icon_th:我的错题本; 
+ *icon_exam:我的考试;
+ *icon_report:效果报告;
+ *icon_schedule:课程表;
+ *icon_shield:我的挑战;
+ *icon_diamond:金币兑礼;
+
+ *--------------------------------------------
+ *个人中心头部icons
+ *icon_lv:个人学力;
+ *icon_user:个人学习经历;
+ *icon_orders:个人订单;
+ *icon_coins:个人金币;
+ *icon_card:激活听课证;
+ *--------------------------------------------
+ *课程列表，课程动态，课程评论，购物车推荐课程
+ *icon_chevron_right:老师轮播图右侧按钮;
+ *icon_chevron_left:老师轮播图左侧按钮;
+ *icon_yellow_sign:课程标题橙色标记
+ *icon_thumbs_up:课程功能区赞图标;
+ *icon_rmb:课程功能区价格图标;
+ *icon_gray_user:课程功能区总学员数图标;
+ *icon_clock:课程功能区请假按钮;
+ *icon_word:课程功能区资料按钮;
+ *icon_horn:课程功能区续保按钮;
+ *icon_manuscript:课程功能区考试按钮;
+ *icon_tv:课程功能区直播按钮;
+ *--------------------------------------------
+ *alert图标
+ *icon_info_sign:警告框图标;
+ *-------------------------------------------
+ *关注按钮
+ *icon_add：关注添加图标
+ *icon_gray_add：未关注图标
+ *-------------------------------------------
+ *icon_coursecard:课程卡大图标;
+ *icon_guide:新手指南;
+ *icon_courseselect:怎样选课图标;
+ *icon_forward:去看看按钮;
+ *
+ */
+.icon_bbverify,
+.icon_byverify {
+  width: 23px;
+}
+.icon_lv {
+  width: 30px;
+  height: 15px;
+}
+.icon_yellow_sign {
+  width: 35px;
+  height: 17px;
+}
+.icon_coursecard,
+.icon_courseselect,
+.icon_guide {
+  width: 238px;
+  height: 41px;
+}
+.icon_forward {
+  width: 150px;
+  height: 36px;
+}
+.icon_new {
+  background-position: 0 0;
+}
+.icon_shopping {
+  background-position: -26px -74px;
+}
+.icon_message {
+  background-position: -26px -99px;
+}
+.icon_settings {
+  background-position: -23px -124px;
+}
+.icon_bverify {
+  background-position: -99px 0;
+}
+.icon_bbverify {
+  background-position: -100px -50px;
+}
+.icon_yverify {
+  background-position: -100px -26px;
+}
+.icon_byverify {
+  background-position: -100px -75px;
+}
+.icon_home {
+  background-position: 0 -24px;
+}
+.icon_star {
+  background-position: 0 -50px;
+}
+.icon_heart {
+  background-position: 0 -75px;
+}
+.icon_th {
+  background-position: 0 0;
+}
+.icon_exam {
+  background-position: 0 0;
+}
+.icon_report {
+  background-position: 0 0;
+}
+.icon_schedule {
+  background-position: 0 0;
+}
+.icon_user {
+  background-position: 0 -100px;
+}
+.icon_shield {
+  background-position: 0 -125px;
+}
+.icon_diamond {
+  background-position: 0 -150px;
+}
+.icon_lv {
+  background-position: -127px 0;
+}
+.icon_orders {
+  background-position: -50px -125px;
+}
+.icon_coins {
+  background-position: -22px -25px;
+}
+.icon_card {
+  background-position: -24px -50px;
+}
+.icon_chevron_right {
+  background-position: -75px -225px;
+}
+.icon_chevron_left {
+  background-position: -75px -200px;
+}
+.icon_yellow_sign {
+  background-position: -127px -211px;
+}
+.icon_thumbs_up {
+  background-position: -75px -49px;
+}
+.icon_rmb {
+  background-position: -70px 0;
+}
+.icon_gray_user {
+  background-position: -75px -25px;
+}
+.icon_clock {
+  background-position: -75px -75px;
+}
+.icon_word {
+  background-position: -75px -100px;
+}
+.icon_horn {
+  background-position: -75px -125px;
+}
+.icon_manuscript {
+  background-position: -75px -150px;
+}
+.icon_tv {
+  background-position: -75px -175px;
+}
+.icon_info_sign {
+  background-position: -75px -75px;
+}
+.icon_follow_add {
+  background-position: 0 0;
+}
+.icon_follow_cancel {
+  background-position: 0 0;
+}
+.icon_coursecard {
+  background-position: -123px -375px;
+}
+.icon_guide {
+  background-position: -123px -420px;
+}
+.icon_courseselect {
+  background-position: -123px -466px;
+}
+.icon_forward {
+  background-position: -127px -366px;
+}
+.nav {
+  overflow: hidden;
+}
+.nav li {
+  float: left;
+  display: inline;
+  line-height: 20px;
+}
+.nav li a {
+  display: inline-block;
+}
+.nav_tabs {
+  height: 26px;
+  position: relative;
+  top: 2px;
+  left: 0;
+  z-index: 10;
+}
+.nav_tabs li {
+  width: 65px;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 10px;
+}
+.nav_tabs li a {
+  color: #999;
+}
+.nav_tabs .current {
+  background: #fff;
+  border-top: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+}
+.nav_pills {
+  margin-bottom: 10px;
+}
+.nav_pills li {
+  margin-right: 20px;
+}
+.nav_pills .current a {
+  color: #ffffff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #4a9eda;
+  padding: 1px 10px;
+}
+/**
+ *tips(alert样式)提示样式
+ * 默认是不带边框的粉色提示
+ */
+.tip {
+  line-height: 24px;
+  padding: 6px 12px;
+  color: #333333;
+  background: #cc0000;
+  background: -webkit-linear-gradient(top, #fff5da, #ffeec0);
+  font-size: 12px;
+}
+.tip .close {
+  float: right;
+  background: none;
+  font-size: 18px;
+}
+.tip_danger {
+  border: 1px solid;
+  border-color: #e6d6a5;
+  background-color: #feeec3;
+}
+.tip a,
+.tip strong {
+  padding-left: 10px;
+}
+.tip a {
+  color: #0078b0;
+}
+.tip a:hover {
+  color: #0078b0;
+}
+/**
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
  * @date    2013-06-27 14:24:01
@@ -1144,6 +1446,72 @@ h1.logo a {
 }
 .list_black a:hover {
   color: #333333;
+}
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2013-06-27 14:38:03
+ * @version $Id$  动态组件
+ */
+.ui_feed {
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #F1F1F1;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.ui_avatar {
+  overflow: hidden;
+}
+.ui_feed .avatar_mini {
+  float: left;
+  display: inline;
+  width: 60px;
+}
+.feed_detail {
+  float: left;
+  display: inline;
+  margin-left: 5px;
+}
+.feed_detail .feed_text {
+  line-height: 180%;
+  color: #666;
+}
+.feed_detail .feed_text a {
+  color: #006699;
+}
+.feed_detail .feed_bar {
+  overflow: hidden;
+  line-height: 20px;
+  color: #999999;
+}
+.feed_detail .feed_bar span {
+  float: right;
+}
+.feed_detail .feed_bar span a {
+  padding-right: 10px;
+}
+.feed_detail .feed_bar span a strong {
+  color: #999999;
+}
+.feed_comment {
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+  margin-top: 10px;
+  position: relative;
+}
+.feed_comment .ui_comment {
+  width: 640px;
+  margin: 10px auto;
+}
+.feed_comment .comment_corner {
+  width: 16px;
+  height: 9px;
+  background: url(/xesui/src/img/ins_c.jpg) no-repeat;
+  position: absolute;
+  z-index: 10;
+  top: -9px;
+  right: 126px;
 }
 /**
  * 
@@ -1297,70 +1665,159 @@ ul.filter_handle_items {
 /**
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 19:52:31
- * @version $Id$  老师排行
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程
  */
-.ui_teachers {
+.ui_courses {
   overflow: hidden;
 }
-.teacher_item {
-  overflow: hidden;
-  height: 80px;
-  line-height: 80px;
-  border-bottom: 1px dashed #F1F1F1;
-}
-.teacher_item .num,
-.avatar,
-.course_num,
-.trend,
-.student_num,
-.new_trend,
-.follow_con {
+.ui_courses .ui_avatar {
   float: left;
   display: inline;
-  text-align: center;
+  height: 110px;
+  margin: 10px;
 }
-.teacher_item .num {
-  width: 30px;
-  margin: 0 15px;
-  background: url(/xesui/src/img/bg1.jpg) 0 -231px no-repeat;
+.course_item {
+  overflow: hidden;
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+  margin-bottom: 10px;
+}
+/*内容部分*/
+.course_detail {
+  float: left;
+  display: inline;
+  width: 645px;
+}
+.course_detail .course_title {
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #333333;
+  font-weight: normal;
+  padding: 7px 0;
+}
+.course_detail .course_title em {
+  display: inline-block;
+  width: 35px;
+  line-height: 17px;
+  background: url(/xesui/src/img/icon_1.png) no-repeat;
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 3px;
+}
+.course_detail .course_title strong {
   font-size: 14px;
+}
+.course_detail .course_info {
+  height: 25px;
+  color: #999999;
+  font-size: 12px;
+}
+.course_detail .course_info strong {
   font-weight: bold;
-  color: #999;
-  font-style: italic;
 }
-.teacher_item .avatar {
-  width: 130px;
+.course_detail .course_func {
+  margin-top: 5px;
 }
-.teacher_item .course_num {
-  width: 100px;
+.course_detail .course_func .btn_audition {
+  float: left;
+  width: 75px;
+  height: 25px;
+  line-height: 25px;
+  background: url(/xesui/src/img/btn_course.png) no-repeat;
+  text-indent: 20px;
+  color: #cc0000;
+  text-decoration: none;
 }
-.teacher_item .trend {
-  width: 100px;
+.course_detail .course_func .btn_audition:hover {
+  background: url(/xesui/src/img/btn_course_hover.png) no-repeat;
+  color: #ffffff;
 }
-.teacher_item .student_num {
-  width: 100px;
+.course_detail .course_func span {
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #999999;
 }
-.teacher_item .new_trend {
-  width: 100px;
+.course_detail .course_func i {
+  float: left;
 }
-.teacher_item .follow_con {
-  width: 110px;
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2013-06-28 14:19:25
+ * @version $Id$
+ */
+.head_user {
+  width: 980px;
+  height: 160px;
+  overflow: hidden;
+  margin: 20px auto 15px;
 }
-.teacher_item .num_one {
-  background-position: 2px 15px;
-  color: #fff;
-  font-size: 18px;
+.head_user .user_pic {
+  float: left;
+  margin-right: 13px;
 }
-.teacher_item .num_two {
-  background-position: 2px -69px;
-  color: #fff;
-  font-size: 18px;
+.head_user .user_pic img {
+  width: 134px;
+  height: 134px;
 }
-.teacher_item .num_three {
-  background-position: 2px -150px;
-  color: #fff;
-  font-size: 18px;
+.head_user .user_detail {
+  float: left;
+}
+.head_user .user_detail .user_name {
+  font-size: 30px;
+  font-family: "Microsoft YaHei";
+}
+.head_user .user_detail .user_name em {
+  margin-top: 14px;
+}
+.head_user .user_detail .user_info {
+  height: 65px;
+  line-height: 180%;
+}
+.head_user .user_detail .ui_follow .addsucess {
+  margin-left: 3px;
+}
+.head_user .user_count {
+  float: right;
+  display: inline;
+  margin-top: 65px;
+}
+.head_user .user_count li {
+  float: left;
+  width: 120px;
+  font-size: 16px;
+}
+.head_user .user_count li strong {
+  display: block;
+  font-size: 24px;
+  padding-left: 5px;
+}
+/**
+ * ui_visitor.less
+ * 最近访客
+ */
+.stupic {
+  float: left;
+  display: inline;
+  width: 50px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 10px 15px 10px;
+}
+.stupic a {
+  color: #333333;
+}
+.stupic a img {
+  width: 50px;
+  height: 50px;
+}
+.stupic .latesttime {
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
 }
 /**
  * ui_follow.less 公用样式
@@ -1384,6 +1841,7 @@ ul.filter_handle_items {
   padding-left: 2px;
 }
 .ui_follow .addsucess {
+  text-indent: -9999em;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1391,13 +1849,14 @@ ul.filter_handle_items {
   text-align: center;
   vertical-align: top;
   margin-top: 1px;
-  text-indent: -9999em;
   background-image: url("../img/icon.png");
+  background-position: 20px 20px;
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
   opacity: 0.5;
   background-position: -50px -177px;
+  background-position: 0 0;
   margin-top: 4px;
 }
 .add {
@@ -1423,33 +1882,153 @@ ul.filter_handle_items {
 .follow_cancel .line {
   padding: 0;
 }
-/*===================/教师排行页/=====================*/
-.panel .ui_feed {
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2013-06-28 16:35:11
+ * @version $Id$
+ */
+.ui_comment {
   overflow: hidden;
-  border-bottom: 1px dashed #F1F1F1;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
 }
-.panel .ui_feed .ui_avatar {
-  float: left;
-  width: 50px;
+.ui_comment form.comment_form {
+  overflow: hidden;
+}
+.ui_comment form.comment_form .comment_title {
+  line-height: 25px;
+  font-size: 14px;
+  color: #999999;
+  display: none;
+}
+.ui_comment form.comment_form .comment_textarea {
+  overflow: hidden;
+}
+.ui_comment form.comment_form .comment_textarea textarea {
+  width: 99%;
+  height: 60px;
+  border: 1px solid #ededed;
+}
+.ui_comment form.comment_form .comment_func {
+  overflow: hidden;
   height: 50px;
 }
-.panel .ui_feed .feed_detail {
-  float: right;
-  width: 175px;
+.ui_comment form.comment_form .comment_func .comment_kind {
+  display: none;
 }
-.panel .ui_feed .feed_detail span {
+.ui_comment form.comment_form .comment_func .comment_tips {
+  float: left;
+  color: #cc0000;
+  line-height: 50px;
+}
+.ui_comment form.comment_form .comment_func .comment_button {
+  float: right;
+}
+.ui_comment form.comment_form .comment_func .comment_button .comment_size {
+  float: left;
+  line-height: 50px;
+  margin-right: 10px;
   color: #999999;
 }
-.panel .ui_feed .feed_detail .feed_bar {
-  height: 20px;
-  line-height: 20px;
+.ui_comment form.comment_form .comment_func .comment_button .btn_submit {
+  width: 67px;
+  height: 29px;
+  font-size: 14px;
+  margin: 10px 5px 0 0;
 }
-.panel .ui_feed .feed_detail .feed_bar span {
-  float: right;
-  text-align: right;
+.ui_comment .comment_content {
+  overflow: hidden;
 }
-.panel .ui_feed .feed_detail .feed_text a {
-  color: #006699;
+.ui_comment .comment_content .comment_list {
+  border-bottom: 1px dashed  #ededed;
+  overflow: hidden;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+.ui_comment .comment_content .comment_list .feed_detail {
+  width: 570px;
+}
+.ui_comment .comment_content .comment_list .feed_detail .feed_text {
+  color: #999999;
+}
+.ui_comment .comment_content .comment_list .feed_detail .feed_text strong {
+  font-size: 14px;
+  color: #333333;
+}
+.ui_comment .comment_more {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+}
+/*===================/个人中心--大图背景/=====================*/
+#container {
+  background: url(/xesui/src/img/teacher.jpg) center top no-repeat;
+}
+/*===================/个人中心-老师介绍/=====================*/
+.home_teacher_info {
+  text-align: center;
+}
+/*===================/个人中心-老师的新鲜事/=====================*/
+.content_box .feed_detail {
+  width: 660px;
+}
+.content_box .ui_feed {
+  border-bottom: 1px dashed  #ededed;
+}
+.layout .main_header {
+  margin-bottom: 10px;
+}
+/*===================/个人中心-我的网校/=====================*/
+.courses_repeat {
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+}
+.courses_repeat .course_item {
+  border: 0;
+  margin: 0;
+}
+/*===================/个人中心-我的网校--右侧课程节列表/=====================*/
+.joint_list {
+  overflow: hidden;
+  border-top: 1px solid #dfdfdf;
+  background: #fff;
+  padding: 15px 0 10px 0;
+}
+.joint_list li {
+  float: left;
+  display: inline;
+  width: 320px;
+  padding-left: 20px;
+  height: 25px;
+  line-height: 25px;
+  color: #333333;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.joint_list .gray {
+  color: #999999;
+}
+/*===================/个人中心-我的网校--左侧导航栏/=====================*/
+.home_side_nav {
+  overflow: hidden;
+}
+.home_side_nav li {
+  display: block;
+  line-height: 27px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.home_side_nav .nav_header {
+  border-bottom: 1px solid #cce4f0;
+  margin-bottom: 20px;
+  color: #999;
+  text-align: center;
+}
+.home_side_nav .nav_header span {
+  display: inline-block;
+  padding: 0 10px ;
+  background: #fbfbfb;
+  position: relative;
+  z-index: 10;
+  top: 12px;
 }

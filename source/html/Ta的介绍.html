@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
+   <link href="../css/page_home.css" type="text/css" rel="stylesheet" />
 
 <body>
 	<!--头部  start-->
@@ -23,93 +23,173 @@
 				<li><a href="#">逛论坛</a></li>
 			</ul>
 			<div class="search">
-				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师"> <button>搜索</button>
+				<input type="text" name="q" id="" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search"> <button class="head_btn_search">搜索</button>
 			</div>
+			<div class="shopcar"><a href=""><em class="icon icon_shopping">购物车</em></a></div>
 			<ul class="topbar">
-				<li><a href=""><em class="icon icon_car">购物车</em></a></li>
-				<li><a href="">登录</a><i>|</i></li>
-				<li><a href="">注册</a></li>
+				<li class=""><a href="##">登录</a></li>
+				<li class=""><i class="line">|</i></li>
+				<li><a href="##">注册</a></li>
+			</ul>
+			<ul class="loginbar hidden">
+				<li class=""><em class="icon icon_shopping">购物车</em></li>
+				
+				<li><em class="icon icon_shopping">购物车</em></li>
 			</ul>
 		</div>
 	</div>
 	<!-- 头部 end-->
 	<!-- 内容 start-->
-	<div id="middle">
+	<div id="container">
 		<!-- 老师形象 -->
 		<div class="head_user">
 			<div class="user_pic">
-				<img/>		
-				大头像
+				<img src="http://r02.xesimg.com/course/2013/03/27/13643666022708.jpg"/>		
+				
 			</div>
 			<div class="user_detail">
 				<div class="user_name">
-					王雨洁 <em class="icon icon_verifty_teacher">v</em>
+					王雨洁 <em class="icon icon_byverify">v</em>
 				</div>
 				<div class="user_info">
 					个人信息的中的
 					<br/>		
 					中的个人信算成好吧的
 				</div>
-				<div class="ui_follow following"> <em class="icon icon_succeed icon_add"></em>
-					关注/已关注 <i class="line line_gray">|</i>
-					<a href="" class="btn_cancel">取消</a>
+				<div class="ui_follow follow_cancel"> <em class="addsucess"></em>
+					已关注 <i class="line">|</i>
+					<a href="#" class="btn_cancel">取消</a>
 				</div>
 			</div>
 			<ul class="user_count">
 				<li>
-					<em class="icon icon_peple"></em>
+					<em class="icon icon_user"></em>
 					学员 <strong>1012324</strong>
 				</li>
 				<li>
-					<em class="icon icon_text"></em>
+					<em class="icon icon_courses"></em>
 					课程 <strong>10124</strong>
 				</li>
 			</ul>
 		</div>
 		<!-- 老师形象 end-->
 		<div class="layout">
-			<div class="layout_body left">
+			<div class="layout_body left w_730">
 				<!--main_header -->
-				<div class="main_header border_blue">
+				<div class="main_header">
 					<ul class="nav_links">
-						<li>
+						<li >
 							<a href="#">ta的新鲜事</a><i class="line line_blue">|</i>
 						</li>
 						<li>
 							<a href="#">ta的课程</a><i class="line line_blue">|</i>
 						</li>
-						<li class="current" >
-							<a href="#">ta的介绍</a><i class="line line_blue">|</i>
+						<li class="current">
+							<a href="#">ta的介绍</a>
 						</li>
-						
-						
+
 					</ul>
 				</div>
                 <!-- main_header  -->
 			
-				<!-- 动态列表 -->
-				    <div class="ui_feed">
-				    	<img src="" alt="图片" title="图片啊啊啊！！！1！">
-				    	ta的介绍啊！！！！！
-				    </div>
-				<!-- 动态列表 end -->
-				
+				<!-- 老师介绍 -->
+				<div class="home_teacher_info">
+					<p>
+						<img border="0" alt="" src="http://x03.xesimg.com/editor/201211/13517405003081.jpg"></p>
+					<p>
+						<img border="0" alt="" src="http://x02.xesimg.com/editor/201211/13517405103039.jpg"></p>
+					<p>
+						<img border="0" alt="" src="http://s04.xesimg.com/editor/201211/13517405154423.jpg"></p>
+					<p>
+						<img border="0" alt="" src="http://s01.xesimg.com/editor/201211/13517405216704.jpg"></p>
+					<p>
+						<img border="0" alt="" src="http://x04.xesimg.com/editor/201211/13517405278922.jpg"></p>
+					<p>
+						<img border="0" alt="" src="http://s04.xesimg.com/editor/201211/13517405339350.jpg"></p>
+					<p>
+						<img border="0" alt="" src="http://r04.xesimg.com/editor/201211/13517405394964.jpg"></p>
+					<p>
+						<img border="0" alt="" src="http://s02.xesimg.com/editor/201211/13517405488083.jpg"></p>
+					
+				</div>
+				 
+				<!-- 老师介绍 end -->
+				<div id="pages">=====翻页=====</div>
+				<!-- 翻页。。。。。。。。。 -->
 			</div>
 			<!--layout_body end -->
-			<div class="layout_side right">
+			<div class="layout_side right w_235">
 			
 				<!-- panle -->
 				<div class="panel">
-					<div class="side_header border_blue"><span>最近访客</span></div>
-					 <div class="ui_avatar avatar_mini">
-					 	<p>
-					 		<a href="" class="userpic">
-					 			<img src="" alt="最近访客"></a>
-					 		<a class="username">王雨洁</a>
-					 		<span>2小时前</span>
-					 	</p>
+					<div class="side_header"><span>最近访客</span></div>
+					 <div class="panel_content">
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时前</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<div class="stupic">
+					 		<a href="#">
+					 			<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="">					 	
+					 			<span>李四</span>
+					 		</a>
+					 		<div class="latesttime">10小时后</div>
+					 	</div>
+					 	<!-- 最近访客列表 -->
 					 </div>
-				<!-- 最近访客列表 -->
+				<!-- panel_content -->
 				</div>
 				<!-- panle -->
 			</div>
@@ -122,22 +202,22 @@
 
 	<div id="footer">
             <div class="foot_service">
-            	<a class="service_share"> <strong>学习经验分享</strong>
+            	<a class="service_share"> <span>学习经验分享</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
-            	<a class="service_live"> <strong>直播学习指导</strong>
+            	<a class="service_live"> <span>直播学习指导</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_system">
-            		<strong>专业的学习规划体系</strong>
+            		<span>专业的学习规划体系</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_interaction">
-            		<strong>有趣的互动视频</strong>
+            		<span>有趣的互动视频</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>
-            <div class="area">
+            <div class="foot_area">
             <p>
                 北京学而思教育科技有限公司
                 <a href="http://www.xueersi.com/">网校首页</a>

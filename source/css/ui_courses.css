@@ -48,7 +48,7 @@
  *--------------------------------------------
  *个人中心头部icons
  *icon_lv:个人学力;
- *icon_user:个人学习经历;
+ *icon_user:个人学习经历/学员;
  *icon_orders:个人订单;
  *icon_coins:个人金币;
  *icon_card:激活听课证;
@@ -131,7 +131,7 @@
   background-position: -100px -50px;
 }
 .icon_yverify {
-  background-position: -100px -26px;
+  background-position: -100px -23px;
 }
 .icon_byverify {
   background-position: -100px -75px;
@@ -158,7 +158,7 @@
   background-position: 0 0;
 }
 .icon_user {
-  background-position: 0 -100px;
+  background-position: 8px -98px;
 }
 .icon_shield {
   background-position: 0 -125px;
@@ -177,6 +177,9 @@
 }
 .icon_card {
   background-position: -24px -50px;
+}
+.icon_courses {
+  background-position: -18px -147px;
 }
 .icon_chevron_right {
   background-position: -75px -225px;

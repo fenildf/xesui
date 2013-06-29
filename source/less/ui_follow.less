@@ -8,12 +8,14 @@
 	height:22px;
 	line-height:22px;
 	color:@g3+#333333;
-	padding:2px 5px;
+	padding:0 2px;
 	display:inline-block;
-	.btn_gray;
+	background:#f3f3f3;
+	border:1px solid #dddddd;
 	em{
 		font-weight:bold;
 		padding-right:3px;
+		
 	}
 	a{
 		color:@linkcolor;   
@@ -22,20 +24,37 @@
 	.addsucess{
 		.icon;
 		.icon_follow_add;
+		 margin-top:4px;
 	}
-	}
+}
+
+
+
 	.add{
 		text-decoration: none;
-		vertical-align:top;
-		&:hover{
-			color:@white;
-			.btn_orange;
-		}
+	
 		em{
 			font-family:@fd; 
 			font-size:12px;
+			font-weight: bold;
+
 		}
 	}
+	.add:hover{
+			color:@white;
+			background:#ffaa36;
+			cursor: pointer;
+			border:1px solid #ffa12f;
+		}
+
+
 	.hidden{
 		color:darken((@g3+#333333), -30%)
 	}
+
+
+	.follow_cancel {
+			width:100px;
+			.line {padding:0;}
+	}
+		
