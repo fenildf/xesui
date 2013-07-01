@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-07-01 16:24:06
+ * @version $Id$
+ */
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
+ *------------------------------------
+ */
+/**
+ * padding值设定
+ *
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@margin0, @margin5
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用 eg:width:20px=20*@w1;
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f18:font-size:18px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *ti:text-index:-9999em;
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ * hl150:high-light:150%;
+ * hl180:high-light:180%;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+#coures_content {
+  background: #f6f6f6;
+  min-height: 605px;
+}
+#coures_content h2 {
+  width: 970px;
+  height: 47px;
+  line-height: 47px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  color: #333333;
+  padding-left: 10px;
+  overflow: hidden;
+}
+#coures_content h2 strong {
+  font-size: 14px;
+}
+#coures_content .content_player {
+  width: 980px;
+  height: 535px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 3px 3px 3px rgba(231, 231, 231, 0.4), -3px -3px 3px rgba(231, 231, 231, 0.4);
+  border-radius: 2px;
+}
+#coures_content .content_player .player_list {
+  float: left;
+  width: 230px;
+  height: 465px;
+  background: url(../html/src/img/tingkeyebg.jpg) repeat-y;
+  border-bottom: 1px solid #efefef;
+}
+#coures_content .content_player .player_list .list_shop_meoney {
+  height: 83px;
+  background: url(../html/src/img/tkbg_01.jpg) no-repeat;
+  position: relative;
+}
+#coures_content .content_player .player_list .list_shop_meoney .btn_apply {
+  position: absolute;
+  left: 1px;
+  top: 0;
+  z-index: 10;
+}
+#coures_content .content_player .player_list .list_title {
+  height: 38px;
+  background: url(../html/src/img/tkbg_02.jpg) no-repeat;
+}
+#coures_content .content_player .player_live {
+  float: right;
+  width: 745px;
+  height: 465px;
+}
+#coures_content .content_player .player_live #VideoPlay {
+  width: 730px;
+  height: 453px;
+  margin: 12px auto 0;
+  overflow: hidden;
+}
+#coures_content .content_player .player_info {
+  overflow: hidden;
+  width: 980px;
+  height: 69px;
+  line-height: 69px;
+}
+#coures_content .content_player .player_info dl {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666666;
+}
+#coures_content .content_player .player_info dl dt {
+  float: left;
+}
+#coures_content .content_player .player_info dl dd {
+  float: left;
+  display: inline;
+  margin-right: 10px;
+}
+#coures_content .content_player .player_info dl dd .star {
+  background: url(../html/src/img/star.jpg) repeat-x;
+  text-indent: -9999em;
+  margin-top: 25px;
+}
+#coures_content .content_player .player_info dl dd .star5 {
+  width: 105px;
+}
+#coures_content .content_player .player_info dl dd .ui_avatar {
+  margin-top: 10px;
+}
+#coures_content .content_player .player_info dl dd .ui_avatar .prev,
+#coures_content .content_player .player_info dl dd .ui_avatar .next {
+  float: left;
+  display: inline;
+  margin: 12px 7px 0 0;
+}
+#coures_content .content_player .player_info dl dd .ui_avatar .avatar_items {
+  float: left;
+  display: inline;
+  margin-right: 7px;
+}
+#coures_content .content_player .player_info dl dd .ui_avatar .avatar_items img {
+  width: 50px;
+  height: 50px;
+}
+#coures_content .content_player .player_info .listen_num {
+  float: right;
+  font-size: 18px;
+  color: #666666;
+  font-family: "Microsoft YaHei";
+  padding-right: 20px;
+}
+#coures_content .content_player .player_info .listen_num strong {
+  font-size: 28px;
+  font-family: "Arial";
+}

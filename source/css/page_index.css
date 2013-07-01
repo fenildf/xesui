@@ -767,7 +767,7 @@ h1.logo a {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(/xesui/src/img/logo.png) no-repeat;
+  background: url(../html/src/img/logo.png) no-repeat;
 }
 /*菜单*/
 #header .header_box ul.nav {
@@ -1040,7 +1040,7 @@ h1.logo a {
   float: left;
   position: absolute;
   z-index: 9;
-  background: url(/xesui/src/pic/pic_01.jpg) no-repeat center;
+  background: url(../html/src/pic/pic_01.jpg) no-repeat center;
 }
 #index_focus .focus_list li a {
   display: none;
@@ -1180,11 +1180,11 @@ h1.logo a {
   text-indent: -9999em;
 }
 .index_login .login_from .login_infor .infor_app a.app_qq {
-  background: url(/xesui/src/img/qq.jpg) no-repeat;
+  background: url(../html/src/img/qq.jpg) no-repeat;
 }
 .index_login .login_from .login_infor .infor_app a.app_weibo {
   float: right;
-  background: url(/xesui/src/img/weibo.jpg) no-repeat;
+  background: url(../html/src/img/weibo.jpg) no-repeat;
 }
 .index_login .login_from .login_infor .infor_text {
   line-height: 25px;
@@ -1232,7 +1232,7 @@ h1.logo a {
   padding: 0 8px;
 }
 .main_header .nav_links li.current {
-  background: url(/xesui/src/img/ins.jpg) 25px 37px no-repeat;
+  background: url(../html/src/img/ins.jpg) 25px 37px no-repeat;
 }
 .main_header .nav_links li.current a {
   font-weight: bold;
@@ -1333,7 +1333,7 @@ h1.logo a {
 .feed_comment .comment_corner {
   width: 16px;
   height: 9px;
-  background: url(/xesui/src/img/ins_c.jpg) no-repeat;
+  background: url(../html/src/img/ins_c.jpg) no-repeat;
   position: absolute;
   z-index: 10;
   top: -9px;

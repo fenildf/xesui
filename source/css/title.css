@@ -145,7 +145,7 @@
   padding: 0 8px;
 }
 .main_header .nav_links li.current {
-  background: url(/xesui/src/img/ins.jpg) 25px 37px no-repeat;
+  background: url(../html/src/img/ins.jpg) 25px 37px no-repeat;
 }
 .main_header .nav_links li.current a {
   font-weight: bold;

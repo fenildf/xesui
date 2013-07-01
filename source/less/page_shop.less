@@ -23,6 +23,7 @@
 
 @import "ui_avatar.less";
 @import "ui_courses.less";
+@import "ui_follow.less";
 
 
 @import "table.less";
@@ -35,19 +36,19 @@
 	width:980px;margin:0 auto;overflow:hidden;
 	h1.logo {
 		float:none;overflow:hidden;
-		a {height:45px;background: url(/xesui/src/img/logo_shop.jpg) no-repeat;}
+		a {height:45px;background: url(../html/src/img/logo_shop.jpg) no-repeat;}
 	}
 	.pay_step {
-		height:30px;background: url(/xesui/src/img/shop_line.jpg) 0 10px repeat-x;
+		height:30px;background: url(../html/src/img/shop_line.jpg) 0 10px repeat-x;
 		ul {
 			float:right;
 			li {
-				float:left;width:120px;background: url(/xesui/src/img/shop_1.jpg) center 1px no-repeat;font-family:@fw ;text-align:@c;
+				float:left;width:120px;background: url(../html/src/img/shop_1.jpg) center 1px no-repeat;font-family:@fw ;text-align:@c;
 				.text_num {display:block;color:@white;padding:2px 0 5px 0;}
 				p {color:#4b9fdb; }
 			}
 			.next_step {
-				background: url(/xesui/src/img/shop_2.jpg) -3px 1px no-repeat;
+				background: url(../html/src/img/shop_2.jpg) -3px 1px no-repeat;
 				.text_num {}
 				p {color:@g3*3;}
 
@@ -117,8 +118,28 @@ table.table_shop {
 }
 
 
+.finish_order {
+		overflow:hidden;padding:10px 60px;border:1px solid #99c7e8;background:#eef9ff;margin:30px 0 10px 0;
+		.order_t {font-family:@fw;font-size:@f18;color:#409ad8;font-weight:normal;line-height:50px;}
+		.order_num {height:41px;line-height:41px;background:#fff;font-size:@f14;padding-left:25px;}
+		.order_tc {line-height:50px;font-size:@f14;}
+		.attention_list {
+				overflow:hidden;float:left;margin-bottom:10px;
+				.ui_avatar {float:left;width:50px;margin-right:10px;}
+				.feed_detail {
+					float:left;width:80px;
+					.hidden {display:block; text-align:center;margin-top:7px;}
+				}
+		}
+}
 
 
+.group_order {
+		height:35px;line-height:30px;overflow:hidden;margin:15px 0 50px 0;
+		span {float:left;color:@g3*3;}
+		a {float:left;color:@g3;margin-right:10px;}
+		.btn_sky {width:100px;height:30px;color:#fff;line-height:30px;font-size:@f14;text-decoration: none;}
+}
 
 
 

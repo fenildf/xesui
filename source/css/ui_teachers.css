@@ -28,7 +28,7 @@
 .teacher_item .num {
   width: 30px;
   margin: 0 15px;
-  background: url(/xesui/src/img/bg1.jpg) 0 -231px no-repeat;
+  background: url(../html/src/img/bg1.jpg) 0 -231px no-repeat;
   font-size: 14px;
   font-weight: bold;
   color: #999;

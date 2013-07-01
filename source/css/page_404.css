@@ -747,7 +747,7 @@ h1.logo a {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(/xesui/src/img/logo.png) no-repeat;
+  background: url(../html/src/img/logo.png) no-repeat;
 }
 /*菜单*/
 #header .header_box ul.nav {
@@ -1007,7 +1007,7 @@ h1.logo a {
 }
 .page_404 .page_404_tips {
   height: 247px;
-  background: url(/xesui/src/img/404.jpg) no-repeat;
+  background: url(../html/src/img/404.jpg) no-repeat;
   text-indent: -9999em;
 }
 .page_404 .page_404_time {
@@ -1020,7 +1020,7 @@ h1.logo a {
 .page_404 .page_404_button a {
   float: left;
   display: inline;
-  background: url(/xesui/src/img/icon.jpg) 1px 10px no-repeat;
+  background: url(../html/src/img/icon.jpg) 1px 10px no-repeat;
   padding-left: 15px;
   font-weight: bold;
   color: #006699;
@@ -1032,7 +1032,7 @@ h1.logo a {
 .page_404 .page_404_info li {
   line-height: 25px;
   color: #666;
-  background: url(/xesui/src/img/icon_1.jpg) 2px 9px no-repeat;
+  background: url(../html/src/img/icon_1.jpg) 2px 9px no-repeat;
   padding-left: 15px;
 }
 .page_404 .page_404_info .title {

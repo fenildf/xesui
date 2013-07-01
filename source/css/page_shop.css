@@ -747,7 +747,7 @@ h1.logo a {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(/xesui/src/img/logo.png) no-repeat;
+  background: url(../html/src/img/logo.png) no-repeat;
 }
 /*菜单*/
 #header .header_box ul.nav {
@@ -1080,7 +1080,7 @@ h1.logo a {
   display: inline-block;
   width: 35px;
   line-height: 17px;
-  background: url(/xesui/src/img/icon_1.png) no-repeat;
+  background: url(../html/src/img/icon_1.png) no-repeat;
   color: #ffffff;
   font-size: 12px;
   padding-left: 3px;
@@ -1107,13 +1107,13 @@ h1.logo a {
   width: 75px;
   height: 25px;
   line-height: 25px;
-  background: url(/xesui/src/img/btn_course.png) no-repeat;
+  background: url(../html/src/img/btn_course.png) no-repeat;
   text-indent: 20px;
   color: #cc0000;
   text-decoration: none;
 }
 .course_detail .course_func .btn_audition:hover {
-  background: url(/xesui/src/img/btn_course_hover.png) no-repeat;
+  background: url(../html/src/img/btn_course_hover.png) no-repeat;
   color: #ffffff;
 }
 .course_detail .course_func span {
@@ -1130,6 +1130,68 @@ h1.logo a {
   font-size: 14px;
   margin: 0 10px;
   color: #006699;
+}
+/**
+ * ui_follow.less 公用样式
+ */
+.ui_follow {
+  width: 50px;
+  height: 22px;
+  line-height: 22px;
+  color: #666666;
+  padding: 0 2px;
+  display: inline-block;
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
+}
+.ui_follow em {
+  font-weight: bold;
+  padding-right: 3px;
+}
+.ui_follow a {
+  color: #329bca;
+  padding-left: 2px;
+}
+.ui_follow .addsucess {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  text-indent: -9999em;
+  background-image: url("../img/icon.png");
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  opacity: 0.5;
+  background-position: -50px -177px;
+  margin-top: 4px;
+}
+.add {
+  text-decoration: none;
+}
+.add em {
+  font-family: "verdana";
+  font-size: 12px;
+  font-weight: bold;
+}
+.add:hover {
+  color: #ffffff;
+  background: #ffaa36;
+  cursor: pointer;
+  border: 1px solid #ffa12f;
+}
+.hidden {
+  color: #b3b3b3;
+}
+.follow_cancel {
+  width: 100px;
+}
+.follow_cancel .line {
+  padding: 0;
 }
 /**
  *Table 公用样式
@@ -1185,11 +1247,11 @@ table {
 }
 .header_shop h1.logo a {
   height: 45px;
-  background: url(/xesui/src/img/logo_shop.jpg) no-repeat;
+  background: url(../html/src/img/logo_shop.jpg) no-repeat;
 }
 .header_shop .pay_step {
   height: 30px;
-  background: url(/xesui/src/img/shop_line.jpg) 0 10px repeat-x;
+  background: url(../html/src/img/shop_line.jpg) 0 10px repeat-x;
 }
 .header_shop .pay_step ul {
   float: right;
@@ -1197,7 +1259,7 @@ table {
 .header_shop .pay_step ul li {
   float: left;
   width: 120px;
-  background: url(/xesui/src/img/shop_1.jpg) center 1px no-repeat;
+  background: url(../html/src/img/shop_1.jpg) center 1px no-repeat;
   font-family: "Microsoft YaHei";
   text-align: center;
 }
@@ -1210,7 +1272,7 @@ table {
   color: #4b9fdb;
 }
 .header_shop .pay_step ul .next_step {
-  background: url(/xesui/src/img/shop_2.jpg) -3px 1px no-repeat;
+  background: url(../html/src/img/shop_2.jpg) -3px 1px no-repeat;
 }
 .header_shop .pay_step ul .next_step p {
   color: #999999;
@@ -1361,4 +1423,71 @@ table.table_shop .shop_empty {
   font-size: 14px;
   font-weight: bold;
   margin: 15px 20px 20px 0;
+}
+.finish_order {
+  overflow: hidden;
+  padding: 10px 60px;
+  border: 1px solid #99c7e8;
+  background: #eef9ff;
+  margin: 30px 0 10px 0;
+}
+.finish_order .order_t {
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  color: #409ad8;
+  font-weight: normal;
+  line-height: 50px;
+}
+.finish_order .order_num {
+  height: 41px;
+  line-height: 41px;
+  background: #fff;
+  font-size: 14px;
+  padding-left: 25px;
+}
+.finish_order .order_tc {
+  line-height: 50px;
+  font-size: 14px;
+}
+.finish_order .attention_list {
+  overflow: hidden;
+  float: left;
+  margin-bottom: 10px;
+}
+.finish_order .attention_list .ui_avatar {
+  float: left;
+  width: 50px;
+  margin-right: 10px;
+}
+.finish_order .attention_list .feed_detail {
+  float: left;
+  width: 80px;
+}
+.finish_order .attention_list .feed_detail .hidden {
+  display: block;
+  text-align: center;
+  margin-top: 7px;
+}
+.group_order {
+  height: 35px;
+  line-height: 30px;
+  overflow: hidden;
+  margin: 15px 0 50px 0;
+}
+.group_order span {
+  float: left;
+  color: #999999;
+}
+.group_order a {
+  float: left;
+  color: #333333;
+  margin-right: 10px;
+}
+.group_order .btn_sky {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 14px;
+  text-decoration: none;
 }

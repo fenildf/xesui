@@ -766,7 +766,7 @@ h1.logo a {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(/xesui/src/img/logo.png) no-repeat;
+  background: url(../html/src/img/logo.png) no-repeat;
 }
 /*菜单*/
 #header .header_box ul.nav {
@@ -1146,7 +1146,7 @@ h1.logo a {
   padding: 0 8px;
 }
 .main_header .nav_links li.current {
-  background: url(/xesui/src/img/ins.jpg) 25px 37px no-repeat;
+  background: url(../html/src/img/ins.jpg) 25px 37px no-repeat;
 }
 .main_header .nav_links li.current a {
   font-weight: bold;
@@ -1318,7 +1318,7 @@ h1.logo a {
 .feed_comment .comment_corner {
   width: 16px;
   height: 9px;
-  background: url(/xesui/src/img/ins_c.jpg) no-repeat;
+  background: url(../html/src/img/ins_c.jpg) no-repeat;
   position: absolute;
   z-index: 10;
   top: -9px;
@@ -1511,7 +1511,7 @@ ul.filter_handle_items {
   display: inline-block;
   width: 35px;
   line-height: 17px;
-  background: url(/xesui/src/img/icon_1.png) no-repeat;
+  background: url(../html/src/img/icon_1.png) no-repeat;
   color: #ffffff;
   font-size: 12px;
   padding-left: 3px;
@@ -1538,13 +1538,13 @@ ul.filter_handle_items {
   width: 75px;
   height: 25px;
   line-height: 25px;
-  background: url(/xesui/src/img/btn_course.png) no-repeat;
+  background: url(../html/src/img/btn_course.png) no-repeat;
   text-indent: 20px;
   color: #cc0000;
   text-decoration: none;
 }
 .course_detail .course_func .btn_audition:hover {
-  background: url(/xesui/src/img/btn_course_hover.png) no-repeat;
+  background: url(../html/src/img/btn_course_hover.png) no-repeat;
   color: #ffffff;
 }
 .course_detail .course_func span {
@@ -1817,7 +1817,7 @@ ul.filter_handle_items {
 }
 /*===================/个人中心--大图背景/=====================*/
 #container {
-  background: url(/xesui/src/img/teacher.jpg) center top no-repeat;
+  background: url(../html/src/img/teacher.jpg) center top no-repeat;
 }
 /*===================/个人中心-老师介绍/=====================*/
 .home_teacher_info {
@@ -1893,7 +1893,7 @@ ul.filter_handle_items {
 }
 .home_side_nav .current {
   border: 1px solid #235a9d;
-  background: url(/xesui/src/img/sid_nav.jpg) repeat-x;
+  background: url(../html/src/img/sid_nav.jpg) repeat-x;
 }
 .home_side_nav .current a {
   color: #fff;

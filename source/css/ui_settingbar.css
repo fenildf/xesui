@@ -807,7 +807,7 @@ h1.logo a {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(/xesui/src/img/logo.png) no-repeat;
+  background: url(../html/src/img/logo.png) no-repeat;
 }
 /*菜单*/
 #header .header_box ul.nav {
@@ -1101,7 +1101,7 @@ h1.logo a {
   padding: 0 8px;
 }
 .main_header .nav_links li.current {
-  background: url(/xesui/src/img/ins.jpg) 25px 37px no-repeat;
+  background: url(../html/src/img/ins.jpg) 25px 37px no-repeat;
 }
 .main_header .nav_links li.current a {
   font-weight: bold;
@@ -1376,7 +1376,7 @@ ul.filter_handle_items {
 .teacher_item .num {
   width: 30px;
   margin: 0 15px;
-  background: url(/xesui/src/img/bg1.jpg) 0 -231px no-repeat;
+  background: url(../html/src/img/bg1.jpg) 0 -231px no-repeat;
   font-size: 14px;
   font-weight: bold;
   color: #999;

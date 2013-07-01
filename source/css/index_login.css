@@ -204,11 +204,11 @@
   text-indent: -9999em;
 }
 .index_login .login_from .login_infor .infor_app a.app_qq {
-  background: url(/xesui/src/img/qq.jpg) no-repeat;
+  background: url(../html/src/img/qq.jpg) no-repeat;
 }
 .index_login .login_from .login_infor .infor_app a.app_weibo {
   float: right;
-  background: url(/xesui/src/img/weibo.jpg) no-repeat;
+  background: url(../html/src/img/weibo.jpg) no-repeat;
 }
 .index_login .login_from .login_infor .infor_text {
   line-height: 25px;

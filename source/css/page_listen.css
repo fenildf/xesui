@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /**
  * 
- * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 14:42:05
+ * @authors Your Name (you@example.org)
+ * @date    2013-07-01 16:26:25
  * @version $Id$
  */
 /**
@@ -322,13 +322,6 @@ table {
  */
 /*base,重置，变量*/
 /**
- * 
- * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 14:40:57
- * @version $Id$
- */
-/*base,重置，变量*/
-/**
  * Button 公用样式
  */
 .icon {
@@ -633,6 +626,26 @@ textarea::-webkit-input-placeholder {
   color: #999999;
 }
 /**
+*name.css
+*ui_username
+*用户，年级名称加"V"
+*
+*div>a+i.icon
+   <a class="ui_username">userName<i class="icon icon_verifty_teacher">V</i></a>
+*/
+.ui_username,
+.ui_username_large {
+  color: #333333;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+}
+.ui_username_large {
+  font-size: 20px;
+}
+/**
  * Button 公用样式
  */
 .btn {
@@ -722,6 +735,14 @@ textarea::-webkit-input-placeholder {
   /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
 
 }
+/*图标，表单，按钮*/
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:40:57
+ * @version $Id$
+ */
+/*base,重置，变量*/
 /*图标，表单，按钮*/
 #header {
   height: 55px;
@@ -999,63 +1020,126 @@ h1.logo a {
 }
 /*头部，内容，底部*/
 /**
- * 学习中心个人设置左侧导航
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-07-01 16:24:06
+ * @version $Id$
  */
-/*base,重置，变量*/
-.side_nav {
-  padding: 20px 0;
+#coures_content {
+  background: #f6f6f6;
+  min-height: 605px;
+}
+#coures_content h2 {
+  width: 970px;
+  height: 47px;
+  line-height: 47px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  color: #333333;
+  padding-left: 10px;
   overflow: hidden;
-  border-bottom: 1px solid #e4e4e4;
-  border-right: 1px solid #e4e4e4;
-  background-color: #fbfbfb;
 }
-.side_nav .nav_header {
-  color: #999999;
-  margin-bottom: 20px;
-  text-align: center;
-  border-bottom: 1px solid #cae0ed;
+#coures_content h2 strong {
+  font-size: 14px;
 }
-.side_nav .nav_header span {
+#coures_content .content_player {
+  width: 980px;
+  height: 535px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 3px 3px 3px rgba(231, 231, 231, 0.4), -3px -3px 3px rgba(231, 231, 231, 0.4);
+  border-radius: 2px;
+}
+#coures_content .content_player .player_list {
+  float: left;
+  width: 230px;
+  height: 465px;
+  background: url(../html/src/img/tingkeyebg.jpg) repeat-y;
+  border-bottom: 1px solid #efefef;
+}
+#coures_content .content_player .player_list .list_shop_meoney {
+  height: 83px;
+  background: url(../html/src/img/tkbg_01.jpg) no-repeat;
   position: relative;
-  top: 12px;
-  display: inline-block;
-  padding: 0 10px;
+}
+#coures_content .content_player .player_list .list_shop_meoney .btn_apply {
+  position: absolute;
+  left: 1px;
+  top: 0;
   z-index: 10;
-  background-color: #fbfbfb;
 }
-.side_nav li {
-  line-height: 24px;
+#coures_content .content_player .player_list .list_title {
+  height: 38px;
+  background: url(../html/src/img/tkbg_02.jpg) no-repeat;
 }
-.side_nav li a {
-  font-size: 14px;
-  color: #0076b8;
+#coures_content .content_player .player_live {
+  float: right;
+  width: 745px;
+  height: 465px;
 }
-/*========================/帮助左侧列表/================================*/
-.nav_help li {
-  text-align: left;
-  padding-left: 15px;
-}
-.nav_help li.current a {
-  font-weight: bold;
-}
-.ui_article {
+#coures_content .content_player .player_live #VideoPlay {
+  width: 730px;
+  height: 453px;
+  margin: 12px auto 0;
   overflow: hidden;
-  margin: 20px 0;
 }
-.ui_article .article_title {
-  line-height: 40px;
+#coures_content .content_player .player_info {
+  overflow: hidden;
+  width: 980px;
+  height: 69px;
+  line-height: 69px;
+}
+#coures_content .content_player .player_info dl {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666666;
+}
+#coures_content .content_player .player_info dl dt {
+  float: left;
+}
+#coures_content .content_player .player_info dl dd {
+  float: left;
+  display: inline;
+  margin-right: 10px;
+}
+#coures_content .content_player .player_info dl dd .star {
+  background: url(../html/src/img/star.jpg) repeat-x;
+  text-indent: -9999em;
+  margin-top: 25px;
+}
+#coures_content .content_player .player_info dl dd .star5 {
+  width: 105px;
+}
+#coures_content .content_player .player_info dl dd .ui_avatar {
+  margin-top: 10px;
+}
+#coures_content .content_player .player_info dl dd .ui_avatar .prev,
+#coures_content .content_player .player_info dl dd .ui_avatar .next {
+  float: left;
+  display: inline;
+  margin: 12px 7px 0 0;
+}
+#coures_content .content_player .player_info dl dd .ui_avatar .avatar_items {
+  float: left;
+  display: inline;
+  margin-right: 7px;
+}
+#coures_content .content_player .player_info dl dd .ui_avatar .avatar_items img {
+  width: 50px;
+  height: 50px;
+}
+#coures_content .content_player .player_info .listen_num {
+  float: right;
   font-size: 18px;
+  color: #666666;
+  font-family: "Microsoft YaHei";
+  padding-right: 20px;
 }
-.ui_article .article_content {
-  overflow: hidden;
-}
-.ui_article .article_content p {
-  line-height: 180%;
-  margin-bottom: 10px;
-  text-indent: 2em;
-  font-size: 14px;
-  color: #666;
-}
-.ui_article .article_content .pic {
-  text-align: center;
+#coures_content .content_player .player_info .listen_num strong {
+  font-size: 28px;
+  font-family: "Arial";
 }

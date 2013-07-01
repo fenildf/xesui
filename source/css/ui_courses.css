@@ -389,7 +389,7 @@
   display: inline-block;
   width: 35px;
   line-height: 17px;
-  background: url(/xesui/src/img/icon_1.png) no-repeat;
+  background: url(../html/src/img/icon_1.png) no-repeat;
   color: #ffffff;
   font-size: 12px;
   padding-left: 3px;
@@ -416,13 +416,13 @@
   width: 75px;
   height: 25px;
   line-height: 25px;
-  background: url(/xesui/src/img/btn_course.png) no-repeat;
+  background: url(../html/src/img/btn_course.png) no-repeat;
   text-indent: 20px;
   color: #cc0000;
   text-decoration: none;
 }
 .course_detail .course_func .btn_audition:hover {
-  background: url(/xesui/src/img/btn_course_hover.png) no-repeat;
+  background: url(../html/src/img/btn_course_hover.png) no-repeat;
   color: #ffffff;
 }
 .course_detail .course_func span {
