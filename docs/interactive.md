@@ -1,6 +1,6 @@
 #交互
 
-## 1. 模块
+## 1. [模块](id:module)
 
 ### 1.1 模块概览
 
@@ -40,7 +40,7 @@
 | queue        | 队列模块   | ![checked icon](../src/img/checkbox.png) | [查看](#queue)
 | iframe       | 框架操作   | ![checked icon](../src/img/checkbox.png) | [查看](#iframe)
 | knowledge    | 知识点类   | ![checked icon](../src/img/checkbox.png) | [查看](#knowledge)
-
+| character    | 字符编码   | ![checked icon](../src/img/checkbox.png) | [查看](#character)
 
 ### 1.2 模块详情
 
@@ -48,13 +48,36 @@
 
 > set / get / del 方法
 
+  - xue.cookie.opt : X.cookie({ });
+  - xue.cookie.set : X.cookie('user', 'xesui');
+  - xue.cookie.get : X.cookie('user');
+  - xue.cookie.del : X.cookie('user', null);
+
+
 #### [form](id:form)
 
 > 全选/反选，获取or设置单选/多选框的值…
 
+xue.form.checkall();
+xue.form.checkempty();
+xue.form.checkInverse
+xue.form.setChecked;
+xue.form.getChecked;
+xue.form.getCheckedText;
+xue.form.getInputsValue;
+xue.form.defaultValue;
+xue.form.setSelected;
+xue.form.getSelected;
+xue.form.getSelectedText;
+
+
 #### [button](id:button)
 
 > disible 效果 / 下拉等...
+
+xue.button.disible;
+xue.button.enable;
+
 
 #### [verify](id:verify)
 
@@ -76,6 +99,13 @@
 
 > 类型、检测
 
+xue.browser.isIE;
+xue.browser.isChrome;
+xue.browser.isSafari;
+xue.browser.isWebkit;
+xue.browser.isMoz;
+
+
 #### [number](id:number)
 
 > 随机数、整数、价格等
@@ -83,6 +113,13 @@
 #### [string](id:string)
 
 > 格式化、去除空格、取长度、去除HTML标签、编码……
+
+xue.string.trim;
+xue.string.format;
+xue.string.length;
+xue.string.encode;
+xue.string.decode;
+xue.string.base64;
 
 #### [array](id:array)
 
@@ -161,9 +198,12 @@
 
 > 知识点操作
 
+#### [character](id:character)
+
+> 字符操作：编码、解码、加密、解密等
 
 
-## 2. 方法
+## 2. [方法](id:method)
 
 ### 2.1 方法概览
 
@@ -179,8 +219,10 @@
 | sort       | 数字排序 | ![checked icon](../src/img/checkbox.png) | [查看](#sort)
 | trim       | 去除空格 | ![checked icon](../src/img/checkbox.png) | [查看](#trim)
 | unique     | 去除重复 | ![checked icon](../src/img/checkbox.png) | [查看](#unique)
-| loader       | 加载对象 | ![checked icon](../src/img/checkbox.png) | [查看](#loader)
-
+| loader     | 加载对象 | ![checked icon](../src/img/checkbox.png) | [查看](#loader)
+| on         | 事件监听 | ![checked icon](../src/img/checkbox.png) | [查看](#on)
+| off        | 取消监听 | ![checked icon](../src/img/checkbox.png) | [查看](#off)
+| code       | 字符编码 | ![checked icon](../src/img/checkbox.png) | [查看](#code)
 
 
 ### 2.2 方法详情
@@ -199,8 +241,8 @@
 > 对象扩展，所有需要扩展到xue对象下的必须通过此方法
 > 
 > 此方法主要是可以将子类注册到xue主类下，方便调用，
->
-    例如：将 xue.string.trim 注册为 xue.trim
+> 
+> 例如：将 xue.string.trim 注册为 xue.trim
 
 
 
@@ -266,13 +308,16 @@
   - 可以是ajax请求；
 
 
+#### [code](id:code)
+
+> 字符操作：编码、解码、加密、解密等
 
 
 
 
 
 
-## 3. 组件
+## 3. [组件](id:Component)
 
 ### 3.1 组件概览
 
