@@ -9,7 +9,7 @@ name  |                   status                  | description
 ------|:-----------------------------------------:|-----------
 网校首页|  ![checked icon](../src/img/checked.png) |
 课程列表| ![checked icon](../src/img/checked.png)  | 
-教师排行| ![checked icon](../src/img/checked.png) |
+教师排行| ![checked icon](../src/img/checked.png)  |
 搜索列表| ![checked icon](../src/img/checked.png)  | 
 登录注册| ![checked icon](../src/img/checkbox.png) |
 课程卡页| ![checked icon](../src/img/checkbox.png) |
@@ -21,14 +21,14 @@ name  |                   status                  | description
 
   name  |                   status                | description
 --------|:---------------------------------------:|---------------
-我的网校 | ![checked icon](../src/img/checked.png) | 节列表缺少ICON
+我的网校 | ![checked icon](../src/img/checked.png)  | 节列表缺少ICON
 完善信息 | ![checked icon](../src/img/checkbox.png) |
-我的关注 | ![checked icon](../src/img/checked.png) |
-我的课程 | ![checked icon](../src/img/checked.png) | 缺少“过期课程”和底部的“查看更多”
-我的通知 | ![checked icon](../src/img/checked.png) | 通知类别字体偏大
+我的关注 | ![checked icon](../src/img/checked.png)  |
+我的课程 | ![checked icon](../src/img/checked.png)  | 缺少“过期课程”和底部的“查看更多”
+我的通知 | ![checked icon](../src/img/checked.png)  | 通知类别字体偏大
 我的收藏 | ![checked icon](../src/img/checkbox.png) |
-我的评论 | ![checked icon](../src/img/checked.png) |
-我新鲜事 | ![checked icon](../src/img/checked.png) | 细节
+我的评论 | ![checked icon](../src/img/checked.png)  |
+我新鲜事 | ![checked icon](../src/img/checked.png)  | 细节
 
 
 

@@ -25,3 +25,11 @@
  */
 
 xue.string = xue.string || {};
+
+xue.string.trim = function(){
+    var trimer = new RegExp('(^[\\s\\t\\xa0\\u3000]+)|([\\u3000\\xa0\\s\\t]+\x24)', 'g');
+    return function(){
+        return this.replace(trimer, '');
+    }
+};
+
