@@ -33,3 +33,4 @@ xue.string.trim = function(){
     }
 };
 
+// xue.string.
