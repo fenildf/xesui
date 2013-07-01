@@ -109,6 +109,7 @@
  *tborder:table-border
  *----------------------------------------
  */
+/*===================/课程详情页---上半部分/===============================*/
 #coures_content {
   background: #f6f6f6;
   min-height: 605px;
@@ -133,7 +134,7 @@
   height: 535px;
   background: #fff;
   margin: 0 auto;
-  box-shadow: 3px 3px 3px rgba(231, 231, 231, 0.4), -3px -3px 3px rgba(231, 231, 231, 0.4);
+  box-shadow: 5px 5px 5px rgba(231, 231, 231, 0.4), -5px -5px 5px rgba(231, 231, 231, 0.4);
   border-radius: 2px;
 }
 #coures_content .content_player .player_list {
@@ -149,14 +150,54 @@
   position: relative;
 }
 #coures_content .content_player .player_list .list_shop_meoney .btn_apply {
+  display: block;
+  width: 110px;
+  height: 47px;
   position: absolute;
-  left: 1px;
-  top: 0;
+  left: -7px;
+  top: 22px;
   z-index: 10;
+  background: url(../html/src/img/baoming.png) no-repeat;
+  text-indent: -9999em;
+}
+#coures_content .content_player .player_list .list_shop_meoney .money_num {
+  float: right;
+  text-align: right;
+  padding: 5px 15px 0 0;
+}
+#coures_content .content_player .player_list .list_shop_meoney .money_num p {
+  font-size: 30px;
+  color: #cc0000;
+}
+#coures_content .content_player .player_list .list_shop_meoney .money_num del {
+  display: block;
+  color: #999999;
 }
 #coures_content .content_player .player_list .list_title {
   height: 38px;
+  line-height: 38px;
   background: url(../html/src/img/tkbg_02.jpg) no-repeat;
+}
+#coures_content .content_player .player_list .list_title .directory {
+  float: left;
+  width: 72px;
+  height: 24px;
+  line-height: 24px;
+  margin: 7px 15px 0;
+  background: url(../html/src/img/label_01.jpg) no-repeat;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+  text-indent: 5px;
+}
+#coures_content .content_player .player_list .list_title .back {
+  width: 48px;
+  background: url(../html/src/img/label_back.jpg) no-repeat;
+}
+#coures_content .content_player .player_list .list_title span {
+  float: right;
+  color: #666666;
+  padding-right: 15px;
 }
 #coures_content .content_player .player_live {
   float: right;
@@ -178,7 +219,7 @@
 #coures_content .content_player .player_info dl {
   float: left;
   display: inline;
-  margin-left: 10px;
+  margin-left: 20px;
   font-size: 14px;
   color: #666666;
 }
@@ -188,12 +229,23 @@
 #coures_content .content_player .player_info dl dd {
   float: left;
   display: inline;
-  margin-right: 10px;
 }
 #coures_content .content_player .player_info dl dd .star {
   background: url(../html/src/img/star.jpg) repeat-x;
   text-indent: -9999em;
   margin-top: 25px;
+}
+#coures_content .content_player .player_info dl dd .star1 {
+  width: 25px;
+}
+#coures_content .content_player .player_info dl dd .star2 {
+  width: 45px;
+}
+#coures_content .content_player .player_info dl dd .star3 {
+  width: 65px;
+}
+#coures_content .content_player .player_info dl dd .star4 {
+  width: 85px;
 }
 #coures_content .content_player .player_info dl dd .star5 {
   width: 105px;
@@ -226,4 +278,42 @@
 #coures_content .content_player .player_info .listen_num strong {
   font-size: 28px;
   font-family: "Arial";
+}
+/*===================/课程详情页---下半部分/===============================*/
+.panel_listen {
+  overflow: hidden;
+  border: 1px solid #d2d2d2;
+  background: url(../html/src/img/listen_title.jpg) repeat-x;
+  box-shadow: 3px 3px 3px rgba(231, 231, 231, 0.4), -3px -3px 3px rgba(231, 231, 231, 0.4);
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.panel_listen .listen_title {
+  height: 37px;
+  line-height: 37px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 15px;
+  color: #333333;
+}
+.panel_listen .listen_conten {
+  min-height: 300px;
+}
+.tabs_title_item {
+  overflow: hidden;
+}
+.tabs_title_item li {
+  float: left;
+  width: 180px;
+  line-height: 37px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 1px solid #d2d2d2;
+}
+.tabs_title_item li a {
+  color: #333333;
+}
+.tabs_title_item .current {
+  background: url(../html/src/img/title_current.jpg) no-repeat;
 }

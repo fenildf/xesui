@@ -119,13 +119,6 @@
 .layout {
   width: 980px;
   margin: auto;
-  overflow: hidden;
-}
-.layout_body {
-  overflow: hidden;
-}
-.layout_side {
-  overflow: hidden;
 }
 .layout_content {
   overflow: hidden;
@@ -150,6 +143,9 @@
 }
 .w_235 {
   width: 235px;
+}
+.w_240 {
+  width: 240px;
 }
 .w_310 {
   width: 310px;
