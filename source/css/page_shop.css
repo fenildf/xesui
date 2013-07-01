@@ -516,7 +516,7 @@ table {
   background-position: -69px -48px;
 }
 .icon_rmb {
-  background-position: -65px 3px;
+  background-position: -67px 3px;
 }
 .icon_gray_user {
   background-position: -71px -24px;
@@ -1000,6 +1000,138 @@ h1.logo a {
 }
 /*头部，内容，底部*/
 /**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:40:19
+ * @version $Id$  头像
+ */
+.ui_avatar {
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.ui_avatar .prev,
+.ui_avatar .next {
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: 85px;
+}
+.ui_avatar .prev {
+  left: 0;
+}
+.ui_avatar .next {
+  right: 0;
+}
+.ui_avatar ul.avatar_items {
+  overflow: hidden;
+}
+.ui_avatar ul.avatar_items li a {
+  display: block;
+  text-align: center;
+  line-height: 180%;
+  color: #666666;
+}
+.ui_avatar ul.avatar_items li img {
+  width: 50px;
+  height: 50px;
+}
+.ui_avatar .userpic img {
+  width: 50px;
+  height: 50px;
+}
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程
+ */
+.ui_courses {
+  overflow: hidden;
+}
+.ui_courses .ui_avatar {
+  float: left;
+  display: inline;
+  height: 110px;
+  margin: 10px;
+}
+.course_item {
+  overflow: hidden;
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+  margin-bottom: 10px;
+}
+/*内容部分*/
+.course_detail {
+  float: left;
+  display: inline;
+  width: 645px;
+}
+.course_detail .course_title {
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #333333;
+  font-weight: normal;
+  padding: 7px 0;
+}
+.course_detail .course_title em {
+  display: inline-block;
+  width: 35px;
+  line-height: 17px;
+  background: url(/xesui/src/img/icon_1.png) no-repeat;
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 3px;
+}
+.course_detail .course_title strong {
+  font-size: 14px;
+}
+.course_detail .course_title a {
+  color: #333333;
+}
+.course_detail .course_info {
+  height: 25px;
+  color: #999999;
+  font-size: 12px;
+}
+.course_detail .course_info strong {
+  font-weight: bold;
+}
+.course_detail .course_func {
+  margin-top: 5px;
+}
+.course_detail .course_func .btn_audition {
+  float: left;
+  width: 75px;
+  height: 25px;
+  line-height: 25px;
+  background: url(/xesui/src/img/btn_course.png) no-repeat;
+  text-indent: 20px;
+  color: #cc0000;
+  text-decoration: none;
+}
+.course_detail .course_func .btn_audition:hover {
+  background: url(/xesui/src/img/btn_course_hover.png) no-repeat;
+  color: #ffffff;
+}
+.course_detail .course_func span {
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #999999;
+}
+.course_detail .course_func i {
+  float: left;
+}
+.course_detail .course_func .tools {
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #006699;
+}
+/**
  *Table 公用样式
  *table元素已经设定了BG和border-collapse属性
  */
@@ -1091,6 +1223,26 @@ h2.shopcar_title {
   font-weight: normal;
   color: #333333;
 }
+h3.shopcar_title {
+  height: 30px;
+  font-family: "Microsoft YaHei", "Arial";
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+}
+h3.pay_way {
+  line-height: 30px;
+  font-weight: bold;
+}
+.account_money {
+  height: 30px;
+  font-family: "Microsoft YaHei", "Arial";
+  font-size: 12px;
+  color: #333333;
+}
+.account_money strong {
+  font-weight: bold;
+}
 table.table_shop {
   border: 1px solid #99c7e9;
   margin-bottom: 10px;
@@ -1128,6 +1280,12 @@ table.table_shop .tfoot td {
 }
 table.table_shop .tfoot .money {
   font-weight: bold;
+  font-size: 18px;
+}
+table.table_shop .shop_empty {
+  background: url(../html/src/img/shop_i.jpg) 1px 1px no-repeat;
+  padding-left: 20px;
+  font-size: 12px;
 }
 .order_button {
   overflow: hidden;
@@ -1139,4 +1297,68 @@ table.table_shop .tfoot .money {
   font-size: 14px;
   font-family: "Microsoft YaHei";
   margin-left: 10px;
+}
+.recommend {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.recommend .recommend_title {
+  font-size: 14px;
+  border-bottom: 1px solid #cdd0d7;
+  height: 25px;
+  line-height: 25px;
+}
+.recommend .recommend_content {
+  background: #f9f9f9;
+  padding: 10px;
+  overflow: hidden;
+}
+.recommend .recommend_content .course_item {
+  width: 250px;
+  margin: 0 10px 0 20px;
+  float: left;
+  display: inline;
+}
+.recommend .recommend_content .course_item .ui_avatar {
+  float: left;
+  margin: 10px;
+  height: 110px;
+}
+.recommend .recommend_content .course_item .course_detail {
+  width: 170px;
+}
+.recommend .recommend_content .course_item .course_detail .course_title {
+  font-size: 12px;
+}
+.recommend .recommend_content .course_item .course_detail .course_func {
+  overflow: hidden;
+}
+.recommend .recommend_content .course_item .course_detail .course_func span {
+  margin: 0 10px 0 0;
+}
+.recommend .recommend_content .course_item .course_detail .course_func .btn_audition {
+  margin: 5px 0 0 5px;
+}
+.order_pay_info {
+  background: #f7f7f7;
+  height: 57px;
+  text-align: right;
+  line-height: 57px;
+}
+.order_pay_info .all_money {
+  float: left;
+  width: 835px;
+  font-size: 14px;
+}
+.order_pay_info .all_money strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+.order_pay_info .btn_sky {
+  float: right;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 20px 20px 0;
 }

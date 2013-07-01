@@ -20,6 +20,11 @@
 @import "footer.less";
 /*头部，内容，底部*/
 
+
+@import "ui_avatar.less";
+@import "ui_courses.less";
+
+
 @import "table.less";
 
 
@@ -54,6 +59,10 @@
 
 
 h2.shopcar_title {height:50px;line-height:50px;font-family:@fw ;font-size:@f18;font-weight:normal;color:@g3;}
+h3.shopcar_title {height:30px;font-family:@fw,@fa;font-size:@f14;font-weight:normal;color:@g3;}
+h3.pay_way {line-height:30px;font-weight:bold;}
+.account_money {height:30px;font-family:@fw,@fa;font-size:@f12;color:@g3;}
+.account_money strong {font-weight:bold;}
 
 table.table_shop {
 	border:1px solid #99c7e9;margin-bottom:10px;
@@ -64,10 +73,63 @@ table.table_shop {
 		span {color:@g3*3;padding-left:20px;}
 	}
 	.text_l {text-align:@l;padding-left:20px;}
-	.text_r {text-align:@r;padding-right:20px;}
+	.text_r {
+		text-align:@r;padding-right:20px;
+	}
 	.tfoot td {background:#fff;border:0;}
-	.tfoot .money {font-weight:bold;}
+	.tfoot .money {font-weight:bold;font-size:@f18;}
+	.shop_empty {background: url(../html/src/img/shop_i.jpg) 1px 1px no-repeat; padding-left:20px;font-size:@f12;}
+
 }
 
 .order_button {overflow:hidden}
 .order_button .btn {float:right;width:100px;height:30px;font-size:@f14;font-family:@fw;margin-left:10px;}
+
+
+.recommend {
+		overflow:hidden;margin-bottom:10px;
+		.recommend_title {font-size:@f14;border-bottom:1px solid #cdd0d7;height:25px;line-height:25px;}
+		.recommend_content {
+				background:#f9f9f9;padding:10px;overflow:hidden;
+				.course_item {
+					width:250px; margin:0 10px 0 20px;float:left;display:inline;
+					.ui_avatar  {float:left;margin:10px;height:110px;}
+					.course_detail {
+							width:170px;
+							.course_title {font-size:@f12;}
+							.course_func {
+									overflow:hidden;
+									span {margin:0 10px 0 0;}
+									.btn_audition {margin:5px 0 0 5px;}
+							}
+					}
+				}
+		}
+}
+
+.order_pay_info {
+		background:#f7f7f7;height:57px;text-align:right;line-height:57px;
+		.all_money {
+		float:left;width:835px;font-size:@f14;
+		strong {font-size:@f18;font-weight:bold;}
+		}
+		.btn_sky {float:right;width:100px;height:30px;font-size:@f14;font-weight:bold;margin:15px 20px 20px 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
