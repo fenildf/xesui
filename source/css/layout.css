@@ -110,6 +110,27 @@
  *tborder:table-border
  *----------------------------------------
  */
+.mtop_10 {
+  margin-top: 10px;
+}
+.mtop_20 {
+  margin-top: 20px;
+}
+.mtop_30 {
+  margin-top: 30px;
+}
+.ptop_10 {
+  padding-top: 10px;
+}
+.ptop_20 {
+  padding-top: 20px;
+}
+.ptop_30 {
+  padding-top: 30px;
+}
+.font14 {
+  font-size: 14px;
+}
 /**/
 #container {
   overflow: hidden;
@@ -119,6 +140,13 @@
 .layout {
   width: 980px;
   margin: auto;
+  overflow: hidden;
+}
+.layout_body {
+  overflow: hidden;
+}
+.layout_side {
+  overflow: hidden;
 }
 .layout_content {
   overflow: hidden;
@@ -140,9 +168,11 @@
 }
 .w_215 {
   width: 215px;
+  padding-bottom: 50px;
 }
 .w_235 {
   width: 235px;
+  padding-bottom: 50px;
 }
 .w_240 {
   width: 240px;
@@ -150,19 +180,23 @@
 .w_310 {
   width: 310px;
   margin-right: 5px;
+  padding-bottom: 50px;
 }
 .w_655 {
   width: 655px;
   border-right: 1px solid #e5e5e5;
+  padding-bottom: 50px;
 }
 .w_645 {
   width: 645px;
 }
 .w_730 {
   width: 730px;
+  padding-bottom: 50px;
 }
 .w_740 {
   width: 740px;
+  padding-bottom: 50px;
 }
 /**
  * [广告块]
@@ -170,25 +204,4 @@
  */
 .advert {
   margin-top: 10px;
-}
-.mtop_10 {
-  margin-top: 10px;
-}
-.mtop_20 {
-  margin-top: 20px;
-}
-.mtop_30 {
-  margin-top: 30px;
-}
-.ptop_10 {
-  padding-top: 10px;
-}
-.ptop_20 {
-  padding-top: 20px;
-}
-.ptop_30 {
-  padding-top: 30px;
-}
-.font14 {
-  font-size: 14px;
 }

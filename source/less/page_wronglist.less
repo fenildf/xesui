@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+
+@import "icon.less";
+@import "form.less";
+@import "button.less";
+/*图标，表单，按钮*/
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+/*头部，内容，底部*/
+
+
+@import "ui_avatar.less";
+@import "ui_courses.less";
+@import "nav.less";
+@import "table.less";
+
+
+/**
+ * 错题本
+ */
+.wrong_header{
+	border-bottom:1px solid;
+	.border-color(#eaeaea);
+	margin-bottom:4*@margin5;
+	.header_info{
+		.layout;
+		height:55px;
+		line-height:55px;
+		.logo,
+		h1{
+			float:@l;
+			margin-right:4*@margin5;
+		}
+		.logo{
+			display:block;
+			width:235px;
+			height:55px;
+			background:url(../html/src/img/logo.png) no-repeat center;
+		}
+		h1{
+			font-size:@f20;
+			font-family:@fw;
+			font-weight:normal;
+		}
+		ul{
+			float:@r;
+			color: @g3*3;
+			li{
+				float:@l;
+				margin-right:10*@margin5;
+			}
+			li > span{
+				color:@g3*2;
+			}
+		}
+	}	
+}
+.wrong_overview{
+	.layout;
+	width:880px;
+	padding:15px 50px;
+	.background-color(#fcfcfc);
+	.wrong_container{
+		width:978px;
+		margin:0 auto;
+	}
+	.l{
+		float:left;
+		padding-right:50px;
+		border-right:1px solid #eaeaea;
+		strong{
+		color: darken(#48A0DB, 10%);
+		font-size:140px;
+		}
+	}
+	.r{
+		float:left;
+		padding-left:50px;
+		font-size:14px;
+		dl{
+			width:530px;
+			line-height:@hl20;
+			clear:both;
+			margin:15px 0;
+			overflow:hidden;
+			dd{
+				float:left;
+				margin-right:20px;
+				span{
+					padding:0 10px 0 3px;
+				}
+				.point{
+					color:@rc;
+				}
+			}
+			dt{
+				font-weight:bold;
+			}
+		}
+
+	}
+}
+.wrong_container{
+		.layout;
+		.nav{
+			border-bottom:1px solid #0076b3;
+			margin-bottom:20px;
+			overflow:hidden;
+			li{
+				margin-left:0;
+			}
+			.current{
+				color:@white;
+				background:#4ba0da;
+			}
+		}
+		.wrong_list_new{
+			border:1px solid;
+			.border-color(#f6de9e);
+		}
+	}
+/**进入错题本**/
+.wrong_title{
+			overflow: hidden;
+			background: #fbfbfb;
+			border:1px solid #e7e7e7;
+			padding-bottom: 15px;
+			margin-bottom: 10px;
+			.title{
+				height:35px;
+				line-height: 35px;
+				overflow: hidden;
+				border-bottom: 1px dashed #e7e7e7;
+				.name {
+					color: #666;
+					float: left;
+					padding-left:15px;
+				}
+				.times {
+					float: right;
+					padding-right: 15px;
+					color: #999;
+				}	
+		}
+		.tabsWrong {
+				float: left;
+				display: inline;
+				padding-left: 15px;
+				overflow: hidden;
+				}
+			.num_bulist{
+				float: left;
+				line-height:26px;
+				display: inline;
+			}
+			.num_bulist li{
+				float: left;
+				font-size: 12px;
+				color: #999;
+				margin-left: 20px;
+				strong{
+					color:@g3;
+				}
+			}
+		.wrong_info{
+			.wrong_btn{
+				.btn;
+				.btn_blue;
+				padding:3px 5px;
+				float:left;
+				margin-left:10px;
+			}
+		}
+	}
+/**错题本：考试结果**/
+.wrong_section{
+		width: 740px;
+		overflow: hidden;
+		.test_result {
+			width: 730px;
+			height: 381px;
+			overflow: hidden;
+			background: url(../html/src/img/test_bg.jpg) no-repeat;
+			font-family: @fw;
+			position: relative;
+		}
+}
+
+/**错题本：考试**/
+.wrong_container{
+	.layout;
+	.overview{
+		height:40px;
+		line-height:40px;
+		li{
+			float:left;
+			display:inline;
+			margin-right:50px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

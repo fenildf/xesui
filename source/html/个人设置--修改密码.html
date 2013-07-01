@@ -6,9 +6,7 @@
 	<title>新版学而思网校首页----个人中心--教师--他的课程</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-	<link href="src/css/test1.css" type="text/css" rel="stylesheet" />
-
+    <link href="../css/page_setting.css" type="text/css" rel="stylesheet" />
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -17,190 +15,149 @@
 				<a href="##" target="_blank">学而思网校</a>
 			</h1>
 			<ul class="nav">
-				<li>
-					<a href="#">首页</a>
-				</li>
-				<li class="current">
-					<a href="#">选课程</a>
-				</li>
-				<li>
-					<a href="#">找老师</a>
-				</li>
-				<li>
-					<a href="#">逛论坛</a>
-				</li>
+				<li><a href="#">首页</a></li>
+				<li class="current"><a href="#">选课程</a></li>
+				<li><a href="#">找老师</a></li>
+				<li><a href="#">逛论坛</a></li>
 			</ul>
 			<div class="search">
-				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师">
-				<button>搜索</button>
+				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师"> <button>搜索</button>
 			</div>
 			<ul class="topbar">
-				<li>
-					<a href=""> <em class="icon icon_car">购物车</em>
-					</a>
-				</li>
-				<li>
-					<a href="">登录</a> <i>|</i>
-				</li>
-				<li>
-					<a href="">注册</a>
-				</li>
+				<li><a href=""><em class="icon icon_car">购物车</em></a></li>
+				<li><a href="">登录</a><i>|</i></li>
+				<li><a href="">注册</a></li>
 			</ul>
 		</div>
 	</div>
 	<!-- 头部 end-->
 	<!-- 内容 start-->
-	<div id="middle">
-
+	<div id="container">
 		<div class="layout">
-			<div class="layout_body right">
-				<div class="main_header border_blue">
-					<span>修改密码</span>
-				</div>
-				<!-- main_header -->
-				<!-- 提示 -->
-				<div class="alert alert-block">
-					<button type="button" class="close" data-dismiss="alert">&times;</button>
-					<h4>Warning!</h4>
-					Best check yo self, you're not...
-				</div>
-				<!--  提示 end-->
-				<!-- form_item_content -->
-				<div class="form_item_content">
-
-					<div class="form_item">
-						<span class="form_label">当前密码：</span>
-						<div class="form_info">
-							<label for="" class="input">
-								<input name="" type="text" ></label>
-							<p class="form_tips tips_text">密码由6-16位半角字符（字母、数字、下划线）组成，区分大小写</p>
-						</div>
-					</div>
-					<div class="form_item">
-						<span class="form_label">新密码：</span>
-						<div class="form_info">
-							<label for="" class="input">
-								<input name="" type="text" ></label>
-							<p class="form_tips tips_text">密码由6-16位半角字符（字母、数字、下划线）组成，区分大小写</p>
-						</div>
-					</div>
-					<div class="form_item">
-						<span class="form_label">确认密码：</span>
-						<div class="form_info">
-							<label for="" class="input">
-								<input name="" type="text" ></label>
-							<p class="form_tips tips_text">确认密码与新密码不一致</p>
-						</div>
-					</div>
-					<div class="form_item">
-						<span class="form_label">验证码：</span>
-						<div class="form_info">
-							<label for="" class="input">
-								<input name="" type="text" >
-								<img src="111.jpg" alt="11111">
-								<a href="">看不清换一张</a>
-							</label>
-							<p class="form_tips tips_text"></p>
-						</div>
-					</div>
-					<div class="form_item">
-						<button>保存</button>
-						<button>取消</button>
-					</div>
-
-				</div>
-				<!-- form_item_content -->
+			<div class="layout_body right w_740">
+				<div class="main_header border_blue header_setting"><span>基本资料</span></div>
+				<div class="tip tip_prompt">
+				    	<button type="button" class="close" data-dismiss="alert">×</button>
+				    	
+				    	<em></em><strong>重要提示：</strong>网校推出课程表功能，帮助大家合理规划学习时间，培养良好的学习习惯
+				    </div>
+				<div class="right-content user_profile password_change">
+					<form>
+						<p>
+							<label>当前密码：</label>
+							<input type="text">
+							<span>密码是由6-16位半角字符（字母，数字，符号）组成，区分大小写</span>
+						</p>
+						<p>
+							<label>新密码：</label>
+							<input type="text">
+							<span>密码是由6-16位半角字符（字母，数字，符号）组成，区分大小写</span>
+						</p>
+						<p>
+							<label>确认密码：</label>
+							<input type="text">
+						</p>
+						<p>
+							<label>验证码：</label>
+							<input type="text">
+							<a href="#">（看不清楚，换一张）</a>
+						</p>
+						<p>
+							<button>保存</button>
+							<button class="cancel">取消</button>
+						</p>
+					</form>
+			</div>
 			</div>
 			<!--layout_body end -->
-			<div class="layout_side left">
-				<ul class="nav nav-list">
-					<li class="nav-header">个人设置</li>
+			<div class="layout_side left w_215">
+			  <ul class="side_nav nav_setting">
+			  	<li class="nav_header"><span>个人设置</span></li>
+			  	<li class="current">
+			  		<a href="#">基本资料</a>
+			  	</li>
+			  	<li>
+			  		<a href="#">头像设置</a>
+			  	</li>
+			  	<li>
+			  		<a href="#">修改密码</a>
+			  	</li>
+			  	<li class="nav_header"><span>我的订单</span></li>
 
-					<li class="current">
-						<a href="#">基本资料</a>
-					</li>
-					<li>
-						<a href="#">头像设置</a>
-					</li>
-					<li>
-						<a href="#">修改密码</a>
-					</li>
-					<li class="nav-header">我的订单</li>
+			  	<li>
+			  		<a href="#">订单管理</a>
+			  	</li>
+			  	<li class="nav_header"><span>支付中心</span></li>
 
-					<li>
-						<a href="#">订单管理</a>
-					</li>
-					<li class="nav-header">支付中心</li>
+			  	<li>
+			  		<a href="#">我要充值</a>
+			  	</li>
+			  	<li>
+			  		<a href="#">充值记录</a>
+			  	</li>
+			  	<li>
+			  		<a href="#">金币记录</a>
+			  	</li>
+			  	<li>
+			  		<a href="#">代金卡</a>
+			  	</li>
+			  	<li class="nav_header"><span>卡激活</span></li>
 
-					<li>
-						<a href="#">我要充值</a>
-					</li>
-					<li>
-						<a href="#">充值记录</a>
-					</li>
-					<li>
-						<a href="#">金币记录</a>
-					</li>
-					<li>
-						<a href="#">代金卡</a>
-					</li>
-					<li class="nav-header">卡激活</li>
-
-					<li>
-						<a href="#">代金卡激活</a>
-					</li>
-					<li>
-						<a href="#">听课证激活</a>
-					</li>
-				</ul>
-
+			  	<li>
+			  		<a href="#">代金卡激活</a>
+			  	</li>
+			  	<li>
+			  		<a href="#">听课证激活</a>
+			  	</li>
+			  </ul>
+				
 			</div>
 			<!--layout_side end -->
 		</div>
-		<!-- layout end-->
+      <!-- layout end-->
 	</div>
 	<!--内容 end-->
 	<!--底部 start -->
 
 	<div id="footer">
-		<div class="foot_service">
-			<a class="service_share"> <strong>学习经验分享</strong>
-				<p>解决学习的困扰，成功学员提供学习经验</p>
-			</a>
-			<a class="service_live"> <strong>直播学习指导</strong>
-				<p>解决学习的困扰，成功学员提供学习经验</p>
-			</a>
-			<a class="service_system">
-				<strong>专业的学习规划体系</strong>
-				<p>解决学习的困扰，成功学员提供学习经验</p>
-			</a>
-			<a class="service_interaction">
-				<strong>有趣的互动视频</strong>
-				<p>解决学习的困扰，成功学员提供学习经验</p>
-			</a>
-		</div>
-		<div class="area">
-			<p>
-				北京学而思教育科技有限公司
-				<a href="http://www.xueersi.com/">网校首页</a>
-				|
-				<a href="http://www.xueersi.com/company/detail/527">关于我们</a>
-				|
-				<a href="http://www.xueersi.com/company/detail/522">合作专区</a>
-				|
-				<a href="http://www.xueersi.com/recruits/index">人才招聘</a>
-				|
-				<a href="http://www.xueersi.com/help/detail/490">投诉与建议</a>
-			</p>
-			<p>
-				Copyright © 2009-2013 www.xueersi.com All Rights Reserved     京ICP备09032638号     京公网安备:1101082103
-			</p>
-			<p class="link">
-				<a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20120925001738002003" target="_blank">
-					<img src="http://x04.xesimg.com/web/201209/13487953879693.png"></a>
-			</p>
-		</div>
-	</div>
+            <div class="foot_service">
+            	<a class="service_share"> <span>学习经验分享</span>
+            		<p>解决学习的困扰，成功学员提供学习经验</p>
+            	</a>
+            	<a class="service_live"> <span>直播学习指导</span>
+            		<p>解决学习的困扰，成功学员提供学习经验</p>
+            	</a>
+            	<a class="service_system">
+            		<span>专业的学习规划体系</span>
+            		<p>解决学习的困扰，成功学员提供学习经验</p>
+            	</a>
+            	<a class="service_interaction">
+            		<span>有趣的互动视频</span>
+            		<p>解决学习的困扰，成功学员提供学习经验</p>
+            	</a>
+            </div>
+            <div class="foot_area">
+            <p>
+                北京学而思教育科技有限公司
+                <a href="http://www.xueersi.com/">网校首页</a>
+                |
+                <a href="http://www.xueersi.com/company/detail/527">关于我们</a>
+                |
+                <a href="http://www.xueersi.com/company/detail/522">合作专区</a>
+                |
+                <a href="http://www.xueersi.com/recruits/index">人才招聘</a>
+                |
+                <a href="http://www.xueersi.com/help/detail/490">投诉与建议</a>
+            </p>
+            <p>
+                Copyright © 2009-2013 www.xueersi.com All Rights Reserved     京ICP备09032638号     京公网安备:1101082103
+            </p>
+            <p class="link">
+                <a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20120925001738002003" target="_blank">
+                    <img src="http://x04.xesimg.com/web/201209/13487953879693.png"></a>
+            </p>
+            </div>
+        </div>
 	<!--底部 end-->
 </body>
 </html>

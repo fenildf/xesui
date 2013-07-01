@@ -105,6 +105,27 @@
  *tborder:table-border
  *----------------------------------------
  */
+.mtop_10 {
+  margin-top: 10px;
+}
+.mtop_20 {
+  margin-top: 20px;
+}
+.mtop_30 {
+  margin-top: 30px;
+}
+.ptop_10 {
+  padding-top: 10px;
+}
+.ptop_20 {
+  padding-top: 20px;
+}
+.ptop_30 {
+  padding-top: 30px;
+}
+.font14 {
+  font-size: 14px;
+}
 /**
  * Typography
  *---------------------------

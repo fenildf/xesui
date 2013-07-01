@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/**
+ * @authors sam shih
+ * @学习中心个人设置我要充值银行列表
+ */
+@import "variables.less";
+/*base,重置，变量*/
+.paylists{
+	line-height:@hl22;
+	.setting_menu{
+		margin-bottom:10px;
+	}
+	.pay_info{
+		font-size:@f14;
+		color:#5b5b5b;
+		padding:10px 50px;
+		strong{
+			display:inline-block;
+			width:90px;
+			text-align:@r;
+			color:@g3;
+			font-weight:bold;
+		}
+
+	}
+	.pay_tips{
+		color:#adadad;
+		overflow:hidden;
+		background:#FAFAFA;
+		padding:10px 20px;
+
+	}
+	ul li{
+		width:180px;
+		float:left;
+		margin:0 15px 40px 0;
+		input[type="radio"]{
+			margin-right:5px;
+		}
+		.bank-item{
+			background-image:url("@{bankpath}");
+			background-repeat: no-repeat;
+			cursor: pointer;
+			width:154px;
+			height:33px;
+			vertical-align: middle;
+			display:inline-block;
+		}
+		.ICBC{
+			background-position:0 0;
+		}
+		.CMB{
+			background-position:0 -99px;
+		}
+		.ABC{
+			background-position:0 -198px;
+		}
+		.CCB{
+			background-position:-154px 0;
+		}
+		.BCM{
+			background-position:-154px -99px;
+		}
+		.SDB{
+			background-position:-154px -198px;
+		}
+		.BOB{
+			background-position:-308px 0;
+		}
+		.CIB{
+			background-position:-308px -99px;
+		}
+		.BOC{
+			background-position:0 -231px;
+		}
+		.CEB{
+			background-position:0 -33px;
+		}
+		.SPD{
+			background-position:0 -132px;
+		}
+		.CMBC{
+			background-position:-308px -198px;
+		}
+		.PSBC{
+			background-position:-154px -132px;
+		}
+		.BEA{
+			background-position:-154px -33px;
+		}
+		.RCB{
+			background-position:-154px -231px;
+		}
+		.CBHB{
+			background-position:-308px -33px;
+		}
+		.CGD{
+			background-position:-308px -133px;
+		}
+		.GZCB{
+			background-position:-308px -230px;
+		}
+		.GZNC{
+			background-position:0 -66px;
+		}
+		.HXB{
+			background-position:0 -165px;
+		}
+		.ZXSY{
+			background-position:0 -264px;
+		}
+		.NBCB{
+			background-position:-154px -66px;
+		}
+		.SHNC{
+			background-position:-154px -165px;
+		}
+		.BBON{
+			background-position:-154px -264px;
+		}
+		.HCCB{
+			background-position:-308px -66px;
+		}
+		.PAYH{
+			background-position:-308px -165px;
+		}
+		.gateway{
+			background-position:-308px -264px;
+		}
+	}
+
+}

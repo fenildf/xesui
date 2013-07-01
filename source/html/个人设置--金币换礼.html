@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +7,7 @@
 	<title>新版学而思网校首页----个人中心--教师--他的课程</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
-
+    <link href="../css/page_setting.css" type="text/css" rel="stylesheet" />
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -34,45 +33,45 @@
 	</div>
 	<!-- 头部 end-->
 	<!-- 内容 start-->
-	<div id="middle">
+	<div id="container">
 		
 		<div class="layout">
-			<div class="layout_body right">
-				<div class="main_header border_blue"><span>金币换礼</span></div>
+			<div class="layout_body right w_740">
+				<div class="main_header border_blue header_setting"><span>金币换礼</span></div>
 				<!-- main_header -->
-				<ul class="nav nav-pills">
-					<li>排序：</li>
-					<li class="current">
-						<a href="#">关注</a>
-					</li>
-					<li>
-						<a href="#">金币</a>
-					</li>
-					<li>
-						<a href="#">最新</a>
-					</li>
-					<li>
-						<a href="#">活动</a>
-					</li>
-				</ul>
-				<!-- nav -->
-				<!-- setting_menu -->
-		              <div class="gift_list">
-		              	<dl class="gift_item">
-		              		<dt>
-		              			<img src="111.jpg" alt="好看的抱枕"></dt>
-		              		<dd class="gift_title">好看的抱枕</dd>
-		              		<dd class="gift_gold">17500</dd>
-		              		<dd class="gift_button">立即兑换</dd>
-		              		<dd class="gift_info hidden">浮动框</dd>
-		              	</dl>
-		              </div>
-				<!-- gift_list -->
+				<div class="gift_menu_hd">
+					<div class="">排序：</div>
+					<ul class="nav nav_pills">
+					    <li class="current"><a href="#">全部订单</a></li>
+					    <li><a href="#">支付成功</a></li>
+					    <li><a href="#">未付款</a></li>
+					    <li><a href="#">待确认收货（<span>3</span>）</a></li>
+	  				</ul>
+  				</div>
+  				<div class="gift-item">
+  					<a href="#">
+  						<img src="src/img/gift.jpg" alt="">
+  						<span>毛和老师(库存43)</span>
+  					</a>
+  					<p class="coin_num"><em></em>17500</p>
+  					<button class="coin_deal">立即兑换</button>
+					<dl class="biggift" style="display:none">
+						<dt>
+							<img src="src/img/biggift.jpg" alt="">
+							<span>毛和老师</span>
+						</dt>
+						<dd><span>品牌：</span>米菲</dd>
+						<dd><span>材质：</span>米菲</dd>
+						<dd><span>使用方法：</span>米菲米菲米菲米菲米菲米菲米菲米菲</dd>
+						<dd><span>库存：</span>28</dd>
+
+					</dl>
+	  			</div>
 			</div>
 			<!--layout_body end -->
-			<div class="layout_side left">
-			  <ul class="nav nav-list">
-			  	<li class="nav-header">个人设置</li>
+			<div class="layout_side left w_215">
+			  <ul class="side_nav nav_setting">
+			  	<li class="nav_header"><span>个人设置</span></li>
 
 			  	<li class="current">
 			  		<a href="#">基本资料</a>
@@ -83,12 +82,12 @@
 			  	<li>
 			  		<a href="#">修改密码</a>
 			  	</li>
-			  	<li class="nav-header">我的订单</li>
+			  	<li class="nav_header"><span>我的订单</span></li>
 
 			  	<li>
 			  		<a href="#">订单管理</a>
 			  	</li>
-			  	<li class="nav-header">支付中心</li>
+			  	<li class="nav_header"><span>支付中心</span></li>
 
 			  	<li>
 			  		<a href="#">我要充值</a>
@@ -102,7 +101,7 @@
 			  	<li>
 			  		<a href="#">代金卡</a>
 			  	</li>
-			  	<li class="nav-header">卡激活</li>
+			  	<li class="nav_header"><span>卡激活</span></li>
 
 			  	<li>
 			  		<a href="#">代金卡激活</a>
@@ -122,22 +121,22 @@
 
 	<div id="footer">
             <div class="foot_service">
-            	<a class="service_share"> <strong>学习经验分享</strong>
+            	<a class="service_share"> <span>学习经验分享</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
-            	<a class="service_live"> <strong>直播学习指导</strong>
+            	<a class="service_live"> <span>直播学习指导</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_system">
-            		<strong>专业的学习规划体系</strong>
+            		<span>专业的学习规划体系</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_interaction">
-            		<strong>有趣的互动视频</strong>
+            		<span>有趣的互动视频</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>
-            <div class="area">
+            <div class="foot_area">
             <p>
                 北京学而思教育科技有限公司
                 <a href="http://www.xueersi.com/">网校首页</a>

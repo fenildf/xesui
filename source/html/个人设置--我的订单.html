@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +7,7 @@
 	<title>新版学而思网校首页----个人中心--教师--他的课程</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link href="http://www.xueersi.com/static/css/s.public.css" type="text/css" rel="stylesheet" />
-    <link href="src/css/test1.css" type="text/css" rel="stylesheet" />
-
+    <link href="../css/page_setting.css" type="text/css" rel="stylesheet" />
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -34,28 +33,19 @@
 	</div>
 	<!-- 头部 end-->
 	<!-- 内容 start-->
-	<div id="middle">
+	<div id="container">
 		
 		<div class="layout">
-			<div class="layout_body right">
-				<div class="main_header border_blue"><span>我的订单</span></div>
+			<div class="layout_body right w_740">
+				<div class="main_header border_blue header_setting"><span>我的订单</span></div>
 				<!-- main_header -->
-				<ul class="nav nav-pills">
-					<li class="current">
-						<a href="#">全部订单</a>
-					</li>
-					<li>
-						<a href="#">支付成功</a>
-					</li>
-					<li>
-						<a href="#">未付款</a>
-					</li>
-					<li>
-						<a href="#">待确认收货</a>
-					</li>
-				</ul>
-				<!-- nav -->
-                 <table class="ui_table text_c">
+				<ul class="nav nav_pills">
+				    <li class="current"><a href="#">全部订单</a></li>
+				    <li><a href="#">支付成功</a></li>
+				    <li><a href="#">未付款</a></li>
+				    <li><a href="#">待确认收货（<span>3</span>）</a></li>
+  				</ul>
+  				<table class="table text_c">
                  	<thead>
                  		<tr class="text_r">
                  			<th>订单编号</th>
@@ -70,22 +60,31 @@
                  			<td>200000001</td>
                  			<td>2013-01-11</td>
                  			<td>10000</td>
-                 			<td>支付成功</td>
-                 			<td><a href="">取消</a></td>
+                 			<td>网上银行</td>
+                 			<td><a href="#">查看详情</a></td>
+                 		</tr>
+                 		<tr>
+                 			<td>200000001</td>
+                 			<td>2013-01-11</td>
+                 			<td>10000</td>
+                 			<td>网上银行</td>
+                 			<td><a href="#">查看详情</a></td>
+                 		</tr>
+                 		<tr>
+                 			<td>200000001</td>
+                 			<td>2013-01-11</td>
+                 			<td>10000</td>
+                 			<td>网上银行</td>
+                 			<td><a href="#">查看详情</a></td>
                  		</tr>
                  	</tbody>
-                 	<tfoot>
-                 		<tr>
-                 			<td colspan="5"></td>
-                 		</tr>
-                 	</tfoot>
+                 	
                  </table>
-				<!-- table -->
 			</div>
 			<!--layout_body end -->
-			<div class="layout_side left">
-			  <ul class="nav nav-list">
-			  	<li class="nav-header">个人设置</li>
+			<div class="layout_side left w_215">
+			  <ul class="side_nav nav_setting">
+			  	<li class="nav_header"><span>个人设置</span></li>
 
 			  	<li class="current">
 			  		<a href="#">基本资料</a>
@@ -96,12 +95,12 @@
 			  	<li>
 			  		<a href="#">修改密码</a>
 			  	</li>
-			  	<li class="nav-header">我的订单</li>
+			  	<li class="nav_header"><span>我的订单</span></li>
 
 			  	<li>
 			  		<a href="#">订单管理</a>
 			  	</li>
-			  	<li class="nav-header">支付中心</li>
+			  	<li class="nav_header"><span>支付中心</span></li>
 
 			  	<li>
 			  		<a href="#">我要充值</a>
@@ -115,7 +114,7 @@
 			  	<li>
 			  		<a href="#">代金卡</a>
 			  	</li>
-			  	<li class="nav-header">卡激活</li>
+			  	<li class="nav_header"><span>卡激活</span></li>
 
 			  	<li>
 			  		<a href="#">代金卡激活</a>
@@ -135,22 +134,22 @@
 
 	<div id="footer">
             <div class="foot_service">
-            	<a class="service_share"> <strong>学习经验分享</strong>
+            	<a class="service_share"> <span>学习经验分享</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
-            	<a class="service_live"> <strong>直播学习指导</strong>
+            	<a class="service_live"> <span>直播学习指导</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_system">
-            		<strong>专业的学习规划体系</strong>
+            		<span>专业的学习规划体系</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             	<a class="service_interaction">
-            		<strong>有趣的互动视频</strong>
+            		<span>有趣的互动视频</span>
             		<p>解决学习的困扰，成功学员提供学习经验</p>
             	</a>
             </div>
-            <div class="area">
+            <div class="foot_area">
             <p>
                 北京学而思教育科技有限公司
                 <a href="http://www.xueersi.com/">网校首页</a>
