@@ -1,4 +1,4 @@
-*
+/*
  * XESUI 
  * Copyright 2013 xueersi.com All rights reserved.
  *
@@ -24,7 +24,7 @@
  * @static 
  */
 
-var X, xue = X = xue || function(expr, fn) { return xue.dom ? xue.dom(expr, fn) : null; };
+var X, xue = X = xue || function(expr, fn) { return xue.dom ? xue.dom(expr, fn) : {}; };
 
 xue.version = '0.4.7';
 
@@ -37,6 +37,53 @@ xue.team = {
 	Star   : 'W.Star@xesui.com',
 }
 
+
+var ui = ui || {};
+
+
+xue.check = function(obj){
+	var tpLen = typeof(obj.length),
+		tp = typeof obj;
+	
+	if(tpLen === 'number'){
+		if(tp === 'object'){
+			return 'array';
+		}
+		if(tp === 'string'){
+			return 'string';
+		}
+		if(tp === 'function'){
+			return 'function';
+		}
+	}else{
+		if(tp === 'number'){
+			return 'number';
+			//有可能是date或者是number
+		}else{
+			return 'object';
+		}
+	}
+
+	// 还差日期类型判断
+	
+	// if(typeof obj === 'object' && typeof(obj.length) === 'number'){
+	// 	return 'array';
+	// }
+	// if(typeof obj === 'string' && typeof(obj.length) === 'number'){
+	// 	return 'string';
+	// }
+	// if(typeof obj === 'function' && typeof(obj.length) === 'number'){
+	// 	return 'function';
+	// }
+	// if(typeof obj === 'number' && typeof(obj.length) === 'undefined'){
+	// 	return 'number';
+	// 	// 还差日期类型判断 return 'date'
+	// }
+	// if(typeof obj === 'object' && typeof(obj.length) === 'undefined'){
+	// 	return '{}';
+	// }
+	
+};
 /**
  * 准备增加几个别名：
  *

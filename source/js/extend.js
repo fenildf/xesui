@@ -24,4 +24,11 @@
  * @static 
  */
 
-xue.extend = xue.extend || {};
+xue.extend = xue.extend || function(className, fn, constructor){
+	var _name = className;
+
+	var _class = xue[_name] = xue[_name] || fn;
+
+	return _class;
+};
+

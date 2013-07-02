@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+
+@import "icon.less";
+@import "form.less";
+@import "name.less";
+@import "button.less";
+
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+/*头部，内容，底部*/
+
+@import "nav.less";
+@import "tips.less";
+@import "title.less";
+@import "button.less";
+@import "ui_avatar.less";
+@import "list.less";
+@import "ui_feed.less";
+@import "ui_filter.less";
+@import "ui_sortbar.less";
+@import "ui_courses.less";
+@import "head_user.less";
+@import "ui_visitor.less";
+@import "ui_follow.less";
+@import "ui_comment.less";
+@import "ui_pages.less";
+
+
+
+
+/*===================/个人中心--大图背景/=====================*/
+
+#container {background: url(../html/src/img/teacher.jpg) center top no-repeat;}
+
+/*===================/个人中心-老师介绍/=====================*/
+.home_teacher_info {text-align:@c;}
+
+/*===================/个人中心-老师的新鲜事/=====================*/
+
+.content_box .feed_detail {width: 660px;}
+.content_box .ui_feed {border-bottom:1px dashed  #ededed;}
+
+.layout .main_header {margin-bottom:10px;}
+
+
+
+
+/*===================/个人中心-我的网校/=====================*/
+
+.courses_repeat {
+	border:1px solid #ededed;background:#fcfcfc;
+	.course_item {border:0;margin:0;}
+}
+
+
+/*===================/个人中心-我的网校--右侧课程节列表/=====================*/
+
+.joint_list {
+		overflow:hidden;border-top:1px solid #dfdfdf;background:#fff;padding:15px 0 10px 0;
+		li {
+			float:left;display:inline;width:320px;padding-left:20px;height:25px;line-height:25px;color:@g3;overflow:hidden;margin-right:20px;
+			a {color:@g3;}
+		}
+		.gray {
+		     a {color:@g3*3;}
+		}
+}
+
+
+/*===================/个人中心-我的网校--左侧导航栏/=====================*/
+
+.home_side_nav {
+	overflow:hidden;
+	li {display:block;line-height:24px;font-size:14px;padding-left:20px;margin-bottom:10px;}
+	.nav_header {
+		border-bottom: 1px solid #cce4f0;margin-bottom: 20px;color: #999;text-align: center;
+		span {display: inline-block;padding: 0 10px ;background: #fbfbfb;position: relative;z-index: 10;top:12px;}
+	}
+	.current {
+		border:1px solid #235a9d;background: url(../html/src/img/sid_nav.jpg) repeat-x;
+		a {color:#fff;}
+	}
+}
+
+
+
+
+
+/*===================/个人中心-我的网校--系统通知/=====================*/
+
+.system_inform {
+	overflow:hidden;
+	.inform_item {
+	  overflow:hidden;border-bottom:1px dashed  #ededed;padding:10px 0;
+	  .inform_con {
+	  		line-height:@hl180;overflow:hidden;
+	  		span {float:left;display:inline;}
+	  		.title {width:90px;font-size:@f16;font-weight:bold;}
+	  		.text {width:650px;color:@g3*2;}
+	  }
+	  .inform_time {
+	 		 line-height:25px; text-align:@r;color:@g3*3;
+	 		 a {padding-left:15px;}
+	  }
+	}
+}
+
+/*===================/个人中心-我的网校--我的关注/=====================*/
+
+.attention_box {
+	overflow:hidden;
+	.feed_detail {
+			position: relative;width:675px;
+	 		.course_info {
+	 				height:35px;line-height:35px;font-size:@f14;color:@g3*3;
+	 				strong {font-weight:bold;}
+	 		}
+	 		.feed_text {color:@g3;}
+	 		.feed_bar {position: absolute;right:10px;top:60px; z-index:10;}
+	 		.ui_follow {position: absolute;right:10px;top:5px; z-index:10;}
+	}
+}
+
+
+/*===================/个人中心-我的网校--学科---发布活动/=====================*/
+
+.ui_comment_event {
+	border:1px solid #ededed;background:#fcfcfc;
+	.comment_form {
+			width:720px;margin:10px auto;
+			.comment_title {display:block;}
+	}
+}
+
+/*===================/个人中心-我的网校--学科---全部评论/=====================*/
+
+.all_comment {
+	.feed_detail {
+		width:720px;
+		.feed_text {font-size:@f14;}
+	}
+	.feed_comment  {
+			.ui_comment {
+			     width:700px;
+			     .feed_text {font-size:@f12;}
+			}
+	}
+}
+
+
+
+
+/**
+ * 修改背景图片路径
+ *
+ * @modify : 2013-07-01;
+ * @author : Marco(wujie@xueersi.com);
+ * 
+ * @type {[type]}
+ */
+h1.logo{float:left;display:inline;width:260px}h1.logo a{display:block;height:55px;text-indent:-9999em;background:url(../html/src/img/logo.png) no-repeat}
+.main_header .nav_links li.current{background:url(../html/src/img/ins.jpg) 25px 37px no-repeat}.main_header .nav_links li.current a{font-weight:bold}
+.feed_comment .comment_corner{width:16px;height:9px;background:url(../html/src/img/ins_c.jpg) no-repeat;position:absolute;z-index:10;top:-9px;right:126px}
+
+
+
+
+
+
+
+
