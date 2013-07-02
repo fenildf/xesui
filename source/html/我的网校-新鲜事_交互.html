@@ -700,48 +700,41 @@
 	<script>
 		window.onload = (function(){
 			
-			// xue.pages.config = {
-			// 	handle   : $('#ui_pages'),
-			// 	current  : 1,
-			// 	pages 	 : 1,
-			// 	callback : function(current, pages){
-
-			// 	}
-			// };
 
 			xue.pages.config({
 				handle   : $('#ui_pages'),
 				current  : 1,
-				pages    : 15,
-				callback : function(current, pages){
-					// var ajaxPage = $.alax({
-					// 	url : '',
-					// 	type: '',
-					// 	data : {},
-					// 	dataType : 'json',
-					// 	timeout : 70000,
-					// });
-
-					// ajaxPage.fail(function(jqXHR, textStatus){ alert( "Request failed: " + textStatus ); });
-
-					// ajaxPage.done(function(msg){ });
+				pages    : 10,
+				size   	 : 5,
+				pageClick: function(num){
+					xue.pages.go(num);
 				},
-				go : 2
+				callback : function(num){
+					console.log(num);
+					xue.pages.go(num);
+				}
+				// callback : function(current, pages){
+				// 	$('#ui_pages').html(xue.pages.html);
+				// 	console.log(current);
+				// 	// var ajaxPage = $.alax({
+				// 	// 	url : '',
+				// 	// 	type: '',
+				// 	// 	data : {},
+				// 	// 	dataType : 'json',
+				// 	// 	timeout : 70000,
+				// 	// });
+
+				// 	// ajaxPage.fail(function(jqXHR, textStatus){ alert( "Request failed: " + textStatus ); });
+
+				// 	// ajaxPage.done(function(msg){ });
+				// }
 			});
 
-			xue.pages.go(2);
-
-
-
-			 //  p:current page number.  
-			 //  pn: page sum.
-			// xue.pages.fn = function(current, pages){
-			// 	// document.getElementById("test").innerHTML ="Page:"+p+" of "+pn + " pages.";
-			// 	//$("#test").text("Page:"+p+" of "+pn + " pages."); //for jquery
-			// };
-			
-			//goto the page 3 of 33.
 			// xue.pages.go(1,10);
+			// xue.pages.callback(function(current, data){
+				// console.log(current);
+				// console.log(data);
+			// });
 
 		});
 	</script>
