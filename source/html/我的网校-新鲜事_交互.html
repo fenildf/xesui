@@ -10,7 +10,6 @@
 	<script src="../../src/js/jquery-2.0.2.min.js"></script>
 	<script src="../../src/js/jquery-migrate-1.2.1.min.js"></script>
 	<script src="../js/xue.js"></script>
-	<script src="../js/extend.js"></script>
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -713,7 +712,7 @@
 			xue.pages.config({
 				handle   : $('#ui_pages'),
 				current  : 1,
-				pages    : 20,
+				pages    : 15,
 				callback : function(current, pages){
 					// var ajaxPage = $.alax({
 					// 	url : '',
@@ -730,7 +729,7 @@
 				go : 2
 			});
 
-			// xue.pages.go(1);
+			xue.pages.go(2);
 
 
 

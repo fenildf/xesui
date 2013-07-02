@@ -37,8 +37,26 @@ xue.team = {
 	Star   : 'W.Star@xesui.com',
 }
 
+/**
+ * @name xue.extend.js
+ * @description 扩展
+ * 
+ * @module 
+ * @submodule 
+ * @main 
+ * @class 
+ * @constructor 
+ * @static 
+ */
 
-var ui = ui || {};
+xue.extend = xue.extend || function(className, fn, constructor){
+	var _name = className;
+
+	var _class = xue[_name] = xue[_name] || fn;
+
+	return _class;
+};
+
 
 
 xue.check = function(obj){
@@ -84,6 +102,17 @@ xue.check = function(obj){
 	// }
 	
 };
+
+
+
+
+var ui = ui || {};
+
+
+
+
+
+
 /**
  * 准备增加几个别名：
  *

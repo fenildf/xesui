@@ -25,21 +25,26 @@
  */
 
 ui.pages = ui.pages || {};
-/*
-	
-	
+/* --------------------------------------
+
 	1. 首页：上一页  |1|  2   3   4   5  ... 10  下一页
+
 	2. 前五：上一页   1  |2|  3   4   5  ... 10  下一页
 		    上一页   1   2  |3|  4   5  ... 10  下一页
+
 	3. 前六：上一页   1   2   3  |4|  5   6  ...  10  下一页
+
 	4. 中五：上一页   1  ...  3   4  |5|  6   7  ...   10  下一页
 			上一页   1  ...  4   5  |6|  7   8  ...   10  下一页
+
 	5. 后六：上一页   1  ...  5   6  |7|  8   9   10  下一页
+
 	6. 后五：上一页   1  ...  6   7  |8|  9   10  下一页
 			上一页   1  ...  6   7   8  |9|  10  下一页
+
 	7. 尾页：上一页   1  ...  6   7   8   9  |10|  下一页
-	
-	------------------------------
+
+	-------------------------------------
 
 	1. 首页：page = first
 
@@ -56,18 +61,17 @@ ui.pages = ui.pages || {};
 
 	7. 尾页：page = length
 
+ --------------------------------------- */
 
 
 
 
 
- */
+
+
 (function(){
 
-
 	var pg = ui.pages || {};
-	
-
 
 	/**
 	 * 分页设置
@@ -77,6 +81,7 @@ ui.pages = ui.pages || {};
 		id  	 : 'ui_pages',
 		handle   : '#ui_pages',
 		length 	 : 5,				// 连续显示的长度
+		bitwise  : 2,				// 当前页码左右要显示页数的长度
 		current  : 1,				// 当前页数
 		pages    : 20,				// 总页数
 		prevText : '上一页',			// 上一页显示的文字
@@ -88,6 +93,9 @@ ui.pages = ui.pages || {};
 		callback : null 			// 点击页数时的会掉函数，返回2个参数：当前页数和总页数
 	};
 
+	/**
+	 * 通过外部的设置来修改内部的配置；
+	 */
 	pg.config = function(o){
 		if(typeof(o) === 'object' && o.length === undefined){
 			$.each(o, function(k, v){
@@ -100,41 +108,23 @@ ui.pages = ui.pages || {};
 		// 根据连续页数的长度计算出左右的位移数：如果length = 7 则 bitwise = 3
 		opt.bitwise = opt.length >> 1;
 
-		// if(opt.fn != null){
 		opt.handle.on('click', opt.item, function(){
 			var num = Number($(this).text());
-			pg.go(num);
+			// pg.go(num);
 		});
 
 		opt.handle.on('click', opt.prev, function(){
 			opt.current--;
-			pg.go(opt.current);
+			// pg.go(opt.current);
 		});
 
 		opt.handle.on('click', opt.next, function(){
 			opt.current++;
-			pg.go(opt.current);
+			// pg.go(opt.current);
 		});
 
-		// }
-		 
-		if(opt.current > 0){
-			// $(opt.handle).
-		}
-
-		if(opt.go > 0){
-
-			this.go(opt.go);
-		}
-
 		return this;
-		// this.go(opt.current, opt.pages);
 	};
-	/**
-	 * 通过外部的设置来修改内部的配置；
-	 */
-	
-
 
 	/**
 	 * 分页模板
@@ -180,14 +170,12 @@ ui.pages = ui.pages || {};
 	 * @return {[type]} 如果设置中禁用更多节点，则返回空值；否则返回HTML节点
 	 */
 	pg.createMore = function(){
-		if(opt.isMore){
-			return tpl.more;
-		}else{
-			return '';
-		}
+		var btn = opt.isMore ? tpl.more : '';
+		return btn;
 	};
 
-	
+
+
 
 	/**
 	 * 返回所有分页HTML结构
@@ -208,6 +196,7 @@ ui.pages = ui.pages || {};
 		}
 		// 校验当前页数
 		if(current > 0){
+			current = current > pages ? pages : current;
 			opt.current = current;
 		}else{
 			opt.current = 1;
@@ -218,51 +207,28 @@ ui.pages = ui.pages || {};
 			return pg.createItem(1);
 		}
 
-		/* --------------------------------------
-
-			1. 首页：上一页  |1|  2   3   4   5  ... 10  下一页
-
-			2. 前五：上一页   1  |2|  3   4   5  ... 10  下一页
-				    上一页   1   2  |3|  4   5  ... 10  下一页
-
-			3. 前六：上一页   1   2   3  |4|  5   6  ...  10  下一页
-
-			4. 中五：上一页   1  ...  3   4  |5|  6   7  ...   10  下一页
-					上一页   1  ...  4   5  |6|  7   8  ...   10  下一页
-
-			5. 后六：上一页   1  ...  5   6  |7|  8   9   10  下一页
-
-			6. 后五：上一页   1  ...  6   7  |8|  9   10  下一页
-					上一页   1  ...  6   7   8  |9|  10  下一页
-
-			7. 尾页：上一页   1  ...  6   7   8   9  |10|  下一页
-
-			-------------------------------------
-
-			1. 首页：page = first
-
-			2. 前五：page + 2 <= 5
-
-			3. 前六：page + 2 <= 6
-
-			4. 中五：6 < page + 2 <= length - 3
-			   		3 < page - 2 < length - 6
-
-			5. 后六：page - 2 >= length - 6
-
-			6. 后五：page - 2 >= length - 5
-
-			7. 尾页：page = length
-
-		 --------------------------------------- */
+		/* 
+			----------------------\  开始计算分页  /----------------------
+								   \_____  _____/
+								         \/
+		*/
 		
 		var start, more, items, end, prev, next, length, first, last, html;
+
 
 		// 上一页节点：第一页只读
 		prev  = this.createBtn('prev', (current === 1 ? true : false));
 		
 		// 下一页节点：最后一页只读
 		next  = this.createBtn('next', (current === pages ? true : false));
+		
+		// 连续页数的：起始页数
+		start = Number(current - opt.bitwise);
+		start = start < 1 ? 1 : start;
+		
+		// 连续页数的：结束页数
+		end   = Number(current + opt.bitwise);
+		end = end > pages ? pages : end;
 		
 		// “...” 节点
 		more  = this.createMore();
@@ -271,80 +237,56 @@ ui.pages = ui.pages || {};
 		first = (end <= opt.length) ? '' : this.createItem(1);
 		
 		// 最后一个：后五个不显示
-		last  = (start >= (pages - opt.length)) ? '' : this.createItem(pages);
-
-		// 连续页数的：起始页数
-		start = Number(current - opt.bitwise);
-		
-		// 连续页数的：结束页数
-		end   = Number(current + opt.bitwise);
+		last  = (start > (pages - opt.length)) ? '' : this.createItem(pages);
 
 		// pages < 10 全显示
 		if(pages <= 10){
 			html = prev;
-			for(var i = 0; i < pages ; i++){
-				html += this.createItem(Number(i+1));
+			for(var i = 1; i <= pages ; i++){
+				var tp = i === current ? 'current' : false;
+				html += this.createItem(i, tp);
 			}
 			html += next;
 			return html;
 		}
 
-		
+		// 前五：
+		if(end <= opt.length){
+			start = 1;
+			end = opt.length;
+		}
 
-		// 第一个：前五个不显示
-		// first = (end <= opt.length) ? '' : first;
-
-		// 最后一个：后五个不显示
-		// last = (start >= (pages - 5)) ? '' : last;
+		// 后五：page - 2 >= length - 5
+		if(start > (pages - opt.length)){
+			start = (pages - opt.length) + 1;
+			end = pages;
+		}
 
 		// 连续的页数
 		items = '';
 		for(var i = start; i <= end; i++){
-			items += this.createItem(i);
+			var tp = i === current ? 'current' : false;
+			items += this.createItem(i, tp);
 		}
 
-		// 前五
-		// if(end <= opt.length){
-		// 	html = prev + items + more + last + next;
-		// }
-		
-		// 前六
-		// if(end <= opt.length + 1){
-		// 	html = prev + first + items + more + last + next;
-		// }
+		// ------------ 开始拼凑分页 ------------
+	
+		html = prev + first;
 
-		// 中间： 6 < page + 2 <= length - 3
-		// if(end > 6 && end <= (pages - 3)){
-		// 	html = prev + first + more + items + more + last + next;
-		// }
-
-		// 后六：page - 2 >= length - 6
-		// if(start >= (pages - 6)){
-		// 	html = prev + first + more + items + last + next;
-		// }
-
-
-		// 后五：page - 2 >= length - 5
-		// if(start >= (pages - 5)){
-		// 	html = prev + first + more + items + next;
-		// }
-		
-
-		html += prev + first;
-
+		// 前置省略号：如果前面的长度是（连续页数 + 1） 则不显示；
 		html += (end <= opt.length + 1) ? '' : more;
 
 		html += items;
 
-		html += (start >= (pages - 6)) ? '' : more;
+		// 后置省略号：如果最后剩余的是长度是（连续页数）则不显示；
+		html += (start >= (pages - (opt.length))) ? '' : more;
 
 		html += last + next;
-
-		// html += prev + first + ((end <= opt.length + 1) ? '' : more) + items + more + last + next;
 
 		return html;
 
 	};
+
 
 	/**
 	 * 页面跳转
@@ -354,161 +296,19 @@ ui.pages = ui.pages || {};
 	 */
 	pg.go = function(currnet, pages){
 		var pages = pages || opt.pages;
-		var list = this.createPages(current, pages);
+		var list = this.createPages(currnet, pages);
 		var wrap = $(tpl.wrap);
 		var html = wrap.html(list);
-		if(this.fn != null){
-			this.fn(num, pages);
-		}
+		// if(this.fn != null){
+		// 	// this.fn(num, pages);
+		// }
 		$(opt.handle).html(html);
 	};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// var pg = ui.pages;
-	// pg.config = {};
-	// // pg.option = pg.config;
-	// var option = {
-	// 	id : 'ui_pages',
-	// 	handle: '#ui_pages',
-	// 	prevText : '上一页',
-	// 	nextText : '下一页',
-	// 	prevCls  : 'pages_prev',
-	// 	nextCls  : 'next_prev',
-	// 	callback : null
-	// };
-
-	// $.each(pg.config, function(k, v){
-	// 	option[k] = v;
-	// });
-
-
-	// pg.fn = option.callback;
-	
-	/**
-	 * 计算分页列表
-	 * @param  {Number} current 当前页码
-	 * @param  {Number} pages   分页总数
-	 * @return {HTML}       	生成后的页面元素
-	 */
-	pg.list = function (current, pages){
-		//只有一页,直接显示1
-		if(pages <= 1){
-			this.current = 1;
-			this.pages = 1;
-			return this.createCurrent(1);
-		}
-		if (pages < current) {
-			current = pages;
-		};
-		var re = '<ol class="ui_pages">';
-
-		//第一页
-		if(current <= 1){
-			current = 1;
-		}else{
-			//非第一页
-			re += this.createPage(current - 1, pages, option.prevText, 'prev');
-			//总是显示第一页页码
-			re += this.createPage(1, pages, '1');
-		}
-		//校正页码
-		this.current = current;
-		this.pages = pages;
-
-		//开始页码
-		var start = 2;
-		var end = (pages < 7) ? pages : 7;
-		//是否显示前置省略号,即大于10的开始页码
-		if (current >= 5) {
-			re += '<li class="pages_more"><span>...</span></li>';
-			start = current - 2;
-			var e = current + 2;
-			end = (pages < e) ? pages : e;
-		}
-		for (var i = start; i < current; i++) {
-			re += this.createPage(i, pages);
-		};
-		re += this.createCurrent(current);
-		for (var i = current + 1; i <= end; i++) {
-			re += this.createPage(i, pages);
-		};
-		if (end < pages) {
-			re += '<li class="pages_more"><span>...</span></li>';
-			//显示最后一页页码,如不需要则去掉下面这一句
-			re += this.createPage(pages, pages);
-		};
-		if (current < pages) {
-			re += this.createPage(current + 1, pages, option.nextText, 'next');
-		};
-		re += '</ol>';
-		return re;
-	};
-	//显示非当前页
-	/**
-	 * 创建页数标签（非当前页）
-	 * @param  {Number} current     当前页数
-	 * @param  {Number} pages       总页数
-	 * @param  {String} currentText 当前页数显示的内容
-	 * @param  {String} btn         上一页、下一页按钮标识
-	 * @return {HTML}               页码的HTML标签
-	 */
-	pg.createPage = function(current, pages, currentText, btn) {
-		currentText = currentText || current;
-
-		var cls = '', btnCls = '';
-
-		btnCls = (btn == 'prev' || btn == 'next') ? 'class="btn btn_gray "' : '';
-
-		cls = (btn == 'prev') ? 'class="' + option.prevCls + '"' 
-			: (btn == 'next') ? 'class="' + option.nextCls + '"' 
-			: '';
-
-		var _html = '<li ' + cls + '> <a href="javascript:xue.pages.go(' + current + ',' + pages + ');" ' + btnCls + '>' + currentText + '</a> </li>';
-		
-		return _html;
-
-	};
-	//显示当前页
-	pg.createCurrent = function(current) {
-		var _html = '<li class="pages_current"> <span class="cPageNum">' + current + '</span> </li>';
-		return _html;
-	};
-	//输出页码,可根据需要重写此方法
-	pg.go = function(current, pages) {
-		if(current > 0){
-
-		}
-		//$("#pageNav").html(this.nav(p,pages)); //如果使用jQuery可用此句
-		document.getElementById(option.id).innerHTML = this.list(current, pages);
-		if (this.fn != null) {
-			this.fn(this.current, this.pages);
-		};
-	};
 })();
 
+
+// 将分页扩展到xue对象下；
 xue.extend('pages', ui.pages);
-// xue.pages = ui.pages || {};
 
 
