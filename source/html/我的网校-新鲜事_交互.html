@@ -615,6 +615,8 @@
 
 
 				</div>
+
+				<div id="pages2"></div>
 				<!-- 翻页。。。。。。。。。 -->
 			</div>
 			<!--layout_body end -->
@@ -730,6 +732,14 @@
 				// }
 			});
 
+
+			xue.pages.config({
+				handle: $('#pages2'),
+				current : 3,
+				pages: 20,
+				size: 3
+
+			});
 			// xue.pages.go(1,10);
 			// xue.pages.callback(function(current, data){
 				// console.log(current);

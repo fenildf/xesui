@@ -55,6 +55,18 @@ ui.pages = ui.pages || {};
 		callback : null 			// 点击页数时的会掉函数，返回2个参数：当前页数和总页数
 	};
 
+	/**
+	 * 用于存储多个分页内容
+	 * @type {Object}
+	 */
+	pg.ids = {
+		'pages_id': {
+			opt:{},
+			fn :{},
+			click : null
+		}
+	};
+
 	pg.html = '';
 	pg.empty = function(){};
 
@@ -72,11 +84,6 @@ ui.pages = ui.pages || {};
 		// 根据连续页数的长度计算出左右的位移数：如果length = 7 则 bitwise = 3
 		opt.bitwise = opt.size >> 1;
 
-		// 将设置中传入的回掉函数放到 pg.callback中；
-		// if(typeof(opt.callback) === 'function'){
-		// 	pg.callback(opt.callback);
-		// }
-
 		// 事件绑定
 		pg.fn({
 			pageClick : opt.pageClick,
@@ -87,7 +94,7 @@ ui.pages = ui.pages || {};
 		if(opt.current > 0 && opt.pages > 0){
 			this.go(opt.current);
 		}
-		// console.log(opt);
+
 		return this;
 	};
 
@@ -311,26 +318,37 @@ ui.pages = ui.pages || {};
 			// 下一页的点击事件
 			nextClick : function(num){ pg.go(num); }
 		};
-		
-		// 根据option修改默认事件
-		if(typeof(option) === 'object' && option.length === undefined){
-			$.each(option, function(k, v){
-				// 如果没有则使用默认事件
-				if(v){
-					o[k] = v;					
-				}
-			});	
-		}
 
-		// 如果在设置参数中存在callback，则直接用opt.callback 覆盖 o.pageClick
+		/**
+		 * 重置点击事件
+		 *
+		 * 如果opt.callback 存在则用callback覆盖所用的点击事件；
+		 * 否则根据传入的option参数进行事件绑定；
+		 * 
+		 * @type {Function} 
+		 * @return {Number}    返回点击的页码
+		 * @return {Number}    返回总页数
+		 */
 		if(typeof opt.callback === 'function'){
-			o.pageClick = opt.callback;
+			$.each(o, function(k, v){
+				o[k] = opt.callback;
+			});
+		}else{
+			// 根据option修改默认事件
+			if(typeof(option) === 'object' && option.length === undefined){
+				$.each(option, function(k, v){
+					// 如果没有则使用默认事件
+					if(v){
+						o[k] = v;					
+					}
+				});	
+			}
 		}
 
 		// 分页节点点击事件
 		opt.handle.on('click', opt.item, function(){
 			var currentNumber = $(this).data('page');
-			o.pageClick(currentNumber);
+			o.pageClick(currentNumber, opt.pages);
 		});
 		// 上一页点击事件
 		opt.handle.on('click', opt.prev, function(){
@@ -339,7 +357,7 @@ ui.pages = ui.pages || {};
 			if(opt.current > 0){
 				currentNumber = opt.current;
 			}
-			o.prevClick(currentNumber);
+			o.prevClick(currentNumber, opt.pages);
 		});
 		// 下一页点击事件
 		opt.handle.on('click', opt.next, function(){
@@ -348,7 +366,7 @@ ui.pages = ui.pages || {};
 			if(opt.current <= opt.pages){
 				currentNumber = opt.current;	
 			}
-			o.nextClick(currentNumber);
+			o.nextClick(currentNumber, opt.pages);
 		});
 	};
 
@@ -358,10 +376,10 @@ ui.pages = ui.pages || {};
 	 * @return {Number}      opt.current    当前页数
 	 * @return {jQuery DOM}  data 		    返回jquery构造的分页节点HTML
 	 */
-	pg.callback = function(fn){
+	pg.click = function(fn){
 		if(typeof fn === 'function'){
 			var html = pg.getPagesHTML();
-			fn(opt.current, html);
+			return fn(opt.current, html);
 		}
 	};
 
