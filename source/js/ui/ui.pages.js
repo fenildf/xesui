@@ -58,10 +58,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 		firstText: null,			// 第一页显示的文本: 默认显示 1
 		lastText : null,			// 最后一页显示的文本：默认显示 总页数
 		isMore   : true,			// 是否显示“...”,
-		// tpl      : null,			// 存放分页模板内容
-		// pageClick: null,			// 分页节点点击事件
-		// prevClick: null,			// 上一页按钮点击事件
-		// nextClick: null,			// 下一页按钮点击事件
 		callback : null 			// 点击页数时的回掉函数，返回2个参数：当前页数和总页数
 	};
 
@@ -79,9 +75,7 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 	 */
 	pg.queue = {};
 
-	// pg.html = '';
 
-	// pg.empty = function(){};
 
 	/**
 	 * 通过外部的设置来修改内部的配置；
