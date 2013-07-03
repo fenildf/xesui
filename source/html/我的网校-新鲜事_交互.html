@@ -702,8 +702,16 @@
 	<script>
 		window.onload = (function(){
 			
+			xue.pages.config('a1', {
+				id      : 'pages2',
+				handle  : $('#pages2'),
+				current : 3,
+				pages   : 20,
+				size    : 3
 
-			xue.pages.config({
+			});
+			xue.pages.config('a2', {
+				id 		 : 'ui_pages',
 				handle   : $('#ui_pages'),
 				current  : 1,
 				pages    : 10,
@@ -733,13 +741,7 @@
 			});
 
 
-			xue.pages.config({
-				handle: $('#pages2'),
-				current : 3,
-				pages: 20,
-				size: 3
-
-			});
+			
 			// xue.pages.go(1,10);
 			// xue.pages.callback(function(current, data){
 				// console.log(current);
