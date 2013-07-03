@@ -29,7 +29,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 (function(){
 
 	var pg = ui.pages;
-	// console.log(pg);
 	/**
 	 * 分页设置
 	 * @type {Object}
@@ -86,8 +85,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 
 		var oo = { opt : {} };
 
-		// $.extend(oo, pg);
-
 		if(typeof(o) === 'object' && o.length === undefined){
 			$.extend(oo, opt, o);
 		}
@@ -121,33 +118,8 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 			pg(this.id).go(oo.current);
 		}
 
-		// console.log(oo.callback);
 		return this;
 
-
-
-
-		// if(typeof(o) === 'object' && o.length === undefined){
-		// 	$.each(o, function(k, v){
-		// 		opt[k] = v;
-		// 	});	
-		// }
-
-		// // 根据连续页数的长度计算出左右的位移数：如果length = 7 则 bitwise = 3
-		// opt.bitwise = opt.size >> 1;
-
-		// // 事件绑定
-		// pg.fn({
-		// 	pageClick : opt.pageClick,
-		// 	prevClick : opt.prevClick,
-		// 	nextClick : opt.nextClick
-		// });
-		
-		// if(opt.current > 0 && opt.pages > 0){
-		// 	this.go(opt.current);
-		// }
-
-		// return this;
 	};
 
 	/**
@@ -316,7 +288,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 
 	};
 
-
 	/**
 	 * 页面跳转
 	 * @param  {Number} currnet 当前页数
@@ -324,7 +295,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 	 * @return {[type]}         [description]
 	 */
 	pg.go = function(current, pages){
-		// console.info(this.id);
 		var opt = this.queue[this.id];
 
 		opt.current = (current > 0) ? current : opt.current;
@@ -334,11 +304,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 		this.append(html);
 
 		return this;
-		// opt.current = (current > 0) ? current : opt.current;
-		// opt.pages = pages || opt.pages;
-
-		// var html = this.getPagesHTML()
-		// this.append(html);
 	};
 
 	/**
@@ -382,48 +347,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 		var _click = function(num, all){
 			pg(id).go(num, opt.pages);
 		};
-		// var o = {
-		// 	// 分页节点的点击事件
-		// 	pageClick : function(num, all, pageID){ pg(pageID).go(num, all); },
-		// 	// 上一页的点击事件
-		// 	prevClick : function(num, all, pageID){ pg(pageID).go(num, all); },
-		// 	// 下一页的点击事件
-		// 	nextClick : function(num, all, pageID){ pg(pageID).go(num, all); }
-		// };
-
-		// $.extend(opt.fn, o);
-
-		// console.log(id + ' | ' + typeof(opt.callback));
-		/**
-		 * 重置点击事件
-		 *
-		 * 如果opt.callback 存在则用callback覆盖所用的点击事件；
-		 * 否则根据传入的option参数进行事件绑定；
-		 * 
-		 * @type {Function} 
-		 * @return {Number}    返回点击的页码
-		 * @return {Number}    返回总页数
-		 */
-		// console.info(opt);
-		// if(typeof opt.callback === 'function'){
-		// 	$.each(opt.fn, function(k, v){
-		// 		opt.fn[k] = opt.callback;
-		// 	});
-		// 	// alert(opt.fn['pageClick']);
-		// }else{
-		// 	console.log(option);
-		// 	// 根据option修改默认事件
-		// 	if(typeof(option) === 'object' && option.length === undefined){
-		// 		$.extend(opt.fn, option);
-
-		// 		// $.each(option, function(k, v){
-		// 		// 	// 如果没有则使用默认事件
-		// 		// 	if(v){
-		// 		// 		o[k] = v;					
-		// 		// 	}
-		// 		// });	
-		// 	}
-		// }
 
 		// 分页节点点击事件
 		opt.handle.on('click', opt.item, function(){
@@ -436,7 +359,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 				}
 			}
 			return _click(currentNumber);
-			// opt.fn.pageClick(currentNumber, opt.pages, id);
 		});
 		// 上一页点击事件
 		opt.handle.on('click', opt.prev, function(){
@@ -454,8 +376,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 				}
 			}
 			return _click(currentNumber);
-			// pg(id).go(currentNumber, opt.pages);
-			// opt.fn.prevClick(currentNumber, opt.pages, id);
 		});
 		// 下一页点击事件
 		opt.handle.on('click', opt.next, function(){
@@ -473,8 +393,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 				}
 			}
 			return _click(currentNumber);
-			// pg(id).go(currentNumber, opt.pages);
-			// opt.fn.nextClick(currentNumber, opt.pages, id);
 		});
 	};
 
