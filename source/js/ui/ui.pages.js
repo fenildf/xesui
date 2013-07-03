@@ -59,7 +59,7 @@ ui.pages = ui.pages || {};
 	 * 用于存储多个分页内容
 	 * @type {Object}
 	 */
-	pg.ids = {
+	pg.queue = {
 		'pages_id': {
 			opt:{},
 			fn :{},
