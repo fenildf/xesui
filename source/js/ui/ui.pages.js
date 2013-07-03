@@ -447,14 +447,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 			 */
 			_check(currentNumber, 'page');
 
-			// if(opt.callback){
-			// 	return opt.callback(currentNumber, opt.pages);
-			// }else{
-			// 	if(opt.fn.pageClick){
-			// 		return opt.fn.pageClick(currentNumber, opt.pages);
-			// 	}
-			// }
-
 			// 当以上2种情况都没有时，绑定默认的点击事件
 			return _click(currentNumber);
 		});
@@ -473,13 +465,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 
 			_check(currentNumber, 'prev');
 
-			// if(opt.callback){
-			// 	return opt.callback(currentNumber, opt.pages);
-			// }else{
-			// 	if(opt.fn.prevClick){
-			// 		return opt.fn.prevClick(currentNumber, opt.pages);
-			// 	}
-			// }
 			return _click(currentNumber);
 		});
 
@@ -495,13 +480,6 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id; return ui.pages; };
 			}
 			_check(currentNumber, 'next');
 
-			// if(opt.callback){
-			// 	return opt.callback(currentNumber, opt.pages);
-			// }else{
-			// 	if(opt.fn.nextClick){
-			// 		return opt.fn.nextClick(currentNumber, opt.pages);
-			// 	}
-			// }
 			return _click(currentNumber);
 		});
 	};
