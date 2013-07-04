@@ -210,7 +210,7 @@ xue.string.base64;
 | name       | feature |                  status                 |    description
 |------------| ------- |:---------------------------------------:|:------------------:
 | add        | 模块添加 | ![checked icon](../src/img/checkbox.png) | [查看](#add)
-| us         | 模块使用 | ![checked icon](../src/img/checkbox.png) | [查看](#use)
+| use        | 模块使用 | ![checked icon](../src/img/checkbox.png) | [查看](#use)
 | extend     | 方法扩展 | ![checked icon](../src/img/checkbox.png) | [查看](#extend)
 | get        | 获取对象 | ![checked icon](../src/img/checkbox.png) | [查看](#get)
 | set        | 设置对象 | ![checked icon](../src/img/checkbox.png) | [查看](#set)
