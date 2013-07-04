@@ -38,21 +38,69 @@
 
 
 /*=============/课程/==================*/
-.setting_menu {overflow: hidden;height: 50px;line-height: 50px;border-bottom: 1px dotted #ccc;}
+.setting_menu {
+	overflow: hidden;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px dotted #ccc;
+}
 .setting_menu span {float: left;}
 .setting_menu span strong {font-size: 20px;}
-.setting_menu a {float: right;}
+.setting_menu a {
+	float: right; 
+	.btn;
+	.btn_red;
+	hieght:24px;
+	line-height:24px;
+	width:80px;
+	margin-top:10px;
+}
 
 .setting_search {height: 30px; margin: 30px 0 0 0;color: 2*@g3;}
 .setting_search p {float: right;}
+.setting_search p > a{
+	.btn;
+	.btn_disable;
+	hieght:18px;
+	line-height:18px;
+	padding:1px 5px;
+	font-size:10px;
+	text-align:center;
+	color:#333;
+}
 
 .nav_setting li {text-align: center;}
 .nav_setting li.current a {padding: 2px 10px;background: #4a9eda;color: #fff;}
 
-/*=============/充值记录/==================*/
+/*==========/订单详情**物流状态/===============*/
+.right-content, .order_state{
+	.order_info{
+		margin-bottom:20px;
+		p{
+			line-height:30px;
+			height:30px;
+		}
+	}
+	table > tfoot > tr >td{
+		text-align:right;
+		span{
+			font-size:20px;
+		}
+	}
+	.order_button > button{
+		.btn;
+		.btn_red;
+		float:right;
+		padding:3px 10px;
+		font-size:14px;
+	}
 
-
-/*=============/代金卡/==================*/
+}
+.order_state{
+	.order_info{
+		padding:0 20px;
+	}		
+}
 
 /*=============/代金卡激活/==================*/
 .right-content{
@@ -77,7 +125,7 @@
 		button{
 				.btn;
 				.btn_red;
-				margin-left:60px;
+				margin-left:35px;
 				dispblay:block;
 				padding:3px 15px;
 				margin-right:10px;

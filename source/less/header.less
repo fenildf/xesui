@@ -19,78 +19,77 @@
       height:55px; overflow: hidden;box-shadow:0 2px 12px #ddd;margin:0;position: relative;z-index: 100;
      .header_box {
           width: 980px;margin:0 auto;overflow: hidden;
+            h1.logo {
+                     float: @l;display: inline;width: 260px; 
+                     a {
+                         display: block; height:55px;text-indent:@ti ;background: url(../html/src/img/logo.png) no-repeat;
+                       }
+            }
+            /*logo*/
+
+            ul.nav {
+                        float: @l;width: 415px;height: 45px;
+                        li {
+                          float: @l;display: inline;line-height: 45px;margin:6px 10px 0 30px;font-family: @fw;font-size: @f18;
+                            a {
+                            color:@g3;
+                            &:hover {
+                                  color:@r0;
+                                  }
+                            }
+
+                      }
+                      li.current {
+                         border-bottom: 4px solid  @r0;
+                             a {
+                              color: @r0;
+                              &:hover {
+                                  color:@r0;
+                                  }
+                              }
+                      }
+            }
+            /*菜单*/
+            .search {
+                     float:left;width: 180px;height: 30px; margin-top: 12px;border-radius: 16px;border:1px solid #ccc;position: relative;
+                    .head_top_search {
+                          width:140px;height: 20px; border: 0;margin:@margin5 @margin0 @margin0 @margin5 * 2;
+                    }
+                     .head_btn_search {
+                          width:15px;height:15px; background:url("@{iconpath}") -49px 0 no-repeat transparent; text-indent:@ti;position: absolute; right:12px;top:7px; z-index:10;
+                    }
+            }
+          /*搜索*/
        }
 }
 
-/*logo*/
-h1.logo {
-         float: @l;display: inline;width: 260px; 
-         a {
-             display: block; height:55px;text-indent:@ti ;background: url(../html/src/img/logo.png) no-repeat;
-           }
-}
 
-
-
-/*菜单*/
-
-#header .header_box ul.nav {
-            float: @l;width: 400px;height: 45px;
-            li {
-              float: @l;display: inline;line-height: 45px;margin:6px 10px 0 30px;font-family: @fw;font-size: @f18;
-                a {
-                color:@g3;
-                &:hover {
-                      color:@r0;
-                      }
-                }
-
-          }
-          li.current {
-             border-bottom: 4px solid  @r0;
-                 a {
-                  color: @r0;
-                  &:hover {
-                      color:@r0;
-                      }
-                  }
-          }
-}
-
-
-/*搜索*/
-
-#header .header_box .search {
-	float:left;width: 180px;height: 30px; margin-top: 12px;border-radius: 16px;border:1px solid #ccc;position: relative;
-	    .head_top_search {
-	          width:140px;height: 20px; border: 0;margin:@margin5 @margin0 @margin0 @margin5 * 2;
-	       }
-	 .head_btn_search {
-	          width:15px;height:15px; background:url("@{iconpath}") -49px 0 no-repeat transparent; text-indent:@ti;position: absolute; right:12px;top:7px; z-index:10;
-	       }
-}
-
-
-/*购物车*/
-#header .header_box .shopcar {
-      float:@l;width:20px;padding-top:18px;margin-left:@margin5*3;
-}
 
 /*未登录*/
 #header .header_box ul.topbar {
-    float:@r;width: 90px;padding-top:18px;
+    float:@r;width: 100px;padding:18px 5px;
       li {
-         float: @l;font-size:@f14;
+         float: @r;font-size:@f14;
          a {
              color:@g3 * 3;
             }
+            .line {padding:0 5px;}
       }
-	
+	     .shopcar {width: 30px;}
 }
 
 /*已登录*/
 
-.loginbar {
-	li {}
+#header .header_box .loginbar {
+      float: right;width: 110px;margin-right: 12px;
+	     li {
+             float:left;cursor: pointer;width: 33px;
+             .line {padding:0 7px;}
+      }
+      .current {
+           background: #fff;border-left:1px solid #ccc;border-right:1px solid #ccc;
+         
+      }
+      .lines {width: 2px;}
 }
 

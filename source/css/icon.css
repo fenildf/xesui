@@ -33,7 +33,7 @@
 /**
  * width值设定
  *@w1=width:1px;
- *可以使用计算值调用 eg:width:20px=20*@w1;
+ *可以使用计算值调用
  *-------------------------------------------------
  */
 /**
@@ -123,9 +123,6 @@
 .ptop_30 {
   padding-top: 30px;
 }
-.font14 {
-  font-size: 14px;
-}
 .icon {
   display: inline-block;
   width: 20px;
@@ -201,6 +198,7 @@
  *icon_guide:新手指南;
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
+ *icon_blue_sign：蓝色的对勾
  *
  */
 .icon_bbverify,
@@ -234,13 +232,13 @@
   background-position: 0 0;
 }
 .icon_shopping {
-  background-position: -26px -75px;
+  background-position: -22px -75px;
 }
-.icon_message {
-  background-position: -26px -99px;
+.icon_messages {
+  background-position: -22px -99px;
 }
-.icon_settings {
-  background-position: -23px -124px;
+.icon_settsings {
+  background-position: -22px -124px;
 }
 .icon_bverify {
   background-position: -99px 2px;
@@ -370,4 +368,7 @@
 }
 .icon_square_gray {
   background-position: -47px -73px;
+}
+.icon_blue_sign {
+  background-position: -47px -145px;
 }

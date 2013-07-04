@@ -33,7 +33,6 @@
 .wrong_header{
 	border-bottom:1px solid;
 	.border-color(#eaeaea);
-	margin-bottom:4*@margin5;
 	.header_info{
 		.layout;
 		height:55px;
@@ -90,8 +89,8 @@
 		padding-left:50px;
 		font-size:14px;
 		dl{
-			width:530px;
-			line-height:@hl20;
+			width:625px;
+			line-height:24px;
 			clear:both;
 			margin:15px 0;
 			overflow:hidden;
@@ -109,7 +108,6 @@
 				font-weight:bold;
 			}
 		}
-
 	}
 }
 .wrong_container{
@@ -136,7 +134,6 @@
 			overflow: hidden;
 			background: #fbfbfb;
 			border:1px solid #e7e7e7;
-			padding-bottom: 15px;
 			margin-bottom: 10px;
 			.title{
 				height:35px;
@@ -161,8 +158,6 @@
 				overflow: hidden;
 				}
 			.num_bulist{
-				float: left;
-				line-height:26px;
 				display: inline;
 			}
 			.num_bulist li{
@@ -175,39 +170,130 @@
 				}
 			}
 		.wrong_info{
+			line-height:40px;
 			.wrong_btn{
 				.btn;
 				.btn_blue;
-				padding:3px 5px;
-				float:left;
+				.btn_medium;
 				margin-left:10px;
+				line-height:15px;
+				float:left;
+				margin-top:8px;
 			}
 		}
 	}
-/**错题本：考试结果**/
-.wrong_section{
-		width: 740px;
-		overflow: hidden;
-		.test_result {
-			width: 730px;
-			height: 381px;
-			overflow: hidden;
-			background: url(../html/src/img/test_bg.jpg) no-repeat;
-			font-family: @fw;
-			position: relative;
-		}
-}
-
 /**错题本：考试**/
-.wrong_container{
-	.layout;
-	.overview{
-		height:40px;
-		line-height:40px;
+
+	.wrong_overview{
+		.layout;
+		.overview{
+			height:40px;
+			line-height:40px;
+			margin-bottom:20px;
+			li{
+				float:left;
+				display:inline;
+				margin-right:50px;
+			}
+		}
+	}
+/**错题本-试卷**/
+.student_overview{
+	width:980px;
+	height:40px;
+	line-height:40px;
+	margin:0 auto 20px auto;
+	color:@g3;
+	li{
+		float:left;
+		margin-right:50px;
+	}
+}
+.wrong_info{
+	height:40px;
+	line-height:40px;
+	color:@g3;
+	border-top:1px solid;
+	border-bottom:1px solid;
+	.border-color(#E0E0E0);
+	background:#F0F0F0;
+	ul{
+		width:980px;
+		margin:0 auto;
 		li{
 			float:left;
-			display:inline;
 			margin-right:50px;
+		}
+		.wrong_sub{
+			float:right;
+			margin-right:0;
+			a{
+				.btn;
+				.btn_red;
+				line-height:15px;
+				.btn_large;
+				&:hover{color:@white;}
+			}
+		}
+	}
+}
+.test_list_new{
+	border:1px solid;
+	.border-color(#EFEFEF);
+	margin-bottom:20px;
+	.answer{
+		height:55px;
+		line-height:55px;
+		border-top:1px dotted;
+		.border-color(#EFEFEF);
+		span{
+			display:block;
+			float:right;
+			margin-right:35px;
+			color:#9a9a9a;
+			a{
+				display:block;
+				.btn;
+				.btn_gray;
+				color:#333;
+				text-shadow:1px;
+				padding:3px 15px;
+				line-height:15px;
+			}
+			.current{
+				.btn;
+				.btn_blue;
+			}
+		}
+	}
+}
+/**我的试卷列表**/
+.my_exam{
+	border:1px solid;
+	.border-color(#E7E7E7);
+	.myexam_th{
+		line-height:40px;
+		.background-color(#F3F3F3);
+		font-weight:bold;
+		color:@g3;
+		.l{
+			font-size:@f14;
+			padding-left:20px;
+		}
+		.r{
+			float:right;
+			padding-right:20px;
+		}
+	}
+	.myexam_body{
+		padding:10px 20px 10px 20px;
+	}
+	.myexam_info{
+		line-height:50px;
+		color:@g3*3;
+		.red{
+			color:@r0;
+			margin-right:5px;
 		}
 	}
 }

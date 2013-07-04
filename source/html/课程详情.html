@@ -6,7 +6,8 @@
 	<title>新版学而思网校首页</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link href="../css/page_listen.css" type="text/css" rel="stylesheet" />	
+	<link href="../css/page_listen.css" type="text/css" rel="stylesheet" />
+</head>	
 <body>
 	<!--头部  start-->
 	<div id="header">
@@ -15,24 +16,44 @@
 				<a href="##" target="_blank">学而思网校</a>
 			</h1>
 			<ul class="nav">
-				<li><a href="#">首页</a></li>
-				<li class="current"><a href="#">选课程</a></li>
-				<li><a href="#">找老师</a></li>
-				<li><a href="#">逛论坛</a></li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li class="current">
+					<a href="#">选课程</a>
+				</li>
+				<li>
+					<a href="#">找老师</a>
+				</li>
+				<li>
+					<a href="#">逛论坛</a>
+				</li>
 			</ul>
 			<div class="search">
-				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search"> <button class="head_btn_search">搜索</button>
+				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search">
+				<button class="head_btn_search">搜索</button>
 			</div>
-			<div class="shopcar"><a href=""><em class="icon icon_shopping">购物车</em></a></div>
+			<div class="shopcar">
+				<a href=""> <em class="icon icon_shopping">购物车</em>
+				</a>
+			</div>
 			<ul class="topbar">
-				<li class=""><a href="##">登录</a></li>
-				<li class=""><i class="line">|</i></li>
-				<li><a href="##">注册</a></li>
+				<li class="">
+					<a href="##">登录</a>
+				</li>
+				<li class=""> <i class="line">|</i>
+				</li>
+				<li>
+					<a href="##">注册</a>
+				</li>
 			</ul>
 			<ul class="loginbar hidden">
-				<li class=""><em class="icon icon_shopping">购物车</em></li>
-				
-				<li><em class="icon icon_shopping">购物车</em></li>
+				<li class=""> <em class="icon icon_shopping">购物车</em>
+				</li>
+
+				<li>
+					<em class="icon icon_shopping">购物车</em>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -40,146 +61,646 @@
 	<!-- 内容 start-->
 	<div id="container">
 		<!-- 听课页上半部份 -->
-		<div id="coures_content">
-			<h2>2013二年级奥数年卡（竞赛班）<strong>附赠直播+测试</strong></h2>
+		<div class="coures_content">
+			<h2>
+				2013二年级奥数年卡（竞赛班） <strong>附赠直播+测试</strong>
+			</h2>
 			<div class="content_player">
-					<div class="player_list">
-						 <div class="list_shop_meoney">
-						 	<a href="/shoppingcart/addcart/8748" class="btn_apply">报名</a>
-						 	<div class="money_num">
-						 		<p>￥19200</p> <del>原价：￥1150</del>
-						 	</div>
-						 </div>
-						 <div class="list_title"><a href="#" class="directory back">返回</a><span>课程目录</span><a href="#" class="directory hidden">课程目录</a></div>
-						 <div class="scroll_content"></div>
-					</div>
-					<!-- 课程列表 -->
-					<div class="player_live">
-						<div id="VideoPlay"><img src="./src/pic/pic_02.jpg"></div>
-					</div>
-					<div class="player_info">
-						<dl>
-							<dt>授课老师：</dt>
-							<dd>
-								<div class="ui_avatar">
-									<a href="" class="prev"> <em class="icon icon_chevron_left">左</em>
-									</a>
-									<ul class="avatar_items">
-										<li>
-											<a href="#" class="userpic J_userinfo">
-												<img src="http://file.xueersi.com/web/13105601335455.jpg" alt=""></a>
-											
-										</li>
-
-									</ul>
-									<a href="" class="next"> <em class="icon icon_chevron_right">右</em>
-									</a>
-								</div>
-							</dd>
-						</dl>
-						<dl>
-							<dt>课程难度：</dt>
-							<dd>
-								<p class="star star4">星</p>
-							</dd>
-						</dl>
-						<dl>
-							<dt>有意思：</dt>
-							<dd>
-								<strong>329</strong>
-							</dd>
-						</dl>
-						<div class="listen_num"> <strong>21,018</strong>
-							试听
+				<div class="player_list">
+					<div class="list_shop_meoney">
+						<a href="/shoppingcart/addcart/8748" class="btn_apply">报名</a>
+						<div class="money_num">
+							<p>￥19200</p> <del>原价：￥1150</del>
 						</div>
 					</div>
+					<div class="list_title">
+						<ul>
+							<li class="hidden"><a href="#" class="directory">课程目录</a></li>
+							<li><span>课程目录</span><a href="#" class="directory back">返回</a></li>
+						</ul>
+					</div>
+					<div class="ui_scrolls">
+						<div class="scrolls_item">
+							<div class="scrolls_bar"><span>滚动条</span></div>
+						<div class="scrolls_con hidden">
+							<ul>
+								<li class="scrolls_title">
+									第1讲 计算常用的解题思维
+								</li>
+								<li>
+									<p class="gray"><em class="icon icon_tests">习题</em><a href="#">预习题</a><a href="#" class="red">堪误说明</a><em class="icon icon_blue_sign">√</em></p>
+
+								</li>
+								<li>
+									<p><em class="icon icon_live_gary">节</em><a href="#">第一节</a></p>
+									<p class="gray"><em class="icon icon_tests">习题</em><a href="#">节练习题</a><em class="icon icon_blue_sign">√</em></p>
+								</li>
+							    <li class="current"><em class="icon icon_live_gary">节</em><a href="#">第二节</a></li>
+								<li><em class="icon icon_live_gary">节</em><a href="#">第三节</a><a href="#" class="red">堪误说明</a></li>
+								<li><em class="icon icon_live_gary">节</em><a href="#">第四节</a></li>
+								<li class="last"><em class="icon icon_live_gary">节</em><a href="#">第五节</a></li>
+							
+							</ul>
+						</div>
+						<div class="scrolls_con scrolls_con_list">
+							<ul>
+								<li>
+									<a href="#">第1讲 计算常用的解题思维</a><em class="icon icon_blue_sign">√</em><em class="icon icon_corner">角</em>
+								</li>
+								<li class=" current">
+									<a href="#">第2讲 计算常用的解题思维</a><em class="icon icon_live_gary">节</em><em class="icon icon_corner">角</em>
+								</li>
+								<li>
+									<a href="#">第3讲 计算常用的解题思维</a><em class="icon icon_corner">角</em>
+								</li>
+								<li>
+									<a href="#">第4讲 计算常用的解题思维</a><em class="icon icon_corner">角</em>
+								</li>
+								<li>
+									<a href="#">第5讲 计算常用的解题思维</a><em class="icon icon_corner">角</em>
+								</li>
+								<li>
+									<a href="#">第6讲 计算常用的解题思维</a><em class="icon icon_corner">角</em>
+								</li>
+								<li>
+									<a href="#" class="gray">直播 2013-06-01 17：00</a><em class="icon icon_corner">角</em>
+								</li>
+							    <li>
+									<a href="#" class="gray">第7讲 计算常用的解题思维</a>
+								</li>
+							</ul>
+						</div>
+						</div>
+						
+					</div>
+				</div>
+				<!-- 课程列表 -->
+				<div class="player_live">
+					<div id="VideoPlay">
+						<img src="./src/pic/pic_02.jpg"></div>
+				</div>
+				<div class="player_info">
+					<dl>
+						<dt>授课老师：</dt>
+						<dd>
+							<div class="ui_avatar">
+								<a href="" class="prev">
+									<em class="icon icon_chevron_left">左</em>
+								</a>
+								<ul class="avatar_items">
+									<li>
+										<a href="#" class="userpic J_userinfo">
+											<img src="http://file.xueersi.com/web/13105601335455.jpg" alt=""></a>
+
+									</li>
+
+								</ul>
+								<a href="" class="next">
+									<em class="icon icon_chevron_right">右</em>
+								</a>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>课程难度：</dt>
+						<dd>
+							<p class="star star4">星</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>有意思：</dt>
+						<dd> <strong>329</strong>
+						</dd>
+					</dl>
+					<div class="listen_num">
+						<strong>21,018</strong>
+						试听
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- 听课页上半部份 end-->
 		<!-- 听课页下半部份  -->
-		   <div class="layout">
-		   	<div class="layout_body left w_730 mtop_20">
-		   		 <div class="panel_listen">
-		   		 	<div class="listen_title">促销优惠</div>
-		   		 	<div class="listen_conten"></div>
-		   		 </div>
-		   		 <div class="panel_listen">
-		   		 	<ul class="tabs_title_item">
-		   		 			<li>
-		   		 				<a href="#">课程详情</a>
-		   		 			</li>
-		   		 			<li class="current">
-		   		 				<a href="#">课前咨询 <strong>(7)</strong></a>
-		   		 				
-		   		 			</li>
-		   		 			<li>
-		   		 				<a href="#">课程评价 <strong>(7)</strong></a>
-		   		 			
-		   		 			</li>
-		   		 			
-		   		 		</ul>
-		   		 	<div class="listen_conten"></div>
-		   		 </div>
-		   	</div>
-		   	<div class="layout_side right w_240 mtop_20">
-		   		 <div class="panel_listen">
-		   		 	<div class="listen_title">相关课程</div>
-		   		 	<div class="listen_conten"></div>
-		   		 </div>
-		   		  <div class="panel_listen">
-		   		 	<div class="listen_title">购买该课程的用户还买过</div>
-		   		 	<div class="listen_conten"></div>
-		   		 </div>
-		   		  <div class="panel_listen">
-		   		 	<div class="listen_title">浏览过的课程</div>
-		   		 	<div class="listen_conten"></div>
-		   		 </div>
-		   	</div>
-		   </div>
+		<div class="layout">
+			<div class="layout_body left w_730 mtop_20">
+				<div class="panel_listen">
+					<div class="listen_title">促销优惠</div>
+					<div class="listen_conten">
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="donate">买赠</div>
+							</div>
+						</div>
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="donate">买赠</div>
+							</div>
+						</div>
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="donate">买赠</div>
+							</div>
+						</div>
+
+						<!-- repeat -->
+					</div>
+				</div>
+				<div class="panel_listen">
+					<ul class="tabs_title_item">
+						<li>
+							<a href="#">课程详情</a>
+						</li>
+						<li class="current">
+							<a href="#">
+								课前咨询
+								<strong>(7)</strong>
+							</a>
+
+						</li>
+						<li>
+							<a href="#">
+								课程大纲
+								
+							</a>
+
+						</li>
+
+					</ul>
+					<div id="course_info_box">
+						<!--课程详情-->
+						<div class="course_detail">
+							<dl>
+								<dt>课程有效期</dt>
+								<dd>
+									本课程有效期自购买之日开始计算，请于 <font color="red">2014-07-10</font>
+									日前学完，合理安排学习时间。
+								</dd>
+							</dl>
+							<dl>
+								<dt>课程更新时间</dt>
+								<dd>
+									本课程更新于 <font color="red">2013-04-23</font>
+									。
+								</dd>
+							</dl>
+							<dl>
+								<dt>适合学生</dt>
+								<dd>
+									适合对知识点理解、吸收速度较快，需要着重提高知识的综合运用能力，形成有体系的解题思路，在基础题目准确的基础上保证中高难度题目的得分能力，目标奥数杯赛争取较好成绩的同学。
+								</dd>
+								<dd>二年级小学生</dd>
+							</dl>
+							<dl>
+								<dt>授课提要</dt>
+								<dd>
+									<div style="text-align:center;">
+										<img style="width:686px;height:535px;" src="http://x04.xesimg.com/2013/04/18/13662738619243.png" alt="" border="0">									
+										<br></div>
+								</dd>
+							</dl>
+						</div>
+						<!-- 课程详情 end-->
+						<!-- 课程咨询 -->
+							<div class="course_detail">
+								<h2 class="detail_title">课前咨询</h2>
+								<div class="detail_login">
+									<a href="/users/logReg/L2tjLzg3NDguaHRtbCNjb3Vyc2VfcXVlc3Rpb24=">立即登陆</a>
+									，发表课前咨询
+								</div>
+								<div class="ui_comment">
+									<form action="" class="comment_form">
+										<div class="comment_title hidden">发布活动</div>
+										<div class="comment_textarea">
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+										<div class="comment_func">
+											<div class="comment_kind">
+												<ul>
+													<li class="kind_img">
+														<p> <em class="icon_img"></em>
+														</p>
+													</li>
+													<li class="kind_media"></li>
+												</ul>
+											</div>
+											<div class="comment_tips">请填写内容，长度在10~140之间</div>
+											<div class="comment_button">
+												<span class="comment_size"> <i class="text_num">1</i>
+													/140
+												</span>
+												<button class="btn btn_submit btn_sky">发布咨询</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="ui_course_consult">
+									<div class="ui_consult odd_course">
+										<p class="consult_title">网校学员：Fairyjf　　2013-05-21 10:30:17</p>
+										<p class="consult_text"><span>咨询内容：请问竞赛班和强化班的区别</span></p>
+										<p class="consult_reply"><span>陈敏老师回复：您好，Q1年卡的课程一共46讲，</span></p>
+									</div>
+									<div class="ui_consult">
+										<p class="consult_title">网校学员：Fairyjf　　2013-05-21 10:30:17</p>
+										<p class="consult_text"><span>咨询内容：请问竞赛班和强化班的区别</span></p>
+										<p class="consult_reply"><span>陈敏老师回复：您好，Q1年卡的课程一共46讲，您好，Q1年卡的课程一共46讲，您好，Q1年卡的课程一共46讲，您好，Q1年卡的课程一共46讲，</span></p>
+									</div>
+								</div>
+							</div>
+						<!-- 课程咨询 end-->
+						<!-- 课程大纲 -->
+						<div class="course_detail">
+							<table class="table table_outline">
+								<tbody>
+									<tr>
+										<td class="text_c">第一讲：</td>
+										<td>
+											<a href="#">分数基本计算</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="text_c"><em class="icon icon_manuscript">月考</em></td>
+										<td>
+											<a href="#">月考：分数基本计算</a> <strong>(20130605-20130630)</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="text_c"><em class="icon icon_tv">直播</em></td>
+										<td>
+											<a href="#">直播：分数基本计算</a> <strong>(20130605-20130630)</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="text_c">第四讲：</td>
+										<td>
+											<a href="#">分数基本计算</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="text_c">第五讲：</td>
+										<td>
+											<a href="#">分数基本计算</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="text_c">第六讲：</td>
+										<td>
+											<a href="#">分数基本计算</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="text_c">第七讲：</td>
+										<td>
+											<a href="#">分数基本计算</a>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+						<!-- 课程大纲 end-->
+					</div>
+				</div>
+			</div>
+			<div class="layout_side right w_240 mtop_20">
+				<div class="panel_listen">
+					<div class="listen_title">相关课程</div>
+					<div class="listen_conten">
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou border_none">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- repeat -->
+					</div>
+				</div>
+				<div class="panel_listen">
+					<div class="listen_title">购买该课程的用户还买过</div>
+					<div class="listen_conten">
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou border_none">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- repeat -->
+					</div>
+				</div>
+				<div class="panel_listen">
+					<div class="listen_title">浏览过的课程</div>
+					<div class="listen_conten">
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="listen_cou border_none">
+							<div class="ui_avatar ">
+								<a href="##" class="userpic J_userinfo">
+									<img src="http://file.xueersi.com/web/13105601335455.jpg" alt="" width="60" height="60"></a>
+							</div>
+							<div class="cou_detail">
+								<div class="cou_text">
+									<a href="#">六年级总复习：2013年数学总复习</a>
+								</div>
+								<div class="cou_info">
+									<span>
+										<em class="icon icon_gray_user"></em>
+										37
+									</span>
+									<span>
+										<em class="icon icon_thumbs_up"></em>
+										88
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- repeat -->
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- 听课页下半部份 end -->
 	</div>
 	<!--内容 end-->
 	<!--底部 start -->
 
 	<div id="footer">
-            <div class="foot_service">
-            	<a class="service_share"> <span>学习经验分享</span>
-            		<p>解决学习的困扰，成功学员提供学习经验</p>
-            	</a>
-            	<a class="service_live"> <span>直播学习指导</span>
-            		<p>解决学习的困扰，成功学员提供学习经验</p>
-            	</a>
-            	<a class="service_system">
-            		<span>专业的学习规划体系</span>
-            		<p>解决学习的困扰，成功学员提供学习经验</p>
-            	</a>
-            	<a class="service_interaction">
-            		<span>有趣的互动视频</span>
-            		<p>解决学习的困扰，成功学员提供学习经验</p>
-            	</a>
-            </div>
-            <div class="foot_area">
-            <p>
-                北京学而思教育科技有限公司
-                <a href="http://www.xueersi.com/">网校首页</a>
-                |
-                <a href="http://www.xueersi.com/company/detail/527">关于我们</a>
-                |
-                <a href="http://www.xueersi.com/company/detail/522">合作专区</a>
-                |
-                <a href="http://www.xueersi.com/recruits/index">人才招聘</a>
-                |
-                <a href="http://www.xueersi.com/help/detail/490">投诉与建议</a>
-            </p>
-            <p>
-                Copyright © 2009-2013 www.xueersi.com All Rights Reserved     京ICP备09032638号     京公网安备:1101082103
-            </p>
-            <p class="link">
-                <a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20120925001738002003" target="_blank">
-                    <img src="http://x04.xesimg.com/web/201209/13487953879693.png"></a>
-            </p>
-            </div>
-        </div>
+		<div class="foot_service">
+			<a class="service_share">
+				<span>学习经验分享</span>
+				<p>解决学习的困扰，成功学员提供学习经验</p>
+			</a>
+			<a class="service_live">
+				<span>直播学习指导</span>
+				<p>解决学习的困扰，成功学员提供学习经验</p>
+			</a>
+			<a class="service_system">
+				<span>专业的学习规划体系</span>
+				<p>解决学习的困扰，成功学员提供学习经验</p>
+			</a>
+			<a class="service_interaction">
+				<span>有趣的互动视频</span>
+				<p>解决学习的困扰，成功学员提供学习经验</p>
+			</a>
+		</div>
+		<div class="foot_area">
+			<p>
+				北京学而思教育科技有限公司
+				<a href="http://www.xueersi.com/">网校首页</a>
+				|
+				<a href="http://www.xueersi.com/company/detail/527">关于我们</a>
+				|
+				<a href="http://www.xueersi.com/company/detail/522">合作专区</a>
+				|
+				<a href="http://www.xueersi.com/recruits/index">人才招聘</a>
+				|
+				<a href="http://www.xueersi.com/help/detail/490">投诉与建议</a>
+			</p>
+			<p>
+				Copyright © 2009-2013 www.xueersi.com All Rights Reserved     京ICP备09032638号     京公网安备:1101082103
+			</p>
+			<p class="link">
+				<a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20120925001738002003" target="_blank">
+					<img src="http://x04.xesimg.com/web/201209/13487953879693.png"></a>
+			</p>
+		</div>
+	</div>
 	<!--底部 end-->
 </body>
 </html>

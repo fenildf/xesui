@@ -10,8 +10,8 @@
 @import "variables.less";
 
 /*===================/课程详情页---上半部分/===============================*/
-#coures_content {
-		background:#f6f6f6;min-height:605px;
+.coures_content {
+		background:#f6f6f6;height:605px;
 		h2 {
 			width:970px;height:47px;line-height:47px;margin:0 auto;font-size:@f16;font-family:@fw;font-weight:normal;color:@g3;padding-left:10px;overflow:hidden;
 			strong {font-size:@f14;}
@@ -31,17 +31,25 @@
 						}
 						.list_title {
 							height:38px;line-height:38px;background: url(../html/src/img/tkbg_02.jpg) no-repeat;
-							.directory {float:left;width:72px;height:24px;line-height:24px;margin:7px 15px 0;background: url(../html/src/img/label_01.jpg) no-repeat; text-align:@c;color:@g3;text-decoration: none;text-indent:5px;}
-							.back {width:48px;background: url(../html/src/img/label_back.jpg) no-repeat;}
-							span {float:right;color:@g3*2;padding-right:15px;}
+							ul {
+  							  width: 500px;
+  							  li {
+  								  float: left; width: 230px;overflow: hidden;
+  									.directory {float:left;width:72px;height:24px;line-height:24px;margin:7px 15px 0;background: url(../html/src/img/label_01.jpg) no-repeat; text-align:@c;color:@g3;text-decoration: none;text-indent:5px;}
+  									.back {float: right;width:48px;text-indent: -3px;background: url(../html/src/img/label_back.jpg) no-repeat;}
+  									span {float:left;color:@g3*2;padding-left:15px;}
+  								}
+							}
 						}
+
 				}
 				.player_live {
 						float:right;width:745px;height:465px;
 						#VideoPlay {width:730px;height:453px;margin:12px auto 0;overflow:hidden;}
 				}
 				.player_info {
-						overflow:hidden;width:980px;height:69px;line-height:69px;
+					/*授课老师*/
+						overflow:hidden;width:980px;height:69px;line-height:69px;float: left;
 						dl {
 							float:left;display:inline;margin-left:20px;font-size:@f14;color:@g3*2;
 							dt {float:left;}
@@ -71,25 +79,90 @@
 				}
 		}
 }
+/*课程列表*/
+.ui_scrolls {
+      width: 230px; overflow: hidden;
+      .scrolls_item {
+               width: 500px;height: 345px;overflow: hidden;position: relative;
+               /*滚动条 */ 
+            .scrolls_bar {
+                    width: 16px;height: 345px;overflow: hidden;background: url(../html/src/img/scroll_bar.jpg) repeat-y;position: absolute;z-index: 10;left: 0;top: 0;
+                    span {
+                      display: block;height: 50px;background: url(../html/src/img/scroll_c.jpg) repeat-y;text-indent:@ti;cursor: pointer;
+                    }
+            }
+            /*滚动条 end*/
+            .scrolls_con {
+                  float: left;width: 230px;
+                  ul {
+                       background: url(../html/src/img/scroll_ul.jpg) 38px 0 repeat-y;
+                      li {
+                        line-height: 43px;padding-left: 58px;font-size: 14px;color:@g3;background: url(../html/src/img/scroll_li.jpg) 44px 20px no-repeat;
+                          .gray {
+                              a {color:@g3*3;}
+                              .red { color:@r0;}
+                          }
+                          a {color:@g3*2;}
+                          .red {font-size:@f12;padding-left: 20px;color: @r0;}
+                          .icon_blue_sign {float: @r;margin: 5px 10px 0 0;}
+                      }
+                      .scrolls_title {height: 41px;border-bottom: 1px solid #e9e9e9;background: url(../html/src/img/tingkeyebg.jpg) repeat-y;padding-left: 25px;}
+                      .current {
+                             background: url(../html/src/img/scroll_current.jpg) no-repeat;
+                             a {color: @white;}
+                      }
+                      .last {background: url(../html/src/img/last.jpg) 38px 1px no-repeat;}
+                  }
+            }
+           /*课程节列表 end*/ 
+          .scrolls_con_list {
+              ul {
+                  li {
+                      height: 42px;border-bottom: 1px solid #e9e9e9;font-size:@f12;overflow: hidden;cursor: pointer;background: url(../html/src/img/tingkeyebg.jpg) repeat-y;padding-left: 25px;
+                      a {float: @l;display: inline;width: 145px;text-decoration: none;}
+                      .icon_blue_sign {float: @l;margin: 5px  0 0 5px;}
+                      .icon_corner {float: @r;margin: 15px 5px 0 0;}
+                      .icon_live_gary {float: @l;margin-left: 7px;}
+                      .gray {color:@g3*3;}
 
-
-/*===================/课程详情页---下半部分/===============================*/
-
-.panel_listen {
-	overflow:hidden;border:1px solid #d2d2d2;background: url(../html/src/img/listen_title.jpg) repeat-x;
-	box-shadow: 3px 3px 3px rgba(231, 231, 231, 0.4),-3px -3px 3px rgba(231, 231, 231, 0.4);border-radius: 2px;margin-bottom:10px;
-	.listen_title {height:37px;line-height:37px;font-size:@f14;font-weight:bold;padding-left:15px;color:@g3;}
-	.listen_conten {min-height:300px;} 
+                  }
+                  .current {
+                        .icon_corner {background: url(../html/src/img/icon_corner_blue.jpg) 0 1px no-repeat;}
+                  }
+              }
+           }
+           /*课程讲列表 end*/ 
+      }
+ 
 }
 
-.tabs_title_item {
-	overflow:hidden;
-	li {
-		float:left;width:180px;line-height:37px; text-align:@c;font-size:@f14;font-weight:bold;border-right:1px solid #d2d2d2;
-		a {color:@g3;}
-	}
-	.current {background: url(../html/src/img/title_current.jpg) no-repeat;}
+
+
+
+
+/*听课页*/ 
+.coures_content_item {
+      height: 508px;padding-top: 37px;
+      .content_player {
+               height: 478px;
+              .player_list {
+                     height: 478px;
+                     .ui_scrolls{
+                          .scrolls_item {
+                                 height: 440px;
+                                 .scrolls_bar {height: 440px;}
+
+                          }  
+                     }
+              }
+      }
 }
+/*听课页 end*/
+.icon_corner {background: url(../html/src/img/icon_corner.jpg) 0 2px no-repeat;}
+.icon_tests {background: url(../html/src/img/icon_test.jpg) 0 2px no-repeat;margin-top: 12px;}
+.icon_live_gary {background: url(../html/src/img/icon_live_gary.jpg) 0 2px no-repeat;margin-top: 12px;}
+.current .icon_live_gary {background: url(../html/src/img/icon_live_cur.jpg) 0 2px no-repeat;}
+
 
 
 

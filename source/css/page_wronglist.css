@@ -248,7 +248,7 @@ table {
 /**
  * width值设定
  *@w1=width:1px;
- *可以使用计算值调用 eg:width:20px=20*@w1;
+ *可以使用计算值调用
  *-------------------------------------------------
  */
 /**
@@ -338,9 +338,6 @@ table {
 .ptop_30 {
   padding-top: 30px;
 }
-.font14 {
-  font-size: 14px;
-}
 /*base,重置，变量*/
 /**
  * Button 公用样式
@@ -420,6 +417,7 @@ table {
  *icon_guide:新手指南;
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
+ *icon_blue_sign：蓝色的对勾
  *
  */
 .icon_bbverify,
@@ -453,13 +451,13 @@ table {
   background-position: 0 0;
 }
 .icon_shopping {
-  background-position: -26px -75px;
+  background-position: -22px -75px;
 }
-.icon_message {
-  background-position: -26px -99px;
+.icon_messages {
+  background-position: -22px -99px;
 }
-.icon_settings {
-  background-position: -23px -124px;
+.icon_settsings {
+  background-position: -22px -124px;
 }
 .icon_bverify {
   background-position: -99px 2px;
@@ -589,6 +587,9 @@ table {
 }
 .icon_square_gray {
   background-position: -47px -73px;
+}
+.icon_blue_sign {
+  background-position: -47px -145px;
 }
 /**
  *From 公用样式
@@ -757,23 +758,27 @@ textarea::-webkit-input-placeholder {
   width: 980px;
   margin: 0 auto;
   overflow: hidden;
+  /*logo*/
+
+  /*菜单*/
+
+  /*搜索*/
+
 }
-/*logo*/
-h1.logo {
+#header .header_box h1.logo {
   float: left;
   display: inline;
   width: 260px;
 }
-h1.logo a {
+#header .header_box h1.logo a {
   display: block;
   height: 55px;
   text-indent: -9999em;
   background: url(../html/src/img/logo.png) no-repeat;
 }
-/*菜单*/
 #header .header_box ul.nav {
   float: left;
-  width: 400px;
+  width: 415px;
   height: 45px;
 }
 #header .header_box ul.nav li {
@@ -799,7 +804,6 @@ h1.logo a {
 #header .header_box ul.nav li.current a:hover {
   color: #cc0000;
 }
-/*搜索*/
 #header .header_box .search {
   float: left;
   width: 180px;
@@ -825,27 +829,47 @@ h1.logo a {
   top: 7px;
   z-index: 10;
 }
-/*购物车*/
-#header .header_box .shopcar {
-  float: left;
-  width: 20px;
-  padding-top: 18px;
-  margin-left: 15px;
-}
 /*未登录*/
 #header .header_box ul.topbar {
   float: right;
-  width: 90px;
-  padding-top: 18px;
+  width: 100px;
+  padding: 18px 5px;
 }
 #header .header_box ul.topbar li {
-  float: left;
+  float: right;
   font-size: 14px;
 }
 #header .header_box ul.topbar li a {
   color: #999999;
 }
+#header .header_box ul.topbar li .line {
+  padding: 0 5px;
+}
+#header .header_box ul.topbar .shopcar {
+  width: 30px;
+}
 /*已登录*/
+#header .header_box .loginbar {
+  float: right;
+  width: 110px;
+  margin-right: 12px;
+}
+#header .header_box .loginbar li {
+  float: left;
+  cursor: pointer;
+  width: 33px;
+}
+#header .header_box .loginbar li .line {
+  padding: 0 7px;
+}
+#header .header_box .loginbar .current {
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#header .header_box .loginbar .lines {
+  width: 2px;
+}
 /**
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
@@ -862,13 +886,6 @@ h1.logo a {
 .layout {
   width: 980px;
   margin: auto;
-  overflow: hidden;
-}
-.layout_body {
-  overflow: hidden;
-}
-.layout_side {
-  overflow: hidden;
 }
 .layout_content {
   overflow: hidden;
@@ -1242,12 +1259,10 @@ table {
 .wrong_header {
   border-bottom: 1px solid;
   border-color: #eaeaea;
-  margin-bottom: 20px;
 }
 .wrong_header .header_info {
   width: 980px;
   margin: auto;
-  overflow: hidden;
   height: 55px;
   line-height: 55px;
 }
@@ -1281,7 +1296,6 @@ table {
 .wrong_overview {
   width: 980px;
   margin: auto;
-  overflow: hidden;
   width: 880px;
   padding: 15px 50px;
   background-color: #fcfcfc;
@@ -1305,8 +1319,8 @@ table {
   font-size: 14px;
 }
 .wrong_overview .r dl {
-  width: 530px;
-  line-height: 20px;
+  width: 625px;
+  line-height: 24px;
   clear: both;
   margin: 15px 0;
   overflow: hidden;
@@ -1327,7 +1341,6 @@ table {
 .wrong_container {
   width: 980px;
   margin: auto;
-  overflow: hidden;
 }
 .wrong_container .nav {
   border-bottom: 1px solid #0076b3;
@@ -1350,7 +1363,6 @@ table {
   overflow: hidden;
   background: #fbfbfb;
   border: 1px solid #e7e7e7;
-  padding-bottom: 15px;
   margin-bottom: 10px;
 }
 .wrong_title .title {
@@ -1376,8 +1388,6 @@ table {
   overflow: hidden;
 }
 .wrong_title .num_bulist {
-  float: left;
-  line-height: 26px;
   display: inline;
 }
 .wrong_title .num_bulist li {
@@ -1388,6 +1398,9 @@ table {
 }
 .wrong_title .num_bulist li strong {
   color: #333333;
+}
+.wrong_title .wrong_info {
+  line-height: 40px;
 }
 .wrong_title .wrong_info .wrong_btn {
   display: inline-block;
@@ -1407,35 +1420,169 @@ table {
   box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
   -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
-  padding: 3px 5px;
-  float: left;
+  padding: 5px 20px;
   margin-left: 10px;
-}
-/**错题本：考试结果**/
-.wrong_section {
-  width: 740px;
-  overflow: hidden;
-}
-.wrong_section .test_result {
-  width: 730px;
-  height: 381px;
-  overflow: hidden;
-  background: url(../html/src/img/test_bg.jpg) no-repeat;
-  font-family: "Microsoft YaHei";
-  position: relative;
+  line-height: 15px;
+  float: left;
+  margin-top: 8px;
 }
 /**错题本：考试**/
-.wrong_container {
+.wrong_overview {
   width: 980px;
   margin: auto;
-  overflow: hidden;
 }
-.wrong_container .overview {
+.wrong_overview .overview {
   height: 40px;
   line-height: 40px;
+  margin-bottom: 20px;
 }
-.wrong_container .overview li {
+.wrong_overview .overview li {
   float: left;
   display: inline;
   margin-right: 50px;
+}
+/**错题本-试卷**/
+.student_overview {
+  width: 980px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto 20px auto;
+  color: #333333;
+}
+.student_overview li {
+  float: left;
+  margin-right: 50px;
+}
+.wrong_info {
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #e0e0e0;
+  background: #F0F0F0;
+}
+.wrong_info ul {
+  width: 980px;
+  margin: 0 auto;
+}
+.wrong_info ul li {
+  float: left;
+  margin-right: 50px;
+}
+.wrong_info ul .wrong_sub {
+  float: right;
+  margin-right: 0;
+}
+.wrong_info ul .wrong_sub a {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 1px solid #880000;
+  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  line-height: 15px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.wrong_info ul .wrong_sub a:hover {
+  color: #ffffff;
+}
+.test_list_new {
+  border: 1px solid;
+  border-color: #efefef;
+  margin-bottom: 20px;
+}
+.test_list_new .answer {
+  height: 55px;
+  line-height: 55px;
+  border-top: 1px dotted;
+  border-color: #efefef;
+}
+.test_list_new .answer span {
+  display: block;
+  float: right;
+  margin-right: 35px;
+  color: #9a9a9a;
+}
+.test_list_new .answer span a {
+  display: block;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  letter-spacing: 2px;
+  border: 1px solid #cfcfcf;
+  background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
+  color: #333;
+  text-shadow: 1px;
+  padding: 3px 15px;
+  line-height: 15px;
+}
+.test_list_new .answer span .current {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 1px solid #377ece;
+  background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  background: -moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+}
+/**我的试卷列表**/
+.my_exam {
+  border: 1px solid;
+  border-color: #e7e7e7;
+}
+.my_exam .myexam_th {
+  line-height: 40px;
+  background-color: #f3f3f3;
+  font-weight: bold;
+  color: #333333;
+}
+.my_exam .myexam_th .l {
+  font-size: 14px;
+  padding-left: 20px;
+}
+.my_exam .myexam_th .r {
+  float: right;
+  padding-right: 20px;
+}
+.my_exam .myexam_body {
+  padding: 10px 20px 10px 20px;
+}
+.my_exam .myexam_info {
+  line-height: 50px;
+  color: #999999;
+}
+.my_exam .myexam_info .red {
+  color: #cc0000;
+  margin-right: 5px;
 }

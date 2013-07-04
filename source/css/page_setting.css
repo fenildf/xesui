@@ -246,7 +246,7 @@ table {
 /**
  * width值设定
  *@w1=width:1px;
- *可以使用计算值调用 eg:width:20px=20*@w1;
+ *可以使用计算值调用
  *-------------------------------------------------
  */
 /**
@@ -336,9 +336,6 @@ table {
 .ptop_30 {
   padding-top: 30px;
 }
-.font14 {
-  font-size: 14px;
-}
 /*base,重置，变量*/
 /**
  * Button 公用样式
@@ -418,6 +415,7 @@ table {
  *icon_guide:新手指南;
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
+ *icon_blue_sign：蓝色的对勾
  *
  */
 .icon_bbverify,
@@ -451,13 +449,13 @@ table {
   background-position: 0 0;
 }
 .icon_shopping {
-  background-position: -26px -75px;
+  background-position: -22px -75px;
 }
-.icon_message {
-  background-position: -26px -99px;
+.icon_messages {
+  background-position: -22px -99px;
 }
-.icon_settings {
-  background-position: -23px -124px;
+.icon_settsings {
+  background-position: -22px -124px;
 }
 .icon_bverify {
   background-position: -99px 2px;
@@ -587,6 +585,9 @@ table {
 }
 .icon_square_gray {
   background-position: -47px -73px;
+}
+.icon_blue_sign {
+  background-position: -47px -145px;
 }
 /**
  *From 公用样式
@@ -849,23 +850,27 @@ table {
   width: 980px;
   margin: 0 auto;
   overflow: hidden;
+  /*logo*/
+
+  /*菜单*/
+
+  /*搜索*/
+
 }
-/*logo*/
-h1.logo {
+#header .header_box h1.logo {
   float: left;
   display: inline;
   width: 260px;
 }
-h1.logo a {
+#header .header_box h1.logo a {
   display: block;
   height: 55px;
   text-indent: -9999em;
   background: url(../html/src/img/logo.png) no-repeat;
 }
-/*菜单*/
 #header .header_box ul.nav {
   float: left;
-  width: 400px;
+  width: 415px;
   height: 45px;
 }
 #header .header_box ul.nav li {
@@ -891,7 +896,6 @@ h1.logo a {
 #header .header_box ul.nav li.current a:hover {
   color: #cc0000;
 }
-/*搜索*/
 #header .header_box .search {
   float: left;
   width: 180px;
@@ -917,27 +921,47 @@ h1.logo a {
   top: 7px;
   z-index: 10;
 }
-/*购物车*/
-#header .header_box .shopcar {
-  float: left;
-  width: 20px;
-  padding-top: 18px;
-  margin-left: 15px;
-}
 /*未登录*/
 #header .header_box ul.topbar {
   float: right;
-  width: 90px;
-  padding-top: 18px;
+  width: 100px;
+  padding: 18px 5px;
 }
 #header .header_box ul.topbar li {
-  float: left;
+  float: right;
   font-size: 14px;
 }
 #header .header_box ul.topbar li a {
   color: #999999;
 }
+#header .header_box ul.topbar li .line {
+  padding: 0 5px;
+}
+#header .header_box ul.topbar .shopcar {
+  width: 30px;
+}
 /*已登录*/
+#header .header_box .loginbar {
+  float: right;
+  width: 110px;
+  margin-right: 12px;
+}
+#header .header_box .loginbar li {
+  float: left;
+  cursor: pointer;
+  width: 33px;
+}
+#header .header_box .loginbar li .line {
+  padding: 0 7px;
+}
+#header .header_box .loginbar .current {
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#header .header_box .loginbar .lines {
+  width: 2px;
+}
 /**
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
@@ -954,13 +978,6 @@ h1.logo a {
 .layout {
   width: 980px;
   margin: auto;
-  overflow: hidden;
-}
-.layout_body {
-  overflow: hidden;
-}
-.layout_side {
-  overflow: hidden;
 }
 .layout_content {
   overflow: hidden;
@@ -1699,6 +1716,27 @@ ul.filter_handle_items {
 }
 .setting_menu a {
   float: right;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 1px solid #880000;
+  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  hieght: 24px;
+  line-height: 24px;
+  width: 80px;
+  margin-top: 10px;
 }
 .setting_search {
   height: 30px;
@@ -1708,6 +1746,30 @@ ul.filter_handle_items {
 .setting_search p {
   float: right;
 }
+.setting_search p > a {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  letter-spacing: 2px;
+  color: #eee;
+  border: 1px solid #c5c5c5;
+  text-shadow: 1px 0px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
+
+  hieght: 18px;
+  line-height: 18px;
+  padding: 1px 5px;
+  font-size: 10px;
+  text-align: center;
+  color: #333;
+}
 .nav_setting li {
   text-align: center;
 }
@@ -1716,8 +1778,50 @@ ul.filter_handle_items {
   background: #4a9eda;
   color: #fff;
 }
-/*=============/充值记录/==================*/
-/*=============/代金卡/==================*/
+/*==========/订单详情**物流状态/===============*/
+.right-content .order_info,
+.order_state .order_info {
+  margin-bottom: 20px;
+}
+.right-content .order_info p,
+.order_state .order_info p {
+  line-height: 30px;
+  height: 30px;
+}
+.right-content table > tfoot > tr > td,
+.order_state table > tfoot > tr > td {
+  text-align: right;
+}
+.right-content table > tfoot > tr > td span,
+.order_state table > tfoot > tr > td span {
+  font-size: 20px;
+}
+.right-content .order_button > button,
+.order_state .order_button > button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 1px solid #880000;
+  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  float: right;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+.order_state .order_info {
+  padding: 0 20px;
+}
 /*=============/代金卡激活/==================*/
 .right-content {
   padding: 20px 60px 10px 60px;
@@ -1756,7 +1860,7 @@ ul.filter_handle_items {
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
   -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  margin-left: 60px;
+  margin-left: 35px;
   dispblay: block;
   padding: 3px 15px;
   margin-right: 10px;

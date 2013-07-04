@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Sam Shih (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+
+@import "icon.less";
+@import "form.less";
+@import "button.less";
+/*图标，表单，按钮*/
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+/*头部，内容，底部*/
+/**登陆页**/
+#xrs_login{
+	height:95px;
+	overflow:hidden;
+	.menu_top{
+		line-height:26px;
+		height:26px;
+		border-color: #E4E4E4; 
+		border-style: solid; 
+		border-width: 1px 0;
+		font-size: 12px;
+		.background-color(#EFEFEF);
+		.area{
+			width:980px;
+			margin:0 auto;
+			overflow:hidden;
+			.xes,
+			.helpcenter{
+				line-height:26px;
+				font-family: SimSun;
+			}
+			.xes{
+				float:left;
+				color:#999;
+			}
+			.helpcenter{
+				float:right;
+			}
+		}
+	}
+	.xes_logo{
+		width:980px;
+		overflow:hidden;
+		margin:0 auto;
+		a{
+			display: block; 
+			width: 330px;
+			height:78px;
+			background: url(../html/src/img/indexLogo.jpg) 0 -13px no-repeat; 
+			text-indent: @ti;
+		}
+	}
+}
+.wrapper_body{
+	.log{
+		font-size:@f14;
+		width: 980px;
+		margin:0 auto;
+		border: 1px solid #dcdfe6;
+		overflow:hidden;
+		.log_title{
+			overflow: hidden;
+			border-bottom: 1px #dcdfe6 solid;
+			color: #343434; 
+			background:url(../html/src/img/bg11.jpg) repeat-x;
+			font-size: 12px;
+			line-height: 30px;
+			height: 30px;
+			font-weight:bold;
+			padding-left:15px;
+			clear:both;	
+		}
+		.log_left{
+			width:320px; 
+			padding: 40px 30px 0 30px; 
+			margin:30px 0 0 140px;
+			float: left; 
+			p{
+				margin-bottom:20px;
+				color:#333;
+				label{
+					width:60px;
+					float:left;
+					font-size:14px;
+					padding-top:5px;
+				}
+				input{
+					width: 221px; 
+					height: 24px;
+					border: 1px solid #a4afc3;
+					padding:2px 3px;
+					vertical-align: middle;
+					.box-shadow(0 1px 1px,rgba(0,0,0,0.075) inset)
+				}
+				.login_btn{
+					.btn;
+					.btn_red;
+					padding:0;
+					width: 105px;
+					height: 32px;
+					font-size:15px;
+					font-weight:bold;
+					margin:0 5px 0 60px;
+				}
+			}
+			.login_third_api{
+				border: 0;
+				height: 75px;
+				bottom: 25px;
+				.third_title{
+					line-height: 30px;
+					color:#999;
+					border-bottom: 1px dotted #ccc;
+					font-size: 12px;
+					font-weight: normal;
+					margin-bottom: 0;
+				}
+					a{
+						float: left;
+						display:inline;
+						margin:10px 10px 0 0; 
+						text-indent:@ti;
+					}
+					.tencent{
+						width: 49px;
+						background: url(../html/src/img/qq.png) no-repeat;
+					}
+				}
+			}
+			.log_right{
+				float:right;
+			}
+		.log_right{
+			width:320px;  
+			float: right; 
+			padding:0px 10px 10px 10px;
+			margin: 8px 0; 
+			color: #676767;
+			font-size: 14px; 
+			border-left:1px solid #dfdfdf; 
+			text-align: center;
+			.joinxes{
+				border:none; 
+				font-size: 12px;
+				margin-left: 55px; 
+				padding-bottom:10px; 
+				line-height: 28px;
+				color: #676767; 
+				text-align: left;
+			}
+			.newpeople{
+				width:320px;
+				padding-bottom: 25px; 
+				border-bottom: 1px dashed #d6d6d6;  
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+/**注册页**/
+.wrapper_body{
+	.log{ 
+		.log_title{
+			span{
+				float:right;
+				font-weight:normal;
+				padding-right:10px;
+			}
+		}
+		.register{
+			width:510px;
+			margin:0 0 0 40px;	
+			p{
+				label{
+					width:150px;
+					i{
+						color:@r0;
+						padding-right:3px;
+					}
+				}
+				.login_btn{
+					width:185px;
+					margin:0 5px 0 150px;
+					font-family:@fs;
+					font-size:14px;
+					text-shadow: 1px 1px 1px #000000;
+				}
+				span{
+					margin-left:5px;
+					.btn;
+					.btn_orange;
+					padding:2px 3px;
+				}
+				a{	
+					display:block;
+					padding:20px 0 0 150px;
+				}
+			}
+		}
+		.enwidth{
+			width:340px;
+		}
+		.what_from{
+			width:320px;
+			overflow: hidden;
+			padding-left: 10px;
+			.past_time{
+				font-size: 15px;
+				line-height: 40px;
+				text-indent: 18px;
+				font-family: @fw;
+			}
+			ul{
+				text-align: left;
+				line-height: 18px; 
+				height: 250px; 
+				overflow: hidden;
+				li{
+					height:42px;
+					padding:5px;
+					border: 1px solid #e7e7e7; 
+					text-indent: 12px; 
+					border-radius: 4px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

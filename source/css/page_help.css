@@ -248,7 +248,7 @@ table {
 /**
  * width值设定
  *@w1=width:1px;
- *可以使用计算值调用 eg:width:20px=20*@w1;
+ *可以使用计算值调用
  *-------------------------------------------------
  */
 /**
@@ -338,9 +338,6 @@ table {
 .ptop_30 {
   padding-top: 30px;
 }
-.font14 {
-  font-size: 14px;
-}
 /*base,重置，变量*/
 /**
  * 
@@ -427,6 +424,7 @@ table {
  *icon_guide:新手指南;
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
+ *icon_blue_sign：蓝色的对勾
  *
  */
 .icon_bbverify,
@@ -460,13 +458,13 @@ table {
   background-position: 0 0;
 }
 .icon_shopping {
-  background-position: -26px -75px;
+  background-position: -22px -75px;
 }
-.icon_message {
-  background-position: -26px -99px;
+.icon_messages {
+  background-position: -22px -99px;
 }
-.icon_settings {
-  background-position: -23px -124px;
+.icon_settsings {
+  background-position: -22px -124px;
 }
 .icon_bverify {
   background-position: -99px 2px;
@@ -596,6 +594,9 @@ table {
 }
 .icon_square_gray {
   background-position: -47px -73px;
+}
+.icon_blue_sign {
+  background-position: -47px -145px;
 }
 /**
  *From 公用样式
@@ -756,23 +757,27 @@ textarea::-webkit-input-placeholder {
   width: 980px;
   margin: 0 auto;
   overflow: hidden;
+  /*logo*/
+
+  /*菜单*/
+
+  /*搜索*/
+
 }
-/*logo*/
-h1.logo {
+#header .header_box h1.logo {
   float: left;
   display: inline;
   width: 260px;
 }
-h1.logo a {
+#header .header_box h1.logo a {
   display: block;
   height: 55px;
   text-indent: -9999em;
   background: url(../html/src/img/logo.png) no-repeat;
 }
-/*菜单*/
 #header .header_box ul.nav {
   float: left;
-  width: 400px;
+  width: 415px;
   height: 45px;
 }
 #header .header_box ul.nav li {
@@ -798,7 +803,6 @@ h1.logo a {
 #header .header_box ul.nav li.current a:hover {
   color: #cc0000;
 }
-/*搜索*/
 #header .header_box .search {
   float: left;
   width: 180px;
@@ -824,27 +828,47 @@ h1.logo a {
   top: 7px;
   z-index: 10;
 }
-/*购物车*/
-#header .header_box .shopcar {
-  float: left;
-  width: 20px;
-  padding-top: 18px;
-  margin-left: 15px;
-}
 /*未登录*/
 #header .header_box ul.topbar {
   float: right;
-  width: 90px;
-  padding-top: 18px;
+  width: 100px;
+  padding: 18px 5px;
 }
 #header .header_box ul.topbar li {
-  float: left;
+  float: right;
   font-size: 14px;
 }
 #header .header_box ul.topbar li a {
   color: #999999;
 }
+#header .header_box ul.topbar li .line {
+  padding: 0 5px;
+}
+#header .header_box ul.topbar .shopcar {
+  width: 30px;
+}
 /*已登录*/
+#header .header_box .loginbar {
+  float: right;
+  width: 110px;
+  margin-right: 12px;
+}
+#header .header_box .loginbar li {
+  float: left;
+  cursor: pointer;
+  width: 33px;
+}
+#header .header_box .loginbar li .line {
+  padding: 0 7px;
+}
+#header .header_box .loginbar .current {
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#header .header_box .loginbar .lines {
+  width: 2px;
+}
 /**
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
@@ -861,13 +885,6 @@ h1.logo a {
 .layout {
   width: 980px;
   margin: auto;
-  overflow: hidden;
-}
-.layout_body {
-  overflow: hidden;
-}
-.layout_side {
-  overflow: hidden;
 }
 .layout_content {
   overflow: hidden;

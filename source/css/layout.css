@@ -38,7 +38,7 @@
 /**
  * width值设定
  *@w1=width:1px;
- *可以使用计算值调用 eg:width:20px=20*@w1;
+ *可以使用计算值调用
  *-------------------------------------------------
  */
 /**
@@ -128,9 +128,6 @@
 .ptop_30 {
   padding-top: 30px;
 }
-.font14 {
-  font-size: 14px;
-}
 /**/
 #container {
   overflow: hidden;
@@ -140,13 +137,6 @@
 .layout {
   width: 980px;
   margin: auto;
-  overflow: hidden;
-}
-.layout_body {
-  overflow: hidden;
-}
-.layout_side {
-  overflow: hidden;
 }
 .layout_content {
   overflow: hidden;

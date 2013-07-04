@@ -703,7 +703,6 @@
 		window.onload = (function(){
 
 			xue.pages('page2').config({
-				id      : 'aaa',
 				pages   : 20,
 				current : 2,
 				size    : 3,
@@ -712,16 +711,14 @@
 				}
 			});
 
-			xue.pages('ui_pages').config({
+			xue.pages.config({
 				pages   : 15,
 				current : 1,
 				size    : 5,
 				pageClick: function(num){
-					alert(111);
 					xue.pages('ui_pages').go(num);
 				},
 				nextClick: function(num){
-					alert(222);
 					xue.pages('ui_pages').go(num);
 				},
 				// callback : function(num){
