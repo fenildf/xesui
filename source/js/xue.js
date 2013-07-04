@@ -172,7 +172,23 @@ xue.loader = xue.loader || function(url, callback, isBody) {
  * 				});
  * 			});
  */
-xue.add = xue.add || function(moduleName, callback, isQueue){};
+// xue.add = xue.add || function(moduleName, callback, isQueue, timeout){
+// 	var fn = (typeof callback === 'function') ? callback : false;
+
+// 	if(xue[moduleName]){
+// 		if(fn){
+// 			fn();
+// 		}
+// 		return this;
+// 	}else{
+// 		xue.loader('../script/xue.' + moduleName + '.min.js', function(){
+// 			if(fn){
+// 				fn();
+// 			}
+// 			return xue;
+// 		});
+// 	}
+// };
 
 /**
  * 模块调用
@@ -183,12 +199,47 @@ xue.add = xue.add || function(moduleName, callback, isQueue){};
  * @return {[type]}              [description]
  */
 xue.use = xue.use || function(moduleName, callback, isQuequ, timeout){ 
-	xue.use.fn = fn; 
-	return {}; 
+	
+	var agr = arguments;
+
+	var n = null, f = false, q = false, t = false, tp = null;
+
+	$.each(agr, function(k, v){
+		tp = typeof v;
+		n = (tp === 'string')   ? v : n;
+		f = (tp === 'function') ? v : f;
+		q = (tp === 'boolean')  ? v : q;
+		t = (tp === 'number')   ? v : t;
+	});
+
+	if(n === null){
+		alert('没有填写模块名称');
+		return;
+	}
+	
+	var callback = function(module){ if(f){ return f(module); } };
+
+	if(xue[n]){
+		callback(xue[n]);
+	}else{
+		xue.loader('../js/ui/ui.' + n + '.js', function(){
+			if(t){
+				setTimeout(function(){
+					callback(xue[n]);
+				}, t);
+			}else{
+				callback(xue[n]);
+			}
+		});	
+		
+	}
+	return this;
 };
 
 
-
+xue.test = function(){
+	console.log(1111);
+}
 
 
 /* ========================== UI 组件 =========================== */

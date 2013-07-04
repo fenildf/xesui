@@ -698,36 +698,44 @@
 	</div>
 	<!--底部 end-->
 
-	<script src="../js/ui/ui.pages.js"></script>
+	<!--script src="../script/xue.pages.min.js"></script-->
+
 	<script>
 		window.onload = (function(){
+			xue.use('pages', function(md){
+				// console.log(a().go(1));
 
-			xue.pages('page2').config({
-				pages   : 20,
-				current : 2,
-				size    : 3,
-				callback : function(num){
-					console.log('pages2 : ' + num);
-					// xue.pages('page2').go(num);
-				}
-			});
+				md.config({
+					pages : 22,
+					current : 1
+				});
+				md.go(3);
 
-			xue.pages.config({
-				pages   : 15,
-				current : 1,
-				size    : 5,
-				pageClick: function(num){
-					console.log('current : ' + num);
-					xue.pages('ui_pages').go(num);
-				},
-				nextClick: function(num){
-					console.log('ui_pages : ' + num);
-					// xue.pages('ui_pages').go(num);
-				},
-				// callback : function(num){
-				// 	xue.pages('ui_pages').go(num);
-				// }
-			});
+			}, true, 1000).test();
+			// console.log(a);
+			// xue.pages('page2').config({
+			// 	pages   : 20,
+			// 	current : 2,
+			// 	size    : 3,
+			// 	callback : function(num){
+			// 		xue.pages('page2').go(num);
+			// 	}
+			// });
+
+			// xue.pages.config({
+			// 	pages   : 15,
+			// 	current : 1,
+			// 	size    : 5,
+			// 	pageClick: function(num){
+			// 		xue.pages('ui_pages').go(num);
+			// 	},
+			// 	nextClick: function(num){
+			// 		xue.pages('ui_pages').go(num);
+			// 	},
+			// 	// callback : function(num){
+			// 	// 	xue.pages('ui_pages').go(num);
+			// 	// }
+			// });
 
 			// xue.pages.config('a2', {
 			// 	id 		 : 'ui_pages',
