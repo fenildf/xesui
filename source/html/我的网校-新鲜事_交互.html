@@ -699,18 +699,31 @@
 	<!--底部 end-->
 
 	<!--script src="../script/xue.pages.min.js"></script-->
-
+	<!--script src="../js/ui/ui.pages.js"></script-->
 	<script>
 		window.onload = (function(){
-			xue.use('pages', function(md){
-				// console.log(a().go(1));
-
-				md.config({
+			/**
+			 * 用模块调用方法加载模块
+			 *
+			 * 用xue.use()方法可以确保模块存在，方便模块与主文件分离
+			 * 
+			 * @param  {object} module 确定存在后的模块对象，方便内部调用
+			 * 
+			 * @return {[type]}    返回跟对象，便于链式调用 ; 
+			 * 链式调用与模块的加载情况是异步的，没有依赖关系，所以在链式调用中不能确保能够调用到模块中的方法
+			 */
+			xue.use('pages', function(module){
+				// 根据模块名称进行调用
+				xue.pages.config({
 					pages : 22,
 					current : 1
-				});
-				md.go(3);
+				}).go(3);
 
+				// 根据返回的对象进行调用
+				module('page2').config({
+					pages: 10,
+					current: 3
+				});
 			}, true, 1000).test();
 			// console.log(a);
 			// xue.pages('page2').config({
