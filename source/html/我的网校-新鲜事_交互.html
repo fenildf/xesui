@@ -707,7 +707,8 @@
 				current : 2,
 				size    : 3,
 				callback : function(num){
-					xue.pages('page2').go(num);
+					console.log('pages2 : ' + num);
+					// xue.pages('page2').go(num);
 				}
 			});
 
@@ -716,10 +717,12 @@
 				current : 1,
 				size    : 5,
 				pageClick: function(num){
+					console.log('current : ' + num);
 					xue.pages('ui_pages').go(num);
 				},
 				nextClick: function(num){
-					xue.pages('ui_pages').go(num);
+					console.log('ui_pages : ' + num);
+					// xue.pages('ui_pages').go(num);
 				},
 				// callback : function(num){
 				// 	xue.pages('ui_pages').go(num);

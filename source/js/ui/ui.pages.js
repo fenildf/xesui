@@ -516,18 +516,26 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 		};
 
 		/**
+		 * 声明在点击事件中用到的变量
+		 *
+		 * currentNumber   : 存储点击页码
+		 * checkValue      : 存储检测是否有回调函数的返回值，如果有回调则返回 undefined，否则返回 default 可以直接执行默认事件
+		 * i               : 为了防止回调中不执行go方法仍然累计的问题，增加临时存储当前页码的变量，用于点击上/下一页按钮时的页码累计，而非修改真实的当前页码
+		 * 
+		 * @type {Number}
+		 */
+		var currentNumber = 1, checkValue = false, i = 1;
+
+		/**
 		 * 分页节点点击事件
 		 * @return {[type]} [description]
 		 */
 		opt.handle.on('click', opt.item, function(){
-			// 通过节点的data-page属性获取页数
-			var currentNumber = $(this).data('page');
 
-			/**
-			 * 如果配置中有回掉，则直接绑定回掉函数；
-			 * 否则判断在队列中是否配置节点的点击事件，如果有则绑定
-			 */
-			var checkValue = _checkFn(currentNumber, 'page');
+			// 通过节点的data-page属性获取页数
+			currentNumber = $(this).data('page');
+
+			checkValue = _checkFn(currentNumber, 'page');
 
 			// 当以上2种情况都没有时，绑定默认的点击事件
 			if(checkValue !== undefined){
@@ -537,23 +545,15 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 
 		/**
 		 * 上一页点击事件
-		 * @return {[type]} [description]
 		 */
 		opt.handle.on('click', opt.prev, function(){
 
-			var i = opt.current;
-			i--;
+			i = opt.current; i--;
 
-			var currentNumber = (i > 0) ? i : 0;
-
-			// opt.current--;
-			// var currentNumber = 1;
-			// if(opt.current > 0){
-			// 	currentNumber = opt.current;
-			// }
+			// 页码校准：上一页不能 < 1;
+			currentNumber = (i > 0) ? i : 0;
 			
-			// 回调函数检测，如果有回调函数，则返回 undefined
-			var checkValue = _checkFn(currentNumber, 'prev');
+			checkValue = _checkFn(currentNumber, 'prev');
 			
 			if(checkValue !== undefined){
 				return _click(currentNumber);
@@ -565,27 +565,13 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 		 * @return {[type]} [description]
 		 */
 		opt.handle.on('click', opt.next, function(){
-			var i = opt.current;
-			i++;
 
-			// var currentNumber = opt.pages;
-			// if(i <= opt.pages){
-			// 	currentNumber = i;
-			// }
+			i = opt.current; i++;
 
-			var currentNumber = (i > opt.pages) ? opt.pages : i;
-
-			// console.log(opt.current);
-			// console.info(currentNumber);
-
-			// opt.current++;
-			// var currentNumber = opt.pages;
-			// if(opt.current <= opt.pages){
-			// 	currentNumber = opt.current;	
-			// }
+			// 页码校准：下一页不能 > 总页数
+			currentNumber = (i > opt.pages) ? opt.pages : i;
 			
-			// 回调函数检测，如果有回调函数，则返回 undefined
-			var checkValue = _checkFn(currentNumber, 'next');
+			checkValue = _checkFn(currentNumber, 'next');
 
 			if(checkValue !== undefined){
 				return _click(currentNumber);
