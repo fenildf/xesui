@@ -27,7 +27,7 @@
 
 
 @import "table.less";
-
+@import "ui_bank.less";
 
 /*================/ 支付 /========================*/
  
@@ -35,8 +35,8 @@
 .header_shop {
 	width:980px;margin:0 auto;overflow:hidden;
 	h1.logo {
-		float:none;overflow:hidden;
-		a {height:45px;background: url(../html/src/img/logo_shop.jpg) no-repeat;}
+		width:230px;height: 40px;overflow:hidden;background: url(../html/src/img/logo_shop.jpg) no-repeat; text-indent: @ti;
+		
 	}
 	.pay_step {
 		height:30px;background: url(../html/src/img/shop_line.jpg) 0 10px repeat-x;
@@ -62,8 +62,10 @@
 h2.shopcar_title {height:50px;line-height:50px;font-family:@fw ;font-size:@f18;font-weight:normal;color:@g3;}
 h3.shopcar_title {height:30px;font-family:@fw,@fa;font-size:@f14;font-weight:normal;color:@g3;}
 h3.pay_way {line-height:30px;font-weight:bold;}
+h6.shopcar_title {height:30px;font-family:@fw,@fa;font-size:@f12;color:@g3;}
+
 .account_money {height:30px;font-family:@fw,@fa;font-size:@f12;color:@g3;}
-.account_money strong {font-weight:bold;}
+.account_money strong {font-weight:bold;font-size: @f18;}
 
 table.table_shop {
 	border:1px solid #99c7e9;margin-bottom:10px;
@@ -83,7 +85,7 @@ table.table_shop {
 
 }
 
-.order_button {overflow:hidden}
+.order_button {overflow:hidden;margin-bottom: 30px;}
 .order_button .btn {float:right;width:100px;height:30px;font-size:@f14;font-family:@fw;margin-left:10px;}
 
 
@@ -145,9 +147,127 @@ table.table_shop {
 
 
 
+.ui_folds {
+	overflow: hidden;margin-bottom:20px;
+	.folds_title {
+		font-weight: bold;color: @g3;
+		span {cursor: pointer;}
+	}
+	.folds_content {
+		background:#eef9ff;overflow: hidden;border:1px solid #99c7e8;
+		.gift_info {
+					overflow: hidden;padding:20px;
+					p {
+						padding-bottom: 5px;
+						a {color: @g3;}
+					}
+		}
+		/*促销信息*/ 
+		.gift_card {
+				overflow: hidden;padding:20px;
+				.card_info {
+					span {color: @r0;}
+					a {padding-left: 100px;}
+				}
+				.card_activate {
+					line-height:30px;font-weight: bold;
+					a {color: @g3;}
+				}
+				.cars_form {
+					border-bottom: 1px dashed #bfdff6;overflow: hidden;padding-bottom: 10px;margin-bottom: 5px;
+					 span {
+					 	float: @l;padding-left:15px;
+					 	input {width:180px;height:22px;padding:0 5px;border:0;border-left:1px solid #c8c4c1;border-top:1px solid #c8c4c1;margin-right: 10px;color: @g3*3;}
+					 }
+					 .btn_orange {float: @l;width:50px;height: 22px;}
+					 .addNotice {color: @r0;}
+				}
+		}
+		/*代金卡*/ 
+		.table_card {
+				width:630px;background: #fff;border:0;margin-left: 15px;
+				th {padding: 0;height: 30px; vertical-align: middle;}
+				.text_l {text-align:@l;padding-left: 20px;}
+		}
+		/*代金卡列表*/
+		.invoice_info {
+			overflow: hidden;padding:20px;
+			p {
+				line-height: 30px;
+				label {display: inline; text-align: @l;color: @g3*3;}
+				input {width: 260px;height: 22px;border:1px solid #c8c4c3;padding:0 5px;}
+				.err_info {padding-left: 20px;color: @r0;}
+			}
+		}
+		/*发票信息*/ 
+	}
+}
 
 
+.ui_payment {
+	overflow: hidden;margin-bottom: 20px;
+	.payment_tabs {
+			overflow: hidden; position: relative;top:1px;z-index: 10;
+			li {float: left;display: inline;width: 82px;height:31px;line-height: 31px; text-align: @c;border:1px solid #dbdee3; border-radius: 2px;margin-right: 5px;cursor: pointer;border-bottom:1px solid #99c7e8;}
+			.current {border: 1px solid #99c7e8;background: #eef9ff;font-weight: bold;border-bottom:1px solid #eef9ff;}
+	}
+	.payment_content {
+			background:#eef9ff;overflow: hidden;border:1px solid #99c7e8;
+			.payment_bank {
+				overflow: hidden;padding: 20px;
+				p {line-height: 24px;}
+				.payment_text {padding-left:40px;}
+				.paylists {
+					overflow: hidden;line-height: auto;margin-bottom: 15px;
+					ul {
+						li {margin: 0 7px 10px 0;}
+					}
+				}
+			}
+	}
+}
 
+
+.order_address {
+	background:#eef9ff;overflow: hidden;border:1px solid #99c7e8;padding:20px;margin-bottom:20px;
+	.address_list {
+		overflow: hidden;margin-bottom: 20px;
+		ul {
+			padding-left: 30px;
+			li {
+				line-height: 180%;
+			}
+		}
+	}
+	.address_info {
+			overflow: hidden;margin-bottom: 20px;
+			.info_from {
+				padding-left: 30px;
+				p {
+					overflow: hidden;
+					label {float:left;display: inline;width: 100px;line-height:30px;margin-bottom: 10px;margin-right: 10px;}
+					input {float:left;width: 160px;height: 22px;border:1px solid #c8c4c3;padding:0 5px;}
+					.input_360 {width: 360px;}
+					span {float: left; color: @g3*3;margin-left: 10px;}
+					.select {float: left;margin-right: 10px;}
+					.btn_gray {width:130px;height:25px;line-height:25px;color: @r0; text-decoration: none;margin-left: 110px;}
+				}
+			}
+	}
+	.order_time {
+		overflow: hidden;margin-bottom: 20px;
+		ul {
+			padding-left: 30px;
+			li {
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+
+.icon_folds_add {background: url(../html/src/img/icon_up.jpg)  no-repeat;}
+.icon_folds_cut {background: url(../html/src/img/icon_close.jpg)  no-repeat;}
 
 
 

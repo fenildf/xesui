@@ -692,6 +692,7 @@ textarea::-webkit-input-placeholder {
 .btn_gray {
   border: 1px solid #cfcfcf;
   background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  background: -webkit-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
   background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
   box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
 }
@@ -699,6 +700,7 @@ textarea::-webkit-input-placeholder {
   color: #ffffff;
   border: 1px solid #880000;
   background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -webkit-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
   background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
   -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
@@ -708,6 +710,7 @@ textarea::-webkit-input-placeholder {
   color: #ffffff;
   border: 1px solid #377ece;
   background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  background: -webkit-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
   background: -moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
   box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
@@ -722,6 +725,7 @@ textarea::-webkit-input-placeholder {
   color: #ffffff;
   border: 1px solid #ff870f;
   background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
+  background: -webkit-linear-gradient(#ffab37 1%, #ff9b2b 100%);
   background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
 }
 /**
@@ -733,6 +737,7 @@ textarea::-webkit-input-placeholder {
   border: 1px solid #c5c5c5;
   text-shadow: 1px 0px rgba(255, 255, 255, 0.5);
   background: linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  background: -webkit-linear-gradient(#e5e5e5 0%, #cccccc 100%);
   background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
   /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
 
@@ -747,17 +752,14 @@ textarea::-webkit-input-placeholder {
 /*base,重置，变量*/
 /*图标，表单，按钮*/
 #header {
-  height: 55px;
-  overflow: hidden;
+  height: 56px;
   box-shadow: 0 2px 12px #ddd;
-  margin: 0;
   position: relative;
   z-index: 100;
 }
 #header .header_box {
   width: 980px;
   margin: 0 auto;
-  overflow: hidden;
   /*logo*/
 
   /*菜单*/
@@ -859,16 +861,73 @@ textarea::-webkit-input-placeholder {
   cursor: pointer;
   width: 33px;
 }
+#header .header_box .loginbar li p {
+  padding: 18px 0;
+}
 #header .header_box .loginbar li .line {
   padding: 0 7px;
 }
+#header .header_box .loginbar li .icon {
+  margin-left: 5px;
+}
 #header .header_box .loginbar .current {
-  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+#header .header_box .loginbar .current p {
+  background: #fcfcfc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
+  position: relative;
+  z-index: 110;
+}
+#header .header_box .loginbar .current .layer_head {
+  width: 101px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px #ddd;
+  background: #fcfcfc;
+  position: absolute;
+  z-index: 1;
+  left: -70px;
+  top: 56px;
+}
+#header .header_box .loginbar .current .layer_head ul {
+  padding-top: 5px;
+}
+#header .header_box .loginbar .current .layer_head ul li {
+  height: 25px;
+  line-height: 25px;
+  width: 101px;
+  padding: 0;
+}
+#header .header_box .loginbar .current .layer_head ul li a {
+  display: block;
+  padding: 0 5px 0 15px;
+  color: #666666;
+  text-decoration: none;
+}
+#header .header_box .loginbar .current .layer_head ul li a:hover {
+  background: #3399cc;
+  color: #ffffff;
+}
+#header .header_box .loginbar .current .layer_head ul li a:hover strong {
+  color: #ffffff;
+}
+#header .header_box .loginbar .current .layer_head ul .exit {
+  border-top: 1px solid #e6e6e6;
+  background: #f2f2f2;
+}
+#header .header_box .loginbar .current .layer_head ul .exit a {
+  color: #006699;
+}
+#header .header_box .loginbar .current .layer_head ul .exit a:hover {
+  background: #f2f2f2;
+  color: #006699;
 }
 #header .header_box .loginbar .lines {
-  width: 2px;
+  width: 3px;
+  color: #ccc;
+  text-align: center;
 }
 /**
  * 
@@ -1261,6 +1320,133 @@ table {
 .table-solid td {
   border: 1px solid #e2e2e2;
 }
+/**
+ * @authors sam shih
+ * @学习中心个人设置我要充值银行列表
+ */
+/*base,重置，变量*/
+.paylists {
+  line-height: 22px;
+}
+.paylists .setting_menu {
+  margin-bottom: 10px;
+}
+.paylists .pay_info {
+  font-size: 14px;
+  color: #5b5b5b;
+  padding: 10px 50px;
+}
+.paylists .pay_info strong {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color: #333333;
+  font-weight: bold;
+}
+.paylists .pay_tips {
+  color: #adadad;
+  overflow: hidden;
+  background: #FAFAFA;
+  padding: 10px 20px;
+}
+.paylists ul li {
+  width: 180px;
+  float: left;
+  margin: 0 15px 40px 0;
+}
+.paylists ul li input[type="radio"] {
+  margin-right: 5px;
+}
+.paylists ul li .bank-item {
+  background-image: url("../img/banklist.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 154px;
+  height: 33px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.paylists ul li .ICBC {
+  background-position: 0 0;
+}
+.paylists ul li .CMB {
+  background-position: 0 -99px;
+}
+.paylists ul li .ABC {
+  background-position: 0 -198px;
+}
+.paylists ul li .CCB {
+  background-position: -154px 0;
+}
+.paylists ul li .BCM {
+  background-position: -154px -99px;
+}
+.paylists ul li .SDB {
+  background-position: -154px -198px;
+}
+.paylists ul li .BOB {
+  background-position: -308px 0;
+}
+.paylists ul li .CIB {
+  background-position: -308px -99px;
+}
+.paylists ul li .BOC {
+  background-position: 0 -231px;
+}
+.paylists ul li .CEB {
+  background-position: 0 -33px;
+}
+.paylists ul li .SPD {
+  background-position: 0 -132px;
+}
+.paylists ul li .CMBC {
+  background-position: -308px -198px;
+}
+.paylists ul li .PSBC {
+  background-position: -154px -132px;
+}
+.paylists ul li .BEA {
+  background-position: -154px -33px;
+}
+.paylists ul li .RCB {
+  background-position: -154px -231px;
+}
+.paylists ul li .CBHB {
+  background-position: -308px -33px;
+}
+.paylists ul li .CGD {
+  background-position: -308px -133px;
+}
+.paylists ul li .GZCB {
+  background-position: -308px -230px;
+}
+.paylists ul li .GZNC {
+  background-position: 0 -66px;
+}
+.paylists ul li .HXB {
+  background-position: 0 -165px;
+}
+.paylists ul li .ZXSY {
+  background-position: 0 -264px;
+}
+.paylists ul li .NBCB {
+  background-position: -154px -66px;
+}
+.paylists ul li .SHNC {
+  background-position: -154px -165px;
+}
+.paylists ul li .BBON {
+  background-position: -154px -264px;
+}
+.paylists ul li .HCCB {
+  background-position: -308px -66px;
+}
+.paylists ul li .PAYH {
+  background-position: -308px -165px;
+}
+.paylists ul li .gateway {
+  background-position: -308px -264px;
+}
 /*================/ 支付 /========================*/
 .header_shop {
   width: 980px;
@@ -1268,12 +1454,11 @@ table {
   overflow: hidden;
 }
 .header_shop h1.logo {
-  float: none;
+  width: 230px;
+  height: 40px;
   overflow: hidden;
-}
-.header_shop h1.logo a {
-  height: 45px;
   background: url(../html/src/img/logo_shop.jpg) no-repeat;
+  text-indent: -9999em;
 }
 .header_shop .pay_step {
   height: 30px;
@@ -1322,6 +1507,12 @@ h3.pay_way {
   line-height: 30px;
   font-weight: bold;
 }
+h6.shopcar_title {
+  height: 30px;
+  font-family: "Microsoft YaHei", "Arial";
+  font-size: 12px;
+  color: #333333;
+}
 .account_money {
   height: 30px;
   font-family: "Microsoft YaHei", "Arial";
@@ -1330,6 +1521,7 @@ h3.pay_way {
 }
 .account_money strong {
   font-weight: bold;
+  font-size: 18px;
 }
 table.table_shop {
   border: 1px solid #99c7e9;
@@ -1377,6 +1569,7 @@ table.table_shop .shop_empty {
 }
 .order_button {
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .order_button .btn {
   float: right;
@@ -1516,4 +1709,247 @@ table.table_shop .shop_empty {
   line-height: 30px;
   font-size: 14px;
   text-decoration: none;
+}
+.ui_folds {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.ui_folds .folds_title {
+  font-weight: bold;
+  color: #333333;
+}
+.ui_folds .folds_title span {
+  cursor: pointer;
+}
+.ui_folds .folds_content {
+  background: #eef9ff;
+  overflow: hidden;
+  border: 1px solid #99c7e8;
+  /*促销信息*/
+  /*代金卡*/
+  /*代金卡列表*/
+
+  /*发票信息*/
+}
+.ui_folds .folds_content .gift_info {
+  overflow: hidden;
+  padding: 20px;
+}
+.ui_folds .folds_content .gift_info p {
+  padding-bottom: 5px;
+}
+.ui_folds .folds_content .gift_info p a {
+  color: #333333;
+}
+.ui_folds .folds_content .gift_card {
+  overflow: hidden;
+  padding: 20px;
+}
+.ui_folds .folds_content .gift_card .card_info span {
+  color: #cc0000;
+}
+.ui_folds .folds_content .gift_card .card_info a {
+  padding-left: 100px;
+}
+.ui_folds .folds_content .gift_card .card_activate {
+  line-height: 30px;
+  font-weight: bold;
+}
+.ui_folds .folds_content .gift_card .card_activate a {
+  color: #333333;
+}
+.ui_folds .folds_content .gift_card .cars_form {
+  border-bottom: 1px dashed #bfdff6;
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+.ui_folds .folds_content .gift_card .cars_form span {
+  float: left;
+  padding-left: 15px;
+}
+.ui_folds .folds_content .gift_card .cars_form span input {
+  width: 180px;
+  height: 22px;
+  padding: 0 5px;
+  border: 0;
+  border-left: 1px solid #c8c4c1;
+  border-top: 1px solid #c8c4c1;
+  margin-right: 10px;
+  color: #999999;
+}
+.ui_folds .folds_content .gift_card .cars_form .btn_orange {
+  float: left;
+  width: 50px;
+  height: 22px;
+}
+.ui_folds .folds_content .gift_card .cars_form .addNotice {
+  color: #cc0000;
+}
+.ui_folds .folds_content .table_card {
+  width: 630px;
+  background: #fff;
+  border: 0;
+  margin-left: 15px;
+}
+.ui_folds .folds_content .table_card th {
+  padding: 0;
+  height: 30px;
+  vertical-align: middle;
+}
+.ui_folds .folds_content .table_card .text_l {
+  text-align: left;
+  padding-left: 20px;
+}
+.ui_folds .folds_content .invoice_info {
+  overflow: hidden;
+  padding: 20px;
+}
+.ui_folds .folds_content .invoice_info p {
+  line-height: 30px;
+}
+.ui_folds .folds_content .invoice_info p label {
+  display: inline;
+  text-align: left;
+  color: #999999;
+}
+.ui_folds .folds_content .invoice_info p input {
+  width: 260px;
+  height: 22px;
+  border: 1px solid #c8c4c3;
+  padding: 0 5px;
+}
+.ui_folds .folds_content .invoice_info p .err_info {
+  padding-left: 20px;
+  color: #cc0000;
+}
+.ui_payment {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.ui_payment .payment_tabs {
+  overflow: hidden;
+  position: relative;
+  top: 1px;
+  z-index: 10;
+}
+.ui_payment .payment_tabs li {
+  float: left;
+  display: inline;
+  width: 82px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  border: 1px solid #dbdee3;
+  border-radius: 2px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #99c7e8;
+}
+.ui_payment .payment_tabs .current {
+  border: 1px solid #99c7e8;
+  background: #eef9ff;
+  font-weight: bold;
+  border-bottom: 1px solid #eef9ff;
+}
+.ui_payment .payment_content {
+  background: #eef9ff;
+  overflow: hidden;
+  border: 1px solid #99c7e8;
+}
+.ui_payment .payment_content .payment_bank {
+  overflow: hidden;
+  padding: 20px;
+}
+.ui_payment .payment_content .payment_bank p {
+  line-height: 24px;
+}
+.ui_payment .payment_content .payment_bank .payment_text {
+  padding-left: 40px;
+}
+.ui_payment .payment_content .payment_bank .paylists {
+  overflow: hidden;
+  line-height: auto;
+  margin-bottom: 15px;
+}
+.ui_payment .payment_content .payment_bank .paylists ul li {
+  margin: 0 7px 10px 0;
+}
+.order_address {
+  background: #eef9ff;
+  overflow: hidden;
+  border: 1px solid #99c7e8;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.order_address .address_list {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.order_address .address_list ul {
+  padding-left: 30px;
+}
+.order_address .address_list ul li {
+  line-height: 180%;
+}
+.order_address .address_info {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.order_address .address_info .info_from {
+  padding-left: 30px;
+}
+.order_address .address_info .info_from p {
+  overflow: hidden;
+}
+.order_address .address_info .info_from p label {
+  float: left;
+  display: inline;
+  width: 100px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.order_address .address_info .info_from p input {
+  float: left;
+  width: 160px;
+  height: 22px;
+  border: 1px solid #c8c4c3;
+  padding: 0 5px;
+}
+.order_address .address_info .info_from p .input_360 {
+  width: 360px;
+}
+.order_address .address_info .info_from p span {
+  float: left;
+  color: #999999;
+  margin-left: 10px;
+}
+.order_address .address_info .info_from p .select {
+  float: left;
+  margin-right: 10px;
+}
+.order_address .address_info .info_from p .btn_gray {
+  width: 130px;
+  height: 25px;
+  line-height: 25px;
+  color: #cc0000;
+  text-decoration: none;
+  margin-left: 110px;
+}
+.order_address .order_time {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.order_address .order_time ul {
+  padding-left: 30px;
+}
+.order_address .order_time ul li {
+  line-height: 30px;
+}
+.icon_folds_add {
+  background: url(../html/src/img/icon_up.jpg) no-repeat;
+}
+.icon_folds_cut {
+  background: url(../html/src/img/icon_close.jpg) no-repeat;
 }

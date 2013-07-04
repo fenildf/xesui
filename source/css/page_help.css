@@ -699,6 +699,7 @@ textarea::-webkit-input-placeholder {
 .btn_gray {
   border: 1px solid #cfcfcf;
   background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  background: -webkit-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
   background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
   box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
 }
@@ -706,6 +707,7 @@ textarea::-webkit-input-placeholder {
   color: #ffffff;
   border: 1px solid #880000;
   background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -webkit-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
   background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
   -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
@@ -715,6 +717,7 @@ textarea::-webkit-input-placeholder {
   color: #ffffff;
   border: 1px solid #377ece;
   background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  background: -webkit-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
   background: -moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
   box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
@@ -729,6 +732,7 @@ textarea::-webkit-input-placeholder {
   color: #ffffff;
   border: 1px solid #ff870f;
   background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
+  background: -webkit-linear-gradient(#ffab37 1%, #ff9b2b 100%);
   background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
 }
 /**
@@ -740,23 +744,21 @@ textarea::-webkit-input-placeholder {
   border: 1px solid #c5c5c5;
   text-shadow: 1px 0px rgba(255, 255, 255, 0.5);
   background: linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  background: -webkit-linear-gradient(#e5e5e5 0%, #cccccc 100%);
   background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
   /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
 
 }
 /*图标，表单，按钮*/
 #header {
-  height: 55px;
-  overflow: hidden;
+  height: 56px;
   box-shadow: 0 2px 12px #ddd;
-  margin: 0;
   position: relative;
   z-index: 100;
 }
 #header .header_box {
   width: 980px;
   margin: 0 auto;
-  overflow: hidden;
   /*logo*/
 
   /*菜单*/
@@ -858,16 +860,73 @@ textarea::-webkit-input-placeholder {
   cursor: pointer;
   width: 33px;
 }
+#header .header_box .loginbar li p {
+  padding: 18px 0;
+}
 #header .header_box .loginbar li .line {
   padding: 0 7px;
 }
+#header .header_box .loginbar li .icon {
+  margin-left: 5px;
+}
 #header .header_box .loginbar .current {
-  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+#header .header_box .loginbar .current p {
+  background: #fcfcfc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
+  position: relative;
+  z-index: 110;
+}
+#header .header_box .loginbar .current .layer_head {
+  width: 101px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px #ddd;
+  background: #fcfcfc;
+  position: absolute;
+  z-index: 1;
+  left: -70px;
+  top: 56px;
+}
+#header .header_box .loginbar .current .layer_head ul {
+  padding-top: 5px;
+}
+#header .header_box .loginbar .current .layer_head ul li {
+  height: 25px;
+  line-height: 25px;
+  width: 101px;
+  padding: 0;
+}
+#header .header_box .loginbar .current .layer_head ul li a {
+  display: block;
+  padding: 0 5px 0 15px;
+  color: #666666;
+  text-decoration: none;
+}
+#header .header_box .loginbar .current .layer_head ul li a:hover {
+  background: #3399cc;
+  color: #ffffff;
+}
+#header .header_box .loginbar .current .layer_head ul li a:hover strong {
+  color: #ffffff;
+}
+#header .header_box .loginbar .current .layer_head ul .exit {
+  border-top: 1px solid #e6e6e6;
+  background: #f2f2f2;
+}
+#header .header_box .loginbar .current .layer_head ul .exit a {
+  color: #006699;
+}
+#header .header_box .loginbar .current .layer_head ul .exit a:hover {
+  background: #f2f2f2;
+  color: #006699;
 }
 #header .header_box .loginbar .lines {
-  width: 2px;
+  width: 3px;
+  color: #ccc;
+  text-align: center;
 }
 /**
  * 

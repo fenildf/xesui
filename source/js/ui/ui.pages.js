@@ -449,10 +449,13 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 	 * @return {[type]}         [description]
 	 */
 	pg.go = function(current, pages){
-		this.id = this.id || 'ui_pages';
-
+		// this.id = this.id || 'ui_pages';
+		if(this.id === undefined){
+			this.config();
+		}
 		// 获取队列中的配置
 		var opt = this.queue[this.id];
+
 
 		/**
 		 * 当前页、总页数校准

@@ -16,9 +16,9 @@
 
 
 #header {
-      height:55px; overflow: hidden;box-shadow:0 2px 12px #ddd;margin:0;position: relative;z-index: 100;
+      height:56px;box-shadow:0 2px 12px #ddd;position: relative;z-index: 100;
      .header_box {
-          width: 980px;margin:0 auto;overflow: hidden;
+          width: 980px;margin:0 auto;
             h1.logo {
                      float: @l;display: inline;width: 260px; 
                      a {
@@ -84,12 +84,67 @@
       float: right;width: 110px;margin-right: 12px;
 	     li {
              float:left;cursor: pointer;width: 33px;
+             p {padding:18px 0; }
              .line {padding:0 7px;}
+             .icon {margin-left:5px;}
+             
       }
       .current {
-           background: #fff;border-left:1px solid #ccc;border-right:1px solid #ccc;
+           position: relative; z-index: 10;
+           p {background: #fcfcfc;border-left:1px solid #ccc;border-right:1px solid #ccc;position: relative; z-index: 110; }
+           .layer_head {
+                  width:101px;border:1px solid #ccc;box-shadow:0 2px 2px #ddd;background: #fcfcfc; position: absolute; z-index: 1;left: -70px;top: 56px;
+                  ul {
+                        padding-top: 5px;
+                       li {
+                          height: 25px;line-height: 25px; width:101px;padding: 0;
+                          a {
+                             display:block;padding:0 5px 0 15px;color: @g3*2; text-decoration: none;
+                             &:hover {
+                                background: #3399cc;color: @white;
+                                strong {color: @white;}
+                              }
+                          }
+                          
+                       }
+                       
+                      .exit {
+                        border-top: 1px solid #e6e6e6;background: #f2f2f2;
+                        a {
+                          color: #006699;
+                          &:hover {
+                                background: #f2f2f2;color:#006699;
+                               
+                              }
+                        }
+                      }
+                  }
+           }
          
       }
-      .lines {width: 2px;}
+      .lines {width: 3px;color: #ccc; text-align: @c;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
