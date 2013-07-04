@@ -36,6 +36,7 @@ xue.team = {
 	Sam    : 'Sam@xesui.com',
 	Star   : 'W.Star@xesui.com',
 }
+/* ========================== 公共方法 =========================== */
 
 /**
  * @name xue.extend.js
@@ -102,9 +103,95 @@ xue.check = function(obj){
 	// }
 	
 };
+/**
+ * 加载script文件
+ * @param {String} 		url
+ * @param {sting}		place: 加载文件的位置：head or body
+ * @param {Function}	callback
+ */
+xue.loader = xue.loader || function(url, callback, isBody) {
+
+	// 如果没有url则返回；
+	if(!url) { return; }
+
+	var _call = callback ? callback : function(){};
+
+	// 检查是否存在函数，返回布尔值；
+	var _isLoad = function() {
+		var _scripts = document.getElementsByTagName('script');
+		for(var i = 0, len = _scripts.length; i < len; i++) {
+			if(_scripts[i].src.indexOf(url) > -1) {
+				return true;
+			}
+		}
+		return false;
+	}();
+
+	// 检测是否存在，不存在则加载，否则直接返回callback
+	if(!_isLoad) {
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+
+		if(script.readyState) {// IE
+			script.onreadystatechange = function() {
+				if(script.readyState == 'loaded' || script.readyState == 'complete') {
+					script.onreadystatechange = null;
+					_call(true);
+				}
+			};
+		} else {
+			script.onload = function() { _call(true); };
+		}
+		script.src = url;
+		var _place = (isBody) ? 'body' : 'head';
+		document.getElementsByTagName(_place)[0].appendChild(script);
+	} else {
+		_call(false);
+	}
+	return this;
+};
+
+
+/**
+ * 模块添加
+ * @param  {string}   moduleName  模块名称
+ * @param  {Function} callback    回调函数
+ * @param  {Boolean}  isQueue  	  是否加入队列：在队列中的文件逐个加载（非异步）
+ * @return {[type]}         	  加载完成后返回xue对象，可直接链式调用，
+ *
+ * @example:
+ *
+ * 			xue.add('pages', function(){
+ * 			
+				// 将分页扩展到xue对象下；
+				xue.extend('pages', ui.pages);
+
+ * 			}).use('pages', function(){
+ * 				xue.pages.config({
+ * 					...
+ * 				});
+ * 			});
+ */
+xue.add = xue.add || function(moduleName, callback, isQueue){};
+
+/**
+ * 模块调用
+ * @param  {string}   moduleName 模块名称
+ * @param  {Function} callback   模块加载完成的回调
+ * @param  {Boolean}  isQueue  	 是否加入队列：在队列中的文件逐个加载（非异步）
+ * @param  {date}     timeout    延时加载的时间以毫秒为单位
+ * @return {[type]}              [description]
+ */
+xue.use = xue.use || function(moduleName, callback, isQuequ, timeout){ 
+	xue.use.fn = fn; 
+	return {}; 
+};
 
 
 
+
+
+/* ========================== UI 组件 =========================== */
 
 var ui = ui || {};
 
