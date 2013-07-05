@@ -25,6 +25,10 @@
  */
 
 var X, xue = X = xue || function(expr, fn) { return xue.dom ? xue.dom(expr, fn) : {}; };
+// var X, xue = X = xue || function(expr, fn) { 
+// 	xue.expr = expr || null;
+// 	return xue;
+// };
 
 xue.version = '0.4.7';
 
@@ -34,8 +38,10 @@ xue.team = {
 	Marco  : 'Marco@xesui.com',
 	Alex   : 'Alex@xesui.com',
 	Sam    : 'Sam@xesui.com',
-	Star   : 'W.Star@xesui.com',
+	Star   : 'W.Star@xesui.com'
 }
+
+xue.expr = '';
 /* ========================== 公共方法 =========================== */
 
 /**
@@ -64,24 +70,24 @@ xue.check = function(obj){
 	var tpLen = typeof(obj.length),
 		tp = typeof obj;
 	
-	if(tpLen === 'number'){
-		if(tp === 'object'){
-			return 'array';
-		}
-		if(tp === 'string'){
-			return 'string';
-		}
-		if(tp === 'function'){
-			return 'function';
-		}
-	}else{
-		if(tp === 'number'){
-			return 'number';
-			//有可能是date或者是number
-		}else{
-			return 'object';
-		}
-	}
+	// if(tpLen === 'number'){
+	// 	if(tp === 'object'){
+	// 		return 'array';
+	// 	}
+	// 	if(tp === 'string'){
+	// 		return 'string';
+	// 	}
+	// 	if(tp === 'function'){
+	// 		return 'function';
+	// 	}
+	// }else{
+	// 	if(tp === 'number'){
+	// 		return 'number';
+	// 		//有可能是date或者是number
+	// 	}else{
+	// 		return 'object';
+	// 	}
+	// }
 
 	// 还差日期类型判断
 	
@@ -283,6 +289,9 @@ xue.test = function(){
 
 var ui = ui || {};
 
+/* ========================== module =========================== */
+
+var m, module = m = module || {};
 
 
 

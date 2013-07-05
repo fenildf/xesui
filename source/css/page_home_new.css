@@ -447,6 +447,9 @@ table {
   height: 14px;
   opacity: 0.5;
 }
+.icon_dot {
+  width: 0;
+}
 .icon_new {
   background-position: 0 0;
 }
@@ -590,6 +593,12 @@ table {
 }
 .icon_blue_sign {
   background-position: -47px -145px;
+}
+.icon_dot {
+  background-position: 0 -215px;
+}
+.icon_star {
+  background-position: -50px -199px;
 }
 /**
  *From 公用样式
@@ -795,7 +804,7 @@ textarea::-webkit-input-placeholder {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(../html/src/img/logo.png) no-repeat;
+  background: url(../img/logo/logo.png) no-repeat;
 }
 #header .header_box ul.nav {
   float: left;
@@ -1231,7 +1240,9 @@ textarea::-webkit-input-placeholder {
   padding: 0 8px;
 }
 .main_header .nav_links li.current {
-  background: url(../html/src/img/ins.jpg) 25px 37px no-repeat;
+  background-position: -110px -272px "../img/icon.png";
+  background-image: url(no-repeat);
+  background-repeat: no-repeat;
 }
 .main_header .nav_links li.current a {
   font-weight: bold;
@@ -2149,29 +2160,3 @@ ul.filter_handle_items {
  * 
  * @type {[type]}
  */
-h1.logo {
-  float: left;
-  display: inline;
-  width: 260px;
-}
-h1.logo a {
-  display: block;
-  height: 55px;
-  text-indent: -9999em;
-  background: url(../html/src/img/logo.png) no-repeat;
-}
-.main_header .nav_links li.current {
-  background: url(../html/src/img/ins.jpg) 25px 37px no-repeat;
-}
-.main_header .nav_links li.current a {
-  font-weight: bold;
-}
-.feed_comment .comment_corner {
-  width: 16px;
-  height: 9px;
-  background: url(../html/src/img/ins_c.jpg) no-repeat;
-  position: absolute;
-  z-index: 10;
-  top: -9px;
-  right: 126px;
-}
