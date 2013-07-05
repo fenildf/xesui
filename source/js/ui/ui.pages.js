@@ -102,7 +102,7 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 	 *
 	 * 全局初始化参数，会根据不同ID存入到队列中：pd.queue[id]
 	 */
-	var opt = {
+	var options = {
 		id  	 : 'ui_pages',
 		handle   : '#ui_pages',		// 存放分页内容的容器：初始化之后是jquery对象
 		size 	 : 5,				// 连续显示的页码节点数
@@ -139,8 +139,8 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 		page    : '<li class="pages_item" data-page="$pageData$"><a href="javascript:void(0);">$pageText$</a></li>',
 		more    : '<li class="pages_more"><span>...</span></li>',
 		current : '<li class="pages_current"><span>$pageText$</span></li>',
-		prev 	: '<li class="pages_prev"><a href="javascript:void(0);" class="btn btn_gray $disable$">' + opt.prevText + '</a></li>',
-		next 	: '<li class="pages_next"><a href="javascript:void(0);" class="btn btn_gray $disable$">' + opt.nextText + '</a></li>'
+		prev 	: '<li class="pages_prev"><a href="javascript:void(0);" class="btn btn_gray $disable$">' + options.prevText + '</a></li>',
+		next 	: '<li class="pages_next"><a href="javascript:void(0);" class="btn btn_gray $disable$">' + options.nextText + '</a></li>'
 	};
 
 	/* ========================== 方法 =============================== */
@@ -152,9 +152,9 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 
 		/**
 		 * 如果没有传入ID(直接调用：xue.pages.config，而非：xue.pages('id').config)
-		 * 则直接调用默认ID(opt.id);
+		 * 则直接调用默认ID(options.id);
 		 */
-		this.id = this.id === undefined ? opt.id : this.id;
+		this.id = this.id === undefined ? options.id : this.id;
 
 		// 给队列中增加ID标识
 		o.id = o.id || this.id;
@@ -167,9 +167,9 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 
 		// 如果传入的配置参数是{}对象，则合并到队列中，否则把全局配置参数合并到队列中
 		if(typeof(o) === 'object' && o.length === undefined){
-			$.extend(oo, opt, o);
+			$.extend(oo, options, o);
 		}else{
-			$.extend(oo, opt);
+			$.extend(oo, options);
 		}
 		
 		// 根据连续页数的长度计算出左右的位移数：如果length = 7 则 bitwise = 3
@@ -449,13 +449,11 @@ ui.pages = ui.pages || function(id){ ui.pages.id = id || 'ui_pages'; return ui.p
 	 * @return {[type]}         [description]
 	 */
 	pg.go = function(current, pages){
-		// this.id = this.id || 'ui_pages';
-		if(this.id === undefined){
-			this.config();
-		}
+		// 如果this.id不存在则直接调用默认ID
+		this.id = this.id || options.id;
+		
 		// 获取队列中的配置
 		var opt = this.queue[this.id];
-
 
 		/**
 		 * 当前页、总页数校准
