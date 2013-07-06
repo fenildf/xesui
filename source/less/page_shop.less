@@ -35,20 +35,23 @@
 .header_shop {
 	width:980px;margin:0 auto;overflow:hidden;
 	h1.logo {
-		width:230px;height: 40px;overflow:hidden;background: url(../html/src/img/logo_shop.jpg) no-repeat; text-indent: @ti;
+		width:230px;height: 40px;overflow:hidden;background: url(../img/logo/logo_shop.jpg) no-repeat; text-indent: @ti;
 		
 	}
 	.pay_step {
-		height:30px;background: url(../html/src/img/shop_line.jpg) 0 10px repeat-x;
+		height:30px;
+		.background-settings(0, -91px, @hbgpath, repeat-x);
 		ul {
 			float:right;
 			li {
-				float:left;width:120px;background: url(../html/src/img/shop_1.jpg) center 1px no-repeat;font-family:@fw ;text-align:@c;
+				float:left;width:120px;
+				.background-settings(-174px,-420px, @btnpath, no-repeat);
+				font-family:@fw ;text-align:@c;
 				.text_num {display:block;color:@white;padding:2px 0 5px 0;}
 				p {color:#4b9fdb; }
 			}
 			.next_step {
-				background: url(../html/src/img/shop_2.jpg) -3px 1px no-repeat;
+				.background-settings(169px, -497px, @btnpath, repeat-x);
 				.text_num {}
 				p {color:@g3*3;}
 
@@ -81,7 +84,8 @@ table.table_shop {
 	}
 	.tfoot td {background:#fff;border:0;}
 	.tfoot .money {font-weight:bold;font-size:@f18;}
-	.shop_empty {background: url(../html/src/img/shop_i.jpg) 1px 1px no-repeat; padding-left:20px;font-size:@f12;}
+	.shop_empty {.background-settings(0px, -299px, @iconpath, no-repeat);
+	 padding-left:20px;font-size:@f12;}
 
 }
 
@@ -266,8 +270,8 @@ table.table_shop {
 }
 
 
-.icon_folds_add {background: url(../html/src/img/icon_up.jpg)  no-repeat;}
-.icon_folds_cut {background: url(../html/src/img/icon_close.jpg)  no-repeat;}
+.icon_folds_add {.background-settings(0,-174px, @iconpath, no-repeat);}
+.icon_folds_cut {.background-settings(0,-199px, @iconpath, no-repeat);}
 
 
 

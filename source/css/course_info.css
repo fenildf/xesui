@@ -127,6 +127,95 @@
 .ptop_30 {
   padding-top: 30px;
 }
+/**
+ * Base style
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.b {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用传入参数：X,Y,图片路径以及重复方向
+ *----------------------------------------------------
+ */
 /*===================/课程详情页---上半部分/===============================*/
 .coures_content {
   background: #f6f6f6;
@@ -159,12 +248,14 @@
   float: left;
   width: 230px;
   height: 465px;
-  background: url(../html/src/img/tingkeyebg.jpg) repeat-y;
   border-bottom: 1px solid #efefef;
+  background: url("../img/scroll/tingkeyebg.jpg") repeat-y;
 }
 .coures_content .content_player .player_list .list_shop_meoney {
   height: 83px;
-  background: url(../html/src/img/tkbg_01.jpg) no-repeat;
+  background-position: 0 -325px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   position: relative;
 }
 .coures_content .content_player .player_list .list_shop_meoney .btn_apply {
@@ -175,7 +266,9 @@
   left: -7px;
   top: 22px;
   z-index: 10;
-  background: url(../html/src/img/baoming.png) no-repeat;
+  background-position: -114px -101px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   text-indent: -9999em;
 }
 .coures_content .content_player .player_list .list_shop_meoney .money_num {
@@ -194,7 +287,9 @@
 .coures_content .content_player .player_list .list_title {
   height: 38px;
   line-height: 38px;
-  background: url(../html/src/img/tkbg_02.jpg) no-repeat;
+  background-position: 0 -238px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
 }
 .coures_content .content_player .player_list .list_title ul {
   width: 500px;
@@ -210,17 +305,21 @@
   height: 24px;
   line-height: 24px;
   margin: 7px 15px 0;
-  background: url(../html/src/img/label_01.jpg) no-repeat;
   text-align: center;
   color: #333333;
   text-decoration: none;
   text-indent: 5px;
+  background-position: -35px -79px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
 }
 .coures_content .content_player .player_list .list_title ul li .back {
   float: right;
   width: 48px;
   text-indent: -3px;
-  background: url(../html/src/img/label_back.jpg) no-repeat;
+  background-position: -34px -172px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
 }
 .coures_content .content_player .player_list .list_title ul li span {
   float: left;
@@ -261,25 +360,8 @@
   float: left;
   display: inline;
 }
-.coures_content .content_player .player_info dl dd .star {
-  background: url(../html/src/img/star.jpg) repeat-x;
-  text-indent: -9999em;
-  margin-top: 25px;
-}
-.coures_content .content_player .player_info dl dd .star1 {
-  width: 25px;
-}
-.coures_content .content_player .player_info dl dd .star2 {
-  width: 45px;
-}
-.coures_content .content_player .player_info dl dd .star3 {
-  width: 65px;
-}
-.coures_content .content_player .player_info dl dd .star4 {
-  width: 85px;
-}
-.coures_content .content_player .player_info dl dd .star5 {
-  width: 105px;
+.coures_content .content_player .player_info dl dd .icon_star {
+  margin-top: 22px;
 }
 .coures_content .content_player .player_info dl dd .ui_avatar {
   margin-top: 10px;
@@ -330,7 +412,7 @@
   width: 16px;
   height: 345px;
   overflow: hidden;
-  background: url(../html/src/img/scroll_bar.jpg) repeat-y;
+  background: url(../img/scroll/scroll_bar.jpg) repeat-y;
   position: absolute;
   z-index: 10;
   left: 0;
@@ -339,7 +421,7 @@
 .ui_scrolls .scrolls_item .scrolls_bar span {
   display: block;
   height: 50px;
-  background: url(../html/src/img/scroll_c.jpg) repeat-y;
+  background: url(../img/scroll/scroll_c.jpg) repeat-y;
   text-indent: -9999em;
   cursor: pointer;
 }
@@ -348,14 +430,14 @@
   width: 230px;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul {
-  background: url(../html/src/img/scroll_ul.jpg) 38px 0 repeat-y;
+  background: url(../img/scroll/scroll_ul.jpg) 38px 0 repeat-y;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul li {
   line-height: 43px;
   padding-left: 58px;
   font-size: 14px;
   color: #333333;
-  background: url(../html/src/img/scroll_li.jpg) 44px 20px no-repeat;
+  background: url(../img/scroll/scroll_li.jpg) 44px 20px no-repeat;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul li .gray a {
   color: #999999;
@@ -378,17 +460,19 @@
 .ui_scrolls .scrolls_item .scrolls_con ul .scrolls_title {
   height: 41px;
   border-bottom: 1px solid #e9e9e9;
-  background: url(../html/src/img/tingkeyebg.jpg) repeat-y;
+  background: url(../img/scroll/tingkeyebg.jpg) repeat-y;
   padding-left: 25px;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul .current {
-  background: url(../html/src/img/scroll_current.jpg) no-repeat;
+  background-position: 0 -282px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul .current a {
   color: #ffffff;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul .last {
-  background: url(../html/src/img/last.jpg) 38px 1px no-repeat;
+  background: url(../img/scroll/last.jpg) 38px 1px no-repeat;
 }
 .ui_scrolls .scrolls_item .scrolls_con_list ul li {
   height: 42px;
@@ -396,7 +480,7 @@
   font-size: 12px;
   overflow: hidden;
   cursor: pointer;
-  background: url(../html/src/img/tingkeyebg.jpg) repeat-y;
+  background: url(../img/scroll/tingkeyebg.jpg) repeat-y;
   padding-left: 25px;
 }
 .ui_scrolls .scrolls_item .scrolls_con_list ul li a {
@@ -420,9 +504,6 @@
 .ui_scrolls .scrolls_item .scrolls_con_list ul li .gray {
   color: #999999;
 }
-.ui_scrolls .scrolls_item .scrolls_con_list ul .current .icon_corner {
-  background: url(../html/src/img/icon_corner_blue.jpg) 0 1px no-repeat;
-}
 /*听课页*/.coures_content_item {
   height: 508px;
   padding-top: 37px;
@@ -441,16 +522,29 @@
 }
 /*听课页 end*/
 .icon_corner {
-  background: url(../html/src/img/icon_corner.jpg) 0 2px no-repeat;
+  background-position: -129px -24px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .icon_tests {
-  background: url(../html/src/img/icon_test.jpg) 0 2px no-repeat;
+  background-position: -129px -98px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
   margin-top: 12px;
 }
 .icon_live_gary {
-  background: url(../html/src/img/icon_live_gary.jpg) 0 2px no-repeat;
+  background-position: -129px -72px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
   margin-top: 12px;
 }
 .current .icon_live_gary {
-  background: url(../html/src/img/icon_live_cur.jpg) 0 2px no-repeat;
+  background-position: -129px -50px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+}
+.current .icon_corner {
+  background-position: -129px 1px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }

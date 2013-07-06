@@ -8,6 +8,7 @@
 
 
 @import "variables.less";
+@import "base.less";
 
 .side_header {
 		height: 42px;line-height: 42px;
@@ -25,7 +26,7 @@
 			i {font-style: normal;color: #ccc;display: inline-block;padding:0 8px;}
 	    }
 	    li.current {
-	   			 background: url(../html/src/img/ins.jpg) 25px 37px no-repeat;
+	    		.background-settings(-120px, -272px, @iconpath, no-repeat);
 				 a{font-weight: bold;}
 	    }
 	}

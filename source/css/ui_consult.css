@@ -127,6 +127,95 @@
 .ptop_30 {
   padding-top: 30px;
 }
+/**
+ * Base style
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.b {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用传入参数：X,Y,图片路径以及重复方向
+ *----------------------------------------------------
+ */
 .ui_course_consult {
   overflow: hidden;
   margin-bottom: 10px;
@@ -138,20 +227,32 @@
 .ui_course_consult .ui_consult p {
   line-height: 25px;
   overflow: hidden;
-  padding-left: 30px;
+}
+.ui_course_consult .ui_consult em {
+  float: left;
+}
+.ui_course_consult .ui_consult span {
+  float: left;
+  width: 650px;
 }
 .ui_course_consult .ui_consult .consult_title {
   color: #333333;
   line-height: 30px;
   padding-left: 5px;
 }
-.ui_course_consult .ui_consult .consult_text {
-  background: url(../html/src/img/icon_05.jpg) no-repeat 5px 5px;
+.ui_course_consult .ui_consult .consult_text .icon_sonsult_1 {
+  background-position: 0px -246px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .ui_course_consult .ui_consult .consult_reply {
-  background: url(../html/src/img/icon_06.jpg) no-repeat 5px 5px;
   color: #BC0000;
   margin-bottom: 5px;
+}
+.ui_course_consult .ui_consult .consult_reply .icon_sonsult_2 {
+  background-position: -24px -246px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .ui_course_consult .odd_course {
   background: #F3F6F6;

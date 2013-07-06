@@ -188,7 +188,7 @@
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
- *icon_info_search:搜索图标
+ *icon_info_search:搜索图标;
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -199,6 +199,7 @@
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
+ *icon_point ：alert图标
  *
  */
 .icon_bbverify,
@@ -227,6 +228,9 @@
   width: 14px;
   height: 14px;
   opacity: 0.5;
+}
+.icon_dot {
+  width: 0;
 }
 .icon_new {
   background-position: 0 0;
@@ -292,7 +296,7 @@
   background-position: -22px -25px;
 }
 .icon_card {
-  background-position: -24px -50px;
+  background-position: -22px -45px;
 }
 .icon_courses {
   background-position: -18px -147px;
@@ -363,6 +367,9 @@
 .icon_arrow_down {
   background-position: -50px -225px;
 }
+.icon_arrow_right {
+  background-position: -43px -200px;
+}
 .icon_square_orange {
   background-position: -47px -48px;
 }
@@ -371,4 +378,13 @@
 }
 .icon_blue_sign {
   background-position: -47px -145px;
+}
+.icon_dot {
+  background-position: 0 -215px;
+}
+.icon_star {
+  background-position: -50px -199px;
+}
+.icon_point {
+  background-position: -50px -22px;
 }

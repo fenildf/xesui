@@ -407,7 +407,7 @@ table {
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
- *icon_info_search:搜索图标
+ *icon_info_search:搜索图标;
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -418,6 +418,7 @@ table {
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
+ *icon_point ：alert图标
  *
  */
 .icon_bbverify,
@@ -446,6 +447,9 @@ table {
   width: 14px;
   height: 14px;
   opacity: 0.5;
+}
+.icon_dot {
+  width: 0;
 }
 .icon_new {
   background-position: 0 0;
@@ -511,7 +515,7 @@ table {
   background-position: -22px -25px;
 }
 .icon_card {
-  background-position: -24px -50px;
+  background-position: -22px -45px;
 }
 .icon_courses {
   background-position: -18px -147px;
@@ -582,6 +586,9 @@ table {
 .icon_arrow_down {
   background-position: -50px -225px;
 }
+.icon_arrow_right {
+  background-position: -43px -200px;
+}
 .icon_square_orange {
   background-position: -47px -48px;
 }
@@ -590,6 +597,15 @@ table {
 }
 .icon_blue_sign {
   background-position: -47px -145px;
+}
+.icon_dot {
+  background-position: 0 -215px;
+}
+.icon_star {
+  background-position: -50px -199px;
+}
+.icon_point {
+  background-position: -50px -22px;
 }
 /**
  *From 公用样式
@@ -776,7 +792,7 @@ textarea::-webkit-input-placeholder {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(../html/src/img/logo.png) no-repeat;
+  background: url(../img/logo/logo.png) no-repeat;
 }
 #header .header_box ul.nav {
   float: left;
@@ -1165,7 +1181,9 @@ textarea::-webkit-input-placeholder {
   display: inline-block;
   width: 35px;
   line-height: 17px;
-  background: url(../html/src/img/icon_1.png) no-repeat;
+  background-position: -35px -59px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   color: #ffffff;
   font-size: 12px;
   padding-left: 3px;
@@ -1192,13 +1210,17 @@ textarea::-webkit-input-placeholder {
   width: 75px;
   height: 25px;
   line-height: 25px;
-  background: url(../html/src/img/btn_course.png) no-repeat;
+  background-position: -35px -138px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   text-indent: 20px;
   color: #cc0000;
   text-decoration: none;
 }
 .course_detail .course_func .btn_audition:hover {
-  background: url(../html/src/img/btn_course_hover.png) no-repeat;
+  background-position: -35px -107px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 .course_detail .course_func span {
@@ -1457,12 +1479,14 @@ table {
   width: 230px;
   height: 40px;
   overflow: hidden;
-  background: url(../html/src/img/logo_shop.jpg) no-repeat;
+  background: url(../img/logo/logo_shop.jpg) no-repeat;
   text-indent: -9999em;
 }
 .header_shop .pay_step {
   height: 30px;
-  background: url(../html/src/img/shop_line.jpg) 0 10px repeat-x;
+  background-position: 0 -91px;
+  background-image: url("../img/hbg.png");
+  background-repeat: repeat-x;
 }
 .header_shop .pay_step ul {
   float: right;
@@ -1470,7 +1494,9 @@ table {
 .header_shop .pay_step ul li {
   float: left;
   width: 120px;
-  background: url(../html/src/img/shop_1.jpg) center 1px no-repeat;
+  background-position: -174px -420px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   font-family: "Microsoft YaHei";
   text-align: center;
 }
@@ -1483,7 +1509,9 @@ table {
   color: #4b9fdb;
 }
 .header_shop .pay_step ul .next_step {
-  background: url(../html/src/img/shop_2.jpg) -3px 1px no-repeat;
+  background-position: 169px -497px;
+  background-image: url("../img/btn.png");
+  background-repeat: repeat-x;
 }
 .header_shop .pay_step ul .next_step p {
   color: #999999;
@@ -1563,7 +1591,9 @@ table.table_shop .tfoot .money {
   font-size: 18px;
 }
 table.table_shop .shop_empty {
-  background: url(../html/src/img/shop_i.jpg) 1px 1px no-repeat;
+  background-position: 0px -299px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
   padding-left: 20px;
   font-size: 12px;
 }
@@ -1948,8 +1978,12 @@ table.table_shop .shop_empty {
   line-height: 30px;
 }
 .icon_folds_add {
-  background: url(../html/src/img/icon_up.jpg) no-repeat;
+  background-position: 0 -174px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .icon_folds_cut {
-  background: url(../html/src/img/icon_close.jpg) no-repeat;
+  background-position: 0 -199px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }

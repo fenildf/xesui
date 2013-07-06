@@ -407,7 +407,7 @@ table {
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
- *icon_info_search:搜索图标
+ *icon_info_search:搜索图标;
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -418,6 +418,7 @@ table {
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
+ *icon_point ：alert图标
  *
  */
 .icon_bbverify,
@@ -446,6 +447,9 @@ table {
   width: 14px;
   height: 14px;
   opacity: 0.5;
+}
+.icon_dot {
+  width: 0;
 }
 .icon_new {
   background-position: 0 0;
@@ -511,7 +515,7 @@ table {
   background-position: -22px -25px;
 }
 .icon_card {
-  background-position: -24px -50px;
+  background-position: -22px -45px;
 }
 .icon_courses {
   background-position: -18px -147px;
@@ -582,6 +586,9 @@ table {
 .icon_arrow_down {
   background-position: -50px -225px;
 }
+.icon_arrow_right {
+  background-position: -43px -200px;
+}
 .icon_square_orange {
   background-position: -47px -48px;
 }
@@ -590,6 +597,15 @@ table {
 }
 .icon_blue_sign {
   background-position: -47px -145px;
+}
+.icon_dot {
+  background-position: 0 -215px;
+}
+.icon_star {
+  background-position: -50px -199px;
+}
+.icon_point {
+  background-position: -50px -22px;
 }
 /**
  *From 公用样式
@@ -796,7 +812,7 @@ textarea::-webkit-input-placeholder {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(../html/src/img/logo.png) no-repeat;
+  background: url(../img/logo/logo.png) no-repeat;
 }
 #header .header_box ul.nav {
   float: left;
@@ -1125,7 +1141,7 @@ textarea::-webkit-input-placeholder {
   float: left;
   position: absolute;
   z-index: 9;
-  background: url(../html/src/pic/pic_01.jpg) no-repeat center;
+  background: url(../pic/pic_01.jpg) no-repeat center;
 }
 #index_focus .focus_list li a {
   display: none;
@@ -1321,7 +1337,9 @@ textarea::-webkit-input-placeholder {
   padding: 0 8px;
 }
 .main_header .nav_links li.current {
-  background: url(../html/src/img/ins.jpg) 25px 37px no-repeat;
+  background-position: -120px -272px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .main_header .nav_links li.current a {
   font-weight: bold;
@@ -1594,4 +1612,17 @@ ul.index_notice li {
 ul.index_notice li i {
   font-size: 18px;
   padding-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1px;
+  text-indent: -9999em;
+  background-image: url("../img/icon.png");
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  width: 0;
+  background-position: 0 -215px;
 }

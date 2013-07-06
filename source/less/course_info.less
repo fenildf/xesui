@@ -8,6 +8,7 @@
 
 
 @import "variables.less";
+@import "base.less";
 
 /*===================/课程详情页---上半部分/===============================*/
 .coures_content {
@@ -19,10 +20,10 @@
 		.content_player {
 				width:980px;height:535px;background:#fff;margin:0 auto;box-shadow: 5px 5px 5px rgba(231, 231, 231, 0.4),-5px -5px 5px rgba(231, 231, 231, 0.4);border-radius: 2px;
 				.player_list {
-						float:left;width:230px;height:465px;background: url(../html/src/img/tingkeyebg.jpg) repeat-y;border-bottom:1px solid #efefef;
+						float:left;width:230px;height:465px;border-bottom:1px solid #efefef;background: url("../img/scroll/tingkeyebg.jpg") repeat-y;
 						.list_shop_meoney {
-							height:83px;background: url(../html/src/img/tkbg_01.jpg) no-repeat;position: relative;
-							.btn_apply {display:block;width:110px;height:47px;position: absolute;left:-7px;top:22px; z-index:10;background: url(../html/src/img/baoming.png) no-repeat;text-indent:@ti;}
+							height:83px;.background-settings(0, -325px, @btnpath, no-repeat);position: relative;
+							.btn_apply {display:block;width:110px;height:47px;position: absolute;left:-7px;top:22px; z-index:10;.background-settings(-114px, -101px, @btnpath, no-repeat);text-indent:@ti;}
 							.money_num {
 								float:right;text-align:@r;padding:5px 15px 0 0;
 								p {font-size:30px;color:@r0;}
@@ -30,13 +31,13 @@
 							}
 						}
 						.list_title {
-							height:38px;line-height:38px;background: url(../html/src/img/tkbg_02.jpg) no-repeat;
+							height:38px;line-height:38px;.background-settings(0, -238px, @btnpath, no-repeat);
 							ul {
   							  width: 500px;
   							  li {
   								  float: left; width: 230px;overflow: hidden;
-  									.directory {float:left;width:72px;height:24px;line-height:24px;margin:7px 15px 0;background: url(../html/src/img/label_01.jpg) no-repeat; text-align:@c;color:@g3;text-decoration: none;text-indent:5px;}
-  									.back {float: right;width:48px;text-indent: -3px;background: url(../html/src/img/label_back.jpg) no-repeat;}
+  									.directory {float:left;width:72px;height:24px;line-height:24px;margin:7px 15px 0; text-align:@c;color:@g3;text-decoration: none;text-indent:5px;.background-settings(-35px, -79px, @btnpath, no-repeat);}
+  									.back {float: right;width:48px;text-indent: -3px;.background-settings(-34px, -172px, @btnpath, no-repeat);}
   									span {float:left;color:@g3*2;padding-left:15px;}
   								}
 							}
@@ -55,12 +56,8 @@
 							dt {float:left;}
 							dd {
 								float:left;display:inline;
-								.star {background: url(../html/src/img/star.jpg) repeat-x; text-indent:@ti;margin-top:25px;}
-								.star1 {width:25px;}
-								.star2 {width:45px;}
-								.star3 {width:65px;}
-								.star4 {width:85px;}
-								.star5 {width:105px;}
+								.icon_star {margin-top:22px;}
+								
 								.ui_avatar {
 										margin-top:10px;
 										.prev,.next {float:left;display:inline;margin:12px 7px 0 0;}
@@ -86,18 +83,18 @@
                width: 500px;height: 345px;overflow: hidden;position: relative;
                /*滚动条 */ 
             .scrolls_bar {
-                    width: 16px;height: 345px;overflow: hidden;background: url(../html/src/img/scroll_bar.jpg) repeat-y;position: absolute;z-index: 10;left: 0;top: 0;
+                    width: 16px;height: 345px;overflow: hidden;background: url(../img/scroll/scroll_bar.jpg) repeat-y;position: absolute;z-index: 10;left: 0;top: 0;
                     span {
-                      display: block;height: 50px;background: url(../html/src/img/scroll_c.jpg) repeat-y;text-indent:@ti;cursor: pointer;
+                      display: block;height: 50px;background: url(../img/scroll/scroll_c.jpg) repeat-y;text-indent:@ti;cursor: pointer;
                     }
             }
             /*滚动条 end*/
             .scrolls_con {
                   float: left;width: 230px;
                   ul {
-                       background: url(../html/src/img/scroll_ul.jpg) 38px 0 repeat-y;
+                       background: url(../img/scroll/scroll_ul.jpg) 38px 0 repeat-y;
                       li {
-                        line-height: 43px;padding-left: 58px;font-size: 14px;color:@g3;background: url(../html/src/img/scroll_li.jpg) 44px 20px no-repeat;
+                        line-height: 43px;padding-left: 58px;font-size: 14px;color:@g3;background: url(../img/scroll/scroll_li.jpg) 44px 20px no-repeat;
                           .gray {
                               a {color:@g3*3;}
                               .red { color:@r0;}
@@ -106,19 +103,19 @@
                           .red {font-size:@f12;padding-left: 20px;color: @r0;}
                           .icon_blue_sign {float: @r;margin: 5px 10px 0 0;}
                       }
-                      .scrolls_title {height: 41px;border-bottom: 1px solid #e9e9e9;background: url(../html/src/img/tingkeyebg.jpg) repeat-y;padding-left: 25px;}
+                      .scrolls_title {height: 41px;border-bottom: 1px solid #e9e9e9;background: url(../img/scroll/tingkeyebg.jpg) repeat-y;padding-left: 25px;}
                       .current {
-                             background: url(../html/src/img/scroll_current.jpg) no-repeat;
+                             .background-settings(0, -282px, @btnpath, no-repeat);
                              a {color: @white;}
                       }
-                      .last {background: url(../html/src/img/last.jpg) 38px 1px no-repeat;}
+                      .last {background: url(../img/scroll/last.jpg) 38px 1px no-repeat;}
                   }
             }
            /*课程节列表 end*/ 
           .scrolls_con_list {
               ul {
                   li {
-                      height: 42px;border-bottom: 1px solid #e9e9e9;font-size:@f12;overflow: hidden;cursor: pointer;background: url(../html/src/img/tingkeyebg.jpg) repeat-y;padding-left: 25px;
+                      height: 42px;border-bottom: 1px solid #e9e9e9;font-size:@f12;overflow: hidden;cursor: pointer;background: url(../img/scroll/tingkeyebg.jpg) repeat-y;padding-left: 25px;
                       a {float: @l;display: inline;width: 145px;text-decoration: none;}
                       .icon_blue_sign {float: @l;margin: 5px  0 0 5px;}
                       .icon_corner {float: @r;margin: 15px 5px 0 0;}
@@ -126,9 +123,7 @@
                       .gray {color:@g3*3;}
 
                   }
-                  .current {
-                        .icon_corner {background: url(../html/src/img/icon_corner_blue.jpg) 0 1px no-repeat;}
-                  }
+                 
               }
            }
            /*课程讲列表 end*/ 
@@ -158,11 +153,11 @@
       }
 }
 /*听课页 end*/
-.icon_corner {background: url(../html/src/img/icon_corner.jpg) 0 2px no-repeat;}
-.icon_tests {background: url(../html/src/img/icon_test.jpg) 0 2px no-repeat;margin-top: 12px;}
-.icon_live_gary {background: url(../html/src/img/icon_live_gary.jpg) 0 2px no-repeat;margin-top: 12px;}
-.current .icon_live_gary {background: url(../html/src/img/icon_live_cur.jpg) 0 2px no-repeat;}
-
+.icon_corner {.background-settings(-129px, -24px, @iconpath, no-repeat);}
+.icon_tests {.background-settings(-129px, -98px, @iconpath, no-repeat);margin-top: 12px;}
+.icon_live_gary {.background-settings(-129px, -72px, @iconpath, no-repeat);margin-top: 12px;}
+.current .icon_live_gary {.background-settings(-129px, -50px, @iconpath, no-repeat);}
+.current .icon_corner  {.background-settings(-129px, 1px, @iconpath, no-repeat);}
 
 
 

@@ -20,7 +20,7 @@
   float: left;
   position: absolute;
   z-index: 9;
-  background: url(../html/src/pic/pic_01.jpg) no-repeat center;
+  background: url(../pic/pic_01.jpg) no-repeat center;
 }
 #index_focus .focus_list li a {
   display: none;

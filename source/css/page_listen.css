@@ -407,7 +407,7 @@ table {
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
- *icon_info_search:搜索图标
+ *icon_info_search:搜索图标;
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -418,6 +418,7 @@ table {
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
+ *icon_point ：alert图标
  *
  */
 .icon_bbverify,
@@ -446,6 +447,9 @@ table {
   width: 14px;
   height: 14px;
   opacity: 0.5;
+}
+.icon_dot {
+  width: 0;
 }
 .icon_new {
   background-position: 0 0;
@@ -511,7 +515,7 @@ table {
   background-position: -22px -25px;
 }
 .icon_card {
-  background-position: -24px -50px;
+  background-position: -22px -45px;
 }
 .icon_courses {
   background-position: -18px -147px;
@@ -582,6 +586,9 @@ table {
 .icon_arrow_down {
   background-position: -50px -225px;
 }
+.icon_arrow_right {
+  background-position: -43px -200px;
+}
 .icon_square_orange {
   background-position: -47px -48px;
 }
@@ -590,6 +597,15 @@ table {
 }
 .icon_blue_sign {
   background-position: -47px -145px;
+}
+.icon_dot {
+  background-position: 0 -215px;
+}
+.icon_star {
+  background-position: -50px -199px;
+}
+.icon_point {
+  background-position: -50px -22px;
 }
 /**
  *From 公用样式
@@ -838,7 +854,7 @@ table {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(../html/src/img/logo.png) no-repeat;
+  background: url(../img/logo/logo.png) no-repeat;
 }
 #header .header_box ul.nav {
   float: left;
@@ -1184,12 +1200,14 @@ table {
   float: left;
   width: 230px;
   height: 465px;
-  background: url(../html/src/img/tingkeyebg.jpg) repeat-y;
   border-bottom: 1px solid #efefef;
+  background: url("../img/scroll/tingkeyebg.jpg") repeat-y;
 }
 .coures_content .content_player .player_list .list_shop_meoney {
   height: 83px;
-  background: url(../html/src/img/tkbg_01.jpg) no-repeat;
+  background-position: 0 -325px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   position: relative;
 }
 .coures_content .content_player .player_list .list_shop_meoney .btn_apply {
@@ -1200,7 +1218,9 @@ table {
   left: -7px;
   top: 22px;
   z-index: 10;
-  background: url(../html/src/img/baoming.png) no-repeat;
+  background-position: -114px -101px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   text-indent: -9999em;
 }
 .coures_content .content_player .player_list .list_shop_meoney .money_num {
@@ -1219,7 +1239,9 @@ table {
 .coures_content .content_player .player_list .list_title {
   height: 38px;
   line-height: 38px;
-  background: url(../html/src/img/tkbg_02.jpg) no-repeat;
+  background-position: 0 -238px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
 }
 .coures_content .content_player .player_list .list_title ul {
   width: 500px;
@@ -1235,17 +1257,21 @@ table {
   height: 24px;
   line-height: 24px;
   margin: 7px 15px 0;
-  background: url(../html/src/img/label_01.jpg) no-repeat;
   text-align: center;
   color: #333333;
   text-decoration: none;
   text-indent: 5px;
+  background-position: -35px -79px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
 }
 .coures_content .content_player .player_list .list_title ul li .back {
   float: right;
   width: 48px;
   text-indent: -3px;
-  background: url(../html/src/img/label_back.jpg) no-repeat;
+  background-position: -34px -172px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
 }
 .coures_content .content_player .player_list .list_title ul li span {
   float: left;
@@ -1286,25 +1312,8 @@ table {
   float: left;
   display: inline;
 }
-.coures_content .content_player .player_info dl dd .star {
-  background: url(../html/src/img/star.jpg) repeat-x;
-  text-indent: -9999em;
-  margin-top: 25px;
-}
-.coures_content .content_player .player_info dl dd .star1 {
-  width: 25px;
-}
-.coures_content .content_player .player_info dl dd .star2 {
-  width: 45px;
-}
-.coures_content .content_player .player_info dl dd .star3 {
-  width: 65px;
-}
-.coures_content .content_player .player_info dl dd .star4 {
-  width: 85px;
-}
-.coures_content .content_player .player_info dl dd .star5 {
-  width: 105px;
+.coures_content .content_player .player_info dl dd .icon_star {
+  margin-top: 22px;
 }
 .coures_content .content_player .player_info dl dd .ui_avatar {
   margin-top: 10px;
@@ -1355,7 +1364,7 @@ table {
   width: 16px;
   height: 345px;
   overflow: hidden;
-  background: url(../html/src/img/scroll_bar.jpg) repeat-y;
+  background: url(../img/scroll/scroll_bar.jpg) repeat-y;
   position: absolute;
   z-index: 10;
   left: 0;
@@ -1364,7 +1373,7 @@ table {
 .ui_scrolls .scrolls_item .scrolls_bar span {
   display: block;
   height: 50px;
-  background: url(../html/src/img/scroll_c.jpg) repeat-y;
+  background: url(../img/scroll/scroll_c.jpg) repeat-y;
   text-indent: -9999em;
   cursor: pointer;
 }
@@ -1373,14 +1382,14 @@ table {
   width: 230px;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul {
-  background: url(../html/src/img/scroll_ul.jpg) 38px 0 repeat-y;
+  background: url(../img/scroll/scroll_ul.jpg) 38px 0 repeat-y;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul li {
   line-height: 43px;
   padding-left: 58px;
   font-size: 14px;
   color: #333333;
-  background: url(../html/src/img/scroll_li.jpg) 44px 20px no-repeat;
+  background: url(../img/scroll/scroll_li.jpg) 44px 20px no-repeat;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul li .gray a {
   color: #999999;
@@ -1403,17 +1412,19 @@ table {
 .ui_scrolls .scrolls_item .scrolls_con ul .scrolls_title {
   height: 41px;
   border-bottom: 1px solid #e9e9e9;
-  background: url(../html/src/img/tingkeyebg.jpg) repeat-y;
+  background: url(../img/scroll/tingkeyebg.jpg) repeat-y;
   padding-left: 25px;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul .current {
-  background: url(../html/src/img/scroll_current.jpg) no-repeat;
+  background-position: 0 -282px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul .current a {
   color: #ffffff;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul .last {
-  background: url(../html/src/img/last.jpg) 38px 1px no-repeat;
+  background: url(../img/scroll/last.jpg) 38px 1px no-repeat;
 }
 .ui_scrolls .scrolls_item .scrolls_con_list ul li {
   height: 42px;
@@ -1421,7 +1432,7 @@ table {
   font-size: 12px;
   overflow: hidden;
   cursor: pointer;
-  background: url(../html/src/img/tingkeyebg.jpg) repeat-y;
+  background: url(../img/scroll/tingkeyebg.jpg) repeat-y;
   padding-left: 25px;
 }
 .ui_scrolls .scrolls_item .scrolls_con_list ul li a {
@@ -1445,9 +1456,6 @@ table {
 .ui_scrolls .scrolls_item .scrolls_con_list ul li .gray {
   color: #999999;
 }
-.ui_scrolls .scrolls_item .scrolls_con_list ul .current .icon_corner {
-  background: url(../html/src/img/icon_corner_blue.jpg) 0 1px no-repeat;
-}
 /*听课页*/.coures_content_item {
   height: 508px;
   padding-top: 37px;
@@ -1466,18 +1474,31 @@ table {
 }
 /*听课页 end*/
 .icon_corner {
-  background: url(../html/src/img/icon_corner.jpg) 0 2px no-repeat;
+  background-position: -129px -24px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .icon_tests {
-  background: url(../html/src/img/icon_test.jpg) 0 2px no-repeat;
+  background-position: -129px -98px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
   margin-top: 12px;
 }
 .icon_live_gary {
-  background: url(../html/src/img/icon_live_gary.jpg) 0 2px no-repeat;
+  background-position: -129px -72px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
   margin-top: 12px;
 }
 .current .icon_live_gary {
-  background: url(../html/src/img/icon_live_cur.jpg) 0 2px no-repeat;
+  background-position: -129px -50px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+}
+.current .icon_corner {
+  background-position: -129px 1px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 /**
  * 
@@ -1581,20 +1602,32 @@ table {
 .ui_course_consult .ui_consult p {
   line-height: 25px;
   overflow: hidden;
-  padding-left: 30px;
+}
+.ui_course_consult .ui_consult em {
+  float: left;
+}
+.ui_course_consult .ui_consult span {
+  float: left;
+  width: 650px;
 }
 .ui_course_consult .ui_consult .consult_title {
   color: #333333;
   line-height: 30px;
   padding-left: 5px;
 }
-.ui_course_consult .ui_consult .consult_text {
-  background: url(../html/src/img/icon_05.jpg) no-repeat 5px 5px;
+.ui_course_consult .ui_consult .consult_text .icon_sonsult_1 {
+  background-position: 0px -246px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .ui_course_consult .ui_consult .consult_reply {
-  background: url(../html/src/img/icon_06.jpg) no-repeat 5px 5px;
   color: #BC0000;
   margin-bottom: 5px;
+}
+.ui_course_consult .ui_consult .consult_reply .icon_sonsult_2 {
+  background-position: -24px -246px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .ui_course_consult .odd_course {
   background: #F3F6F6;
@@ -1604,7 +1637,6 @@ table {
 .panel_listen {
   overflow: hidden;
   border: 1px solid #d2d2d2;
-  background: url(../html/src/img/listen_title.jpg) repeat-x;
   box-shadow: 3px 3px 3px rgba(231, 231, 231, 0.4), -3px -3px 3px rgba(231, 231, 231, 0.4);
   border-radius: 2px;
   margin-bottom: 10px;
@@ -1616,6 +1648,9 @@ table {
   font-weight: bold;
   padding-left: 15px;
   color: #333333;
+  background-position: 0px 0px;
+  background-image: url("../img/hbg.png");
+  background-repeat: repeat-x;
 }
 .panel_listen .listen_conten {
   overflow: hidden;
@@ -1624,6 +1659,9 @@ table {
 }
 .tabs_title_item {
   overflow: hidden;
+  background-position: 0px 0px;
+  background-image: url("../img/hbg.png");
+  background-repeat: repeat-x;
 }
 .tabs_title_item li {
   float: left;
@@ -1638,7 +1676,9 @@ table {
   color: #333333;
 }
 .tabs_title_item .current {
-  background: url(../html/src/img/title_current.jpg) no-repeat;
+  background-position: -36px -199px;
+  background-image: url("../img/btn.png");
+  background-repeat: repeat-x;
 }
 .listen_cou {
   overflow: hidden;
@@ -1678,7 +1718,9 @@ table {
   line-height: 25px;
   color: #ffffff;
   text-align: center;
-  background: url(../html/src/img/course_kc.jpg) no-repeat;
+  background-position: -35px -30px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   font-weight: bold;
 }
 .listen_conten .border_none {
@@ -1712,7 +1754,6 @@ table {
   overflow: hidden;
 }
 #course_info_box .course_detail dl dt {
-  background: url(../html/src/img/icon_1.jpg) no-repeat 0px 5px;
   color: #666666;
   font-size: 14px;
   padding-left: 10px;

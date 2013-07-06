@@ -407,7 +407,7 @@ table {
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
- *icon_info_search:搜索图标
+ *icon_info_search:搜索图标;
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -418,6 +418,7 @@ table {
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
+ *icon_point ：alert图标
  *
  */
 .icon_bbverify,
@@ -446,6 +447,9 @@ table {
   width: 14px;
   height: 14px;
   opacity: 0.5;
+}
+.icon_dot {
+  width: 0;
 }
 .icon_new {
   background-position: 0 0;
@@ -511,7 +515,7 @@ table {
   background-position: -22px -25px;
 }
 .icon_card {
-  background-position: -24px -50px;
+  background-position: -22px -45px;
 }
 .icon_courses {
   background-position: -18px -147px;
@@ -582,6 +586,9 @@ table {
 .icon_arrow_down {
   background-position: -50px -225px;
 }
+.icon_arrow_right {
+  background-position: -43px -200px;
+}
 .icon_square_orange {
   background-position: -47px -48px;
 }
@@ -590,6 +597,15 @@ table {
 }
 .icon_blue_sign {
   background-position: -47px -145px;
+}
+.icon_dot {
+  background-position: 0 -215px;
+}
+.icon_star {
+  background-position: -50px -199px;
+}
+.icon_point {
+  background-position: -50px -22px;
 }
 /*图标，表单，按钮*/
 /**
@@ -776,7 +792,7 @@ textarea::-webkit-input-placeholder {
   display: block;
   height: 55px;
   text-indent: -9999em;
-  background: url(../html/src/img/logo.png) no-repeat;
+  background: url(../img/logo/logo.png) no-repeat;
 }
 #header .header_box ul.nav {
   float: left;
@@ -1092,7 +1108,7 @@ textarea::-webkit-input-placeholder {
 }
 .page_404 .page_404_tips {
   height: 247px;
-  background: url(../html/src/img/404.jpg) no-repeat;
+  background: url(../img/404.jpg) no-repeat;
   text-indent: -9999em;
 }
 .page_404 .page_404_time {
@@ -1105,11 +1121,13 @@ textarea::-webkit-input-placeholder {
 .page_404 .page_404_button a {
   float: left;
   display: inline;
-  background: url(../html/src/img/icon.jpg) 1px 10px no-repeat;
   padding-left: 15px;
   font-weight: bold;
   color: #006699;
   font-size: 14px;
+  background-position: -132px -121px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .page_404 .page_404_button .up {
   margin-left: 30px;

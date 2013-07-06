@@ -31,19 +31,20 @@
 
 /*相关课程和促销*/
 .panel_listen {
-	overflow:hidden;border:1px solid #d2d2d2;background: url(../html/src/img/listen_title.jpg) repeat-x;
+	overflow:hidden;border:1px solid #d2d2d2;
 	box-shadow: 3px 3px 3px rgba(231, 231, 231, 0.4),-3px -3px 3px rgba(231, 231, 231, 0.4);border-radius: 2px;margin-bottom:10px;
-	.listen_title {height:37px;line-height:37px;font-size:@f14;font-weight:bold;padding-left:15px;color:@g3;}
+	.listen_title {height:37px;line-height:37px;font-size:@f14;font-weight:bold;padding-left:15px;color:@g3;
+		.background-settings(0px, 0px, @hbgpath, repeat-x);}
 	.listen_conten {overflow:hidden;width:220px;margin:15px auto 0px;} 
 }
 
 .tabs_title_item {
-	overflow:hidden;
+	overflow:hidden;.background-settings(0px, 0px, @hbgpath, repeat-x);
 	li {
-		float:left;width:180px;line-height:37px; text-align:@c;font-size:@f14;font-weight:bold;border-right:1px solid #d2d2d2;
+		float:left;width:180px;line-height:37px; text-align:@c;font-size:@f14;font-weight:bold;border-right:1px solid #d2d2d2; 
 		a {color:@g3;}
 	}
-	.current {background: url(../html/src/img/title_current.jpg) no-repeat;}
+	.current {.background-settings(-36px, -199px, @btnpath, repeat-x);}
 }
 
 
@@ -62,7 +63,7 @@
 		.cou_info {
 			span {float:left;margin-right:10px;color:@g3*3;font-size:@f14;}
 		}
-		.donate {width:42px;height:25px;line-height:25px;color:@white; text-align:@c;background: url(../html/src/img/course_kc.jpg) no-repeat;font-weight:bold;}
+		.donate {width:42px;height:25px;line-height:25px;color:@white; text-align:@c;.background-settings(-35px, -30px, @btnpath, no-repeat);font-weight:bold;}
 	}
 }
 
@@ -86,7 +87,7 @@
 			overflow:hidden;word-wrap: break-word;
 			 dl {
 			      padding: 10px 0;overflow: hidden;
-			     dt {background: url(../html/src/img/icon_1.jpg) no-repeat 0px 5px;color: @g3*2;font-size: @f14;
+			     dt {color: @g3*2;font-size: @f14;
 			     	  padding-left:10px;font-weight: bold;margin-bottom:5px;}
 			      dd {color:@g3*2;font-size: 12px;line-height: 22px;padding-left:10px;}
 

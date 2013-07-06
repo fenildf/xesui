@@ -27,13 +27,19 @@
 
 .page_404 {
 	width:440px;overflow:hidden;margin:40px auto;
-	.page_404_tips {height:247px;background: url(../html/src/img/404.jpg) no-repeat; text-indent:@ti;}
+	.page_404_tips {height:247px;
+	background: url(../img/404.jpg) no-repeat; text-indent:@ti;}
 	.page_404_time {display:none;}
 	.page_404_button {
 	            line-height:30px;overflow:hidden;
 	            a {
-	            	float:left;display:inline;background:url(../html/src/img/icon.jpg) 1px 10px no-repeat;padding-left:15px;font-weight:bold;color:#006699;font-size:14px;
-	
+	            	float:left;
+	            	display:inline;
+	            	padding-left:15px;
+	            	font-weight:bold;
+	            	color:#006699;
+	            	font-size:14px;
+	            	.background-settings(-132px, -121px, @iconpath, no-repeat);
 				}
 				.up {
 					margin-left:30px;
