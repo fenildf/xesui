@@ -1,939 +1,134 @@
-/**
- * 
- * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 14:40:57
- * @version $Id$
- */
-/**
- * Base style
- */
-/**
- * Typography
- *---------------------------
- */
-.bl {
-  clear: both;
-}
-.fl {
-  float: left;
-}
-.fr {
-  float: right;
-}
-.n {
-  font-weight: normal;
-  font-style: normal;
-}
-.b {
-  font-weight: bold;
-}
-.tc {
-  text-align: center;
-}
-.tl {
-  text-align: left;
-}
-.tr {
-  text-align: right;
-}
-.red {
-  color: #cc0000;
-}
-.line {
-  display: inline-block;
-  padding: 0 10px;
-  color: #999;
-}
-.hidden {
-  display: none;
-}
-.show {
-  display: block;
-}
-.border_none {
-  border: 0;
-}
-/**
- * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
- * 可以在less文件中使用.border-radius(5px)调用
- *--------------------------------------------------------------------
- */
-/**
- * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
- * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
- *------------------------------------------------------
- */
-/**
- * 用.placeholder(argument)为placeholder设定一个颜色值
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 
- * 可以在less文件中使用.placeholder()调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用background-color(@color)调用
- *----------------------------------------------------
- */
-/**
- * 可以换背景颜色
- * 可以在less文件中使用border-color(@color)调用
- *----------------------------------------------------
- */
-/**
- * 可以换元素透明度，默认值为1
- * 可以在less文件中使用.alpha(opacity的值)调用
- *----------------------------------------------------
- */
-/**
- * 可以修改背景图片
- * 可以在less文件中使用传入参数：X,Y,图片路径以及重复方向
- *----------------------------------------------------
- */
+.bl{clear:both}
+.fl{float:left}
+.fr{float:right}
+.n{font-weight:normal;font-style:normal}
+.b{font-weight:bold}
+.tc{text-align:center}
+.tl{text-align:left}
+.tr{text-align:right}
+.red{color:#c00}
+.line{display:inline-block;padding:0 10px;color:#999}
+.hidden{display:none}
+.show{display:block}
+.border_none{border:0}
 @charset "UTF-8";
-/* reset */
-* {
-  margin: 0px;
-  padding: 0px;
-}
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-blockquote,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-pre,
-form,
-fieldset,
-legend,
-button,
-input,
-textarea,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-body,
-button,
-input,
-select,
-textarea {
-  font: 12px/1.5 arial, tahoma, "\5b8b\4f53", sans-serif;
-}
-body {
-  _background-image: url(about:blank);
-  /*用浏览器空白页面作为背景*/
-
-  _background-attachment: fixed;
-  position: relative;
-  /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/
-
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-}
-address,
-cite,
-dfn,
-em,
-var {
-  font-style: normal;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: courier new,courier,monospace;
-}
-small {
-  font-size: 12px;
-}
-ul,
-ol {
-  list-style: none;
-}
-img {
-  border: 0;
-}
-a,
-a:link {
-  text-decoration: none;
-  color: #006699;
-}
-a:visited {
-  text-decoration: none;
-  color: #006699;
-}
-a:hover {
-  text-decoration: underline;
-  color: #cc0000;
-}
-a:active {
-  text-decoration: underline;
-  color: #F00;
-}
-ul,
-li {
-  list-style: none;
-}
-i {
-  font-style: normal;
-}
-strong {
-  color: #cc0000;
-  font-weight: normal;
-}
-button {
-  font-size: 100%;
-  border: 0;
-  cursor: pointer;
-}
-input,
-select,
-textarea {
-  font-size: 100%;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/**
- * Colors
- *---------------------------
- */
-/**
- * 全站链接样式
- *
- */
-/**
- * font-family
- *fa:font-family:"Arial";
- *fg:font-family:"Georgia";
- *ft:font-family:"Tahoma";
- *fl:font-family:"Lucida Console";
- *fs:font-family:"宋体";
- *fw:font-family:"Microsoft YaHei";
- *fd:font-family:"verdana";
- *------------------------------------
- */
-/**
- * padding值设定
- *
- *-----------------------------------------------
- */
-/**
- * margin值设定
- *@margin0, @margin5
- *-------------------------------------------------
- */
-/**
- * width值设定
- *@w1=width:1px;
- *可以使用计算值调用
- *-------------------------------------------------
- */
-/**
- * font-size:
- *f0:font-size:0;
- *f10:font-size:0;
- *f12:font-size:12px;
- *f13:font-size:13px;
- *f14:font-size:14px;
- *f16:font-size:16px;
- *f18:font-size:18px;
- *f20:font-size:20px;
- *f24:font-size:24px;
- *------------------------------------
- */
-/**
- * Align & Direction
- * l:left
- * r:right
- * c:center
- * t:top
- * m:middle
- * b:bottom
- *ti:text-index:-9999em;
- *--------------------------------------
- */
-/**
- * HL:high-light属性设置
- * hl14:high-light:14px;
- * hl16:high-light:16px;
- * hl18:high-light:18px;
- * hl20:high-light:20px;
- * hl22:high-light:22px;
- * hl24:high-light:24px;
- * hl150:high-light:150%;
- * hl180:high-light:180%;
- *--------------------------------------
- */
-/**
- * border设置
- * bbr:base border redius:3px;
- *--------------------------------------
- */
-/**
- * button
- * btnColor:btn-color:#fff;
- * btnfh:btn-first-height;
- * btnzh:btn-zero-high-light:0%; //没有渐变
- * btnsh:btn-zero-high-light:5%; //渐变从5%开始
- *--------------------------------------
- */
-/**
- * 雪碧图路径设置
- *----------------------------------------
- */
-/**
- * table设置
- *tbg: tableBackground
- *tbga: tableBackgroundAccent
- *tbhb:table-th-background
- *tborder:table-border
- *----------------------------------------
- */
-/**
- * Form设置
- *tbg: tableBackground
- *tbga: tableBackgroundAccent
- *tbhb:table-th-background
- *tborder:table-border
- *----------------------------------------
- */
-.mtop_10 {
-  margin-top: 10px;
-}
-.mtop_20 {
-  margin-top: 20px;
-}
-.mtop_30 {
-  margin-top: 30px;
-}
-.ptop_10 {
-  padding-top: 10px;
-}
-.ptop_20 {
-  padding-top: 20px;
-}
-.ptop_30 {
-  padding-top: 30px;
-}
-/*base,重置，变量*/
-/**
- * Button 公用样式
- */
-.icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 1px;
-  text-indent: -9999em;
-  background-image: url("../img/icon.png");
-  background-position: 20px 20px;
-  background-repeat: no-repeat;
-}
-/**
- *icon按钮样式
- * <em>于icon图片类，<i>用于文字类
- *
- *认证加V以及顶部图标
- *icon_bverify：蓝V
- *icon_bbverify：大蓝V
- *icon_yverify：黄V
- *icon_byverify：大黄V
- *icon_new:有新消息状态;
- *icon_shopping：顶部购物图标
- *icon_messages：顶部信息图标
- *icon_settsings：顶部设置图标
- *-------------------------------------------
- *nav-list图标
- *icon_home:我的网校;
- *icon_star:我的收藏;
- *icon_heart:我的关注; 
- *icon_th:我的错题本; 
- *icon_exam:我的考试;
- *icon_report:效果报告;
- *icon_schedule:课程表;
- *icon_shield:我的挑战;
- *icon_diamond:金币兑礼;
-
- *--------------------------------------------
- *个人中心头部icons
- *icon_lv:个人学力;
- *icon_user:个人学习经历/学员;
- *icon_orders:个人订单;
- *icon_coins:个人金币;
- *icon_card:激活听课证;
- *--------------------------------------------
- *课程列表，课程动态，课程评论，购物车推荐课程;
- *icon_chevron_right:老师轮播图右侧按钮;
- *icon_chevron_right_reverse:老师轮播图右侧变暗按钮;
- *icon_chevron_left:老师轮播图左侧按钮;
- *icon_chevron_left_reverse:老师轮播图左侧变亮按钮;
- *icon_yellow_sign:课程标题橙色标记;
- *icon_thumbs_up:课程功能区赞图标;
- *icon_rmb:课程功能区价格图标;
- *icon_gray_user:课程功能区总学员数图标;
- *icon_clock:课程功能区请假按钮;
- *icon_word:课程功能区资料按钮;
- *icon_horn:课程功能区续保按钮;
- *icon_manuscript:课程功能区考试按钮;
- *icon_tv:课程功能区直播按钮;
- *icon_square_orange: 排行橘色图标;
- *icon_square_gray:排行灰色图标;
- *--------------------------------------------
- *alert图标
- *icon_info_sign:警告框图标;
- *icon_info_search:搜索图标;
- *-------------------------------------------
- *关注按钮
- *icon_add：关注添加图标
- *icon_gray_add：未关注图标
- *-------------------------------------------
- *icon_coursecard:课程卡大图标;
- *icon_guide:新手指南;
- *icon_courseselect:怎样选课图标;
- *icon_forward:去看看按钮;
- *icon_blue_sign：蓝色的对勾
- *icon_point ：alert图标
- *
- */
-.icon_bbverify,
-.icon_byverify {
-  width: 23px;
-}
-.icon_lv {
-  width: 30px;
-  height: 15px;
-}
-.icon_yellow_sign {
-  width: 35px;
-  height: 17px;
-}
-.icon_coursecard,
-.icon_courseselect,
-.icon_guide {
-  width: 238px;
-  height: 41px;
-}
-.icon_forward {
-  width: 150px;
-  height: 36px;
-}
-.icon_follow_add {
-  width: 14px;
-  height: 14px;
-  opacity: 0.5;
-}
-.icon_dot {
-  width: 0;
-}
-.icon_new {
-  background-position: 0 0;
-}
-.icon_shopping {
-  background-position: -22px -75px;
-}
-.icon_messages {
-  background-position: -22px -99px;
-}
-.icon_settsings {
-  background-position: -22px -124px;
-}
-.icon_bverify {
-  background-position: -99px 2px;
-}
-.icon_bbverify {
-  background-position: -100px -50px;
-}
-.icon_yverify {
-  background-position: -100px -23px;
-}
-.icon_byverify {
-  background-position: -100px -75px;
-}
-.icon_home {
-  background-position: 0 -20px;
-}
-.icon_star {
-  background-position: 0 -50px;
-}
-.icon_heart {
-  background-position: 0 -75px;
-}
-.icon_th {
-  background-position: 0 0;
-}
-.icon_exam {
-  background-position: 0 0;
-}
-.icon_report {
-  background-position: 0 0;
-}
-.icon_schedule {
-  background-position: 0 0;
-}
-.icon_user {
-  background-position: 8px -98px;
-}
-.icon_shield {
-  background-position: 0 -125px;
-}
-.icon_diamond {
-  background-position: 0 -150px;
-}
-.icon_lv {
-  background-position: -127px 0;
-}
-.icon_orders {
-  background-position: -50px -125px;
-}
-.icon_coins {
-  background-position: -22px -25px;
-}
-.icon_card {
-  background-position: -22px -45px;
-}
-.icon_courses {
-  background-position: -18px -147px;
-}
-.icon_chevron_right {
-  background-position: -75px -225px;
-}
-.icon_chevron_left {
-  background-position: -75px -200px;
-}
-.icon_chevron_right_reverse {
-  background-position: -75px -251px;
-}
-.icon_chevron_left_reverse {
-  background-position: -75px -275px;
-}
-.icon_yellow_sign {
-  background-position: -127px -211px;
-}
-.icon_thumbs_up {
-  background-position: -69px -48px;
-}
-.icon_rmb {
-  background-position: -67px 3px;
-}
-.icon_gray_user {
-  background-position: -71px -24px;
-}
-.icon_clock {
-  background-position: -75px -75px;
-}
-.icon_word {
-  background-position: -75px -100px;
-}
-.icon_horn {
-  background-position: -75px -125px;
-}
-.icon_manuscript {
-  background-position: -75px -150px;
-}
-.icon_tv {
-  background-position: -75px -175px;
-}
-.icon_info_sign {
-  background-position: -75px -75px;
-}
-.icon_info_search {
-  background-position: -50px 0;
-}
-.icon_follow_add {
-  background-position: -50px -177px;
-}
-.icon_coursecard {
-  background-position: -123px -375px;
-}
-.icon_guide {
-  background-position: -123px -420px;
-}
-.icon_courseselect {
-  background-position: -123px -466px;
-}
-.icon_forward {
-  background-position: -127px -366px;
-}
-.icon_arrow_up {
-  background-position: -50px -200px;
-}
-.icon_arrow_down {
-  background-position: -50px -225px;
-}
-.icon_arrow_right {
-  background-position: -43px -200px;
-}
-.icon_square_orange {
-  background-position: -47px -48px;
-}
-.icon_square_gray {
-  background-position: -47px -73px;
-}
-.icon_blue_sign {
-  background-position: -47px -145px;
-}
-.icon_dot {
-  background-position: 0 -215px;
-}
-.icon_star {
-  background-position: -50px -199px;
-}
-.icon_point {
-  background-position: -50px -22px;
-}
-/**
- *From 公用样式
- *table元素已经设定了BG和border-collapse属性
- */
-form {
-  font-size: 12px;
-}
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-label {
-  display: block;
-  text-align: right;
-}
-textarea {
-  height: auto;
-}
-/**
- * 设定select, checkbox样式
- */
-select,
-label,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  font-size: 12px;
-}
-/**
- * 设定表单元素placeholder的字体颜色值
- */
-input[type="text"]:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #999999;
-}
-input[type="text"]:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #999999;
-}
-input[type="text"]::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #999999;
-}
-/**
- * Button 公用样式
- */
-.btn {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  letter-spacing: 2px;
-}
-.btn_text {
-  border: none;
-  background: none;
-}
-/**
- * 按钮按大小分类
- * large:10px 20px;
- * small:5px 5px;
- * medium:5px 20px;
- */
-.btn_large {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-.btn_small {
-  padding: 5px 5px;
-}
-.btn_medium {
-  padding: 5px 20px;
-}
-/**
- * 按钮按颜色分类
- * gray：取消按钮，
- * red：提交类按钮以及课程列表听课按钮激活状态
- * blue：页面按钮
- * orange:关注按钮;
- */
-.btn_gray {
-  border: 1px solid #cfcfcf;
-  background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
-  background: -webkit-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
-  background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
-  box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
-}
-.btn_red {
-  color: #ffffff;
-  border: 1px solid #880000;
-  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
-  background: -webkit-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
-  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-}
-.btn_blue {
-  color: #ffffff;
-  border: 1px solid #377ece;
-  background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
-  background: -webkit-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
-  background: -moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
-  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
-  -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
-}
-.btn_sky {
-  color: #ffffff;
-  border: 1px solid #339afe;
-  background-color: #339afe;
-}
-.btn_orange {
-  color: #ffffff;
-  border: 1px solid #ff870f;
-  background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
-  background: -webkit-linear-gradient(#ffab37 1%, #ff9b2b 100%);
-  background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
-}
-/**
- * 按钮按功能分类(默认样式)
- * 
- */
-.btn_disable {
-  color: #eee;
-  border: 1px solid #c5c5c5;
-  text-shadow: 1px 0px rgba(255, 255, 255, 0.5);
-  background: linear-gradient(#e5e5e5 0%, #cccccc 100%);
-  background: -webkit-linear-gradient(#e5e5e5 0%, #cccccc 100%);
-  background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
-  /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
-
-}
-/*图标，表单，按钮*/
-#header {
-  height: 56px;
-  box-shadow: 0 2px 12px #ddd;
-  position: relative;
-  z-index: 100;
-}
-#header .header_box {
-  width: 980px;
-  margin: 0 auto;
-  /*logo*/
-
-  /*菜单*/
-
-  /*搜索*/
-
-}
-#header .header_box h1.logo {
-  float: left;
-  display: inline;
-  width: 260px;
-}
-#header .header_box h1.logo a {
-  display: block;
-  height: 55px;
-  text-indent: -9999em;
-  background: url(../img/logo/logo.png) no-repeat;
-}
-#header .header_box ul.nav {
-  float: left;
-  width: 415px;
-  height: 45px;
-}
-#header .header_box ul.nav li {
-  float: left;
-  display: inline;
-  line-height: 45px;
-  margin: 6px 10px 0 30px;
-  font-family: "Microsoft YaHei";
-  font-size: 18px;
-}
-#header .header_box ul.nav li a {
-  color: #333333;
-}
-#header .header_box ul.nav li a:hover {
-  color: #cc0000;
-}
-#header .header_box ul.nav li.current {
-  border-bottom: 4px solid #cc0000;
-}
-#header .header_box ul.nav li.current a {
-  color: #cc0000;
-}
-#header .header_box ul.nav li.current a:hover {
-  color: #cc0000;
-}
-#header .header_box .search {
-  float: left;
-  width: 180px;
-  height: 30px;
-  margin-top: 12px;
-  border-radius: 16px;
-  border: 1px solid #ccc;
-  position: relative;
-}
-#header .header_box .search .head_top_search {
-  width: 140px;
-  height: 20px;
-  border: 0;
-  margin: 5px 0px 0px 10px;
-}
-#header .header_box .search .head_btn_search {
-  width: 15px;
-  height: 15px;
-  background: url("../img/icon.png") -49px 0 no-repeat transparent;
-  text-indent: -9999em;
-  position: absolute;
-  right: 12px;
-  top: 7px;
-  z-index: 10;
-}
-/*未登录*/
-#header .header_box ul.topbar {
-  float: right;
-  width: 100px;
-  padding: 18px 5px;
-}
-#header .header_box ul.topbar li {
-  float: right;
-  font-size: 14px;
-}
-#header .header_box ul.topbar li a {
-  color: #999999;
-}
-#header .header_box ul.topbar li .line {
-  padding: 0 5px;
-}
-#header .header_box ul.topbar .shopcar {
-  width: 30px;
-}
-/*已登录*/
-#header .header_box .loginbar {
-  float: right;
-  width: 110px;
-  margin-right: 12px;
-}
-#header .header_box .loginbar li {
-  float: left;
-  cursor: pointer;
-  width: 33px;
-}
-#header .header_box .loginbar li p {
-  padding: 18px 0;
-}
-#header .header_box .loginbar li .line {
-  padding: 0 7px;
-}
-#header .header_box .loginbar li .icon {
-  margin-left: 5px;
-}
-#header .header_box .loginbar .current {
-  position: relative;
-  z-index: 10;
-}
-#header .header_box .loginbar .current p {
-  background: #fcfcfc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  position: relative;
-  z-index: 110;
-}
-#header .header_box .loginbar .current .layer_head {
-  width: 101px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 2px #ddd;
-  background: #fcfcfc;
-  position: absolute;
-  z-index: 1;
-  left: -70px;
-  top: 56px;
-}
-#header .header_box .loginbar .current .layer_head ul {
-  padding-top: 5px;
-}
-#header .header_box .loginbar .current .layer_head ul li {
-  height: 25px;
-  line-height: 25px;
-  width: 101px;
-  padding: 0;
-}
-#header .header_box .loginbar .current .layer_head ul li a {
-  display: block;
-  padding: 0 5px 0 15px;
-  color: #666666;
-  text-decoration: none;
-}
-#header .header_box .loginbar .current .layer_head ul li a:hover {
-  background: #3399cc;
-  color: #ffffff;
-}
-#header .header_box .loginbar .current .layer_head ul li a:hover strong {
-  color: #ffffff;
-}
-#header .header_box .loginbar .current .layer_head ul .exit {
-  border-top: 1px solid #e6e6e6;
-  background: #f2f2f2;
-}
-#header .header_box .loginbar .current .layer_head ul .exit a {
-  color: #006699;
-}
-#header .header_box .loginbar .current .layer_head ul .exit a:hover {
-  background: #f2f2f2;
-  color: #006699;
-}
-#header .header_box .loginbar .lines {
-  width: 3px;
-  color: #ccc;
-  text-align: center;
-}
+*{margin:0;padding:0}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 arial,tahoma,"\5b8b\4f53",sans-serif}
+body{_background-image:url(about:blank);_background-attachment:fixed;position:relative;}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+address,cite,dfn,em,var{font-style:normal}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+small{font-size:12px}
+ul,ol{list-style:none}
+img{border:0}
+a,a:link{text-decoration:none;color:#069}
+a:visited{text-decoration:none;color:#069}
+a:hover{text-decoration:underline;color:#c00}
+a:active{text-decoration:underline;color:#f00}
+ul,li{list-style:none}
+i{font-style:normal}
+strong{color:#c00;font-weight:normal}
+button{font-size:100%;border:0;cursor:pointer}
+input,select,textarea{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+.mtop_10{margin-top:10px}
+.mtop_20{margin-top:20px}
+.mtop_30{margin-top:30px}
+.ptop_10{padding-top:10px}
+.ptop_20{padding-top:20px}
+.ptop_30{padding-top:30px}
+.icon{display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;vertical-align:top;margin-top:1px;text-indent:-9999em;background-image:url("../img/icon.png");background-position:20px 20px;background-repeat:no-repeat}
+.icon_bbverify,.icon_byverify{width:23px}
+.icon_lv{width:30px;height:15px}
+.icon_yellow_sign{width:35px;height:17px}
+.icon_coursecard,.icon_courseselect,.icon_guide{width:238px;height:41px}
+.icon_forward{width:150px;height:36px}
+.icon_follow_add{width:14px;height:14px;opacity:.5}
+.icon_dot{width:0}
+.icon_new{background-position:0 0}
+.icon_shopping{background-position:-22px -75px}
+.icon_messages{background-position:-22px -99px}
+.icon_settsings{background-position:-22px -124px}
+.icon_bverify{background-position:-99px 2px}
+.icon_bbverify{background-position:-100px -50px}
+.icon_yverify{background-position:-100px -23px}
+.icon_byverify{background-position:-100px -75px}
+.icon_home{background-position:0 -20px}
+.icon_star{background-position:0 -50px}
+.icon_heart{background-position:0 -75px}
+.icon_th{background-position:0 0}
+.icon_exam{background-position:0 0}
+.icon_report{background-position:0 0}
+.icon_schedule{background-position:0 0}
+.icon_user{background-position:8px -98px}
+.icon_shield{background-position:0 -125px}
+.icon_diamond{background-position:0 -150px}
+.icon_lv{background-position:-127px 0}
+.icon_orders{background-position:-50px -125px}
+.icon_coins{background-position:-22px -25px}
+.icon_card{background-position:-22px -45px}
+.icon_courses{background-position:-18px -147px}
+.icon_chevron_right{background-position:-75px -225px}
+.icon_chevron_left{background-position:-75px -200px}
+.icon_chevron_right_reverse{background-position:-75px -251px}
+.icon_chevron_left_reverse{background-position:-75px -275px}
+.icon_yellow_sign{background-position:-127px -211px}
+.icon_thumbs_up{background-position:-69px -48px}
+.icon_rmb{background-position:-67px 3px}
+.icon_gray_user{background-position:-71px -24px}
+.icon_clock{background-position:-75px -75px}
+.icon_word{background-position:-75px -100px}
+.icon_horn{background-position:-75px -125px}
+.icon_manuscript{background-position:-75px -150px}
+.icon_tv{background-position:-75px -175px}
+.icon_info_sign{background-position:-75px -75px}
+.icon_info_search{background-position:-50px 0}
+.icon_follow_add{background-position:-50px -177px}
+.icon_coursecard{background-position:-123px -375px}
+.icon_guide{background-position:-123px -420px}
+.icon_courseselect{background-position:-123px -466px}
+.icon_forward{background-position:-127px -366px}
+.icon_arrow_up{background-position:-50px -200px}
+.icon_arrow_down{background-position:-50px -225px}
+.icon_arrow_right{background-position:-43px -200px}
+.icon_square_orange{background-position:-47px -48px}
+.icon_square_gray{background-position:-47px -73px}
+.icon_blue_sign{background-position:-47px -145px}
+.icon_dot{background-position:0 -215px}
+.icon_star{background-position:-50px -199px}
+.icon_point{background-position:-50px -22px}
+form{font-size:12px}
+fieldset{padding:0;margin:0;border:0}
+label{display:block;text-align:right}
+textarea{height:auto}
+select,label,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],.uneditable-input{font-size:12px}
+input[type="text"]:-moz-placeholder,textarea:-moz-placeholder{color:#999}
+input[type="text"]:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#999}
+input[type="text"]::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#999}
+.btn{display:inline-block;text-align:center;vertical-align:middle;cursor:pointer;position:relative;text-decoration:none;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;letter-spacing:2px;padding:0 5px}
+.btn_text{border:none;background:none}
+.btn_large{padding:10px 20px;font-size:14px}
+.btn_small{padding:5px 5px}
+.btn_medium{padding:5px 20px}
+.btn_gray{border:1px solid #cfcfcf;background:linear-gradient(#f2f2f2 0, #f0f0f0 60%, #e8e8e8 100%);background:-webkit-linear-gradient(#f2f2f2 0, #f0f0f0 60%, #e8e8e8 100%);background:-moz-linear-gradient(#f2f2f2 0, #f0f0f0 60%, #e8e8e8 100%);box-shadow:1px 1px 1px #fff inset,-1px -1px 1px #fff inset}
+.btn_red{color:#fff;border:1px solid #800;background:linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);background:-webkit-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);background:-moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);box-shadow:0 1px 1px rgba(255,255,255,0.3) inset;-moz-box-shadow:0 1px 1px rgba(255,255,255,0.3) inset;-webkit-box-shadow:0 1px 1px rgba(255,255,255,0.3) inset}
+.btn_blue{color:#fff;border:1px solid #377ece;background:linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);background:-webkit-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);background:-moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);box-shadow:0 1px 2px rgba(255,255,255,0.5) inset;-moz-box-shadow:0 1px 2px rgba(255,255,255,0.5) inset;-webkit-box-shadow:0 1px 2px rgba(255,255,255,0.5) inset}
+.btn_sky{color:#fff;border:1px solid #339afe;background-color:#339afe}
+.btn_orange{color:#fff;border:1px solid #ff870f;background:linear-gradient(#ffab37 1%, #ff9b2b 100%);background:-webkit-linear-gradient(#ffab37 1%, #ff9b2b 100%);background:-moz-linear-gradient(#ffab37 1%, #ff9b2b 100%)}
+.btn_disable{color:#eee;border:1px solid #c5c5c5;text-shadow:1px 0 rgba(255,255,255,0.5);background:linear-gradient(#e5e5e5 0, #ccc 100%);background:-webkit-linear-gradient(#e5e5e5 0, #ccc 100%);background:-moz-linear-gradient(#e5e5e5 0, #ccc 100%);}
+#header{height:56px;box-shadow:0 2px 12px #ddd;position:relative;z-index:100}#header .header_box{width:980px;margin:0 auto;}#header .header_box h1.logo{float:left;display:inline;width:260px}#header .header_box h1.logo a{display:block;height:55px;text-indent:-9999em;background:url(../img/logo/logo.png) no-repeat}
+#header .header_box ul.nav{float:left;width:415px;height:55px}#header .header_box ul.nav li{float:left;display:inline;line-height:45px;margin:6px 10px 0 30px;font-family:"Microsoft YaHei";font-size:18px}#header .header_box ul.nav li a{color:#333}#header .header_box ul.nav li a:hover{color:#c00}
+#header .header_box ul.nav li.current{border-bottom:4px solid #c00}#header .header_box ul.nav li.current a{color:#c00}#header .header_box ul.nav li.current a:hover{color:#c00}
+#header .header_box .search{float:left;width:180px;height:30px;margin-top:12px;border-radius:16px;border:1px solid #ccc;position:relative}#header .header_box .search .head_top_search{width:140px;height:20px;border:0;margin:5px 0 0 10px}
+#header .header_box .search .head_btn_search{width:15px;height:15px;background:url("../img/icon.png") -49px 0 no-repeat transparent;text-indent:-9999em;position:absolute;right:12px;top:7px;z-index:10}
+#header .header_box ul.topbar{float:right;width:100px;padding:18px 5px}#header .header_box ul.topbar li{float:right;font-size:14px}#header .header_box ul.topbar li a{color:#999}
+#header .header_box ul.topbar li .line{padding:0 5px}
+#header .header_box ul.topbar .shopcar{width:30px}
+#header .header_box .loginbar{float:right;width:110px;margin-right:12px}#header .header_box .loginbar li{float:left;cursor:pointer;width:33px}#header .header_box .loginbar li p{padding:18px 0}
+#header .header_box .loginbar li .line{padding:0 7px}
+#header .header_box .loginbar li .icon{margin-left:5px}
+#header .header_box .loginbar .current{position:relative;z-index:10}#header .header_box .loginbar .current p{background:#fcfcfc;border-left:1px solid #ccc;border-right:1px solid #ccc;position:relative;z-index:110}
+#header .header_box .loginbar .current .layer_head{width:101px;border:1px solid #ccc;box-shadow:0 2px 2px #ddd;background:#fcfcfc;position:absolute;z-index:1;left:-70px;top:56px}#header .header_box .loginbar .current .layer_head ul{padding-top:5px}#header .header_box .loginbar .current .layer_head ul li{height:25px;line-height:25px;width:101px;padding:0}#header .header_box .loginbar .current .layer_head ul li a{display:block;padding:0 5px 0 15px;color:#666;text-decoration:none}#header .header_box .loginbar .current .layer_head ul li a:hover{background:#39c;color:#fff}#header .header_box .loginbar .current .layer_head ul li a:hover strong{color:#fff}
+#header .header_box .loginbar .current .layer_head ul .exit{border-top:1px solid #e6e6e6;background:#f2f2f2}#header .header_box .loginbar .current .layer_head ul .exit a{color:#069}#header .header_box .loginbar .current .layer_head ul .exit a:hover{background:#f2f2f2;color:#069}
+#header .header_box .loginbar .lines{width:3px;color:#ccc;text-align:center}
