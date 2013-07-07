@@ -543,6 +543,15 @@
 				<!-- 新鲜事 end -->
 				<!-- 我的网校课程 end -->
 				<div id="pages">=====翻页=====</div>
+				<script>
+				xue.use('pages', function(module){
+					// 根据模块名称进行调用
+					xue.pages('pages').config({
+						pages : 22,
+						current : 1
+					});
+				});
+				</script>
 				<!-- 翻页。。。。。。。。。 -->
 			</div>
 			<!--layout_body end -->
