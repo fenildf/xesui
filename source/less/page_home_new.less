@@ -39,10 +39,9 @@
 
 
 
-
 /*===================/个人中心--大图背景/=====================*/
 
-#container {background: url(../html/src/img/teacher.jpg) center top no-repeat;}
+#container {background: url(../pic/teacher.jpg) center top no-repeat;}
 
 /*===================/个人中心-老师介绍/=====================*/
 .home_teacher_info {text-align:@c;}
@@ -89,7 +88,8 @@
 		span {display: inline-block;padding: 0 10px ;background: #fbfbfb;position: relative;z-index: 10;top:12px;}
 	}
 	.current {
-		border:1px solid #235a9d;background: url(../html/src/img/sid_nav.jpg) repeat-x;
+		border:1px solid #235a9d;
+		.background-settings(0, -38px, @hbgpath, repeat-x);
 		a {color:#fff;}
 	}
 }
@@ -158,23 +158,6 @@
 			}
 	}
 }
-
-
-
-
-/**
- * 修改背景图片路径
- *
- * @modify : 2013-07-01;
- * @author : Marco(wujie@xueersi.com);
- * 
- * @type {[type]}
- */
-// h1.logo{float:left;display:inline;width:260px}h1.logo a{display:block;height:55px;text-indent:-9999em;background:url(../html/src/img/logo.png) no-repeat}
-// .main_header .nav_links li.current{background:url(../html/src/img/ins.jpg) 25px 37px no-repeat}.main_header .nav_links li.current a{font-weight:bold}
-// .feed_comment .comment_corner{width:16px;height:9px;background:url(../html/src/img/ins_c.jpg) no-repeat;position:absolute;z-index:10;top:-9px;right:126px}
-
-
 
 
 

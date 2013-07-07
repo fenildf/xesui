@@ -407,7 +407,7 @@ table {
  *--------------------------------------------
  *alert图标
  *icon_info_sign:警告框图标;
- *icon_info_search:搜索图标
+ *icon_info_search:搜索图标;
  *-------------------------------------------
  *关注按钮
  *icon_add：关注添加图标
@@ -418,6 +418,7 @@ table {
  *icon_courseselect:怎样选课图标;
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
+ *icon_point ：alert图标
  *
  */
 .icon_bbverify,
@@ -514,7 +515,7 @@ table {
   background-position: -22px -25px;
 }
 .icon_card {
-  background-position: -24px -50px;
+  background-position: -22px -45px;
 }
 .icon_courses {
   background-position: -18px -147px;
@@ -585,6 +586,9 @@ table {
 .icon_arrow_down {
   background-position: -50px -225px;
 }
+.icon_arrow_right {
+  background-position: -43px -200px;
+}
 .icon_square_orange {
   background-position: -47px -48px;
 }
@@ -599,6 +603,9 @@ table {
 }
 .icon_star {
   background-position: -50px -199px;
+}
+.icon_point {
+  background-position: -50px -22px;
 }
 /**
  *From 公用样式
@@ -1240,8 +1247,8 @@ textarea::-webkit-input-placeholder {
   padding: 0 8px;
 }
 .main_header .nav_links li.current {
-  background-position: -110px -272px "../img/icon.png";
-  background-image: url(no-repeat);
+  background-position: -120px -272px;
+  background-image: url("../img/icon.png");
   background-repeat: no-repeat;
 }
 .main_header .nav_links li.current a {
@@ -1608,7 +1615,9 @@ ul.filter_handle_items {
   display: inline-block;
   width: 35px;
   line-height: 17px;
-  background: url(../html/src/img/icon_1.png) no-repeat;
+  background-position: -35px -59px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   color: #ffffff;
   font-size: 12px;
   padding-left: 3px;
@@ -1635,13 +1644,17 @@ ul.filter_handle_items {
   width: 75px;
   height: 25px;
   line-height: 25px;
-  background: url(../html/src/img/btn_course.png) no-repeat;
+  background-position: -35px -138px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   text-indent: 20px;
   color: #cc0000;
   text-decoration: none;
 }
 .course_detail .course_func .btn_audition:hover {
-  background: url(../html/src/img/btn_course_hover.png) no-repeat;
+  background-position: -35px -107px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 .course_detail .course_func span {
@@ -1980,7 +1993,7 @@ ul.filter_handle_items {
 }
 /*===================/个人中心--大图背景/=====================*/
 #container {
-  background: url(../html/src/img/teacher.jpg) center top no-repeat;
+  background: url(../pic/teacher.jpg) center top no-repeat;
 }
 /*===================/个人中心-老师介绍/=====================*/
 .home_teacher_info {
@@ -2056,7 +2069,9 @@ ul.filter_handle_items {
 }
 .home_side_nav .current {
   border: 1px solid #235a9d;
-  background: url(../html/src/img/sid_nav.jpg) repeat-x;
+  background-position: 0 -38px;
+  background-image: url("../img/hbg.png");
+  background-repeat: repeat-x;
 }
 .home_side_nav .current a {
   color: #fff;
@@ -2152,11 +2167,3 @@ ul.filter_handle_items {
 .all_comment .feed_comment .ui_comment .feed_text {
   font-size: 12px;
 }
-/**
- * 修改背景图片路径
- *
- * @modify : 2013-07-01;
- * @author : Marco(wujie@xueersi.com);
- * 
- * @type {[type]}
- */
