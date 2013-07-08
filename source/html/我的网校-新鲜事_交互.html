@@ -91,43 +91,35 @@
 				
 				<div id="ui_pages"></div>
 				<script>
-				xue.use('ajax')
-				.use('tabs', function(){
 
-					xue.tabs('ui_tabs', function(dom){
-						var box = $(dom);
-						var url = box.data('url');
-						$.ajax({
-							url : url+'?'+111,
-							dataType: 'html',
-							beforeSend : function(){
-								xue.ajax.loading('.main_body');
-							},
-							success : function(d){
-								xue.ajax.loaded('.main_body');
-
-								$('.main_body').html(d);
-								// console.log(d.length);
-							}
-						});
+				xue.tabs('ui_tabs', function(dom){
+					var box = $(dom);
+					var url = box.data('url');
+					$.ajax({
+						url : url+'?'+111,
+						dataType: 'html',
+						beforeSend : xue.ajax.loading('.main_body'),
+						success : function(d){
+							xue.ajax.loaded('.main_body');
+							$('.main_body').html(d);
+						}
 					});
+				});
 
-					xue.tabs('ui_pills', function(nav){
-						var box = $(nav);
-						var url = box.data('url');
-						$.ajax({
-							url : url+'?'+222,
-							dataType: 'html',
-							beforeSend : function(){
-								xue.ajax.loading('.main_body');
-							},
-							success : function(d){
-								xue.ajax.loaded('.main_body');
+				xue.tabs('ui_pills', function(nav){
+					var box = $(nav);
+					var url = box.data('url');
+					$.ajax({
+						url : url+'?'+222,
+						dataType: 'html',
+						beforeSend : function(){
+							xue.ajax.loading('.main_body');
+						},
+						success : function(d){
+							xue.ajax.loaded('.main_body');
 
-								$('.main_body').html(d);
-								// console.log(d.length);
-							}
-						});
+							$('.main_body').html(d);
+						}
 					});
 				});
 				xue.use('pages', function(module){

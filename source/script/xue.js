@@ -289,11 +289,91 @@ xue.test = function(){
 
 var ui = ui || {};
 
+
+ui.tabs = ui.tabs || function(id, opt){ 
+	if(id === undefined){
+		return ui.tabs;
+	}
+	
+	ui.tabs.id = id || 'ui_tabs'; 
+	ui.tabs.handle = $('#' + ui.tabs.id);
+
+	if(ui.tabs.handle.length == 0){
+		return ui.tabs;
+	}
+
+	ui.tabs.handle.on('click', 'li', function(){
+		$(this).addClass('current').siblings('.current').removeClass('current');
+		if(typeof opt === 'function'){
+			return opt(this);
+		}else{
+			return false;
+		}
+	});
+
+	return ui.tabs; 
+};
+
+xue.extend('tabs', ui.tabs);
+
 /* ========================== module =========================== */
 
 var m, module = m = module || {};
 
+module.ajax = module.ajax || function(expr, opt, fn){
+	
+	if(expr === undefined){
+		return module.ajax;
+	}
+	
+	var handle = expr ? $(expr) : $(document);
 
+	var opt = (typeof opt === 'object' && opt.length === undefined) ? opt : false;
+
+	var defult = {
+		dataType : 'json',
+		timeout  : 7000,
+		beforeSend : function(a, b, c){
+			handle.html('<span class="ui_loading">Loading...</span>');
+		},
+		error      : function(a, b, c){
+			alert(c);
+		},
+		complete   : function(){
+			handle.find('.ui_loading').remove();
+		}
+	};
+	var options = {};
+
+	$.extend(options, defult, opt);
+	
+	$.ajax(options);
+
+	if(typeof fn === 'function'){
+		handle.ajaxSuccess(function(d){
+			return fn(d);
+		});
+	}
+	
+
+};
+
+(function(){
+	var ajax = module.ajax;
+
+	ajax.loading = function(expr){
+		var handle = expr ? $(expr) : $(document);
+		handle.html('<span class="ui_loading">Loading...</span>');
+	};
+
+	ajax.loaded = function(expr){
+		var handle = expr ? $(expr) : $(document);
+		handle.find('.ui_loading').remove();
+	};
+
+})();
+
+xue.extend('ajax', module.ajax);
 
 
 
