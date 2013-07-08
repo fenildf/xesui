@@ -125,9 +125,118 @@
 .ptop_30 {
   padding-top: 30px;
 }
+/**
+ * Base style
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.b {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用传入参数：X,Y,图片路径以及重复方向
+ *----------------------------------------------------
+ */
 /*base,重置，变量*/
 .paylists {
   line-height: 22px;
+}
+.paylists .bank_list {
+  margin: 20px 0 0 50px;
+  clear: both;
+  overflow: hidden;
+}
+.paylists .paynow {
+  margin: 20px 0 0 50px;
+}
+.paylists .paynow label,
+.paylists .paynow input,
+.paylists .paynow button {
+  float: left;
+}
+.paylists .paynow input {
+  margin: 0 5px;
+  width: 150px;
+}
+.paylists .paynow button {
+  padding: 2px 5px;
 }
 .paylists .setting_menu {
   margin-bottom: 10px;

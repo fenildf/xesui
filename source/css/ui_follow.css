@@ -226,6 +226,7 @@
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   letter-spacing: 2px;
+  color: #ffffff;
 }
 .btn_text {
   border: none;
@@ -234,7 +235,7 @@
 /**
  * 按钮按大小分类
  * large:10px 20px;
- * small:5px 5px;
+ * small:3px 5px;
  * medium:5px 20px;
  */
 .btn_large {
@@ -242,7 +243,7 @@
   font-size: 14px;
 }
 .btn_small {
-  padding: 5px 5px;
+  padding: 3px 5px;
 }
 .btn_medium {
   padding: 5px 20px;
@@ -255,6 +256,7 @@
  * orange:关注按钮;
  */
 .btn_gray {
+  color: #333;
   border: 1px solid #cfcfcf;
   background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
   background: -webkit-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
@@ -262,7 +264,6 @@
   box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
 }
 .btn_red {
-  color: #ffffff;
   border: 1px solid #880000;
   background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
   background: -webkit-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
@@ -272,7 +273,6 @@
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
 }
 .btn_blue {
-  color: #ffffff;
   border: 1px solid #377ece;
   background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
   background: -webkit-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
@@ -282,12 +282,10 @@
   -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
 }
 .btn_sky {
-  color: #ffffff;
   border: 1px solid #339afe;
   background-color: #339afe;
 }
 .btn_orange {
-  color: #ffffff;
   border: 1px solid #ff870f;
   background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
   background: -webkit-linear-gradient(#ffab37 1%, #ff9b2b 100%);
@@ -387,6 +385,7 @@
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
  *icon_point ：alert图标
+ *icon_timer ：timer图标
  *
  */
 .icon_bbverify,
@@ -418,6 +417,11 @@
 }
 .icon_dot {
   width: 0;
+}
+.icon_timer {
+  width: 30px;
+  height: 30px;
+  line-heiht: 30px;
 }
 .icon_new {
   background-position: 0 0;
@@ -495,10 +499,10 @@
   background-position: -75px -200px;
 }
 .icon_chevron_right_reverse {
-  background-position: -75px -251px;
+  background-position: -75px -252px;
 }
 .icon_chevron_left_reverse {
-  background-position: -75px -275px;
+  background-position: -75px -276px;
 }
 .icon_yellow_sign {
   background-position: -127px -211px;
@@ -549,10 +553,10 @@
   background-position: -127px -366px;
 }
 .icon_arrow_up {
-  background-position: -50px -200px;
+  background-position: -107px -131px;
 }
 .icon_arrow_down {
-  background-position: -50px -225px;
+  background-position: -107px -106px;
 }
 .icon_arrow_right {
   background-position: -43px -200px;
@@ -574,6 +578,12 @@
 }
 .icon_point {
   background-position: -50px -22px;
+}
+.icon_live {
+  background-position: -45px -97px;
+}
+.icon_timer {
+  background-position: -17px -189px;
 }
 .ui_follow {
   width: 50px;

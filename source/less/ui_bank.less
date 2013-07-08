@@ -4,9 +4,28 @@
  * @学习中心个人设置我要充值银行列表
  */
 @import "variables.less";
+@import "base.less";
 /*base,重置，变量*/
 .paylists{
 	line-height:@hl22;
+	.bank_list{
+		margin:20px 0 0 50px;
+		clear:both;
+		overflow:hidden;
+	}
+	.paynow{
+		margin:20px 0 0 50px;
+		label, input, button{
+			float:left;
+		}
+		input{
+			margin:0 5px;
+			width:150px;
+		}
+		button{
+			padding:2px 5px;
+		}
+	}
 	.setting_menu{
 		margin-bottom:10px;
 	}
@@ -21,7 +40,6 @@
 			color:@g3;
 			font-weight:bold;
 		}
-
 	}
 	.pay_tips{
 		color:#adadad;

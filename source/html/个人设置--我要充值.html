@@ -10,9 +10,74 @@
     <link href="../css/page_setting.css" type="text/css" rel="stylesheet" />
 	<script src="../script/xue.jquery.min.js"></script>
 	<script src="../script/xue.js"></script>
+</head>
 <body>
 	<!--头部  start-->
-	<div id="header"><script type="text/javascript">xue.use('getHeader')</script></div>
+	<div id="header">
+		<div class="header_box">
+			<h1 class="logo">
+				<a href="##" target="_blank">学而思网校</a>
+			</h1>
+			<ul class="nav">
+				<li><a href="#">首页</a></li>
+				<li class="current"><a href="#">选课程</a></li>
+				<li><a href="#">找老师</a></li>
+				<li><a href="#">逛论坛</a></li>
+			</ul>
+			<div class="search">
+				<input type="text" name="q" id="mq" accesskey="s" tabindex="9" autocomplete="off" autofocus="true" placeholder="搜索：课程老师" class="head_top_search"> <button class="head_btn_search">搜索</button>
+			</div>
+			
+			<ul class="topbar hidden">
+				<li><a href="#">登录</a><i class="line">|</i><a href="#">注册</a></li>
+				<li class="shopcar"><a href="#"><em class="icon icon_shopping">购物车</em></a></li>
+				
+			</ul>
+			<ul class="loginbar ">
+				<li>
+					<p>
+						<a href="#"> <em class="icon icon_shopping">购物车</em>
+						</a>
+					</p>
+				</li>
+				<li class="lines"><p>|</p></li>
+				<li class="current">
+				  <p> <em class="icon icon_messages">信息</em></p>
+					<div class="layer_head ">
+						<ul>
+							<li>
+								<a href="#">系统通知 <strong>2</strong></a> 
+							</li>
+							<li>
+								<a href="#">系统通知  <strong>2</strong></a>
+							</li>
+							<li>
+								<a href="#">系统通知 <strong>2</strong></a>
+								
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="lines"><p>|</p></li>
+				<li>
+					<p><em class="icon icon_settsings">设置</em></p>
+					<div class="layer_head hidden">
+						<ul>
+							<li>
+								<a href="#">账号设置</a>
+							</li>
+							<li>
+								<a href="#">模版设置</a>
+							</li>
+							<li class="exit">
+								<a href="#">退出</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<!-- 头部 end-->
 	<!-- 内容 start-->
 	<div id="container">
@@ -33,7 +98,7 @@
 						<form action="">
 							<div><label for="">卡号：</label><input type="text"></div>
 							<div><label for="">密码：</label><input type="text"></div>
-							<button>激活</button><a href="">查看激活记录</a>
+							<button class="btn btn_red">激活</button><a href="">查看激活记录</a>
 						</form>
 					<!-- table -->
 					</div>
@@ -57,6 +122,7 @@
 					 </div>
 				</div>
 				<div class="paylists">
+					<h5>第一步：选择网上银行</h5>
 					<ul class="bank_list">
 						<li><input type="radio"><label for="" class="bank-item ICBC" title="中国工商银行"></label></li>
 						<li><input type="radio"><label for="" class="bank-item CMB" title="招商银行"></label></li>
@@ -86,6 +152,12 @@
 						<li><input type="radio"><label for="" class="bank-item PAYH" title="平安银行"></label></li>
 						<li><input type="radio"><label for="" class="bank-item gateway" title="快钱支付"></label></li>
 					</ul>
+					<h5>第二步： 输入你要充值的金额</h5>
+						<form action="" class="paynow">
+							<label for="">请输入充值金额：</label>
+							<input type="text">
+							<button type="submit" class="btn btn_red btn_small">充值</button>
+						</form>
 				</div>
 			</div>
 			<!--layout_body end -->

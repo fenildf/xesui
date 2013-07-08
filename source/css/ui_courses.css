@@ -85,6 +85,7 @@
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
  *icon_point ：alert图标
+ *icon_timer ：timer图标
  *
  */
 .icon_bbverify,
@@ -116,6 +117,11 @@
 }
 .icon_dot {
   width: 0;
+}
+.icon_timer {
+  width: 30px;
+  height: 30px;
+  line-heiht: 30px;
 }
 .icon_new {
   background-position: 0 0;
@@ -193,10 +199,10 @@
   background-position: -75px -200px;
 }
 .icon_chevron_right_reverse {
-  background-position: -75px -251px;
+  background-position: -75px -252px;
 }
 .icon_chevron_left_reverse {
-  background-position: -75px -275px;
+  background-position: -75px -276px;
 }
 .icon_yellow_sign {
   background-position: -127px -211px;
@@ -247,10 +253,13 @@
   background-position: -127px -366px;
 }
 .icon_arrow_up {
-  background-position: -50px -200px;
+  background-position: -107px -131px;
 }
 .icon_arrow_down {
-  background-position: -50px -225px;
+  background-position: -107px -106px;
+}
+.icon_arrow_right {
+  background-position: -43px -200px;
 }
 .icon_square_orange {
   background-position: -47px -48px;
@@ -269,6 +278,12 @@
 }
 .icon_point {
   background-position: -50px -22px;
+}
+.icon_live {
+  background-position: -45px -97px;
+}
+.icon_timer {
+  background-position: -17px -189px;
 }
 /**
  * Colors
@@ -392,20 +407,109 @@
 .ptop_30 {
   padding-top: 30px;
 }
+/**
+ * Base style
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.b {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用传入参数：X,Y,图片路径以及重复方向
+ *----------------------------------------------------
+ */
 .ui_courses {
   overflow: hidden;
 }
 .ui_courses .ui_avatar {
   float: left;
   display: inline;
-  height: 110px;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
 }
 .course_item {
   overflow: hidden;
   border: 1px solid #ededed;
   background: #fcfcfc;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 /*内容部分*/
 .course_detail {
@@ -424,7 +528,9 @@
   display: inline-block;
   width: 35px;
   line-height: 17px;
-  background: url(../html/src/img/icon_1.png) no-repeat;
+  background-position: -35px -59px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   color: #ffffff;
   font-size: 12px;
   padding-left: 3px;
@@ -451,13 +557,17 @@
   width: 75px;
   height: 25px;
   line-height: 25px;
-  background: url(../html/src/img/btn_course.png) no-repeat;
+  background-position: -35px -138px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   text-indent: 20px;
   color: #cc0000;
   text-decoration: none;
 }
 .course_detail .course_func .btn_audition:hover {
-  background: url(../html/src/img/btn_course_hover.png) no-repeat;
+  background-position: -35px -107px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 .course_detail .course_func span {

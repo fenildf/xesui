@@ -419,6 +419,7 @@ table {
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
  *icon_point ：alert图标
+ *icon_timer ：timer图标
  *
  */
 .icon_bbverify,
@@ -450,6 +451,11 @@ table {
 }
 .icon_dot {
   width: 0;
+}
+.icon_timer {
+  width: 30px;
+  height: 30px;
+  line-heiht: 30px;
 }
 .icon_new {
   background-position: 0 0;
@@ -527,10 +533,10 @@ table {
   background-position: -75px -200px;
 }
 .icon_chevron_right_reverse {
-  background-position: -75px -251px;
+  background-position: -75px -252px;
 }
 .icon_chevron_left_reverse {
-  background-position: -75px -275px;
+  background-position: -75px -276px;
 }
 .icon_yellow_sign {
   background-position: -127px -211px;
@@ -581,10 +587,10 @@ table {
   background-position: -127px -366px;
 }
 .icon_arrow_up {
-  background-position: -50px -200px;
+  background-position: -107px -131px;
 }
 .icon_arrow_down {
-  background-position: -50px -225px;
+  background-position: -107px -106px;
 }
 .icon_arrow_right {
   background-position: -43px -200px;
@@ -606,6 +612,12 @@ table {
 }
 .icon_point {
   background-position: -50px -22px;
+}
+.icon_live {
+  background-position: -45px -97px;
+}
+.icon_timer {
+  background-position: -17px -189px;
 }
 /**
  *From 公用样式
@@ -697,6 +709,7 @@ textarea::-webkit-input-placeholder {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   letter-spacing: 2px;
+  color: #ffffff;
 }
 .btn_text {
   border: none;
@@ -705,7 +718,7 @@ textarea::-webkit-input-placeholder {
 /**
  * 按钮按大小分类
  * large:10px 20px;
- * small:5px 5px;
+ * small:3px 5px;
  * medium:5px 20px;
  */
 .btn_large {
@@ -713,7 +726,7 @@ textarea::-webkit-input-placeholder {
   font-size: 14px;
 }
 .btn_small {
-  padding: 5px 5px;
+  padding: 3px 5px;
 }
 .btn_medium {
   padding: 5px 20px;
@@ -726,6 +739,7 @@ textarea::-webkit-input-placeholder {
  * orange:关注按钮;
  */
 .btn_gray {
+  color: #333;
   border: 1px solid #cfcfcf;
   background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
   background: -webkit-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
@@ -733,7 +747,6 @@ textarea::-webkit-input-placeholder {
   box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
 }
 .btn_red {
-  color: #ffffff;
   border: 1px solid #880000;
   background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
   background: -webkit-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
@@ -743,7 +756,6 @@ textarea::-webkit-input-placeholder {
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
 }
 .btn_blue {
-  color: #ffffff;
   border: 1px solid #377ece;
   background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
   background: -webkit-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
@@ -753,12 +765,10 @@ textarea::-webkit-input-placeholder {
   -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
 }
 .btn_sky {
-  color: #ffffff;
   border: 1px solid #339afe;
   background-color: #339afe;
 }
 .btn_orange {
-  color: #ffffff;
   border: 1px solid #ff870f;
   background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
   background: -webkit-linear-gradient(#ffab37 1%, #ff9b2b 100%);
@@ -817,30 +827,73 @@ textarea::-webkit-input-placeholder {
 #header .header_box ul.nav {
   float: left;
   width: 415px;
-  height: 45px;
+  height: 55px;
 }
 #header .header_box ul.nav li {
   float: left;
   display: inline;
   line-height: 45px;
-  margin: 6px 10px 0 30px;
+  margin: 0 10px 0 20px;
   font-family: "Microsoft YaHei";
   font-size: 18px;
 }
 #header .header_box ul.nav li a {
+  display: inline-block;
   color: #333333;
+  margin-top: 6px;
 }
 #header .header_box ul.nav li a:hover {
   color: #cc0000;
 }
-#header .header_box ul.nav li.current {
+#header .header_box ul.nav li .icon_down {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/header_corner.jpg") 6px 11px no-repeat;
+}
+#header .header_box ul.nav li .current {
+  color: #cc0000;
   border-bottom: 4px solid #cc0000;
+  text-decoration: none;
 }
-#header .header_box ul.nav li.current a {
-  color: #cc0000;
+#header .header_box ul.nav .course {
+  position: relative;
+  background: #fcfcfc;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  padding-left: 20px;
+  width: 95px;
+  box-shadow: 0 2px 12px #ddd;
 }
-#header .header_box ul.nav li.current a:hover {
-  color: #cc0000;
+#header .header_box ul.nav .course .current {
+  border: 0;
+}
+#header .header_box ul.nav .course .layer_head_menu {
+  overflow: hidden;
+  width: 115px;
+  position: absolute;
+  right: -1px;
+  top: 45px;
+  z-index: 100;
+  background: #fcfcfc;
+  border: 1px solid #ccc;
+  border-top: 0;
+  box-shadow: 0 2px 4px #ddd;
+}
+#header .header_box ul.nav .course .layer_head_menu a {
+  display: block;
+  color: #666666;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "SimSun";
+  text-align: center;
+}
+#header .header_box ul.nav .course .layer_head_menu a:hover {
+  background: #3399cc;
+  color: #ffffff;
 }
 #header .header_box .search {
   float: left;
@@ -1182,7 +1235,7 @@ textarea::-webkit-input-placeholder {
   line-height: 40px;
   color: #0078b0;
 }
-.side_header .border_blue span {
+.layout_side .border_blue span {
   float: right;
   color: #0076b3;
   text-align: right;
@@ -1202,20 +1255,17 @@ textarea::-webkit-input-placeholder {
   position: relative;
   overflow: hidden;
 }
-.ui_avatar .prev,
-.ui_avatar .next {
-  width: 21px;
-  height: 21px;
-  display: inline-block;
-  position: absolute;
-  z-index: 10;
-  top: 85px;
+.avatar_roll {
+  overflow: hidden;
+  padding-top: 5px;
 }
-.ui_avatar .prev {
-  left: 0;
+.avatar_roll .prev {
+  float: left;
+  display: inline;
 }
-.ui_avatar .next {
-  right: 0;
+.avatar_roll .next {
+  float: right;
+  display: inline;
 }
 .ui_avatar ul.avatar_items {
   overflow: hidden;
@@ -1269,15 +1319,15 @@ textarea::-webkit-input-placeholder {
  * @version $Id$ 课程筛选
  */
 .ui_filter {
-  overflow: hidden;
+  clear: both;
 }
 /*===================/年级列表/=====================*/
 .ui_filter .filter_handle {
-  overflow: hidden;
   height: 28px;
   line-height: 28px;
   border-bottom: 1px solid #4a9fdb;
   _zoom: 1;
+  position: relative;
 }
 .ui_filter .filter_handle h2 {
   float: left;
@@ -1291,6 +1341,34 @@ textarea::-webkit-input-placeholder {
   float: right;
   font-size: 12px;
   color: #999999;
+}
+.ui_filter .filter_handle .filter_down {
+  cursor: pointer;
+}
+.ui_filter .filter_handle .filter_down .icon_course_down {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  background: url(../img/course_corner.jpg) right bottom no-repeat;
+}
+.ui_filter .filter_handle .filter_handle_items {
+  width: 75px;
+  background: #fff;
+  border: 1px solid #4a9fdb;
+  border-top: 0;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  z-index: 100;
+}
+.ui_filter .filter_handle .filter_handle_items li {
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+.ui_filter .filter_handle .filter_handle_items li:hover {
+  background: #eee;
 }
 /*===================/学科分类/=====================*/
 .ui_filter .filter_item {
@@ -1336,18 +1414,19 @@ textarea::-webkit-input-placeholder {
   position: absolute;
   right: 0;
   top: -1px;
-  width: 87px;
-  background: #eeebe9;
-  text-align: center;
+  width: 75px;
+  padding-left: 12px;
   font-size: 12px;
   color: #666666;
+  background: url(../img/course_more.jpg) 69px 5px no-repeat #eeebe9;
+  cursor: pointer;
+}
+.ui_filter .filter_more .up {
+  background: url(../img/course_up.jpg) 69px 5px no-repeat #eeebe9;
 }
 /*===================/扩展样式/=====================*/
-ul.filter_handle_items {
-  display: none;
-}
 .ui_filter .border_none {
-  border-bottom: 0;
+  border-bottom: 1px solid #eeebe9;
 }
 /**
  * 
@@ -1423,14 +1502,14 @@ ul.filter_handle_items {
 .ui_courses .ui_avatar {
   float: left;
   display: inline;
-  height: 110px;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
 }
 .course_item {
   overflow: hidden;
   border: 1px solid #ededed;
   background: #fcfcfc;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 /*内容部分*/
 .course_detail {

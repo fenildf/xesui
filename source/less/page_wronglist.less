@@ -58,7 +58,7 @@
 			color: @g3*3;
 			li{
 				float:@l;
-				margin-right:10*@margin5;
+				margin-left:10*@margin5;
 			}
 			li > span{
 				color:@g3*2;
@@ -127,7 +127,11 @@
 		}
 		.wrong_list_new{
 			border:1px solid;
-			.border-color(#f6de9e);
+			margin-bottom:20px;
+			.border-color(#eee);
+		}
+		.orangeborder{
+			.border-color(#F9DFA9);
 		}
 	}
 /**进入错题本**/
@@ -173,13 +177,16 @@
 		.wrong_info{
 			line-height:40px;
 			.wrong_btn{
-				.btn;
-				.btn_blue;
-				.btn_medium;
 				margin-left:10px;
 				line-height:15px;
 				float:left;
 				margin-top:8px;
+				padding:5px 10px;
+				color:@g3;
+				text-decoration:none;
+				&:hover{
+					.btn_blue;
+				}
 			}
 		}
 	}
@@ -211,19 +218,29 @@
 	}
 }
 .wrong_info{
-	height:40px;
-	line-height:40px;
 	color:@g3;
 	border-top:1px solid;
 	border-bottom:1px solid;
 	.border-color(#E0E0E0);
 	background:#F0F0F0;
 	ul{
+		height:40px;
+		line-height:40px;
 		width:980px;
 		margin:0 auto;
 		li{
 			float:left;
 			margin-right:50px;
+			.pro_bar{
+					display:inline-block;
+					height:	10px;
+					width:180px;
+					border:1px solid;
+					background:#fff;
+					vertical-align: middle;
+					color:#22cd10;
+					.border-color(#22cd10);
+				}
 		}
 		.wrong_sub{
 			float:right;
@@ -291,9 +308,8 @@
 	}
 	.myexam_info{
 		line-height:50px;
-		color:@g3*3;
 		.red{
-			color:@r0;
+			color:#cc0000;
 			margin-right:5px;
 		}
 	}

@@ -1176,181 +1176,6 @@ textarea::-webkit-input-placeholder {
 /**
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 11:39:59
- * @version $Id$  首页广告轮播
- */
-#index_focus {
-  height: 400px;
-  overflow: hidden;
-  /*=================/图片轮播大图/============================*/
-
-}
-#index_focus .focus_list {
-  overflow: hidden;
-}
-#index_focus .focus_list li {
-  width: 100%;
-  height: 400px;
-  float: left;
-  position: absolute;
-  z-index: 9;
-  background: url(../pic/pic_01.jpg) no-repeat center;
-}
-#index_focus .focus_list li a {
-  display: none;
-  height: 400px;
-  text-indent: -999999em;
-}
-#index_focus .focus_list li.current {
-  z-index: 10;
-}
-/*=================/图片轮播缩小图/============================*/
-#index_focus .focus_num_wrap {
-  width: 980px;
-  height: 20px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 11;
-  top: 375px;
-}
-#index_focus .focus_num_wrap ol.focus_num {
-  width: 100px;
-  height: 20px;
-  position: absolute;
-  right: 308px;
-}
-#index_focus .focus_num_wrap ol.focus_num li {
-  float: left;
-  display: inline;
-  width: 9px;
-  height: 9px;
-  background-color: #fff;
-  border-radius: 15px;
-  text-indent: -99999em;
-  margin: 0 3px;
-  cursor: pointer;
-}
-#index_focus .focus_num_wrap ol.focus_num li.current {
-  background: #0076b3;
-}
-/**
- * 
- * authors alex liu (liuyanbin@xueersi.com)
- * @date    2013-06-27 11:44:46
- * @version $Id$  首页登录框部分
- */
-.index_login {
-  width: 980px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 11;
-  top: 15px;
-}
-.index_login .login_from {
-  width: 318px;
-  height: 368px;
-  overflow: hidden;
-  border: 1px solid #cfdede;
-  background: #fbfdfd;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-/*====================/上：登录框和登录按钮部份/==========================*/
-.index_login .login_from .login_input {
-  width: 282px;
-  height: 207px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.index_login .login_from .login_input p {
-  overflow: hidden;
-}
-.index_login .login_from .login_input p input.input_text {
-  width: 265px;
-  height: 30px;
-  border: 1px solid #cfdede;
-  color: #ccc;
-  margin-top: 18px;
-  padding-left: 15px;
-}
-.index_login .login_from .login_input p label {
-  float: left;
-  display: inline;
-  line-height: 40px;
-  color: #999999;
-}
-.index_login .login_from .login_input p label input {
-  vertical-align: middle;
-}
-.index_login .login_from .login_input p span {
-  float: right;
-  display: inline;
-  line-height: 40px;
-  color: #999999;
-}
-.index_login .login_from .login_input p span a {
-  color: #999999;
-}
-.index_login .login_from .login_input p button.btn {
-  width: 281px;
-  height: 42px;
-  margin-top: 5px;
-  line-height: 42px;
-  border-radius: 5px;
-  background: #cc0000;
-  background: -webkit-linear-gradient(top, #e72501, #bd1c01);
-  font-size: 18px;
-  color: #fff;
-  font-family: "Microsoft YaHei";
-  text-shadow: 2px 3px 5px #f1f1f1;
-}
-/*====================/下：登录信息说明部份/==========================*/
-.index_login .login_from .login_infor {
-  border-top: 1px solid #cfdede;
-}
-.index_login .login_from .login_infor p {
-  width: 282px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.index_login .login_from .login_infor .infor_reg {
-  line-height: 42px;
-  color: #666666;
-}
-.index_login .login_from .login_infor .infor_reg a {
-  color: #006699;
-}
-.index_login .login_from .login_infor .infor_app {
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-.index_login .login_from .login_infor .infor_app a.app_qq,
-.index_login .login_from .login_infor .infor_app a.app_weibo {
-  float: left;
-  display: inline;
-  width: 138px;
-  height: 47px;
-  text-indent: -9999em;
-}
-.index_login .login_from .login_infor .infor_app a.app_qq {
-  background-position: -112px -50px;
-  background-image: url("../img/btn.png");
-  background-repeat: no-repeat;
-}
-.index_login .login_from .login_infor .infor_app a.app_weibo {
-  float: right;
-  background-position: -112px 0px;
-  background-image: url("../img/btn.png");
-  background-repeat: no-repeat;
-}
-.index_login .login_from .login_infor .infor_text {
-  line-height: 25px;
-  color: #999;
-}
-/**
- * 
- * @authors alex liu (liuyanbin@xueersi.com)
  * @date    2013-06-27 14:24:01
  * @version $Id$ 所有标题
  */
@@ -1421,98 +1246,6 @@ textarea::-webkit-input-placeholder {
 }
 /**
  * 
- * @authors Your Name (you@example.org)
- * @date    2013-06-27 14:38:03
- * @version $Id$  动态组件
- */
-.ui_feed {
-  overflow: hidden;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #F1F1F1;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-.ui_avatar {
-  overflow: hidden;
-}
-.ui_feed .avatar_mini {
-  float: left;
-  display: inline;
-  width: 60px;
-}
-.feed_detail {
-  float: left;
-  display: inline;
-  margin-left: 5px;
-}
-.feed_detail .feed_text {
-  line-height: 180%;
-  color: #666;
-}
-.feed_detail .feed_text a {
-  color: #006699;
-}
-.feed_detail .feed_bar {
-  overflow: hidden;
-  line-height: 20px;
-  color: #999999;
-  line-height: 30px;
-  position: relative;
-  z-index: 10;
-  top: 1px;
-}
-.feed_detail .feed_bar span {
-  float: right;
-}
-.feed_detail .feed_bar span a {
-  padding-right: 10px;
-  display: inline-block;
-  text-decoration: none;
-}
-.feed_detail .feed_bar span a:hover {
-  color: #006699;
-}
-.feed_detail .feed_bar span a strong {
-  color: #999999;
-}
-.feed_detail .feed_bar span .corner {
-  position: relative;
-}
-.feed_detail .feed_bar span .corner .icon_comments_corner {
-  position: absolute;
-  left: 0;
-  top: 20px;
-  z-index: 10;
-  background-position: -20px -175px;
-  background-image: url("../img/icon.png");
-  background-repeat: no-repeat;
-}
-.feed_detail .feed_text_my {
-  overflow: hidden;
-  font-size: 14px;
-  padding-bottom: 20px;
-}
-.feed_detail .feed_text_my .my {
-  float: left;
-  width: 30px;
-  color: #333333;
-}
-.feed_detail .feed_text_my .my_info {
-  float: left;
-  width: 630px;
-  color: #999999;
-}
-.feed_comment {
-  border: 1px solid #ededed;
-  background: #fcfcfc;
-  position: relative;
-}
-.feed_comment .ui_comment {
-  width: 640px;
-  margin: 10px auto;
-}
-/**
- * 
  * @authors alex liu (liuyanbin@xueersi.com)
  * @date    2013-06-27 14:40:19
  * @version $Id$  头像
@@ -1552,76 +1285,6 @@ textarea::-webkit-input-placeholder {
   height: 50px;
 }
 /**
- * *name.css
- *ui_username
- *用户，年级名称加"V"
- *默认为.ui_username小V，大小V分为BLUE(.b)以及YELLOW(.y)两种样式
- */
-.ui_username,
-.ui_username_large {
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 0px;
-}
-.ui_username .b {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 1px;
-  text-indent: -9999em;
-  background-image: url("../img/icon.png");
-  background-position: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: -99px 2px;
-}
-.ui_username .y {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 1px;
-  text-indent: -9999em;
-  background-image: url("../img/icon.png");
-  background-position: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: -100px -23px;
-}
-.ui_username_large .b {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 1px;
-  text-indent: -9999em;
-  background-image: url("../img/icon.png");
-  background-position: 20px 20px;
-  background-repeat: no-repeat;
-  width: 23px;
-  background-position: -100px -50px;
-}
-.ui_username_large .y {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 1px;
-  text-indent: -9999em;
-  background-image: url("../img/icon.png");
-  background-position: 20px 20px;
-  background-repeat: no-repeat;
-  width: 23px;
-  background-position: -100px -75px;
-}
-/**
 *list.css
 *ui_list
 *所有有序，无序列表
@@ -1648,6 +1311,279 @@ textarea::-webkit-input-placeholder {
 }
 .list_black a:hover {
   color: #333333;
+}
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程筛选
+ */
+.ui_filter {
+  clear: both;
+}
+/*===================/年级列表/=====================*/
+.ui_filter .filter_handle {
+  height: 28px;
+  line-height: 28px;
+  border-bottom: 1px solid #4a9fdb;
+  _zoom: 1;
+  position: relative;
+}
+.ui_filter .filter_handle h2 {
+  float: left;
+  display: inline;
+  width: 77px;
+  background: #4a9fdb;
+  text-align: center;
+  color: #ffffff;
+}
+.ui_filter .filter_handle p.more {
+  float: right;
+  font-size: 12px;
+  color: #999999;
+}
+.ui_filter .filter_handle .filter_down {
+  cursor: pointer;
+}
+.ui_filter .filter_handle .filter_down .icon_course_down {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  background: url(../img/course_corner.jpg) right bottom no-repeat;
+}
+.ui_filter .filter_handle .filter_handle_items {
+  width: 75px;
+  background: #fff;
+  border: 1px solid #4a9fdb;
+  border-top: 0;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  z-index: 100;
+}
+.ui_filter .filter_handle .filter_handle_items li {
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+.ui_filter .filter_handle .filter_handle_items li:hover {
+  background: #eee;
+}
+/*===================/学科分类/=====================*/
+.ui_filter .filter_item {
+  height: 37px;
+  overflow: hidden;
+  border-left: 1px solid #eeebe9;
+  border-right: 1px solid #eeebe9;
+  border-bottom: 1px dashed #e6e6e6;
+  margin: 0;
+  font-size: 12px;
+  background: #ffffff;
+}
+.ui_filter .filter_item dt {
+  float: left;
+  width: 77px;
+  line-height: 37px;
+  text-align: center;
+  background: #f7f6f5;
+  font-weight: bold;
+  color: #333333;
+}
+.ui_filter .filter_item dd {
+  float: left;
+  line-height: 37px;
+}
+.ui_filter .filter_item dd a {
+  margin: 0 6px;
+  color: #666666;
+}
+.ui_filter .filter_item dd a.current {
+  padding: 2px 6px;
+  background: #4a9fdb;
+  color: #ffffff;
+}
+/*===================/更多条件/=====================*/
+.ui_filter .filter_more {
+  overflow: hidden;
+  position: relative;
+  height: 22px;
+  border-top: 5px solid #eeebe9;
+}
+.ui_filter .filter_more p {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 75px;
+  padding-left: 12px;
+  font-size: 12px;
+  color: #666666;
+  background: url(../img/course_more.jpg) 69px 5px no-repeat #eeebe9;
+  cursor: pointer;
+}
+.ui_filter .filter_more .up {
+  background: url(../img/course_up.jpg) 69px 5px no-repeat #eeebe9;
+}
+/*===================/扩展样式/=====================*/
+.ui_filter .border_none {
+  border-bottom: 1px solid #eeebe9;
+}
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程页和教师页--排序标题
+ */
+/*=============/课程/==================*/
+.ui_sortbar {
+  overflow: hidden;
+  height: 36px;
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+  margin: 10px 0 15px 0;
+}
+.ui_sortbar li {
+  float: left;
+  line-height: 36px;
+  font-size: 12px;
+  margin: 0 30px 0 5px;
+}
+.ui_sortbar li a {
+  color: #666666;
+}
+.ui_sortbar li a em {
+  margin-top: 14px;
+}
+.ui_sortbar li a.current {
+  background: #4a9fdb;
+  padding: 2px 6px;
+  color: #fff;
+}
+.ui_sortbar li.sort_title {
+  margin: 0 0 0 15px;
+  font-weight: bold;
+}
+/*=============/教师/==================*/
+.sort_teacher {
+  overflow: hidden;
+}
+.sort_teacher li {
+  margin: 0;
+}
+.sort_teacher li.sort_num {
+  width: 30px;
+  margin: 0 15px;
+}
+.sort_teacher li.sort_avatar {
+  width: 145px;
+  padding-left: 30px;
+}
+.sort_teacher li.sort_course_num {
+  width: 100px;
+}
+.sort_teacher li.sort_trend {
+  width: 100px;
+}
+.sort_teacher li.sort_student_num {
+  width: 100px;
+}
+.sort_teacher li.sort_new_trend {
+  width: 100px;
+}
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程
+ */
+.ui_courses {
+  overflow: hidden;
+}
+.ui_courses .ui_avatar {
+  float: left;
+  display: inline;
+  margin: 10px 10px 0 10px;
+}
+.course_item {
+  overflow: hidden;
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+/*内容部分*/
+.course_detail {
+  float: left;
+  display: inline;
+  width: 645px;
+}
+.course_detail .course_title {
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #333333;
+  font-weight: normal;
+  padding: 7px 0;
+}
+.course_detail .course_title em {
+  display: inline-block;
+  width: 35px;
+  line-height: 17px;
+  background-position: -35px -59px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 3px;
+}
+.course_detail .course_title strong {
+  font-size: 14px;
+}
+.course_detail .course_title a {
+  color: #333333;
+}
+.course_detail .course_info {
+  height: 25px;
+  color: #999999;
+  font-size: 12px;
+}
+.course_detail .course_info strong {
+  font-weight: bold;
+}
+.course_detail .course_func {
+  margin-top: 5px;
+}
+.course_detail .course_func .btn_audition {
+  float: left;
+  width: 75px;
+  height: 25px;
+  line-height: 25px;
+  background-position: -35px -138px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
+  text-indent: 20px;
+  color: #cc0000;
+  text-decoration: none;
+}
+.course_detail .course_func .btn_audition:hover {
+  background-position: -35px -107px;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.course_detail .course_func span {
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #999999;
+}
+.course_detail .course_func i {
+  float: left;
+}
+.course_detail .course_func .tools {
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #006699;
 }
 /**
  * ui_pages.less 分页组件
@@ -1706,44 +1642,16 @@ textarea::-webkit-input-placeholder {
   border: 1px solid #ffffff;
   margin: 0;
 }
-/*================/ 首页 /========================*/
-.content_box {
+/*===================/课程卡频道页/=====================*/
+.advert_card {
+  overflow: hidden;
+  width: 980px;
+  margin: 20px auto;
+}
+.course_card_list {
   overflow: hidden;
 }
-.content_box .feed_text {
-  width: 570px;
-}
-.content_box .border_none {
-  border: 0;
-}
-ul.index_notice {
+.course_card_list li {
   overflow: hidden;
-  padding: 10px 0;
-}
-ul.index_notice li {
-  height: 25px;
-  line-height: 25px;
-  padding-left: 10px;
-  overflow: hidden;
-  font-size: 14px;
-}
-ul.index_notice li i {
-  font-size: 18px;
-  padding-right: 10px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 1px;
-  text-indent: -9999em;
-  background-image: url("../img/icon.png");
-  background-position: 20px 20px;
-  background-repeat: no-repeat;
-  width: 0;
-  background-position: 0 -215px;
-}
-ul.index_notice li a {
-  color: #333333;
+  height: 50px;
 }

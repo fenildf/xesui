@@ -33,7 +33,6 @@
 @import "ui_teachers.less";
 @import "ui_bank.less";
 @import "side_nav.less"; //学习中心个人设置左侧导航
-@import "ui_pages.less";
 
 
 
@@ -43,6 +42,7 @@
 	overflow: hidden;
 	height: 50px;
 	line-height: 50px;
+	color:#999;
 	border-bottom: 1px dotted #ccc;
 }
 .setting_menu span {float: left;}
@@ -50,19 +50,21 @@
 .setting_menu span strong {font-size: 20px;}
 .setting_menu a {
 	float: right; 
-	.btn;
-	.btn_red;
 	hieght:24px;
 	line-height:24px;
-	width:80px;
 	margin-top:10px;
+	text-decoration:none;
 }
-
+.setting_menu .btn{
+	padding:0 5px;
+	color:#fff;
+	&:hover{
+		color:#fff;
+	}
+}
 .setting_search {height: 30px; margin: 30px 0 0 0;color: 2*@g3;}
 .setting_search p {float: right;}
 .setting_search p > a{
-	.btn;
-	/*.btn_disable;*/
 	hieght:18px;
 	line-height:18px;
 	padding:1px 5px;
@@ -72,7 +74,8 @@
 }
 
 .nav_setting li {text-align: center;}
-.nav_setting li.current a {padding: 2px 10px;background: #4a9eda;color: #fff;}
+.nav_setting li.current a {padding: 2px 10px;
+background: #4a9eda;color: #fff;}
 
 /*==========/订单详情**物流状态/===============*/
 .right-content, .order_state{
@@ -94,23 +97,23 @@
 		}
 	}
 	.order_button > button{
-		.btn;
-		.btn_red;
 		float:right;
 		padding:3px 10px;
 		font-size:14px;
 	}
-
 }
 .order_state{
 	.order_info{
 		padding:0 20px;
 	}		
+	.order_account{
+			color:#c00;
+		}
 }
 
 /*=============/代金卡激活/==================*/
 .right-content{
-	padding:20px 60px 10px 60px;
+	padding:20px 30px 10px 30px;
 	p{
 		height:50px;
 		line-heihgt:50px;
@@ -129,8 +132,6 @@
 			}
 		}
 		button{
-				.btn;
-				.btn_red;
 				margin-left:35px;
 				dispblay:block;
 				padding:3px 15px;
@@ -145,6 +146,7 @@
 .user_profile{
 	p{
 		height:40px;
+		color:#333;
 		line-height:40px;
 		label{
 			width:60px;
@@ -184,6 +186,9 @@
 		button{
 			margin-left:60px;
 		}
+		.btn_gray{
+			margin-left:10px;
+		}
 	}
 }
 /*=============/收货地址/==================*/
@@ -211,8 +216,6 @@
 		color: darken(@ge, 10%);
 	}
 	.cancel{
-		.btn;
-		.btn_gray;
 		color:@g3;
 		margin-left:10px;
 	}
@@ -307,4 +310,9 @@
 		float:left;
 		margin-right:10px;
 	}
+}
+
+/*=============/daijinka/==================*/
+.gift_card_info{
+	line-height:@hl24;
 }

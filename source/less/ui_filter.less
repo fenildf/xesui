@@ -9,13 +9,13 @@
 @import "variables.less";
 
 .ui_filter {
-	overflow: hidden;
+	clear: both;
 	
 }
 
 /*===================/年级列表/=====================*/
 .ui_filter .filter_handle {
-	overflow: hidden;height: 28px;line-height: 28px;border-bottom: 1px solid #4a9fdb;_zoom:1;
+	height: 28px;line-height: 28px;border-bottom: 1px solid #4a9fdb;_zoom:1;position: relative;
 	h2 {
 		float: @l;display: inline;width: 77px;background: #4a9fdb; text-align: @c;color: @white;
 		
@@ -23,6 +23,18 @@
 	p.more {
 			float: @r;font-size: @f12;color: @g3 * 3;
 			
+		}
+		.filter_down {
+			cursor: pointer;
+			.icon_course_down {display:inline-block;width:15px;height:16px;background: url(../img/course_corner.jpg) right bottom no-repeat;}
+		
+		}
+		.filter_handle_items {
+				width: 75px;background: #fff;border: 1px solid #4a9fdb; border-top:0;position: absolute;top:29px;left:0;z-index: 100;
+				li {
+					height: 25px;line-height: 25px;cursor: pointer; text-align: @c;
+					&:hover {background: #eee;}
+				}
 		}
 }
 
@@ -41,9 +53,14 @@
 /*===================/更多条件/=====================*/
 .ui_filter .filter_more {
 	overflow: hidden; position: relative;height: 22px;border-top: 5px solid #eeebe9;
-	p {position: absolute;right: 0;top: -1px; width: 87px;background: #eeebe9; text-align: @c;font-size: @f12;color: @g3 * 2;}
+	p {position: absolute;right: 0;top: -1px; width: 75px; padding-left:12px;font-size: @f12;color: @g3 * 2;
+		background: url(../img/course_more.jpg) 69px 5px no-repeat #eeebe9; cursor: pointer;}
+	.up {background: url(../img/course_up.jpg) 69px 5px no-repeat #eeebe9;}
+
 }
 
 /*===================/扩展样式/=====================*/
-ul.filter_handle_items {display: none;}
-.ui_filter .border_none {border-bottom:0;}
+
+.ui_filter .border_none {border-bottom: 1px solid #eeebe9;}
+
+

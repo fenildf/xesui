@@ -127,6 +127,95 @@
 .ptop_30 {
   padding-top: 30px;
 }
+/**
+ * Base style
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.b {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用传入参数：X,Y,图片路径以及重复方向
+ *----------------------------------------------------
+ */
 .ui_feed {
   overflow: hidden;
   margin-bottom: 10px;
@@ -158,15 +247,36 @@
   overflow: hidden;
   line-height: 20px;
   color: #999999;
+  line-height: 30px;
+  position: relative;
+  z-index: 10;
+  top: 1px;
 }
 .feed_detail .feed_bar span {
   float: right;
 }
 .feed_detail .feed_bar span a {
   padding-right: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+.feed_detail .feed_bar span a:hover {
+  color: #006699;
 }
 .feed_detail .feed_bar span a strong {
   color: #999999;
+}
+.feed_detail .feed_bar span .corner {
+  position: relative;
+}
+.feed_detail .feed_bar span .corner .icon_comments_corner {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 10;
+  background-position: -20px -175px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
 }
 .feed_detail .feed_text_my {
   overflow: hidden;
@@ -186,19 +296,9 @@
 .feed_comment {
   border: 1px solid #ededed;
   background: #fcfcfc;
-  margin-top: 10px;
   position: relative;
 }
 .feed_comment .ui_comment {
   width: 640px;
   margin: 10px auto;
-}
-.feed_comment .comment_corner {
-  width: 16px;
-  height: 9px;
-  background: url(../html/src/img/ins_c.jpg) no-repeat;
-  position: absolute;
-  z-index: 10;
-  top: -9px;
-  right: 126px;
 }

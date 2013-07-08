@@ -206,6 +206,7 @@
  *icon_forward:去看看按钮;
  *icon_blue_sign：蓝色的对勾
  *icon_point ：alert图标
+ *icon_timer ：timer图标
  *
  */
 .icon_bbverify,
@@ -237,6 +238,11 @@
 }
 .icon_dot {
   width: 0;
+}
+.icon_timer {
+  width: 30px;
+  height: 30px;
+  line-heiht: 30px;
 }
 .icon_new {
   background-position: 0 0;
@@ -314,10 +320,10 @@
   background-position: -75px -200px;
 }
 .icon_chevron_right_reverse {
-  background-position: -75px -251px;
+  background-position: -75px -252px;
 }
 .icon_chevron_left_reverse {
-  background-position: -75px -275px;
+  background-position: -75px -276px;
 }
 .icon_yellow_sign {
   background-position: -127px -211px;
@@ -368,10 +374,10 @@
   background-position: -127px -366px;
 }
 .icon_arrow_up {
-  background-position: -50px -200px;
+  background-position: -107px -131px;
 }
 .icon_arrow_down {
-  background-position: -50px -225px;
+  background-position: -107px -106px;
 }
 .icon_arrow_right {
   background-position: -43px -200px;
@@ -393,6 +399,12 @@
 }
 .icon_point {
   background-position: -50px -22px;
+}
+.icon_live {
+  background-position: -45px -97px;
+}
+.icon_timer {
+  background-position: -17px -189px;
 }
 .ui_username,
 .ui_username_large {
