@@ -1524,7 +1524,13 @@ textarea::-webkit-input-placeholder {
   overflow: hidden;
   margin-top: 10px;
 }
-.feed_media img {
+.feed_media ul {
+  overflow: hidden;
+}
+.feed_media ul li {
+  overflow: hidden;
+}
+.feed_media ul li img {
   max-width: 120px;
   max-height: 120px;
   cursor: url(../img/big.cur), auto !important;
@@ -2029,6 +2035,25 @@ textarea::-webkit-input-placeholder {
   height: 50px;
 }
 .ui_comment form.comment_form .comment_func .comment_kind {
+  float: left;
+  width: 200px;
+}
+.ui_comment form.comment_form .comment_func .comment_kind a {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  overflow: hidden;
+  margin: 7px 10px 0 0;
+  text-align: center;
+  text-indent: -9999em;
+}
+.ui_comment form.comment_form .comment_func .comment_kind .kind_img {
+  background: url("../img/icon_02.png") 0px -25px no-repeat;
+}
+.ui_comment form.comment_form .comment_func .comment_kind .kind_img:hover {
+  background: url("../img/icon_02.png") -25px -25px no-repeat;
+}
+.ui_comment form.comment_form .comment_func .comment_kind .kind_media {
   display: none;
 }
 .ui_comment form.comment_form .comment_func .comment_tips {

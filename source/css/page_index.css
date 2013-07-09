@@ -1550,7 +1550,13 @@ textarea::-webkit-input-placeholder {
   overflow: hidden;
   margin-top: 10px;
 }
-.feed_media img {
+.feed_media ul {
+  overflow: hidden;
+}
+.feed_media ul li {
+  overflow: hidden;
+}
+.feed_media ul li img {
   max-width: 120px;
   max-height: 120px;
   cursor: url(../img/big.cur), auto !important;

@@ -152,6 +152,25 @@
   height: 50px;
 }
 .ui_comment form.comment_form .comment_func .comment_kind {
+  float: left;
+  width: 200px;
+}
+.ui_comment form.comment_form .comment_func .comment_kind a {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  overflow: hidden;
+  margin: 7px 10px 0 0;
+  text-align: center;
+  text-indent: -9999em;
+}
+.ui_comment form.comment_form .comment_func .comment_kind .kind_img {
+  background: url("../img/icon_02.png") 0px -25px no-repeat;
+}
+.ui_comment form.comment_form .comment_func .comment_kind .kind_img:hover {
+  background: url("../img/icon_02.png") -25px -25px no-repeat;
+}
+.ui_comment form.comment_form .comment_func .comment_kind .kind_media {
   display: none;
 }
 .ui_comment form.comment_form .comment_func .comment_tips {

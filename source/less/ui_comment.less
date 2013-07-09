@@ -20,7 +20,18 @@
 		}
 		.comment_func {
 			overflow:hidden;height:50px;
-			.comment_kind {display:none;}
+			.comment_kind {
+				float: left; width: 200px;
+				a {
+					display:inline-block;width: 25px;height: 20px;overflow: hidden;margin: 7px 10px 0 0;text-align: center; text-indent: @ti;
+
+				}
+				.kind_img {
+					background: url("../img/icon_02.png") 0px -25px no-repeat;
+					&:hover{background: url("../img/icon_02.png") -25px -25px no-repeat;}
+				}
+				.kind_media {display: none;}
+			}
 			.comment_tips {float:left;color:@r0;line-height:50px;}
 			.comment_button {
 					float:right;
