@@ -491,7 +491,7 @@ table {
   background-position: 0 -75px;
 }
 .icon_th {
-  background-position: 0 0;
+  background-position: 0 -270px;
 }
 .icon_exam {
   background-position: 0 0;
@@ -509,7 +509,7 @@ table {
   background-position: 0 -125px;
 }
 .icon_diamond {
-  background-position: 0 -150px;
+  background-position: 0 -145px;
 }
 .icon_lv {
   background-position: -127px 0;
@@ -694,6 +694,99 @@ textarea::-webkit-input-placeholder {
 }
 .ui_username_large {
   font-size: 20px;
+}
+/**
+ * Button 公用样式
+ */
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.btn_text {
+  border: none;
+  background: none;
+}
+/**
+ * 按钮按大小分类
+ * large:10px 20px;
+ * small:3px 5px;
+ * medium:5px 20px;
+ */
+.btn_large {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.btn_small {
+  padding: 3px 5px;
+}
+.btn_medium {
+  padding: 5px 20px;
+}
+/**
+ * 按钮按颜色分类
+ * gray：取消按钮，
+ * red：提交类按钮以及课程列表听课按钮激活状态
+ * blue：页面按钮
+ * orange:关注按钮;
+ */
+.btn_gray {
+  color: #333;
+  border: 1px solid #cfcfcf;
+  background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  background: -webkit-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
+  box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
+}
+.btn_red {
+  border: 1px solid #880000;
+  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -webkit-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
+}
+.btn_blue {
+  border: 1px solid #377ece;
+  background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  background: -webkit-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  background: -moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
+}
+.btn_sky {
+  border: 1px solid #339afe;
+  background-color: #339afe;
+}
+.btn_orange {
+  border: 1px solid #ff870f;
+  background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
+  background: -webkit-linear-gradient(#ffab37 1%, #ff9b2b 100%);
+  background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
+}
+/**
+ * 按钮按功能分类(默认样式)
+ * 
+ */
+.btn_disable {
+  color: #eee;
+  border: 1px solid #c5c5c5;
+  text-shadow: 1px 0px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  background: -webkit-linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
+  /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
+
 }
 /**
  * 
@@ -1233,99 +1326,6 @@ textarea::-webkit-input-placeholder {
   margin: 10px 0 10px 0;
 }
 /**
- * Button 公用样式
- */
-.btn {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  letter-spacing: 2px;
-  color: #ffffff;
-}
-.btn_text {
-  border: none;
-  background: none;
-}
-/**
- * 按钮按大小分类
- * large:10px 20px;
- * small:3px 5px;
- * medium:5px 20px;
- */
-.btn_large {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-.btn_small {
-  padding: 3px 5px;
-}
-.btn_medium {
-  padding: 5px 20px;
-}
-/**
- * 按钮按颜色分类
- * gray：取消按钮，
- * red：提交类按钮以及课程列表听课按钮激活状态
- * blue：页面按钮
- * orange:关注按钮;
- */
-.btn_gray {
-  color: #333;
-  border: 1px solid #cfcfcf;
-  background: linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
-  background: -webkit-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
-  background: -moz-linear-gradient(#f2f2f2 0%, #f0f0f0 60%, #e8e8e8 100%);
-  box-shadow: 1px 1px 1px #ffffff inset, -1px -1px 1px #ffffff inset;
-}
-.btn_red {
-  border: 1px solid #880000;
-  background: linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
-  background: -webkit-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
-  background: -moz-linear-gradient(#e05866 2%, #c40018 5%, #ba0113 25%, #a4000b 70%, #8f0100 100%);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset;
-}
-.btn_blue {
-  border: 1px solid #377ece;
-  background: linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
-  background: -webkit-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
-  background: -moz-linear-gradient(#4fa4f4 2%, #4b9def 5%, #3981d3 70%, #377ece 100%);
-  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
-  -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) inset;
-}
-.btn_sky {
-  border: 1px solid #339afe;
-  background-color: #339afe;
-}
-.btn_orange {
-  border: 1px solid #ff870f;
-  background: linear-gradient(#ffab37 1%, #ff9b2b 100%);
-  background: -webkit-linear-gradient(#ffab37 1%, #ff9b2b 100%);
-  background: -moz-linear-gradient(#ffab37 1%, #ff9b2b 100%);
-}
-/**
- * 按钮按功能分类(默认样式)
- * 
- */
-.btn_disable {
-  color: #eee;
-  border: 1px solid #c5c5c5;
-  text-shadow: 1px 0px rgba(255, 255, 255, 0.5);
-  background: linear-gradient(#e5e5e5 0%, #cccccc 100%);
-  background: -webkit-linear-gradient(#e5e5e5 0%, #cccccc 100%);
-  background: -moz-linear-gradient(#e5e5e5 0%, #cccccc 100%);
-  /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
-
-}
-/**
  * 
  * @authors alex liu (liuyanbin@xueersi.com)
  * @date    2013-06-27 14:40:19
@@ -1449,10 +1449,10 @@ textarea::-webkit-input-placeholder {
 .feed_detail .feed_bar span a strong {
   color: #999999;
 }
-.feed_detail .feed_bar span .corner {
+.feed_detail .feed_bar span .current {
   position: relative;
 }
-.feed_detail .feed_bar span .corner .icon_comments_corner {
+.feed_detail .feed_bar span .current .icon_comments_corner {
   position: absolute;
   left: 0;
   top: 20px;

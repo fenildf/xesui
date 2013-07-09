@@ -73,48 +73,45 @@
 				<!--main_header -->
 				<div class="main_header">
 					<ul id="ui_tabs" class="nav nav_links">
-						<li data-url="../json/courses.html" data-index="0" data-id=""><a href="javascript:void(0);">课程</a> <i class="line line_blue">|</i></li>
-						<li data-url="../json/feed.html" data-index="1" class="current" ><a href="javascript:void(0);">新鲜事</a></li>
+						<li data-url="../json/tab_course.html" data-params="0" data-id=""><a href="javascript:void(0);">课程</a> <i class="line line_blue">|</i></li>
+						<li data-url="../json/tab_feed.html" data-params="1" class="current" ><a href="javascript:void(0);">新鲜事</a></li>
 					</ul>
 				</div>
 				<!-- main_header  -->
-				<div class="main_nav">
-					<!-- tabs -->
-					<ul id="ui_pills" class="nav nav_pills">
-						<li data-url="../json/feed.html" data-index="" data-id="" class="current"><a href="###">全部</a></li>
-						<li data-url="../json/feed.html" data-index="" data-id=""><a href="###">我自己的</a></li>
-						<li data-url="../json/feed.html" data-index="" data-id=""><a href="###">我关注的</a></li>
-					</ul>
-					<!-- tabs end-->
-				</div>
+				<div id="nav_pills" class="main_nav"></div>
+
 				<div class="main_body"></div>
 				
 				<div id="ui_pages"></div>
-				<script>
 
+				<script>
+				// 分类切换
 				xue.tabs('ui_tabs', function(dom){
 					var box = $(dom);
-					var url = box.data('url');
+					var url = box.data('url'),
+						data = box.data('params');
+						console.log(data);
 					$.ajax({
-						url : url+'?'+111,
+						url : url+'?'+data,
 						dataType: 'html',
-						beforeSend : xue.ajax.loading('.main_body'),
+						// beforeSend : xue.ajax.loading('.main_body'),
 						success : function(d){
 							xue.ajax.loaded('.main_body');
-							$('.main_body').html(d);
+							$('.main_nav').html(d);
 						}
 					});
 				});
-
-				xue.tabs('ui_pills', function(nav){
+				
+				// 二级分类切换
+				xue.tabs('nav_pills', function(nav){
 					var box = $(nav);
-					var url = box.data('url');
+					var url = box.data('url'),
+						data = box.data('params');
+						console.log(data);
 					$.ajax({
-						url : url+'?'+222,
+						url : url+'?'+data,
 						dataType: 'html',
-						beforeSend : function(){
-							xue.ajax.loading('.main_body');
-						},
+						// beforeSend : xue.ajax.loading('.main_body'),
 						success : function(d){
 							xue.ajax.loaded('.main_body');
 
@@ -122,11 +119,17 @@
 						}
 					});
 				});
+
+				// 分页代码
 				xue.use('pages', function(module){
 					// 根据模块名称进行调用
 					xue.pages.config({
 						pages : 22,
-						current : 1
+						current : 1,
+						callback : function(current, pages){
+							// console.log(current);
+							xue.pages.go(current);
+						}
 					});
 				});
 				</script>
@@ -170,88 +173,5 @@
 	<!--底部 start -->
 	<div id="footer"><script>xue.use('getFooter')</script></div>
 	<!--底部 end-->
-
-	<script>
-		window.onload = (function(){
-			/**
-			 * 用模块调用方法加载模块
-			 *
-			 * 用xue.use()方法可以确保模块存在，方便模块与主文件分离
-			 * 
-			 * @param  {object} module 确定存在后的模块对象，方便内部调用
-			 * 
-			 * @return {[type]}    返回跟对象，便于链式调用 ; 
-			 * 链式调用与模块的加载情况是异步的，没有依赖关系，所以在链式调用中不能确保能够调用到模块中的方法
-			 */
-			// xue.use('pages', function(module){
-			// 	// 根据模块名称进行调用
-			// 	xue.pages.config({
-			// 		pages : 22,
-			// 		current : 1
-			// 	}).go(3);
-
-			// 	// 根据返回的对象进行调用
-			// 	module('page2').config({
-			// 		pages: 10,
-			// 		current: 3
-			// 	});
-			// }, true, 1000);
-
-			
-
-
-			// console.log(a);
-			// xue.pages('page2').config({
-			// 	pages   : 20,
-			// 	current : 2,
-			// 	size    : 3,
-			// 	callback : function(num){
-			// 		xue.pages('page2').go(num);
-			// 	}
-			// });
-
-			// xue.pages.config({
-			// 	pages   : 15,
-			// 	current : 1,
-			// 	size    : 5,
-			// 	pageClick: function(num){
-			// 		xue.pages('ui_pages').go(num);
-			// 	},
-			// 	nextClick: function(num){
-			// 		xue.pages('ui_pages').go(num);
-			// 	},
-			// 	// callback : function(num){
-			// 	// 	xue.pages('ui_pages').go(num);
-			// 	// }
-			// });
-
-			// xue.pages.config('a2', {
-			// 	id 		 : 'ui_pages',
-			// 	handle   : $('#ui_pages'),
-			// 	current  : 1,
-			// 	pages    : 10,
-			// 	size   	 : 5,
-			// 	pageClick: function(num){
-			// 		xue.pages.go(num);
-			// 	},
-			// 	// callback : function(current, pages){
-			// 	// 	$('#ui_pages').html(xue.pages.html);
-			// 	// 	console.log(current);
-			// 	// 	// var ajaxPage = $.alax({
-			// 	// 	// 	url : '',
-			// 	// 	// 	type: '',
-			// 	// 	// 	data : {},
-			// 	// 	// 	dataType : 'json',
-			// 	// 	// 	timeout : 70000,
-			// 	// 	// });
-
-			// 	// 	// ajaxPage.fail(function(jqXHR, textStatus){ alert( "Request failed: " + textStatus ); });
-
-			// 	// 	// ajaxPage.done(function(msg){ });
-			// 	// }
-			// });
-
-		});
-	</script>
 </body>
 </html>

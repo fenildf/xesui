@@ -491,7 +491,7 @@ table {
   background-position: 0 -75px;
 }
 .icon_th {
-  background-position: 0 0;
+  background-position: 0 -270px;
 }
 .icon_exam {
   background-position: 0 0;
@@ -509,7 +509,7 @@ table {
   background-position: 0 -125px;
 }
 .icon_diamond {
-  background-position: 0 -150px;
+  background-position: 0 -145px;
 }
 .icon_lv {
   background-position: -127px 0;
@@ -1449,10 +1449,10 @@ textarea::-webkit-input-placeholder {
 .feed_detail .feed_bar span a strong {
   color: #999999;
 }
-.feed_detail .feed_bar span .corner {
+.feed_detail .feed_bar span .current {
   position: relative;
 }
-.feed_detail .feed_bar span .corner .icon_comments_corner {
+.feed_detail .feed_bar span .current .icon_comments_corner {
   position: absolute;
   left: 0;
   top: 20px;
@@ -2099,6 +2099,7 @@ textarea::-webkit-input-placeholder {
 .courses_repeat {
   border: 1px solid #ededed;
   background: #fcfcfc;
+  margin-bottom: 10px;
 }
 .courses_repeat .course_item {
   border: 0;

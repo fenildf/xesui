@@ -67,27 +67,6 @@ xue.extend = xue.extend || function(className, fn, constructor){
 
 
 xue.check = function(obj){
-	var tpLen = typeof(obj.length),
-		tp = typeof obj;
-	
-	// if(tpLen === 'number'){
-	// 	if(tp === 'object'){
-	// 		return 'array';
-	// 	}
-	// 	if(tp === 'string'){
-	// 		return 'string';
-	// 	}
-	// 	if(tp === 'function'){
-	// 		return 'function';
-	// 	}
-	// }else{
-	// 	if(tp === 'number'){
-	// 		return 'number';
-	// 		//有可能是date或者是number
-	// 	}else{
-	// 		return 'object';
-	// 	}
-	// }
 
 	// 还差日期类型判断
 	
@@ -280,8 +259,8 @@ xue.use = xue.use || function(moduleName, callback, isQuequ, timeout){
 };
 
 
-xue.test = function(){
-	console.log(1111);
+xue.test = function(d){
+	console.log(d);
 }
 
 
@@ -290,7 +269,7 @@ xue.test = function(){
 var ui = ui || {};
 
 
-ui.tabs = ui.tabs || function(id, opt){ 
+ui.tabs = ui.tabs || function(id, fn){ 
 	if(id === undefined){
 		return ui.tabs;
 	}
@@ -304,8 +283,8 @@ ui.tabs = ui.tabs || function(id, opt){
 
 	ui.tabs.handle.on('click', 'li', function(){
 		$(this).addClass('current').siblings('.current').removeClass('current');
-		if(typeof opt === 'function'){
-			return opt(this);
+		if(typeof fn === 'function'){
+			return fn(this);
 		}else{
 			return false;
 		}
