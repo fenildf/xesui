@@ -18,7 +18,7 @@
 #header {
       height:56px;box-shadow:0 2px 12px #ddd;position: relative;z-index: 100;
      .header_box {
-          width: 980px;margin:0 auto;
+          width: 980px;margin:0 auto; position: relative;
             h1.logo {
                      float: @l;display: inline;width: 260px; 
                      a {
@@ -136,8 +136,19 @@
 
 
 
-
-
+/*消息提醒*/
+.layer_news_tips {
+    width:175px;overflow: hidden;border: 1px solid #ccc;background: #fcfcfc;box-shadow:0 2px 12px #ddd;
+    position: absolute;right: 25px;top:56px;z-index: 100;
+    .news_tips {
+          position: relative;
+          ul {
+              padding:10px 15px;
+              li {line-height: 20px;color:#666}
+          }
+          button.close {width:15px;height:15px; position: absolute;right:5px;top:3px;background: none;border: 0;font-size: 14px;font-weight: bold; color: #999;}
+    }
+}
 
 
 

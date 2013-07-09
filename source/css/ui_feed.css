@@ -302,3 +302,31 @@
   width: 640px;
   margin: 10px auto;
 }
+.feed_media {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.feed_media img {
+  max-width: 120px;
+  max-height: 120px;
+  cursor: url(../img/big.cur), auto !important;
+}
+.feed_media_expand {
+  overflow: hidden;
+  width: 640px;
+  margin: 10px auto 0;
+  border: 1px solid #d9d9d9;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 10px;
+}
+.feed_media_expand .media_expand_func {
+  display: none;
+}
+.feed_media_expand .media_expand_pic {
+  text-align: center;
+}
+.feed_media_expand .media_expand_pic img {
+  max-width: 640px;
+  cursor: url(../img/small.cur), auto !important;
+}

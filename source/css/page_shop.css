@@ -786,6 +786,7 @@ textarea::-webkit-input-placeholder {
 #header .header_box {
   width: 980px;
   margin: 0 auto;
+  position: relative;
   /*logo*/
 
   /*菜单*/
@@ -997,6 +998,40 @@ textarea::-webkit-input-placeholder {
   width: 3px;
   color: #ccc;
   text-align: center;
+}
+/*消息提醒*/
+.layer_news_tips {
+  width: 175px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #fcfcfc;
+  box-shadow: 0 2px 12px #ddd;
+  position: absolute;
+  right: 25px;
+  top: 56px;
+  z-index: 100;
+}
+.layer_news_tips .news_tips {
+  position: relative;
+}
+.layer_news_tips .news_tips ul {
+  padding: 10px 15px;
+}
+.layer_news_tips .news_tips ul li {
+  line-height: 20px;
+  color: #666666;
+}
+.layer_news_tips .news_tips button.close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  background: none;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;
 }
 /**
  * 
