@@ -2839,6 +2839,11 @@ ul.notice_list li a {
 ul.notice_list .rank a {
   color: #0078b0;
 }
+ul.notice_list .rank_1 i.icon_square_gray,
+ul.notice_list .rank_2 i.icon_square_gray,
+ul.notice_list .rank_3 i.icon_square_gray {
+  background-position: -47px -48px;
+}
 /*===================/教师排行页/=====================*/
 .panel .ui_feed {
   overflow: hidden;
