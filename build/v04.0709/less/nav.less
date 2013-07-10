@@ -1,0 +1,48 @@
+/**
+ * nav 导航类
+ * 左侧导航：nav_list
+ * tab导航：nav_tabs
+ * 高亮显示：nav_pills
+ * 文本链接：nav_links
+ */
+@import "variables.less";
+@import "base.less";
+
+.nav {
+	 overflow:hidden;
+   li {
+      float:left;
+      display:inline;
+      line-height:@hl20;
+      a {
+          display:inline-block;
+      }
+   }
+}
+
+
+.nav_tabs {
+       height:26px;position: relative;top:2px;left:0;z-index:10;
+       li {
+            width:65px;line-height:26px; text-align:center; margin-left:10px;
+            a {color:#999;}
+       }
+       .current {background:#fff;border-top:1px solid #dfdfdf;border-left:1px solid #dfdfdf;border-right:1px solid #dfdfdf;}
+}
+
+
+.nav_pills {
+      margin-bottom:10px;
+      li {
+        margin-right:20px;
+      }
+     .current {
+      
+       a {
+          color: @white;
+          .border-radius(@bbr);
+          background:#4a9eda;
+          padding:1px 10px;  
+       }
+     }
+}

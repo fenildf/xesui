@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>新版学而思网校首页-订单支付</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="http://css04.xesimg.com/page_shop.css" type="text/css" rel="stylesheet" />	
+	<script src="http://js04.xesimg.com/xue.jquery.min.js"></script>
+	<script src="http://js04.xesimg.com/xue.js"></script>
+</head>
+<body>
+	<!--头部  start-->
+
+	<div class="header_shop">
+		<h1 class="logo">学而思网校</h1>
+		<div class="pay_step">
+			<ul>
+				<li> <i class="text_num">1</i>
+					<p>1.我的购物车</p>
+				</li>
+				<li> <i class="text_num">2</i>
+					<p>2.填写并核对订单信息</p>
+				</li>
+				<li class="next_step">
+					<i class="text_num">3</i>
+					<p>3.成功提交订单</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 头部 end-->
+	<!-- 内容 start-->
+	<div id="container">
+		<div class="layout">
+			<h2 class="shopcar_title">填写并核对订单信息</h2>
+			<h3  class="shopcar_title">订单号：<strong>201307011121435030</strong></h3>
+		<table class="table table_shop">
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th class="text_l">课程名称</th>
+					<th>原价</th>
+					<th>节省</th>
+					<th>小计</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						01
+					</td>
+					<td class="text_l"><a href="##">2013年上海课程卡暑假班</a> <span><strong>3280</strong>人已报名</td></span>
+					<td>￥10</td>
+					
+					<td><strong>￥500</strong></td>
+					<td>￥1000</td>
+				</tr>
+				<tr>
+					<td>
+						02
+					</td>
+					<td class="text_l"><a href="##">2013年上海课程卡暑假班</a></td>
+					<td>￥10</td>
+					
+					<td><strong>￥500</strong></td>
+					<td>￥1000</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				
+				<tr class="tfoot">
+					<td colspan="5"  class="text_r ">
+						课程价格总计：￥800.00 - 代金卡节省：￥0.00 = 课程总金额：
+						<strong class="money">￥920.00</strong>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<!-- ui_table -->
+		<!-- 赠品信息折叠区 -->
+			<div class="ui_folds">
+				<div class="folds_title"><span><em class="icon icon_folds_cut"></em>赠品信息</span></div>
+				<div class="folds_content">
+					<div class="gift_info">
+		          		<p>
+		            		<input type="checkbox" name="data[promotionCourse][]" value="170033" checked="">
+		            		<a href="/kc/9339.html" target="_blank">初三人教暑期附赠课-朱韬</a>
+		            	</p>
+		            	<p>
+		            		<input type="checkbox" name="data[promotionCourse][]" value="170033" checked="">
+		            		<a href="/kc/9339.html" target="_blank">初三人教暑期附赠课-朱韬</a>
+		            	</p>
+		            	<p>
+		            		<input type="checkbox" name="data[promotionCourse][]" value="170033" checked="">
+		            		<a href="/kc/9339.html" target="_blank">初三人教暑期附赠课-朱韬</a>
+		            	</p>
+		        	</div>
+		        	<!--赠品信息 -->
+				</div>
+			</div>
+			<!--赠品信息 折叠区 -->
+			<!-- 使用代金卡折叠区 -->
+			<div class="ui_folds">
+				<div class="folds_title"><span><em class="icon icon_folds_add"></em>使用代金卡</span></div>
+				<div class="folds_content">
+					<div class="gift_card">
+						<p class="card_info">
+							<span>提示：代金卡使用额度上限为订单金额的10%;</span>
+							<a href="#">了解代金卡使用规则&gt;&gt;</a>
+						</p>
+						<p class="card_activate"><a href="javascript:void(0);">激活代金卡</a></p>
+						<div class="cars_form">
+							<span>
+								输入卡号密码：
+								<input value="卡号" id="giftCardNo" size="" type="text">							
+								 
+								<input value="密码" id="giftCardPwd" size="" type="text"></span>
+
+							<button class="btn btn_orange">确定</button>
+
+							<span class="addNotice">卡号密码不能为空</span>
+						</div>
+						<p class="card_activate">使用代金卡</p>
+						<table class="table table_card">
+							<tr>
+								<th class="text_l">卡号</th>
+								<th>面值</th>
+								<th>激活时间</th>
+								<th>有效期</th>
+							</tr>
+							<tr>
+								<td class="text_l">
+									<input type="checkbox"> 20121212154679</td>
+								<td>1000</td>
+								<td>2013-02-25</td>
+								<td>1015-02-23</td>
+							</tr>
+							<tr>
+								<td class="text_l">
+									<input type="checkbox"> 20121212154679</td>
+								<td>1000</td>
+								<td>2013-02-25</td>
+								<td>1015-02-23</td>
+							</tr>
+							<tr>
+								<td class="text_l">
+									<input type="checkbox"> 20121212154679</td>
+								<td>1000</td>
+								<td>2013-02-25</td>
+								<td>1015-02-23</td>
+							</tr>
+							<tr>
+								<td class="text_l">
+									<input type="checkbox"> 20121212154679</td>
+								<td>1000</td>
+								<td>2013-02-25</td>
+								<td>1015-02-23</td>
+							</tr>
+							<tr>
+								<td class="text_l">
+									<input type="checkbox"> 20121212154679</td>
+								<td>1000</td>
+								<td>2013-02-25</td>
+								<td>1015-02-23</td>
+							</tr>
+						</table>
+					</div>
+		        	<!--使用代金卡 -->
+				</div>
+			</div>
+			<!--使用代金卡 折叠区 -->
+			<h3 class="shopcar_title pay_way">请选择支付方式</h3>
+			<p class="account_money"> 帐户余额：<strong id="balance">0.00</strong> 元。 </p>
+			<div class="ui_payment">
+				 <ul class="payment_tabs">
+				 	<li>
+				 		货到付款
+				 	</li>
+				 	<li class="current">
+				 		在线支付
+				 	</li>
+				 </ul>
+				 <div class="payment_content">
+				 	   <div class="payment_bank hidden">
+					 	   	<p> <strong>声明：</strong>
+					 	   		1.货到付款订单金额小于等于￥50.00，需支付快递费￥20.00。
+					 	   	</p>
+					 	   	<p class="payment_text">
+					 	   		2.您成功下单后，我们将立即安排为您发货，正常会在2-4天内送达，但由于天气等不可抗力因素的影响，您的订单可能会有延误现象，如有问题
+					 	   		<br>				 	   
+					 	   		请咨询网校400-610-8908或在订单记录中查询配送情况。
+					 	   		<br>				 	   
+					 	   		3.由于部分偏远地区快递无法送达，建议偏远城市用户下单前先查询配送区域，以免给您带来不便。[
+					 	   		<a style="color:#006699;" target="_blank" href="http://www.zjs.com.cn/WS_Business/WS_Bussiness_CityArea.aspx">点击查询配送区域</a>
+					 	   		]
+					 	   	</p>
+				 	   </div>
+				 	   <!--货到付款  -->
+				 	    <div class="payment_bank">
+				 	    	<div class="paylists">
+				 	    		<h6 class="shopcar_title">网银支付：</h6>
+						 	     <ul class="bank_list">
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item ICBC" title="中国工商银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item CMB" title="招商银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item ABC" title="中国农业银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item CCB" title="中国建设银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item BCM" title="交通银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item SDB" title="深证发展银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item BOB" title="北京银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item CIB" title="兴业银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item BOC" title="中国银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item CEB" title="中国光大银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item SPD" title="上海浦东发展银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item CMBC" title="中国民生银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item PSBC" title="中国邮政"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item BEA" title="BEA东亚银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item RCB" title="中国农村商业银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item CBHB" title="渤海银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item CGD" title="广东发展银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item GZCB" title="广州市商业银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item GZNC" title="广州市农村信用合作社"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item HXB" title="华夏银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item ZXSY" title="中信实业银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item NBCB" title="宁波银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item SHNC" title="上海农村商业银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item BBON" title="南京银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item HCCB" title="杭州银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item PAYH" title="平安银行"></label>
+						 	     	</li>
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item gateway" title="快钱支付"></label>
+						 	     	</li>
+						 	     </ul>
+					 	   </div>
+					 	   <div class="paylists">
+				 	    		<h6 class="shopcar_title">支付平台：</h6>
+						 	     <ul class="bank_list">
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item ICBC" title="支付宝"></label>
+						 	     	</li>
+						 	     	
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item gateway" title="快钱支付"></label>
+						 	     	</li>
+						 	     </ul>
+					 	   </div>
+					 	    <div class="paylists">
+				 	    		<h6 class="shopcar_title">借记卡快捷支付：</h6>
+						 	     <ul class="bank_list">
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item ICBC" title="支付宝"></label>
+						 	     	</li>
+						 	     	
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item gateway" title="快钱支付"></label>
+						 	     	</li>
+						 	     </ul>
+					 	   </div>
+					 	   <div class="paylists">
+				 	    		<h6 class="shopcar_title">信用卡快捷支付：</h6>
+						 	     <ul class="bank_list">
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item ICBC" title="支付宝"></label>
+						 	     	</li>
+						 	     	
+						 	     	<li>
+						 	     		<input type="radio">					 	     
+						 	     		<label for="" class="bank-item gateway" title="快钱支付"></label>
+						 	     	</li>
+						 	     </ul>
+					 	   </div>
+				 	   </div>
+				 	   <!--在线支付  -->
+				 </div>
+			</div>
+			<!-- 支付方式  -->
+			<!-- 发票折叠区 -->
+			<div class="ui_folds">
+				<div class="folds_title"><span><em class="icon icon_folds_add"></em>发票信息</span></div>
+				<div class="folds_content">
+					<div class="invoice_info">
+		          		<p>
+		            		<label for="">发票类型：</label>
+		            		<select id="invoice_type" name="data[invoiceType]">
+                                    <option value="0" selected="selected">请选择</option>
+                                    <option value="1">培训费</option>
+                                    <option value="2">资料费</option>
+                             </select>
+		            	</p>
+		            	<p>
+		            		<label for="">发票抬头：</label>
+		            		<input type="text" value="" size="" class="oType" id="invoice_head" name="data[invoiceHead]"><span class="err_info">发票信息不能为空</span>
+		            	</p>
+		            	<p>
+		            		<a href="#">保存发票信息</a>
+		            	</p>
+		        	</div>
+		        	<div class="invoice_info hidden">
+		          		<p>
+		            		<label for="">发票类型：</label><span id="">资料费</span>
+		            		
+		            	</p>
+		            	<p>
+		            		<label for="">发票抬头：</label><span id="">北京学而思集团</span>
+		            	</p>
+		            	<p>
+		            		<a href="#">修改发票信息</a>
+		            	</p>
+		        	</div>
+		        	<!--发票信息 -->
+				</div>
+			</div>
+			<!--发票 折叠区 -->
+			<!-- 配送地址 -->
+				<h3 class="shopcar_title pay_way">请选择配送方式</h3>
+				 <div class="order_address">
+				 	 <h6 class="shopcar_title">收货地址：</h6>
+				 	 <div class="address_list">
+				 	 	<ul>
+				 	 		<li>
+				 	 			<input type="radio" id="addid[]" name="data[addid]" value="0" checked="">				 	 	
+				 	 			北京市 海淀区 中关村大街32号
+				 	 			<a href="#">修改</a>
+				 	 		</li>
+				 	 		<li>
+				 	 			<input type="radio" id="addid[]" name="data[addid]" value="0" checked="">
+				 	 			使用新的地址
+				 	 		</li>
+				 	 	</ul>
+				 	 </div>
+				 	 <div class="address_info">
+				 	 	
+				 	 		<div class="info_from">
+				 	 			<p>
+				 	 				<label for="">收货人姓名：</label>
+				 	 				<input name="" type="text" >				 	 		
+				 	 				<span><strong>※</strong>请准确填写真实姓名</span>
+				 	 			</p>
+				 	 			<p>
+				 	 				<label for="">省份/直辖市：</label>
+				 	 				<select id="add_province" name="province" class="select" style="display: inline-block;">
+				 	 					<option value="">省份</option>
+				 	 					<option value="1">北京市</option>
+				 	 				</select>
+				 	 				<select id="add_province" name="province" class="select" style="display: inline-block;">
+				 	 					<option value="">城市</option>
+				 	 					<option value="1">北京市</option>
+				 	 				</select>
+				 	 				<select id="add_province" name="province" class="select" style="display: inline-block;">
+				 	 					<option value="">县</option>
+				 	 					<option value="1">北京市</option>
+				 	 				</select>				 	 		
+				 	 				<span><strong>※</strong></span>
+				 	 			</p>
+				 	 			<p>
+				 	 				<label for="">详细地址：</label>
+				 	 				<input name="" type="text"  class="input_360">				 	 		
+				 	 				<span><strong>※</strong>请填写详细路名及门牌号</span>
+				 	 			</p>
+				 	 			<p>
+				 	 				<label for="">邮政编码：</label>
+				 	 				<input name="" type="text" >				 	 		
+				 	 				<span><strong>※</strong>用于快递确定送货地址</span>
+				 	 			</p>
+				 	 			<p>
+				 	 				<label for="">手机：</label>
+				 	 				<input name="" type="text" >				 	 		
+				 	 				<span><strong>※</strong>用于接收发货通知短信和送货前通知</span>
+				 	 			</p>
+				 	 			<p>
+				 	 				<a href="#" class="btn btn_gray">保存收货人信息</a>
+				 	 			</p>
+				 	 		</div>
+				 	 </div>
+				 	 <div class="order_time">
+				 	 		<h6 class="shopcar_title">送货时间：</h6>
+				 	 		<ul>
+				 	 			<li>
+				 	 				<input type="radio" id="addid[]" name="data[addid]" value="0" checked="checked"> 工作日、双休日与节假日均可送货
+				 	 			</li>
+				 	 			<li>
+				 	 				<input type="radio" id="addid[]" name="data[addid]" value="0" checked=""> 只有双休日与假日可送货（工作日不送）
+				 	 			</li>
+				 	 			<li>
+				 	 				<input type="radio" id="addid[]" name="data[addid]" value="0" checked=""> 只有工作日送货（双休日、假日不送）
+				 	 			</li>
+				 	 		</ul>
+				 	 </div>
+				 </div>
+			<!-- 配送地址 end-->
+			
+			<div class="order_pay_info">
+				<p class="all_money">课程总金额：￥800.00 + 快递费：￥0.00 - 帐户余额：￥0.00 = 您需支付：<strong>￥800.00</strong></p>
+				<button class="btn btn_sky">确认支付</button>
+			</div>
+		</div>
+	</div>
+	<!--内容 end-->
+	<!--底部 start -->
+	<div id="footer">
+		
+	</div>
+	<!--底部 end-->
+</body>
+</html>

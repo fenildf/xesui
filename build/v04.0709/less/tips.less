@@ -1,0 +1,26 @@
+/**
+ *tips(alert样式)提示样式
+ * 默认是不带边框的粉色提示
+ */
+@import "variables.less";
+@import "base.less";
+.tip{
+	line-height:@hl24;	
+	padding:6px 12px;
+	color: @g3;
+	font-size: @f12;
+	background: @r0;background: -webkit-linear-gradient(top,#fff5da, #ffeec0);font-size:@f12;
+	.close {float:@r;background:none;font-size:@f18;}
+}
+.tip_danger{
+	border:1px solid;
+	.border-color(#E6D6A5);
+	.background-color(#FEEEC3);
+}
+.tip a{
+	color:@b0;
+	&:hover{
+		color:@b0;
+	}
+}
+

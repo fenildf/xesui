@@ -6,9 +6,9 @@
 	<title>新版学而思网校首页</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link href="../css/page_index.css" type="text/css" rel="stylesheet" />	
-	<script src="../script/xue.jquery.min.js"></script>
-	<script src="../script/xue.js"></script>
+	<link href="http://css04.xesimg.com/page_index.css" type="text/css" rel="stylesheet" />	
+	<script src="http://js04.xesimg.com/xue.jquery.min.js"></script>
+	<script src="http://js04.xesimg.com/xue.js"></script>
 </head>
 <body>
 
@@ -202,6 +202,7 @@
 		<!-- 首页轮播广告图 -->
 		<div id="index_focus">
 			<ul class="focus_list">
+				<!-- 首页轮播图模块 -->
 				<li>
 					<a href="##">广告说明文字</a>
 				</li>
@@ -226,16 +227,16 @@
 			<div class="layout_body left w_655">
 				<div class="main_header border_blue w_645">
 					<ul class="nav_links">
-						<li class="current" >
+						<li data-grade="0" class="current" >
 							<a href="#">全部</a><i class="line line_blue">|</i>
 						</li>
-						<li>
+						<li data-grade="1">
 							<a href="#">小学</a><i class="line line_blue">|</i>
 						</li>
-						<li>
+						<li data-grade="2">
 							<a href="#">初中</a><i class="line line_blue">|</i>
 						</li>
-						<li>
+						<li data-grade="3">
 							<a href="#">高中</a>
 						</li>
 						
@@ -346,6 +347,7 @@
 			<div class="layout_side right w_310">
 				<div class="panel">
 					<div class="side_header border_blue"><span>最新活动</span></div>
+					<div class="side_body">
 					 <div class="advert">
 					 	<a href="##">
 					 		<img src="../pic/ad_01.jpg"/>					 
@@ -365,9 +367,12 @@
 					 </div>
 				<!-- 广告 3 -->
 				</div>
+					 
+				</div>
 				<!-- panle -->
 				<div class="panel">
 					<div class="side_header border_blue"><span>最新公告</span></div>
+					<div class="side_body">
 					 <ul class="ui_list index_notice">
 					 	<li><i></i><a href="">系列讲座：秀情老师“情学好问”第七场</a></li>
 					 	<li><i></i><a href="">小学三四年级面授暑假班课程上线啦</a></li>
@@ -377,6 +382,8 @@
 					 	<li><i></i><a href="">陈双老师“又一村”阅读挑战></a></li>
 					 	<li><i></i><a href="">阅读满分：陈双老师“又一村”阅读挑战></a></li>
 					 </ul>
+					</div>
+					 
 				   
 				<!-- 列表 -->
 				</div>

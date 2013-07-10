@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 11:36:00
+ * @version $Id$
+ *@ layout.css  框架和公用样式
+ */
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
+ *------------------------------------
+ */
+/**
+ * padding值设定
+ *
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@margin0, @margin5
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f18:font-size:18px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *ti:text-index:-9999em;
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ * hl150:high-light:150%;
+ * hl180:high-light:180%;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+.mtop_10 {
+  margin-top: 10px;
+}
+.mtop_20 {
+  margin-top: 20px;
+}
+.mtop_30 {
+  margin-top: 30px;
+}
+.ptop_10 {
+  padding-top: 10px;
+}
+.ptop_20 {
+  padding-top: 20px;
+}
+.ptop_30 {
+  padding-top: 30px;
+}
+/**/
+#container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+}
+.layout {
+  width: 980px;
+  margin: auto;
+}
+.layout_content {
+  overflow: hidden;
+}
+/*公用样式*/
+.panle {
+  overflow: hidden;
+}
+.panel_content {
+  overflow: hidden;
+}
+.left {
+  float: left;
+  display: inline;
+}
+.right {
+  float: right;
+  display: inline;
+}
+.w_215 {
+  width: 215px;
+  padding-bottom: 50px;
+}
+.w_235 {
+  width: 235px;
+  padding-bottom: 50px;
+}
+.w_240 {
+  width: 240px;
+}
+.w_310 {
+  width: 310px;
+  margin-right: 5px;
+  padding-bottom: 50px;
+}
+.w_655 {
+  width: 655px;
+  border-right: 1px solid #e5e5e5;
+  padding-bottom: 50px;
+}
+.w_645 {
+  width: 645px;
+}
+.w_730 {
+  width: 730px;
+  padding-bottom: 50px;
+}
+.w_740 {
+  width: 740px;
+  padding-bottom: 50px;
+}
+/**
+ * [广告块]
+ *
+ */
+.advert {
+  margin-top: 10px;
+}

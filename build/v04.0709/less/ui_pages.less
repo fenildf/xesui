@@ -1,0 +1,62 @@
+/**
+ * ui_pages.less 分页组件
+ * 
+ * @modify : 2013-07-01;
+ * @author : Marco(wujie@xueersi.com);
+ * 
+ */
+@import	"button.less";
+
+.ui_pages {
+	text-align: center;
+	margin: 10px auto;
+	li {
+		width: auto;
+		display: inline-block;
+		
+		a, span {
+			color: @g3;
+			display: inline-block;
+			margin: 0 5px;
+			padding:5px 10px;
+			border:1px solid @btngrayborder;
+			
+		}
+
+		a:hover {
+			color: @b0;
+			border-color: @b0;
+			text-decoration: none;
+		}
+		.btn {
+			border-radius: 0;
+			padding: 5px 10px;
+			background: linear-gradient(#fff, @gf, #f5f5f5);
+			&:hover{
+				color: @g3;
+				border-color: @btngrayborder;
+			}
+			&.btn_disable {
+				color:#999;
+				&:hover {
+					color:#999;
+				}
+			}	
+		}
+		&.pages_current {
+			color:@white;
+			a, span {
+				color:@white;
+				background-color: @b0;
+				border-color: @b0;
+			}
+		}
+		&.pages_more {
+			a, span {
+				border:1px solid @white;
+				margin:0;
+			}
+		}
+	}
+
+}

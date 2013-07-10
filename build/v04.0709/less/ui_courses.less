@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 17:57:54
+ * @version $Id$ 课程
+ */
+@import "icon.less";
+@import "variables.less";
+@import "base.less";
+
+.ui_courses {overflow: hidden;}
+.ui_courses .ui_avatar {float: left;display:inline;margin:10px 10px 0 10px;}
+.course_item {overflow: hidden;border: 1px solid #ededed;background: #fcfcfc;margin-bottom: 10px;padding-bottom: 10px;}
+
+/*内容部分*/
+.course_detail {
+		float: left;display: inline;width:645px;
+		.course_title {
+			font-size: 18px;font-family: @fw;color: @g3;font-weight: normal;padding: 7px 0;
+			em {display: inline-block;width:35px;line-height: 17px;.background-settings(-35px, -59px, @btnpath, no-repeat);color: @white;font-size: @f12;padding-left: 3px;}
+			strong {font-size: @f14;}
+			a {color:@g3;}
+		}
+		.course_info {
+			height: 25px;color: @g3 * 3;font-size:@f12;
+			strong {font-weight:bold;}
+		}
+		.course_func {
+			margin-top:5px;
+			.btn_audition  {
+				float:left;width:75px;height: 25px;line-height:25px;.background-settings(-35px, -138px, @btnpath, no-repeat); text-indent:20px; color:@r0;text-decoration: none;
+				&:hover {.background-settings(-35px, -107px, @btnpath, no-repeat);color:@white;}
+			}
+			span {float: left;font-size: @f14;margin:0 10px; color:@g3 * 3;}
+			i {float: left;}
+			.tools {float: left;font-size: @f14;margin:0 10px; color:#006699;}
+		}
+}
+

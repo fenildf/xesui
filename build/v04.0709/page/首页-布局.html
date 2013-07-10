@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>新版学而思网校首页</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="http://css04.xesimg.com/page_index.css" type="text/css" rel="stylesheet" />	
+	<script src="http://js04.xesimg.com/xue.jquery.min.js"></script>
+	<script src="http://js04.xesimg.com/xue.js"></script>
+</head>
+<body>
+
+	<!--头部  start-->
+	<div id="header">
+		<!-- @include: moudle/头部-未登录.html“ -->
+	</div>
+	<!-- 头部 end-->
+	<!-- 内容 start-->
+	<div id="container">
+		<!-- 登录部分 -->
+			<div class="index_login">
+				<!-- @include: moudle/前台/首页-登录框.html -->
+			</div>
+			<!-- 登录部分  -->
+		<!-- 首页轮播广告图 -->
+		<div id="index_focus">
+			<ul class="focus_list">
+				<!-- @include: moudle/前台/首页-轮播图.html -->
+			</ul>
+			<div class="focus_num_wrap">
+				<ol class="focus_num">
+					<li class="current">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ol>
+			</div>
+			
+		</div>
+		<!-- 首页轮播广告图  end-->
+
+		<div class="layout">
+			<div class="layout_body left w_655">
+				<div class="main_header border_blue w_645">
+					<ul class="nav_links">
+						<li data-grade="0" class="current" >
+							<a href="#">全部</a><i class="line line_blue">|</i>
+						</li>
+						<li data-grade="1">
+							<a href="#">小学</a><i class="line line_blue">|</i>
+						</li>
+						<li data-grade="2">
+							<a href="#">初中</a><i class="line line_blue">|</i>
+						</li>
+						<li data-grade="3">
+							<a href="#">高中</a>
+						</li>
+						
+					</ul>
+				</div>
+                <!-- main_header  -->
+                <div class="content_box w_645">
+					<!-- @include: moudle/前台/首页-动态.html -->
+                </div> 
+              <!--  -->
+			</div>
+			<!-- layout_body -->
+			<div class="layout_side right w_310">
+				<div class="panel">
+					<div class="side_header border_blue"><span>最新活动</span></div>
+					<div class="side_body">
+						<!-- @include: moudle/前台/首页-右侧广告位.html -->
+					</div>
+					 
+				</div>
+				<!-- panle -->
+				<div class="panel">
+					<div class="side_header border_blue"><span>最新公告</span></div>
+					<div class="side_body">
+						<!-- @include: moudle/前台/首页-最新动态.html -->	
+					</div>
+					 
+				   
+				<!-- 列表 -->
+				</div>
+				<!-- panle -->
+			</div>
+			<!-- layout_side  -->
+		</div>
+		<!--layout  end-->
+	</div>
+	<!--内容 end-->
+	<!--底部 start -->
+	<div id="footer">
+		<!-- @include: moudle/底部.html -->	
+	</div>
+	<!--底部 end-->
+</body>
+</html>

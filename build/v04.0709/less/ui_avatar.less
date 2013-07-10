@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:40:19
+ * @version $Id$  头像
+ */
+@import "icon.less";
+@import "variables.less";
+
+.ui_avatar {width:50px;position: relative; overflow: hidden;}
+.avatar_roll {
+	overflow: hidden;padding-top: 5px;
+	.prev {float: left; display: inline;}
+	.next {float:right; display: inline;}
+}
+.ui_avatar ul.avatar_items {
+			overflow: hidden;
+			li {
+				a {display: block; text-align: @c;line-height: @hl180; color:@g3 * 2;}
+				img {width: 50px;height: 50px;}
+			}
+}
+
+.ui_avatar .userpic img{width: 50px;height: 50px;}

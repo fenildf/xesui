@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:24:01
+ * @version $Id$ 所有标题
+ */
+
+
+@import "variables.less";
+@import "base.less";
+
+.side_header {
+		height: 42px;line-height: 42px;
+		span {color:@g3 * 3;font-size: @f16;font-family: @fw;text-align: @l;}
+}
+
+
+.main_header {
+	overflow: hidden;margin-bottom: 20px;border-bottom:1px solid #e5e5e5;
+	.nav_links {
+		width:645px;height: 42px;overflow: hidden;
+		li {
+			float: left;display: inline;line-height: 42px;
+			a {color: #006699;font-size: 14px;}
+			i {font-style: normal;color: #ccc;display: inline-block;padding:0 8px;}
+	    }
+	    li.current {
+	    		.background-settings(-120px, -272px, @iconpath, no-repeat);
+				 a{font-weight: bold;}
+	    }
+	}
+}
+
+.border_blue {border-bottom:1px solid #0076b3; }
+
+.layout_body .border_blue .nav_links li.current {background:none;}
+.layout_body .border_blue span {float: left;font-size: 14px;font-weight: bold;line-height: 40px; color:@b0;}
+
+.layout_side .border_blue span {float:right;color:#0076b3;text-align: right;font-size: @f20;}
+.header_setting {margin:10px 0 10px 0;}

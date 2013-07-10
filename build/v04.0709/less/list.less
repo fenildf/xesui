@@ -1,0 +1,30 @@
+/**
+*list.css
+*ui_list
+*所有有序，无序列表
+*<ul ol>
+*    <li>1<a>中华人民共和国--学而思网校</a></li>
+*</ul ol>
+*/
+@import "reset.less";
+@import "variables.less";
+.ui_list{
+	list-style-type: none;
+	padding-left: 5px;
+	line-height: @hl20;
+}
+.list_blue{
+	line-height: @hl22;
+}
+.list_blue a{
+	color: @linkcolor;
+	&:hover{ 
+		color: @linkcolor;
+		};
+}
+.list_black a{
+	color: @g3;
+	&:hover{ 
+		color: @g3;
+		};
+}

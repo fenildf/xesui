@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+/*头部，内容，底部*/
+
+@import "side_nav.less";
+
+
+/*========================/帮助左侧列表/================================*/
+
+.nav_help li {text-align: left;padding-left: 15px;}
+.nav_help li.current a {font-weight: bold;}
+
+.ui_article {
+		overflow: hidden;margin: 20px 0;
+		.article_title {line-height: 40px;font-size: 18px;}
+		.article_content {
+				overflow: hidden;
+				p {line-height: 180%;margin-bottom: 10px; text-indent: 2em;font-size: 14px;color: #666;}
+				.pic {text-align: center;}
+		}
+}
+
+
+

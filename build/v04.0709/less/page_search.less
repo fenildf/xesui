@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+@import "base.less";
+@import "reset.less";
+@import "variables.less";
+/*base,重置，变量*/
+
+@import "icon.less";
+@import "form.less";
+@import "name.less";
+@import "button.less";
+/*图标，表单，按钮*/
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+/*头部，内容，底部*/
+
+
+@import "title.less";
+@import "ui_avatar.less";
+@import "list.less";
+@import "ui_filter.less";
+@import "ui_sortbar.less";
+@import "ui_courses.less";
+@import "ui_pages.less";
+
+
+/*==================/搜课/====================*/
+
+.ui_searchbar {
+	overflow: hidden;margin:20px 0 15px 0;
+	.search_head {height: 26px;line-height: 26px;font-size: 14px;color: #0175b2;font-weight: bold;}
+	.search_group  {
+		overflow: hidden;
+		.search_keyword {float:left;width:658px;height:33px;line-height: 33px;border: 1px solid #3399fe;}
+		.btn_blue {float:left;width:70px;height:35px;color:#fff;font-size:14px;background: #3399fe;border:0;border-radius: 0;}
+	}
+	.search_tips {height: 37px;line-height: 37px;background: #f4f0ef;padding-left: 15px;color: @g3*2}
+}
+
+
+
+ul.notice_list {
+	overflow: hidden;
+	li {
+		height: 25px;line-height: 25px;padding-left: 10px;overflow: hidden; font-size: @f14;border-bottom:1px dotted #ccc;padding:5px 0;
+		i {font-size: @f12; text-indent:0em;color:@white;margin-right:5px;}
+		a {color:@g3;}
+	}
+	.rank {
+	   a {color:@b0;}
+	}
+}
+
