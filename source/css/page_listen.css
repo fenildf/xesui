@@ -1410,8 +1410,26 @@ table {
   float: left;
   display: inline;
 }
-.coures_content .content_player .player_info dl dd .icon_star {
-  margin-top: 22px;
+.coures_content .content_player .player_info dl dd .star {
+  height: 20px;
+  background: url("../img/star.jpg") repeat-x;
+  text-indent: -9999em;
+  margin-top: 25px;
+}
+.coures_content .content_player .player_info dl dd .star1 {
+  width: 20px;
+}
+.coures_content .content_player .player_info dl dd .star2 {
+  width: 40px;
+}
+.coures_content .content_player .player_info dl dd .star3 {
+  width: 60px;
+}
+.coures_content .content_player .player_info dl dd .star4 {
+  width: 80px;
+}
+.coures_content .content_player .player_info dl dd .star5 {
+  width: 100px;
 }
 .coures_content .content_player .player_info dl dd .ui_avatar {
   margin-top: 10px;
@@ -1554,6 +1572,15 @@ table {
 }
 .ui_scrolls .scrolls_item .scrolls_con_list ul li .gray {
   color: #999999;
+}
+.ui_scrolls .scrolls_item .scrolls_con_list ul li p {
+  color: #999999;
+  cursor: default;
+}
+.ui_scrolls .scrolls_item .scrolls_con_list ul li p a {
+  float: none;
+  color: #006699;
+  text-decoration: underline;
 }
 /*听课页*/.coures_content_item {
   height: 508px;

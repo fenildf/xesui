@@ -244,7 +244,7 @@ xue.use = xue.use || function(moduleName, callback, isQuequ, timeout){
 		callback();
 	}else{
 		// 调用异步加载方法，默认线上JS模块文件放到 sript/下面，文件名：xue.[模块名].min.js
-		xue.loader('../script/xue.' + n + '.min.js', function(){
+		xue.loader('http://js04.xesimg.com/xue.' + n + '.min.js', function(){
 			if(t){
 				setTimeout(function(){
 					callback();
