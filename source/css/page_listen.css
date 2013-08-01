@@ -1533,9 +1533,7 @@ table {
   padding-left: 25px;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul .current {
-  background-position: 0 -282px;
-  background-image: url("http://img04.xesimg.com/btn.png");
-  background-repeat: no-repeat;
+  background: url(http://img04.xesimg.com/scroll/scroll_current.png) no-repeat;
 }
 .ui_scrolls .scrolls_item .scrolls_con ul .current a {
   color: #ffffff;
